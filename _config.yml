@@ -1,10 +1,11 @@
 # Site wide configuration
 
-title: Write, Version, Merge=Docs Like Code
+title: Write, Version, Merge. Let's Treat Docs Like Code
 locale: en_US
 description: When you want to write more, write better, merge drafts, and write with others.
 logo: docs-like-code.png
-url: https://justwriteclick.github.io/docslikecode
+url:
+#url: https://justwriteclick.github.io/docslikecode
 
 # Jekyll configuration
 
