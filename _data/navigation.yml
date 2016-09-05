@@ -1,0 +1,10 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: Blog
+  url: http://justwrite.click/
+
+- title: Search
+  url: /search/

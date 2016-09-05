@@ -1,0 +1,60 @@
+# Site wide configuration
+
+title: Write, Version, Merge. Let's Treat Docs Like Code
+locale: en_US
+description: When you want to write more, write better, merge drafts, and write with others.
+logo: docs-like-code.png
+url:
+#url: https://justwriteclick.github.io/docslikecode
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+
+mathjax: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+comments: true
+
+# Site owner
+owner:
+  name: Anne Gentle
+  avatar: gentle_anne.jpg
+  email: annegentle@justwriteclick.com
+  disqus-shortname: annegentle
+  twitter: annegentle
+  facebook: 
+  github: justwriteclick
+  stackexchange:
+  linkedin:
+  instagram:
+  flickr:
+  tumblr: 
+  pinterest:
+  weibo:
+  google:
+    plus: AnneGentle
+    analytics: 
+    verify: 
+    ad-client: 
+    ad-slot:
+  bing-verify: 

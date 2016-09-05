@@ -1,0 +1,500 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Theme Setup &#8211; Write, Version, Merge. Let's Treat Docs Like Code</title>
+<meta name="description" content="Instructions on how to install and customize the Jekyll theme So Simple.">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Theme Setup">
+<meta name="twitter:description" content="Instructions on how to install and customize the Jekyll theme So Simple.">
+<meta name="twitter:site" content="@annegentle">
+<meta name="twitter:creator" content="@annegentle">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/images/so-simple-sample-image-6.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Theme Setup">
+<meta property="og:description" content="Instructions on how to install and customize the Jekyll theme So Simple.">
+<meta property="og:url" content="/theme-setup/">
+<meta property="og:site_name" content="Write, Version, Merge. Let's Treat Docs Like Code">
+
+
+
+
+
+<link rel="canonical" href="/theme-setup/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Write, Version, Merge. Let's Treat Docs Like Code Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="page">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://justwrite.click/" target="_blank">Blog</a></li>
+		  
+		    
+		    <li><a href="/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="/" class="site-logo" rel="home" title="Write, Version, Merge. Let's Treat Docs Like Code"><img src="/images/docs-like-code.png" width="200" height="200" alt="Write, Version, Merge. Let's Treat Docs Like Code logo" class="animated fadeInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="entry">
+    <img src="/images/so-simple-sample-image-6.jpg" class="entry-feature-image" alt="Theme Setup" ><p class="image-credit">Photo Credit: <a href="http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/">WeGraphics</a></p>
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <h1 class="entry-title">Theme Setup</h1>
+      </header>
+      <div class="entry-content">
+        <p>General notes and suggestions for customizing <strong>So Simple Theme</strong>.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#installation" id="markdown-toc-installation">Installation</a></li>
+  <li><a href="#running-jekyll" id="markdown-toc-running-jekyll">Running Jekyll</a></li>
+  <li><a href="#scaffolding" id="markdown-toc-scaffolding">Scaffolding</a></li>
+  <li><a href="#site-setup" id="markdown-toc-site-setup">Site Setup</a></li>
+  <li><a href="#adding-new-content" id="markdown-toc-adding-new-content">Adding New Content</a></li>
+  <li><a href="#layouts-and-content" id="markdown-toc-layouts-and-content">Layouts and Content</a></li>
+  <li><a href="#social-share-links" id="markdown-toc-social-share-links">Social Share Links</a></li>
+  <li><a href="#disqus-comments" id="markdown-toc-disqus-comments">Disqus Comments</a></li>
+  <li><a href="#twitter-cards" id="markdown-toc-twitter-cards">Twitter Cards</a></li>
+  <li><a href="#jekyll-search" id="markdown-toc-jekyll-search">Jekyll search</a></li>
+  <li><a href="#further-customization" id="markdown-toc-further-customization">Further Customization</a></li>
+  <li><a href="#questions" id="markdown-toc-questions">Questions?</a></li>
+  <li><a href="#license" id="markdown-toc-license">License</a></li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>So Simple now requires <a href="http://jekyllrb.com/">Jekyll</a> 3.0. Make sure to run <code class="highlighter-rouge">bundle update</code> if you aren’t on the latest version to update all gem dependencies.</p>
+
+<p>If you are creating a new Jekyll site using So Simple follow these steps:</p>
+
+<ol>
+  <li>Fork the <a href="http://github.com/mmistakes/so-simple-theme/fork">So Simple repo</a>.</li>
+  <li>Clone the repo you just forked and rename it.</li>
+  <li><a href="http://bundler.io">Install Bundler</a> <code class="highlighter-rouge">gem install bundler</code> and Run <code class="highlighter-rouge">bundle install</code> to install Jekyll and all dependencies.</li>
+  <li>Update <code class="highlighter-rouge">_config.yml</code>, add navigation, and replace demo posts and pages with your own. Full details below.</li>
+</ol>
+
+<p>If you want to use So Simple with an existing Jekyll site follow these steps:</p>
+
+<ol>
+  <li><a href="https://github.com/mmistakes/so-simple-theme/archive/master.zip">Download So Simple</a> and unzip.</li>
+  <li>Rename <code class="highlighter-rouge">so-simple-theme-master</code> to something meaningful ie: <code class="highlighter-rouge">new-site</code></li>
+  <li>Run <code class="highlighter-rouge">bundle install</code> to install Jekyll and all dependencies.</li>
+  <li>Remove demo posts/pages and replace with your own posts, pages, and any other content you want to move over.</li>
+  <li>Update posts’ and pages’ YAML to match variables used by So Simple. Full details below.</li>
+  <li>Update <code class="highlighter-rouge">_config.yml</code> and add navigation links and additional author data if applicable. Full details below.</li>
+</ol>
+
+<p class="notice"><strong>Pro-tip:</strong> Delete the <code class="highlighter-rouge">gh-pages</code> branch after cloning and start fresh by branching off <code class="highlighter-rouge">master</code>. There is a bunch of garbage in <code class="highlighter-rouge">gh-pages</code> used for the theme’s demo site that I’m guessing you won’t want.</p>
+
+<hr />
+
+<h2 id="running-jekyll">Running Jekyll</h2>
+
+<p>The preferred method for running Jekyll is with <code class="highlighter-rouge">bundle exec</code>, but if you’re willing to deal gem conflicts feel free to go cowboy with a <code class="highlighter-rouge">jekyll build</code> or <code class="highlighter-rouge">jekyll serve</code>.</p>
+
+<blockquote>
+  <p>In some cases, running executables without bundle exec may work, if the executable happens to be installed in your system and does not pull in any gems that conflict with your bundle.</p>
+
+  <p>However, this is unreliable and is the source of considerable pain. Even if it looks like it works, it may not work in the future or on another machine.</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll build
+
+bundle <span class="nb">exec </span>jekyll serve
+</code></pre>
+</div>
+
+<hr />
+
+<h2 id="scaffolding">Scaffolding</h2>
+
+<p>How So Simple is organized and what the various files are. All posts, layouts, includes, stylesheets, assets, and whatever else is grouped nicely under the root folder. The compiled Jekyll site outputs to <code class="highlighter-rouge">_site/</code>.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>so-simple-theme/
+├── _includes/
+|    ├── browser-upgrade.html    <span class="c"># prompt to install a modern browser for &lt; IE9</span>
+|    ├── disqus-comments.html    <span class="c"># Disqus comments script</span>
+|    ├── feed-footer.html        <span class="c"># post footers in feed</span>
+|    ├── footer.html             <span class="c"># site footer</span>
+|    ├── head.html               <span class="c"># site head</span>
+|    ├── navigation.html         <span class="c"># site top navigation</span>
+|    ├── open-graph.html         <span class="c"># meta data for Open Graph and Twitter cards</span>
+|    └── scripts.html            <span class="c"># site scripts</span>
+├── _layouts/
+|    ├── page.html               <span class="c"># single column page layout</span>
+|    └── post.html               <span class="c"># main content with sidebar for author/post details</span>
+├── _posts/                      <span class="c"># MarkDown formatted posts</span>
+├── _sass/                       <span class="c"># Sass stylesheets</span>
+├── about/                       <span class="c"># sample about page</span>
+├── articles/                    <span class="c"># sample articles category page</span>
+├── assets/
+|    ├── css/                    <span class="c"># compiled stylesheets</span>
+|    ├── fonts/                  <span class="c"># webfonts</span>
+|    └── js/
+|        ├── _main.js            <span class="c"># main JavaScript file, plugin settings, etc</span>
+|        ├── plugins/            <span class="c"># scripts and jQuery plugins to combine with _main.js</span>
+|        ├── scripts.min.js      <span class="c"># concatenated and minified _main.js + plugin scripts</span>
+|        └── vendor/             <span class="c"># vendor scripts to leave alone and load as is</span>
+├── blog/                        <span class="c"># sample blog category page</span>
+├── images/                      <span class="c"># images for posts and pages</span>
+├── 404.md                       <span class="c"># 404 page</span>
+├── feed.xml                     <span class="c"># Atom feed template</span>
+├── index.md                     <span class="c"># sample homepage. lists 5 latest posts </span>
+└── theme-setup/                 <span class="c"># theme setup page. safe to remove</span>
+</code></pre>
+</div>
+
+<hr />
+
+<h2 id="site-setup">Site Setup</h2>
+
+<p>A quick checklist of the files you’ll want to edit to get up and running.</p>
+
+<h3 id="site-wide-configuration">Site Wide Configuration</h3>
+
+<p><code class="highlighter-rouge">_config.yml</code> is your friend. Open it up and personalize it. Most variables are self explanatory but here’s an explanation of each if needed:</p>
+
+<h4 id="title">title</h4>
+
+<p>The title of your site… shocker!</p>
+
+<p>Example <code class="highlighter-rouge">title: My Awesome Site</code></p>
+
+<h4 id="logo">logo</h4>
+
+<p>Your site’s logo, appears in the header below the navigation bar and is used as a default image for Twitter Cards when a feature is not defined. Place in the <code class="highlighter-rouge">images</code> folder.</p>
+
+<h4 id="url">url</h4>
+
+<p>Used to generate absolute URLs for sitemaps, feeds and for generating canonical URLs in a page’s <code class="highlighter-rouge">&lt;head&gt;</code>. When developing locally either comment this out or use something like <code class="highlighter-rouge">http://localhost:4000</code> so all assets load properly. <em>Don’t include a trailing <code class="highlighter-rouge">/</code></em>.</p>
+
+<p>Examples:</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">url</span><span class="pi">:</span> <span class="s">https://mmistakes.github.io/so-simple-theme</span>
+<span class="s">url</span><span class="pi">:</span> <span class="s">http://localhost:4000</span>
+<span class="s">url</span><span class="pi">:</span> <span class="s">http://yourdomain.com</span>
+<span class="s">url</span><span class="pi">:</span> 
+</code></pre>
+</div>
+
+<h4 id="google-analytics-and-webmaster-tools">Google Analytics and Webmaster Tools</h4>
+
+<p>Google Analytics UA and Webmaster Tool verification tags can be entered under <code class="highlighter-rouge">owner</code> in <code class="highlighter-rouge">_config.yml</code>. For more information on obtaining these meta tags check <a href="http://support.google.com/webmasters/bin/answer.py?hl=en&amp;answer=35179">Google Webmaster Tools</a> and <a href="https://ssl.bing.com/webmaster/configure/verify/ownership">Bing Webmaster Tools</a> support.</p>
+
+<h3 id="navigation-links">Navigation Links</h3>
+
+<p>To set what links appear in the top navigation edit <code class="highlighter-rouge">_data/navigation.yml</code>. Use the following format to set the URL and title for as many links as you’d like. <em>External links will open in a new window.</em></p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="pi">-</span> <span class="s">title</span><span class="pi">:</span> <span class="s">Portfolio</span>
+  <span class="s">url</span><span class="pi">:</span> <span class="s">/portfolio/</span>
+
+<span class="pi">-</span> <span class="s">title</span><span class="pi">:</span> <span class="s">Made Mistakes</span>
+  <span class="s">url</span><span class="pi">:</span> <span class="s">http://mademistakes.com</span>  
+</code></pre>
+</div>
+
+<hr />
+
+<h2 id="adding-new-content">Adding New Content</h2>
+
+<p>Posts are stored in the <code class="highlighter-rouge">_posts</code> directory and named according to the <code class="highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code> format as per <a href="https://jekyllrb.com/docs/posts/">the usual</a>.</p>
+
+<p>To streamline the creation of posts and pages, <a href="https://github.com/jekyll/jekyll-compose">Jekyll::Compose</a> and <a href="https://github.com/octopress/octopress">Octopress</a> are great plugins you can install to automate this process.</p>
+
+<hr />
+
+<h2 id="layouts-and-content">Layouts and Content</h2>
+
+<p>Explanations of the various <code class="highlighter-rouge">_layouts</code> included with the theme and when to use them.</p>
+
+<h3 id="post-and-page">Post and Page</h3>
+
+<p>These two layouts are very similar. Both have an author sidebar, allow for large feature images at the top, and optional Disqus comments. The only real difference is the post layout includes related posts at the end of the page.</p>
+
+<h3 id="categories">Categories</h3>
+
+<p>In the sample posts folder you may have noticed <code class="highlighter-rouge">categories: articles</code> in the YAML front matter. Categories can be used to group posts into sub-folders. If you decide to rename or add categories you will need to create new category index pages.</p>
+
+<p>For example. Say you want to group all your posts under blog/ instead of articles/. In your post add <code class="highlighter-rouge">categories: blog</code> to the YAML front matter, rename or duplicate articles/index.md to blog/index.md and update the <em>for loop</em> to limit posts to just the blog category.</p>
+
+<div class="language-liquid highlighter-rouge"><pre class="highlight"><code>
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>post<span class="w"> </span>in<span class="w"> </span>site.categories.blog<span class="w"> </span><span class="p">%}</span>
+
+</code></pre>
+</div>
+
+<p>If done correctly /blog/ should be a page index of only posts with a category of <code class="highlighter-rouge">blog</code>.</p>
+
+<h3 id="feature-images">Feature Images</h3>
+
+<p>A good rule of thumb is to keep feature images nice and wide so you don’t push the body text too far down. An image cropped around around 1024 x 256 pixels will keep file size down with an acceptable resolution for most devices. If you want to serve these images responsively I’d suggest looking at the <a href="https://github.com/robwierzbowski/jekyll-picture-tag">Jekyll Picture Tag</a> plugin<sup id="fnref:plugins"><a href="#fn:plugins" class="footnote">1</a></sup>.</p>
+
+<p>The post and page layouts make the assumption that the feature images live in the <code class="highlighter-rouge">images/</code> folder. To add a feature image to a post or page just include the filename in the front matter like so.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">image</span><span class="pi">:</span>
+  <span class="s">feature</span><span class="pi">:</span> <span class="s">feature-image-filename.jpg</span>
+  <span class="s">thumb</span><span class="pi">:</span> <span class="s">thumbnail-image.jpg</span> <span class="c1">#keep it square 200x200 px is good</span>
+</code></pre>
+</div>
+
+<p>To add attribution to a feature image use the following YAML front matter on posts or pages. Image credits appear directly below the feature image with a link back to the original source if supplied.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">image</span><span class="pi">:</span>
+  <span class="s">feature</span><span class="pi">:</span> <span class="s">feature-image-filename.jpg</span>
+  <span class="s">credit</span><span class="pi">:</span> <span class="s">Michael Rose</span> <span class="c1">#name of the person or site you want to credit</span>
+  <span class="s">creditlink</span><span class="pi">:</span> <span class="s">http://mademistakes.com</span> <span class="c1">#url to their site or licensing</span>
+</code></pre>
+</div>
+
+<h3 id="videos">Videos</h3>
+
+<p>Video embeds are responsive and scale with the width of the main content block with the help of <a href="http://fitvidsjs.com/">FitVids</a>.</p>
+
+<p>Not sure if this only effects Kramdown or if it’s an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the <code class="highlighter-rouge">&lt;iframe&gt;</code> tags and remove <code class="highlighter-rouge">allowfullscreen</code>. Example below:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">"560"</span> <span class="na">height=</span><span class="s">"315"</span> <span class="na">src=</span><span class="s">"http://www.youtube.com/embed/PWf4WUoMXwg"</span> <span class="na">frameborder=</span><span class="s">"0"</span><span class="nt">&gt;</span> <span class="nt">&lt;/iframe&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="link-post-type">Link Post Type</h3>
+
+<p>So Simple Theme supports <strong>link posts</strong>, made famous by John Gruber. To activate just add <code class="highlighter-rouge">link: http://url-you-want-linked</code> to the post’s YAML front matter and you’re done. Here’s an <a href="/articles/sample-link-post">example of a link post</a> if you need a visual.</p>
+
+<h3 id="author-override">Author Override</h3>
+
+<p>By making use of data files you can assign different authors for each post.</p>
+
+<p>Start by modifying <code class="highlighter-rouge">authors.yml</code> file in the <code class="highlighter-rouge">_data</code> folder and add your authors using the following format.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="c1"># Authors</span>
+
+<span class="s">billy_rick</span><span class="pi">:</span>
+  <span class="s">name</span><span class="pi">:</span> <span class="s">Billy Rick</span>
+  <span class="s">web</span><span class="pi">:</span> <span class="s">http://thewhip.com</span>
+  <span class="s">email</span><span class="pi">:</span> <span class="s">billy@rick.com</span>
+  <span class="s">bio</span><span class="pi">:</span> <span class="s2">"</span><span class="s">What</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">want,</span><span class="nv"> </span><span class="s">jewels?</span><span class="nv"> </span><span class="s">I</span><span class="nv"> </span><span class="s">am</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">very</span><span class="nv"> </span><span class="s">extravagant</span><span class="nv"> </span><span class="s">man."</span>
+  <span class="s">avatar</span><span class="pi">:</span> <span class="s">bio-photo-2.jpg</span>
+  <span class="s">twitter</span><span class="pi">:</span> <span class="s">extravagantman</span>
+  <span class="s">google</span><span class="pi">:</span>
+    <span class="s">plus</span><span class="pi">:</span> <span class="s">+BillyRick</span>
+
+<span class="s">cornelius_fiddlebone</span><span class="pi">:</span>
+  <span class="s">name</span><span class="pi">:</span> <span class="s">Cornelius Fiddlebone</span>
+  <span class="s">email</span><span class="pi">:</span> <span class="s">cornelius@thewhip.com</span>
+  <span class="s">bio</span><span class="pi">:</span> <span class="s2">"</span><span class="s">I</span><span class="nv"> </span><span class="s">ordered</span><span class="nv"> </span><span class="s">what?"</span>
+  <span class="s">avatar</span><span class="pi">:</span> <span class="s">bio-photo.jpg</span>
+  <span class="s">twitter</span><span class="pi">:</span> <span class="s">rhymeswithsackit</span>
+  <span class="s">google</span><span class="pi">:</span>
+    <span class="s">plus</span><span class="pi">:</span> <span class="s">+CorneliusFiddlebone</span>
+</code></pre>
+</div>
+
+<p>To assign Billy Rick as an author for our post. We’d add the following YAML front matter to a post:</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">author</span><span class="pi">:</span> <span class="s">billy_rick</span>
+</code></pre>
+</div>
+
+<hr />
+
+<h2 id="social-share-links">Social Share Links</h2>
+
+<p>To add Facebook, Twitter, and Google+ share links to a post add the following YAML front matter.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">share</span><span class="pi">:</span> <span class="s">true</span>
+</code></pre>
+</div>
+
+<p>Share links appear below author details in the sidebar.</p>
+
+<hr />
+
+<h2 id="disqus-comments">Disqus Comments</h2>
+
+<p>To enable comments <a href="https://disqus.com/admin/signup/?utm_source=New-Site">signup for a Disqus account</a> and create a shortname for your site. Then add it to your <code class="highlighter-rouge">_config.yml</code> under the site owner section like so:</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">site</span><span class="pi">:</span>
+  <span class="s">owner</span><span class="pi">:</span>
+    <span class="s">disqus-shortname</span><span class="pi">:</span> <span class="s">shortname</span>
+</code></pre>
+</div>
+
+<p>If you would like comments to appear on every post or page that uses the <code class="highlighter-rouge">post.html</code> layout simply add the following line to your <code class="highlighter-rouge">_config.yml</code> and you’re done.</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="s">comments</span><span class="pi">:</span> <span class="s">true</span>
+</code></pre>
+</div>
+
+<p>To be more selective and granualar with which posts and pages Disqus comments appear on, add <code class="highlighter-rouge">comments: true</code> to the YAML Front Matter of each post or page instead.</p>
+
+<hr />
+
+<h2 id="twitter-cards">Twitter Cards</h2>
+
+<p>Feature and thumbnail images are used by <a href="https://developers.facebook.com/docs/opengraph/">Open Graph</a> and <a href="https://dev.twitter.com/docs/cards">Twitter Cards</a> as well. If you don’t assign a thumbnail the site logo is used.</p>
+
+<p>Here’s an example of a tweet with Twitter Cards enabled.</p>
+
+<p><img src="/images/twitter-card-summary-large-image.jpg" alt="Twitter Card summary large image screenshot" /></p>
+
+<p class="notice"><strong>Pro-Tip</strong>: You need to <a href="https://dev.twitter.com/docs/cards">apply for Twitter Cards</a> before they will begin showing up when links to your site are shared.</p>
+
+<hr />
+
+<h2 id="jekyll-search">Jekyll search</h2>
+
+<p>This is a very basic attempt at <a href="https://github.com/mathaywarduk/jekyll-search">indexing a Jekyll site</a> and returning search results with JSON — Google quality results this is not.</p>
+
+<p>To exclude posts/pages from search results add <code class="highlighter-rouge">search_omit: true</code> to their YAML Front Matter.</p>
+
+<hr />
+
+<h2 id="further-customization">Further Customization</h2>
+
+<p>Jekyll 2.x added support for Sass files making it much easier to modify a theme’s fonts and colors. By editing values found in <code class="highlighter-rouge">_sass/_variables.scss</code> you can fine tune the site’s colors and typography.</p>
+
+<p>For example if you wanted a red background instead of white you’d change <code class="highlighter-rouge">$body-color: #ebebeb;</code> to <code class="highlighter-rouge">$body-color: $cc0033;</code>.</p>
+
+<p>To modify the site’s JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into <code class="highlighter-rouge">scripts.min.js</code>. <a href="http://nodejs.org/">Install Node.js</a>, then <a href="http://gruntjs.com/getting-started">install Grunt</a>, and then finally install the dependencies for the theme contained in <code class="highlighter-rouge">package.json</code>:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>npm install
+</code></pre>
+</div>
+
+<p>From the theme’s root, run <code class="highlighter-rouge">grunt</code> to concatenate JavaScript files, and optimize all .jpg, .png, and .svg files in the <code class="highlighter-rouge">images/</code> folder. You can also use <code class="highlighter-rouge">grunt dev</code> in combination with <code class="highlighter-rouge">jekyll build --watch</code> to watch for updates JS files that Grunt will then automatically re-build as you write your code which will in turn auto-generate your Jekyll site when developing locally.</p>
+
+<hr />
+
+<h2 id="questions">Questions?</h2>
+
+<p>Found a bug or aren’t quite sure how something works? By all means Ping me on Twitter <a href="http://twitter.com/mmistakes">@mmistakes</a> or <a href="https://github.com/mmistakes/so-simple-theme/issues/new">file a GitHub Issue</a>. And if you make something cool with this theme feel free to let me know.</p>
+
+<hr />
+
+<h2 id="license">License</h2>
+
+<p>This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:plugins">
+      <p>If you’re using GitHub Pages to host your site be aware that plugins are disabled. You’ll need to build your site locally and then manually deploy if you want to use this sweet plugin. <a href="#fnref:plugins" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2016 Anne Gentle. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/annegentle" title="Anne Gentle on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	<a href="https://plus.google.com/+AnneGentle" title="Anne Gentle on Google+" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
+	
+	
+	
+	
+	<a href="https://github.com/justwriteclick" title="Anne Gentle on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = '';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
