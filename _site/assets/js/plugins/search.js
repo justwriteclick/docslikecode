@@ -12,7 +12,7 @@
     ========================================================================== */
 
 var q, jsonFeedUrl = "/search.json",
-    $searchForm = $(".simple-search"),
+    $searchForm = "[data-search-form]",
     $searchInput = $("[data-search-input]"),
     $resultTemplate = $("#search-result"),
     $resultsPlaceholder = $("[data-search-results]"),
@@ -75,7 +75,7 @@ function execSearch(q) {
             toggleLoadingClass();
         }
 
-        getSearchResults(processData());
+        getSearchResults(processSearchData());
     }
 }
 
@@ -104,7 +104,7 @@ function getSearchResults(callbackFunction) {
  * Process search result data
  * @return null
  */
-function processData() {
+function processSearchData() {
     $results = [];
     
     return function(data) {
