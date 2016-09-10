@@ -75,7 +75,7 @@ function execSearch(q) {
             toggleLoadingClass();
         }
 
-        getSearchResults(processData());
+        getSearchResults(processSearchData());
     }
 }
 
@@ -104,7 +104,7 @@ function getSearchResults(callbackFunction) {
  * Process search result data
  * @return null
  */
-function processData() {
+function processSearchData() {
     $results = [];
     
     return function(data) {
