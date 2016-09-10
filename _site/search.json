@@ -3,7 +3,7 @@
   
     {
       "title"			: "MathJax Example",
-      "link"			: "/blog/mathjax-example/",
+      "link"			: "http://127.0.0.1:4000/blog/mathjax-example/",
       "excerpt"		: "MathJax is a simple way of including Tex/LaTex/MathML based mathematics in HTML webpages. To get up and running you need to include the MathJax script in the header of your github pages page, and then write some maths. For LaTex, there are two delimiters you need to know about, one for block or displayed mathematics  ... , and the other for inline mathematics  ... ."
     }
   
@@ -11,7 +11,7 @@
   
     ,{
       "title"			: "Hello World",
-      "link"			: "/blog/hello-world/",
+      "link"			: "http://127.0.0.1:4000/blog/hello-world/",
       "excerpt"		: "You’ll find this post in your _posts directory - edit this post and re-build (or run with the -w switch) to see your changes!To add new posts, simply add a file in the _posts directory that follows the convention: YYYY-MM-DD-name-of-post.ext."
     }
   
@@ -19,7 +19,7 @@
   
     ,{
       "title"			: "Override Author Byline Test Post",
-      "link"			: "/articles/author-override/",
+      "link"			: "http://127.0.0.1:4000/articles/author-override/",
       "excerpt"		: "An article to test overriding the default site author."
     }
   
@@ -27,7 +27,7 @@
   
     ,{
       "title"			: "Syntax Highlighting Post",
-      "link"			: "/articles/code-highlighting-post/",
+      "link"			: "http://127.0.0.1:4000/articles/code-highlighting-post/",
       "excerpt"		: "Demo post displaying the various ways of highlighting code in Markdown."
     }
   
@@ -35,7 +35,7 @@
   
     ,{
       "title"			: "Sample Link Post",
-      "link"			: "/articles/sample-link-post/",
+      "link"			: "http://127.0.0.1:4000/articles/sample-link-post/",
       "excerpt"		: "Example and code for using link posts."
     }
   
@@ -43,7 +43,7 @@
   
     ,{
       "title"			: "A Post with a Video",
-      "link"			: "/articles/video-post/",
+      "link"			: "http://127.0.0.1:4000/articles/video-post/",
       "excerpt"		: "Custom written post descriptions are the way to go… if you’re not lazy."
     }
   
@@ -51,7 +51,7 @@
   
     ,{
       "title"			: "Post with Large Feature Image and Text",
-      "link"			: "/articles/readability-feature-post/",
+      "link"			: "http://127.0.0.1:4000/articles/readability-feature-post/",
       "excerpt"		: "Custom written post descriptions are the way to go… if you’re not lazy."
     }
   
@@ -59,7 +59,7 @@
   
     ,{
       "title"			: "A Post with Images",
-      "link"			: "/articles/sample-post-images/",
+      "link"			: "http://127.0.0.1:4000/articles/sample-post-images/",
       "excerpt"		: "Examples and code for displaying images in posts."
     }
   
@@ -67,7 +67,7 @@
   
     ,{
       "title"			: "Testing Readability with a Bunch of Text",
-      "link"			: "/articles/readability-post/",
+      "link"			: "http://127.0.0.1:4000/articles/readability-post/",
       "excerpt"		: "A ton of text to test readability."
     }
   
@@ -75,7 +75,7 @@
   
     ,{
       "title"			: "Sample Post",
-      "link"			: "/articles/sample-post/",
+      "link"			: "http://127.0.0.1:4000/articles/sample-post/",
       "excerpt"		: "Just about everything you’ll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
     }
   
@@ -95,7 +95,7 @@
   
     ,{
       "title"			: "Theme Setup",
-      "link"			: "/theme-setup/",
+      "link"			: "http://127.0.0.1:4000/theme-setup/",
       "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
     }
   
@@ -103,7 +103,7 @@
   
     ,{
       "title"			: "About Docs Like Code",
-      "link"			: "/about/",
+      "link"			: "http://127.0.0.1:4000/about/",
       "excerpt"		: "Brought to you by the author of the Just Write Click blog, Anne Gentle."
     }
   

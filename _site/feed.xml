@@ -2,26 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Write, Version, Merge. Let's Treat Docs Like Code</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="/feed.xml" />
-<link rel="alternate" type="text/html" href="" />
-<updated>2016-09-04T21:28:38-05:00</updated>
-<id>/</id>
+<link rel="self" type="application/atom+xml" href="http://127.0.0.1:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://127.0.0.1:4000" />
+<updated>2016-09-10T15:24:19-05:00</updated>
+<id>http://127.0.0.1:4000/</id>
 <author>
   <name>Anne Gentle</name>
-  <uri>/</uri>
+  <uri>http://127.0.0.1:4000/</uri>
   <email>annegentle@justwriteclick.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[MathJax Example]]></title>
-  <link rel="alternate" type="text/html" href="/blog/mathjax-example/" />
-  <id>/blog/mathjax-example</id>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/blog/mathjax-example/" />
+  <id>http://127.0.0.1:4000/blog/mathjax-example</id>
   <published>2015-08-10T07:08:50-05:00</published>
   <updated>2015-08-10T07:08:50-05:00</updated>
   <author>
     <name>Anne Gentle</name>
-    <uri></uri>
+    <uri>http://127.0.0.1:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -46,21 +46,21 @@
 
 &lt;p&gt;The only thing to look out for is the escaping of the backslash when using markdown, so the delimiters become &lt;code class=&quot;highlighter-rouge&quot;&gt;\\[ ... \\]&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;\\( ... \\)&lt;/code&gt; for inline and block maths respectively.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/blog/mathjax-example/&quot;&gt;MathJax Example&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on August 10, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/blog/mathjax-example/&quot;&gt;MathJax Example&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on August 10, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Hello World]]></title>
-  <link rel="alternate" type="text/html" href="/blog/hello-world/" />
-  <id>/blog/hello-world</id>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/blog/hello-world/" />
+  <id>http://127.0.0.1:4000/blog/hello-world</id>
   <updated>2016-06-01 13:19:19 -0500T00:00:00-00:00</updated>
   <published>2014-08-08T14:39:55-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri></uri>
+    <uri>http://127.0.0.1:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -84,21 +84,21 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on August 08, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on August 08, 2014.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Override Author Byline Test Post]]></title>
-  <link rel="alternate" type="text/html" href="/articles/author-override/" />
-  <id>/articles/author-override</id>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/articles/author-override/" />
+  <id>http://127.0.0.1:4000/articles/author-override</id>
   <updated>2016-06-01 13:18:57 -0500T00:00:00-00:00</updated>
   <published>2014-06-19T00:00:00-05:00</published>
   
   <author>
     <name>Billy Rick</name>
-    <uri></uri>
+    <uri>http://127.0.0.1:4000</uri>
     <email>billy@rick.com</email>
   </author>
   <content type="html">
@@ -137,21 +137,21 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/articles/author-override/&quot;&gt;Override Author Byline Test Post&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on June 19, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/articles/author-override/&quot;&gt;Override Author Byline Test Post&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on June 19, 2014.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Syntax Highlighting Post]]></title>
-  <link rel="alternate" type="text/html" href="/articles/code-highlighting-post/" />
-  <id>/articles/code-highlighting-post</id>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/articles/code-highlighting-post/" />
+  <id>http://127.0.0.1:4000/articles/code-highlighting-post</id>
   <updated>2016-06-01 13:11:53 -0500T00:00:00-00:00</updated>
   <published>2013-08-16T00:00:00-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri></uri>
+    <uri>http://127.0.0.1:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -263,40 +263,40 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/articles/code-highlighting-post/&quot;&gt;Syntax Highlighting Post&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on August 16, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/articles/code-highlighting-post/&quot;&gt;Syntax Highlighting Post&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on August 16, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Sample Link Post]]></title>
-  <link rel="alternate" type="text/html" href="/articles/sample-link-post/" />
-  <id>/articles/sample-link-post</id>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/articles/sample-link-post/" />
+  <id>http://127.0.0.1:4000/articles/sample-link-post</id>
   <published>2013-08-12T00:00:00-05:00</published>
   <updated>2013-08-12T00:00:00-05:00</updated>
   <author>
     <name>Anne Gentle</name>
-    <uri></uri>
+    <uri>http://127.0.0.1:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
     &lt;p&gt;So Simple Theme now supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To activate just add &lt;code class=&quot;highlighter-rouge&quot;&gt;link: http://url-you-want-linked&lt;/code&gt; to the post’s YAML front matter and you’re done.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/articles/sample-link-post/&quot;&gt;Sample Link Post&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on August 12, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/articles/sample-link-post/&quot;&gt;Sample Link Post&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on August 12, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[A Post with a Video]]></title>
-  <link rel="alternate" type="text/html" href="/articles/video-post/" />
-  <id>/articles/video-post</id>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/articles/video-post/" />
+  <id>http://127.0.0.1:4000/articles/video-post</id>
   <updated>2016-06-01 13:18:26 -0500T00:00:00-00:00</updated>
   <published>2013-06-25T00:00:00-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri></uri>
+    <uri>http://127.0.0.1:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -312,21 +312,21 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 &lt;iframe src=&quot;//player.vimeo.com/video/98146708?title=0&amp;amp;byline=0&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/articles/video-post/&quot;&gt;A Post with a Video&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on June 25, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/articles/video-post/&quot;&gt;A Post with a Video&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on June 25, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Post with Large Feature Image and Text]]></title>
-  <link rel="alternate" type="text/html" href="/articles/readability-feature-post/" />
-  <id>/articles/readability-feature-post</id>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/articles/readability-feature-post/" />
+  <id>http://127.0.0.1:4000/articles/readability-feature-post</id>
   <updated>2013-06-30T00:00:00-00:00</updated>
   <published>2013-05-23T00:00:00-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri></uri>
+    <uri>http://127.0.0.1:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -371,21 +371,21 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 &lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/articles/readability-feature-post/&quot;&gt;Post with Large Feature Image and Text&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on May 23, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/articles/readability-feature-post/&quot;&gt;Post with Large Feature Image and Text&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on May 23, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[A Post with Images]]></title>
-  <link rel="alternate" type="text/html" href="/articles/sample-post-images/" />
-  <id>/articles/sample-post-images</id>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/articles/sample-post-images/" />
+  <id>http://127.0.0.1:4000/articles/sample-post-images</id>
   <updated>2016-06-01 13:17:50 -0500T00:00:00-00:00</updated>
   <published>2013-05-22T00:00:00-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri></uri>
+    <uri>http://127.0.0.1:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -447,20 +447,20 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 	&lt;figcaption&gt;Three images.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/articles/sample-post-images/&quot;&gt;A Post with Images&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on May 22, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/articles/sample-post-images/&quot;&gt;A Post with Images&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on May 22, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Testing Readability with a Bunch of Text]]></title>
-  <link rel="alternate" type="text/html" href="/articles/readability-post/" />
-  <id>/articles/readability-post</id>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/articles/readability-post/" />
+  <id>http://127.0.0.1:4000/articles/readability-post</id>
   <published>2012-05-22T00:00:00-05:00</published>
   <updated>2012-05-22T00:00:00-05:00</updated>
   <author>
     <name>Anne Gentle</name>
-    <uri></uri>
+    <uri>http://127.0.0.1:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -505,21 +505,21 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 &lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/articles/readability-post/&quot;&gt;Testing Readability with a Bunch of Text&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on May 22, 2012.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/articles/readability-post/&quot;&gt;Testing Readability with a Bunch of Text&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on May 22, 2012.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Sample Post]]></title>
-  <link rel="alternate" type="text/html" href="/articles/sample-post/" />
-  <id>/articles/sample-post</id>
+  <link rel="alternate" type="text/html" href="http://127.0.0.1:4000/articles/sample-post/" />
+  <id>http://127.0.0.1:4000/articles/sample-post</id>
   <updated>2016-06-01 13:17:25 -0500T00:00:00-00:00</updated>
   <published>2011-03-10T00:00:00-06:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri></uri>
+    <uri>http://127.0.0.1:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -541,7 +541,7 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
 
-&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;http://127.0.0.1:4000/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;This is emphasized&lt;/em&gt;. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H&lt;sub&gt;2&lt;/sub&gt;O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times &lt;cite&gt;(That’s a citation)&lt;/cite&gt;. &lt;u&gt;Underline&lt;/u&gt;. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
 
@@ -645,7 +645,7 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 &lt;div&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;This is a button&lt;/a&gt;&lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;/articles/sample-post/&quot;&gt;Sample Post&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on March 10, 2011.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://127.0.0.1:4000/articles/sample-post/&quot;&gt;Sample Post&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on March 10, 2011.&lt;/p&gt;
   </content>
 </entry>
 
