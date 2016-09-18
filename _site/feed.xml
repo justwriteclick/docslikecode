@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://docslikecode.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://docslikecode.com" />
-<updated>2016-09-17T21:00:31-05:00</updated>
+<updated>2016-09-17T21:13:48-05:00</updated>
 <id>http://docslikecode.com/</id>
 <author>
   <name>Anne Gentle</name>
@@ -32,13 +32,17 @@
 
 &lt;p&gt;Believe me, your fellow software builders are wondering, experimenting, or already starting down this road. I’ve seen this vision come to life and want to share my experiences so more people can learn these techniques.&lt;/p&gt;
 
+&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;http://docslikecode.com/images/git-logo.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;I’ve found that the principles inherent to the social web for coding work extremely well for documentation. The social web, leads to social coding, leads to social documentation.&lt;/p&gt;
 
 &lt;h1 id=&quot;what-is-github&quot;&gt;What is GitHub?&lt;/h1&gt;
 
-&lt;p&gt;Like many tools, git and GitHub were created by fire — througha pressing need for performant and efficient source control management for theLinux kernel. Read the history in the excellent &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git&quot;&gt;Pro Git Book&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Like many tools, git and GitHub were created by fire — through a pressing need for performant and efficient source control management for theLinux kernel. Read the history in the excellent &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git&quot;&gt;Pro Git Book&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;GitHub is the web interface for &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; the command-line tool, that works well on Linux, Mac, or Windows. To work with others on a project (code or docs), you merge files. This model is the opposite of using  a “lock and checkout” model, where no one else can work on the piece at the same time as you. With GitHub, you can work separately and bring it all together later. Git has a non-linear branching model that can take some learning to get used to. That said, I’ve found git and GitHub for docs quite practical and even inspirational.&lt;/p&gt;
+
+&lt;p class=&quot;pull-left&quot;&gt;&lt;img src=&quot;http://docslikecode.com/images/github-logo.png&quot; alt=&quot;GitHub&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can keep docs in a source code repository then the developers will review all your changes prior to merging them in. Unlike traditional source code management, branches are not full copies of entire code base so they are “cheap” and “fast.” The more Agile techniques are applied to documentation, the
 more treating docs like code makes sense.&lt;/p&gt;

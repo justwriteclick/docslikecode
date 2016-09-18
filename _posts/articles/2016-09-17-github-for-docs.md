@@ -4,7 +4,7 @@ title: The Vocabulary of GitHub for Documentation
 excerpt: "What would happen if we treated docs like code?"
 modified: Sat Sep 17 07:11:52 CDT 2016
 categories: articles
-tags: [github, definitions, repository, branch, fork, pull request]
+tags: [github, git, definitions, repository, branch, fork, pull request]
 image:
   feature: guarded-lightbulb-rob-sinclair.jpg
   credit: Flickr rob-sinclair
@@ -19,13 +19,19 @@ I hope you're wondering, "What would happen if we treated docs like code?"
 
 Believe me, your fellow software builders are wondering, experimenting, or already starting down this road. I've seen this vision come to life and want to share my experiences so more people can learn these techniques.
 
+![git]({{ site.url }}/images/git-logo.png)
+{: .pull-right}
+
 I’ve found that the principles inherent to the social web for coding work extremely well for documentation. The social web, leads to social coding, leads to social documentation.
 
 # What is GitHub?
 
-Like many tools, git and GitHub were created by fire — througha pressing need for performant and efficient source control management for theLinux kernel. Read the history in the excellent [Pro Git Book](https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git).
+Like many tools, git and GitHub were created by fire — through a pressing need for performant and efficient source control management for theLinux kernel. Read the history in the excellent [Pro Git Book](https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git).
 
 GitHub is the web interface for `git` the command-line tool, that works well on Linux, Mac, or Windows. To work with others on a project (code or docs), you merge files. This model is the opposite of using  a “lock and checkout” model, where no one else can work on the piece at the same time as you. With GitHub, you can work separately and bring it all together later. Git has a non-linear branching model that can take some learning to get used to. That said, I've found git and GitHub for docs quite practical and even inspirational.
+
+![GitHub]({{ site.url }}/images/github-logo.png)
+{: .pull-left}
 
 You can keep docs in a source code repository then the developers will review all your changes prior to merging them in. Unlike traditional source code management, branches are not full copies of entire code base so they are “cheap” and “fast.” The more Agile techniques are applied to documentation, the
 more treating docs like code makes sense.
