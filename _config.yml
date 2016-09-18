@@ -32,14 +32,14 @@ mathjax: true
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
 
-comments: true
+comments: false
 
 # Site owner
 owner:
   name: Anne Gentle
   avatar: gentle_anne.jpg
   email: annegentle@justwriteclick.com
-  disqus-shortname: annegentle
+  disqus-shortname:
   twitter: annegentle
   facebook: 
   github: justwriteclick

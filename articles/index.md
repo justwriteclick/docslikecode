@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Sample Articles
-excerpt: "An archive of articles sorted by date."
+title: Articles
+excerpt: "Read articles to learn more about the docs like code vision and how to try it for yourself."
 search_omit: true
 ---
 

@@ -2,87 +2,13 @@
 
   
     {
-      "title"			: "MathJax Example",
-      "link"			: "http://docslikecode.com/blog/mathjax-example/",
-      "excerpt"		: "MathJax is a simple way of including Tex/LaTex/MathML based mathematics in HTML webpages. To get up and running you need to include the MathJax script in the header of your github pages page, and then write some maths. For LaTex, there are two delimiters you need to know about, one for block or displayed mathematics  ... , and the other for inline mathematics  ... ."
-    }
-  
-
-  
-    ,{
-      "title"			: "Hello World",
-      "link"			: "http://docslikecode.com/blog/hello-world/",
-      "excerpt"		: "You’ll find this post in your _posts directory - edit this post and re-build (or run with the -w switch) to see your changes!To add new posts, simply add a file in the _posts directory that follows the convention: YYYY-MM-DD-name-of-post.ext."
-    }
-  
-
-  
-    ,{
-      "title"			: "Override Author Byline Test Post",
-      "link"			: "http://docslikecode.com/articles/author-override/",
-      "excerpt"		: "An article to test overriding the default site author."
-    }
-  
-
-  
-    ,{
-      "title"			: "Syntax Highlighting Post",
-      "link"			: "http://docslikecode.com/articles/code-highlighting-post/",
-      "excerpt"		: "Demo post displaying the various ways of highlighting code in Markdown."
-    }
-  
-
-  
-    ,{
-      "title"			: "Sample Link Post",
-      "link"			: "http://docslikecode.com/articles/sample-link-post/",
-      "excerpt"		: "Example and code for using link posts."
-    }
-  
-
-  
-    ,{
-      "title"			: "A Post with a Video",
-      "link"			: "http://docslikecode.com/articles/video-post/",
-      "excerpt"		: "Custom written post descriptions are the way to go… if you’re not lazy."
-    }
-  
-
-  
-    ,{
-      "title"			: "Post with Large Feature Image and Text",
-      "link"			: "http://docslikecode.com/articles/readability-feature-post/",
-      "excerpt"		: "Custom written post descriptions are the way to go… if you’re not lazy."
-    }
-  
-
-  
-    ,{
-      "title"			: "A Post with Images",
-      "link"			: "http://docslikecode.com/articles/sample-post-images/",
-      "excerpt"		: "Examples and code for displaying images in posts."
-    }
-  
-
-  
-    ,{
-      "title"			: "Testing Readability with a Bunch of Text",
-      "link"			: "http://docslikecode.com/articles/readability-post/",
-      "excerpt"		: "A ton of text to test readability."
-    }
-  
-
-  
-    ,{
-      "title"			: "Sample Post",
-      "link"			: "http://docslikecode.com/articles/sample-post/",
-      "excerpt"		: "Just about everything you’ll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+      "title"			: "The Vocabulary of GitHub for Documentation",
+      "link"			: "http://docslikecode.com/articles/github-for-docs/",
+      "excerpt"		: "What would happen if we treated docs like code?"
     }
   
 
 
-
-  
 
   
 
