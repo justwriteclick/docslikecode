@@ -26,12 +26,12 @@ I’ve found that the principles inherent to the social web for coding work extr
 
 # What is GitHub?
 
+![GitHub]({{ site.url }}/images/github-logo.png)
+{: .pull-left}
+
 Like many tools, git and GitHub were created by fire — through a pressing need for performant and efficient source control management for theLinux kernel. Read the history in the excellent [Pro Git Book](https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git).
 
 GitHub is the web interface for `git` the command-line tool, that works well on Linux, Mac, or Windows. To work with others on a project (code or docs), you merge files. This model is the opposite of using  a “lock and checkout” model, where no one else can work on the piece at the same time as you. With GitHub, you can work separately and bring it all together later. Git has a non-linear branching model that can take some learning to get used to. That said, I've found git and GitHub for docs quite practical and even inspirational.
-
-![GitHub]({{ site.url }}/images/github-logo.png)
-{: .pull-left}
 
 You can keep docs in a source code repository then the developers will review all your changes prior to merging them in. Unlike traditional source code management, branches are not full copies of entire code base so they are “cheap” and “fast.” The more Agile techniques are applied to documentation, the
 more treating docs like code makes sense.
@@ -53,7 +53,7 @@ I hope I'm talking to people who care a lot about words. Let's start with some v
 
 These definitions can give you decision points to make about information architecture, so think about which deliverables you'll make, who should review and collaborate on those deliverables, and how you can automate publishing with the chunks of a repository or an organization as overarching collections.
 
-Take a look at this article on GitHub to get a sense of the "source" for a document. We'll look at the source aspects in a future article. To stay in touch, subscribe to get relevant emails in your inbox.
+Take a look at [this article's source on GitHub](https://raw.githubusercontent.com/justwriteclick/docslikecode/master/_posts/articles/2016-09-17-github-for-docs.md) to get a sense of the "source" for a document. We'll look at the source aspects in a future article. To stay in touch, subscribe to get relevant emails in your inbox.
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
