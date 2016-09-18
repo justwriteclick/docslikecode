@@ -9,9 +9,7 @@ image:
   creditlink: https://www.flickr.com/photos/hddod/7229001564/
 ---
 
-Looking for a way to invigorate your documentation team and grow that team to
-include developers, designers, and writers of all backgrounds? Plus let's invite
-some robots into the mix for good measure.
+Looking for a way to invigorate your documentation team and grow that team to include developers, designers, and writers of all backgrounds? Plus, how about inviting some robots into the mix for good measure?
 
 ## Treating docs like code is all about what you can do.
 

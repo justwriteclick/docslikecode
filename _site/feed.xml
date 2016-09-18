@@ -4,13 +4,77 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://docslikecode.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://docslikecode.com" />
-<updated>2016-09-17T21:21:49-05:00</updated>
+<updated>2016-09-18T13:57:36-05:00</updated>
 <id>http://docslikecode.com/</id>
 <author>
   <name>Anne Gentle</name>
   <uri>http://docslikecode.com/</uri>
   <email>annegentle@justwriteclick.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Collaborating on GitHub for Documentation]]></title>
+  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/github-collaborators/" />
+  <id>http://docslikecode.com/articles/github-collaborators</id>
+  <updated>Sat Sep 17 07:11:52 CDT 2016T00:00:00-00:00</updated>
+  <published>2016-09-18T00:00:00-05:00</published>
+  
+  <author>
+    <name>Anne Gentle</name>
+    <uri>http://docslikecode.com</uri>
+    <email>annegentle@justwriteclick.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Let’s admit it. Writing in isolation sucks. No one to bounce ideas off of, to tell you when you’re flat-out wrong or a terrible typist. Happens in organizations all the time: assignments thrown over a wall, deliverables that are project-centric instead of user-centric. The hardest can be when deadlines set by development, not docs or quality assurance, so those deliverables are always squeezed for time at the end. Less context, less empathy, less collaboration. What to do?&lt;/p&gt;
+
+&lt;p&gt;All these downfalls can be avoided when you collaborate where your readers and makers live – on GitHub. I say, go beyond content curation and curate the audience itself! Write with and for the audience. Have a developer write for her fellow developers. Make sure users have a way to share tips with each other through the documentation.&lt;/p&gt;
+
+&lt;p&gt;As Andy Oram said so well in “Educating computer users: the need for community/author collaboration,” “…the &lt;em&gt;value&lt;/em&gt; in educational content lies in &lt;em&gt;context&lt;/em&gt; (what immediate problem the reader is trying to solve) and &lt;em&gt;timeliness&lt;/em&gt; (what’s true today will be outdated tomorrow).”&lt;/p&gt;
+
+&lt;p&gt;Value, context, and timeliness, all these features are available when you use GitHub to co-author your documentation.&lt;/p&gt;
+
+&lt;h1 id=&quot;motivations&quot;&gt;Motivations&lt;/h1&gt;
+
+&lt;p&gt;When you write with people beyond your immediate team, ensure that those contributors are valued and rewarded! Keep in mind these motivations people have for making information better:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Feel a sense of belonging.&lt;/li&gt;
+  &lt;li&gt;Meet a desire to pay it forward (reciprocity).&lt;/li&gt;
+  &lt;li&gt;Produce effective, time-saving, user support.&lt;/li&gt;
+  &lt;li&gt;Build a reputation, recruiting.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Harnessing these needs being met is not about gaining free labor. Contributors should be highly, highly valued, and rewarded. It’s about creating opportunity to shine, and curating jobs. Because contributor graphs are available on GitHub, and because the contribution data can be mined to see that reputation being built one pull request at a time, GitHub gives rewards in a new way.&lt;/p&gt;
+
+&lt;p&gt;If you think this all sounds nice but impractical, I encourage you to sign up for the newsletter to learn how to practice these techniques like you would a musical instrument. You need hands-on experience and time to play to get better and better.&lt;/p&gt;
+
+&lt;!-- Begin MailChimp Signup Form --&gt;
+&lt;link href=&quot;//cdn-images.mailchimp.com/embedcode/slim-10_7.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+&lt;/style&gt;
+
+&lt;div id=&quot;mc_embed_signup&quot;&gt;
+&lt;form action=&quot;//justwriteclick.us1.list-manage.com/subscribe/post?u=3828f8d87d82289b96ff8fd19&amp;amp;id=cc1d483d59&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate=&quot;&quot;&gt;
+    &lt;div id=&quot;mc_embed_signup_scroll&quot;&gt;
+	&lt;label for=&quot;mce-EMAIL&quot;&gt;Enter your email address to learn about docs like code together&lt;/label&gt;
+	&lt;input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;email&quot; id=&quot;mce-EMAIL&quot; placeholder=&quot;email address&quot; required=&quot;&quot; /&gt;
+    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
+    &lt;div style=&quot;position: absolute; left: -5000px;&quot; aria-hidden=&quot;true&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;b_3828f8d87d82289b96ff8fd19_cc1d483d59&quot; tabindex=&quot;-1&quot; value=&quot;&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;clear&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;btn&quot; /&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;!--End mc_embed_signup--&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/github-collaborators/&quot;&gt;Collaborating on GitHub for Documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on September 18, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
 <entry>
