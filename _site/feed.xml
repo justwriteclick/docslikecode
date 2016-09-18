@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://docslikecode.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://docslikecode.com" />
-<updated>2016-09-17T21:13:48-05:00</updated>
+<updated>2016-09-17T21:21:49-05:00</updated>
 <id>http://docslikecode.com/</id>
 <author>
   <name>Anne Gentle</name>
@@ -38,11 +38,11 @@
 
 &lt;h1 id=&quot;what-is-github&quot;&gt;What is GitHub?&lt;/h1&gt;
 
+&lt;p class=&quot;pull-left&quot;&gt;&lt;img src=&quot;http://docslikecode.com/images/github-logo.png&quot; alt=&quot;GitHub&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Like many tools, git and GitHub were created by fire — through a pressing need for performant and efficient source control management for theLinux kernel. Read the history in the excellent &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git&quot;&gt;Pro Git Book&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;GitHub is the web interface for &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; the command-line tool, that works well on Linux, Mac, or Windows. To work with others on a project (code or docs), you merge files. This model is the opposite of using  a “lock and checkout” model, where no one else can work on the piece at the same time as you. With GitHub, you can work separately and bring it all together later. Git has a non-linear branching model that can take some learning to get used to. That said, I’ve found git and GitHub for docs quite practical and even inspirational.&lt;/p&gt;
-
-&lt;p class=&quot;pull-left&quot;&gt;&lt;img src=&quot;http://docslikecode.com/images/github-logo.png&quot; alt=&quot;GitHub&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can keep docs in a source code repository then the developers will review all your changes prior to merging them in. Unlike traditional source code management, branches are not full copies of entire code base so they are “cheap” and “fast.” The more Agile techniques are applied to documentation, the
 more treating docs like code makes sense.&lt;/p&gt;
@@ -66,7 +66,7 @@ more treating docs like code makes sense.&lt;/p&gt;
 
 &lt;p&gt;These definitions can give you decision points to make about information architecture, so think about which deliverables you’ll make, who should review and collaborate on those deliverables, and how you can automate publishing with the chunks of a repository or an organization as overarching collections.&lt;/p&gt;
 
-&lt;p&gt;Take a look at this article on GitHub to get a sense of the “source” for a document. We’ll look at the source aspects in a future article. To stay in touch, subscribe to get relevant emails in your inbox.&lt;/p&gt;
+&lt;p&gt;Take a look at &lt;a href=&quot;https://raw.githubusercontent.com/justwriteclick/docslikecode/master/_posts/articles/2016-09-17-github-for-docs.md&quot;&gt;this article’s source on GitHub&lt;/a&gt; to get a sense of the “source” for a document. We’ll look at the source aspects in a future article. To stay in touch, subscribe to get relevant emails in your inbox.&lt;/p&gt;
 
 &lt;!-- Begin MailChimp Signup Form --&gt;
 &lt;link href=&quot;//cdn-images.mailchimp.com/embedcode/slim-10_7.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
