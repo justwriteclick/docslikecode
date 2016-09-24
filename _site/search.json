@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Quality Tracking with GitHub for Docs",
+      "link"			: "http://docslikecode.com/articles/doc-issues-tracking/",
+      "excerpt"		: "What do you do when people say, ‘The Docs Suck.’?"
+    }
+  
+
+  
+    ,{
       "title"			: "Collaborating on GitHub for Documentation",
       "link"			: "http://docslikecode.com/articles/github-collaborators/",
       "excerpt"		: "When you work with others, your deliverables win."

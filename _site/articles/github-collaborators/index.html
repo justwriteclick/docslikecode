@@ -1,0 +1,261 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Collaborating on GitHub for Documentation &#8211; Write, Version, Merge. Let's Treat Docs Like Code</title>
+<meta name="description" content="When you work with others, your deliverables win.">
+<meta name="keywords" content="collaboration, developers, github, git, writers">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Collaborating on GitHub for Documentation">
+<meta name="twitter:description" content="When you work with others, your deliverables win.">
+<meta name="twitter:site" content="@annegentle">
+<meta name="twitter:creator" content="@annegentle">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://docslikecode.com/images/cat-mtischendorf.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Collaborating on GitHub for Documentation">
+<meta property="og:description" content="When you work with others, your deliverables win.">
+<meta property="og:url" content="http://docslikecode.com/articles/github-collaborators/">
+<meta property="og:site_name" content="Write, Version, Merge. Let's Treat Docs Like Code">
+
+
+
+
+
+<link rel="canonical" href="http://docslikecode.com/articles/github-collaborators/">
+<link href="http://docslikecode.com/feed.xml" type="application/atom+xml" rel="alternate" title="Write, Version, Merge. Let's Treat Docs Like Code Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://docslikecode.com/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://docslikecode.com/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://docslikecode.com/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://docslikecode.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://docslikecode.com/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://docslikecode.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://docslikecode.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://docslikecode.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://docslikecode.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://docslikecode.com/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://docslikecode.com/about/" >About</a></li>
+		  
+		    
+		    <li><a href="http://docslikecode.com/articles/" >Articles</a></li>
+		  
+		    
+		    <li><a href="http://justwrite.click/" target="_blank">Blog</a></li>
+		  
+		    
+		    <li><a href="http://docslikecode.com/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="http://docslikecode.com/" class="site-logo" rel="home" title="Write, Version, Merge. Let's Treat Docs Like Code"><img src="http://docslikecode.com/images/treat-docs-like-code.png" width="200" height="200" alt="Write, Version, Merge. Let's Treat Docs Like Code logo" class="animated fadeInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="http://docslikecode.com/images/cat-mtischendorf.jpg" class="entry-feature-image" alt="Collaborating on GitHub for Documentation" ><p class="image-credit">Image credit: <a href="https://flic.kr/p/dji3zy">Flickr mtischendorf</a></p>
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          <li><a href="http://docslikecode.com/tags/#collaboration" title="Pages tagged collaboration">collaboration</a></li><li><a href="http://docslikecode.com/tags/#developers" title="Pages tagged developers">developers</a></li><li><a href="http://docslikecode.com/tags/#github" title="Pages tagged github">github</a></li><li><a href="http://docslikecode.com/tags/#git" title="Pages tagged git">git</a></li><li><a href="http://docslikecode.com/tags/#writers" title="Pages tagged writers">writers</a></li>
+        </ul>
+        
+          <h1 class="entry-title">Collaborating on GitHub for Documentation</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://docslikecode.com/images/anne_gentle.jpg" class="bio-photo" alt="Anne Gentle bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Anne Gentle</span></span>
+        <span class="entry-date date published"><time datetime="2016-09-18T00:00:00-05:00"><i class="fa fa-calendar-o"></i> September 18, 2016</time></span>
+        <span class="entry-date date modified"><time datetime="Sat Sep 17 07:11:52 CDT 2016"><i class="fa fa-pencil"></i> September 17, 2016</time></span>
+        
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=collaboration,developers,github,git,writers&amp;text=Collaborating%20on%20GitHub%20for%20Documentation&amp;url=http://docslikecode.com/articles/github-collaborators/&amp;via=annegentle" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://docslikecode.com/articles/github-collaborators/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://docslikecode.com/articles/github-collaborators/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        <div class="google-ads" style="margin-top:40px; text-align:center;">
+  <style>
+  .responsive-ads { width: 300px; height: 200px; }
+  @media(min-width: 518px) { .responsive-ads { width: 468px; height: 60px; } }
+  @media(min-width: 778px) { .responsive-ads { width: 728px; height: 90px; } }
+  @media(min-width: 1000px) { .responsive-ads { width: 160px; height: 600px; } }
+  </style>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle responsive-ads"
+    style="display:inline-block"
+    data-ad-client=""
+    data-ad-slot=""></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div><!-- /.google-ads -->
+<!-- /.google-ads -->
+      </footer>
+      <div class="entry-content">
+        <p>Let’s admit it. Writing in isolation sucks. No one to bounce ideas off of, to tell you when you’re flat-out wrong or a terrible typist. Happens in organizations all the time: assignments thrown over a wall, deliverables that are project-centric instead of user-centric. The hardest can be when deadlines set by development, not docs or quality assurance, so those deliverables are always squeezed for time at the end. Less context, less empathy, less collaboration. What to do?</p>
+
+<p>All these downfalls can be avoided when you collaborate where your readers and makers live – on GitHub. I say, go beyond content curation and curate the audience itself! Write with and for the audience. Have a developer write for her fellow developers. Make sure users have a way to share tips with each other through the documentation.</p>
+
+<p>As Andy Oram said so well in “Educating computer users: the need for community/author collaboration,” “…the <em>value</em> in educational content lies in <em>context</em> (what immediate problem the reader is trying to solve) and <em>timeliness</em> (what’s true today will be outdated tomorrow).”</p>
+
+<p>Value, context, and timeliness, all these features are available when you use GitHub to co-author your documentation.</p>
+
+<h1 id="motivations">Motivations</h1>
+
+<p>When you write with people beyond your immediate team, ensure that those contributors are valued and rewarded! Keep in mind these motivations people have for making information better:</p>
+
+<ul>
+  <li>Feel a sense of belonging.</li>
+  <li>Meet a desire to pay it forward (reciprocity).</li>
+  <li>Produce effective, time-saving, user support.</li>
+  <li>Build a reputation, recruiting.</li>
+</ul>
+
+<p>Harnessing these needs being met is not about gaining free labor. Contributors should be highly, highly valued, and rewarded. It’s about creating opportunity to shine, and curating jobs. Because contributor graphs are available on GitHub, and because the contribution data can be mined to see that reputation being built one pull request at a time, GitHub gives rewards in a new way.</p>
+
+<p>If you think this all sounds nice but impractical, I encourage you to sign up for the newsletter to learn how to practice these techniques like you would a musical instrument. You need hands-on experience and time to play to get better and better.</p>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+<div id="mc_embed_signup">
+<form action="//justwriteclick.us1.list-manage.com/subscribe/post?u=3828f8d87d82289b96ff8fd19&amp;id=cc1d483d59" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Enter your email address to learn about docs like code together</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" />
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3828f8d87d82289b96ff8fd19_cc1d483d59" tabindex="-1" value="" /></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" /></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://docslikecode.com/articles/github-for-docs/" class="btn" title="The Vocabulary of GitHub for Documentation">Previous</a>
+      
+      
+        <a href="http://docslikecode.com/articles/doc-issues-tracking/" class="btn" title="Quality Tracking with GitHub for Docs">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2016 Anne Gentle. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="https://twitter.com/annegentle" title="Anne Gentle on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	<a href="https://plus.google.com/+AnneGentle" title="Anne Gentle on Google+" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
+	
+	
+	
+	
+	<a href="https://github.com/justwriteclick" title="Anne Gentle on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://docslikecode.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://docslikecode.com';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://docslikecode.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://docslikecode.com/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

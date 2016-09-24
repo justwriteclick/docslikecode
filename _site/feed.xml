@@ -4,13 +4,85 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://docslikecode.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://docslikecode.com" />
-<updated>2016-09-18T14:12:27-05:00</updated>
+<updated>2016-09-23T21:44:46-05:00</updated>
 <id>http://docslikecode.com/</id>
 <author>
   <name>Anne Gentle</name>
   <uri>http://docslikecode.com/</uri>
   <email>annegentle@justwriteclick.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Quality Tracking with GitHub for Docs]]></title>
+  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/doc-issues-tracking/" />
+  <id>http://docslikecode.com/articles/doc-issues-tracking</id>
+  <updated>Fri Sep 23 21:03:14 CDT 2016T00:00:00-00:00</updated>
+  <published>2016-09-23T00:00:00-05:00</published>
+  
+  <author>
+    <name>Anne Gentle</name>
+    <uri>http://docslikecode.com</uri>
+    <email>annegentle@justwriteclick.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;A definitive aspect of a docs-like-code philosophy is attention to quality and accuracy. You want the docs to get better and better. You want to know if the docs are out of date compared to tightly-coupled code. You want people to report issues when they see something that needs fixing. The vision is that more readers mean more testers, and those readers and testers should report problems right there on the page.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-do-you-do-when-people-say-the-docs-suck&quot;&gt;What do you do when people say, “The Docs Suck.”?&lt;/h2&gt;
+
+&lt;p&gt;It’s a pretty simple ask:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tell me which page.&lt;/li&gt;
+  &lt;li&gt;Tell me your expectations for that page.&lt;/li&gt;
+  &lt;li&gt;Tell me how to fix it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can then pre-fill with additional information to help you or other collaborators fix the bug, such as the source file and when it was merged into the repository.&lt;/p&gt;
+
+&lt;p&gt;All these concerns can be addressed with a great &lt;a href=&quot;https://github.com/blog/2111-issue-and-pull-request-templates&quot;&gt;Issues template&lt;/a&gt;. To make an Issue template for a GitHub docs repository, save a file named ISSUE_TEMPLATE in the root directory that contains the information you need in Markdown format. Add headings, links, @-mentions, and task lists to your Issue template.&lt;/p&gt;
+
+&lt;p&gt;In OpenStack, we use &lt;a href=&quot;https://github.com/openstack/openstackdocstheme/blob/master/openstackdocstheme/theme/openstackdocs/static/js/docs.js#L119&quot;&gt;JavaScript&lt;/a&gt; to pre-fill the bug form with the page title, URL, a link to the source file itself, and any tags to add to the logged doc bug. I’m sure you could adopt something similar in your static site generator as well.&lt;/p&gt;
+
+&lt;p&gt;Users click here: &lt;img src=&quot;/images/report-a-bug.png&quot; alt=&quot;Figure: Report a docs bug&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And go through a bug reporting workflow with some pre-filled information from the web page they clicked through:
+&lt;img src=&quot;/images/pre-filled-bug-template.png&quot; alt=&quot;Figure: Pre-filled docs bug template&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To take it a step further, you can also add a link to edit the source doc file in GitHub’s web editor workflow to have the person fix the bug themselves.&lt;/p&gt;
+
+&lt;h2 id=&quot;from-no-reviews-to-many&quot;&gt;From no reviews to many&lt;/h2&gt;
+
+&lt;p&gt;In traditional enterprise doc systems, writers can go weeks without getting reviews or input. Even when asking and nagging multiple times, sometimes the documentation systems are so separate from code systems that technical reviews are through email. GASP. Put those days behind you and go where the technically knowledgeable people are.&lt;/p&gt;
+
+&lt;p&gt;Working in the same collaboration tools as technical people gives better reviews. We can merge as many as 50 patches per day, though in reality it’s about a dozen a day. We are running up to four automated doc tests per patch and requiring two humans to check the patch and click in order to publish. Each reviewer who can publish must adhere to our review rules, and people follow the rules really well.&lt;/p&gt;
+
+&lt;!-- Begin MailChimp Signup Form --&gt;
+&lt;link href=&quot;//cdn-images.mailchimp.com/embedcode/slim-10_7.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+&lt;/style&gt;
+
+&lt;div id=&quot;mc_embed_signup&quot;&gt;
+&lt;form action=&quot;//justwriteclick.us1.list-manage.com/subscribe/post?u=3828f8d87d82289b96ff8fd19&amp;amp;id=cc1d483d59&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate=&quot;&quot;&gt;
+    &lt;div id=&quot;mc_embed_signup_scroll&quot;&gt;
+	&lt;label for=&quot;mce-EMAIL&quot;&gt;Enter your email address to learn about docs like code together&lt;/label&gt;
+	&lt;input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;email&quot; id=&quot;mce-EMAIL&quot; placeholder=&quot;email address&quot; required=&quot;&quot; /&gt;
+    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
+    &lt;div style=&quot;position: absolute; left: -5000px;&quot; aria-hidden=&quot;true&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;b_3828f8d87d82289b96ff8fd19_cc1d483d59&quot; tabindex=&quot;-1&quot; value=&quot;&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;clear&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;btn&quot; /&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+
+&lt;!--End mc_embed_signup--&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/doc-issues-tracking/&quot;&gt;Quality Tracking with GitHub for Docs&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on September 23, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
 <entry>
