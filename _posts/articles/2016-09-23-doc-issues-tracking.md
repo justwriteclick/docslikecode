@@ -31,7 +31,7 @@ In OpenStack, we use [JavaScript](https://github.com/openstack/openstackdocsthem
 
 Users click here: ![Figure: Report a docs bug]({{base_url}}/images/report-a-bug.png)
 
-And go through a bug reporting workflow with some pre-filled information from the web page they clicked through:
+Next, users go through a bug reporting workflow with a pre-filled template:
 ![Figure: Pre-filled docs bug template]({{base_url}}/images/pre-filled-bug-template.png)
 
 To take it a step further, you can also add a link to edit the source doc file in GitHub's web editor workflow to have the person fix the bug themselves.
