@@ -6,14 +6,14 @@ modified: Sun Sep 25 15:35:08 CDT 2016
 categories: articles
 tags: [developers, github, git, improvement, quality, testing, writers]
 image:
-  feature: stacked-logs-mtischendorf.jpg
-  credit: Flickr mtischendorf
+  feature: threeblackdots-playground.jpg
+  credit: Flickr threeblackdots
   creditlink: https://flic.kr/p/aAb4s8
 comments: false
 share: true
 ---
 
-Let's take a look at what docs like code looks like in practice. This video shows you how to clone a GitHub repo with an existing Jekyll theme, and build it locally. We'll also examine how to build a staging site to a cloud server with Ansible playbooks.
+Let's take a look at what docs like code looks like in practice. This video shows you how to clone a GitHub repo with an existing Jekyll theme, and build it locally.
 
 The steps are:
 
