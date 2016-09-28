@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Building Docs Like Code",
+      "link"			: "http://docslikecode.com/articles/what-docs-like-code-looks-like/",
+      "excerpt"		: "Let’s look at a live example."
+    }
+  
+
+  
+    ,{
       "title"			: "Quality Tracking with GitHub for Docs",
       "link"			: "http://docslikecode.com/articles/doc-issues-tracking/",
       "excerpt"		: "What do you do when people say, ‘The Docs Suck.’?"
