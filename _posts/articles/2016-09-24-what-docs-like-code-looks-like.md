@@ -14,16 +14,20 @@ comments: false
 share: true
 ---
 
-Let's take a look at what docs like code looks like in practice. This video shows you how to clone a GitHub repo with an existing Jekyll theme, and build it locally.
+Let's take a look at what docs like code looks like in practice.
 
-The steps are:
+The basic steps on a Mac are:
 
-1. Clone a repository that contains a Jekyll theme that you like. We're using the so-simple theme here.
-1. Make sure you have all the pre-requisites set up for Ruby and Jekyll.
+1. Make sure you have all the pre-requisites set up for Ruby, Jekyll, and Bundler. [Set up GitHub Pages locally](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) as instructed in the excellent GitHub documentation.
+1. Clone a repository that contains a Jekyll theme that you like. We're using the [so-simple theme](https://mmistakes.github.io/so-simple-theme/) here.
 1. Switch to the cloned git directory.
 1. Run `bundle install` to install the required gems.
 1. Run `bundle exec jekyll serve` to serve the content from a local web server.
 1. Copy and paste the `http://127.0.0.1:4000/` URL into your web browser.
+
+This video shows you how to clone a GitHub repo with an existing Jekyll theme, and build it locally.
+
+### How it's made
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
 

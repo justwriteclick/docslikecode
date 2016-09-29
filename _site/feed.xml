@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://docslikecode.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://docslikecode.com" />
-<updated>2016-09-28T09:07:01-05:00</updated>
+<updated>2016-09-29T07:44:46-05:00</updated>
 <id>http://docslikecode.com/</id>
 <author>
   <name>Anne Gentle</name>
@@ -26,18 +26,24 @@
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;Let’s take a look at what docs like code looks like in practice. This video shows you how to clone a GitHub repo with an existing Jekyll theme, and build it locally.&lt;/p&gt;
+    &lt;p&gt;Let’s take a look at what docs like code looks like in practice.&lt;/p&gt;
 
-&lt;p&gt;The steps are:&lt;/p&gt;
+&lt;p&gt;The basic steps on a Mac are:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Clone a repository that contains a Jekyll theme that you like. We’re using the so-simple theme here.&lt;/li&gt;
-  &lt;li&gt;Make sure you have all the pre-requisites set up for Ruby and Jekyll.&lt;/li&gt;
+  &lt;li&gt;Make sure you have all the pre-requisites set up for Ruby, Jekyll, and Bundler. &lt;a href=&quot;https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/&quot;&gt;Set up GitHub Pages locally&lt;/a&gt; as instructed in the excellent GitHub documentation.&lt;/li&gt;
+  &lt;li&gt;Clone a repository that contains a Jekyll theme that you like. We’re using the &lt;a href=&quot;https://mmistakes.github.io/so-simple-theme/&quot;&gt;so-simple theme&lt;/a&gt; here.&lt;/li&gt;
   &lt;li&gt;Switch to the cloned git directory.&lt;/li&gt;
   &lt;li&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; to install the required gems.&lt;/li&gt;
   &lt;li&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; to serve the content from a local web server.&lt;/li&gt;
   &lt;li&gt;Copy and paste the &lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.1:4000/&lt;/code&gt; URL into your web browser.&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;This video shows you how to clone a GitHub repo with an existing Jekyll theme, and build it locally.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-its-made&quot;&gt;How it’s made&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 
     &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/what-docs-like-code-looks-like/&quot;&gt;Building Docs Like Code&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Version, Merge. Let's Treat Docs Like Code&lt;/a&gt; on September 24, 2016.&lt;/p&gt;
