@@ -1,7 +1,7 @@
 # == Dependencies ==========
 
 require 'rake'
-require 'html/proofer'
+require 'html-proofer'
 
 # == Configuration =========
 
