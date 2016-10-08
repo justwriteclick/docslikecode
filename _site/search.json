@@ -44,20 +44,10 @@
 
   
     ,{
-      "title"			: "Theme Setup",
-      "link"			: "http://docslikecode.com/theme-setup/",
-      "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
-    }
-  
-
-  
-    ,{
       "title"			: "About Docs Like Code",
       "link"			: "http://docslikecode.com/about/",
       "excerpt"		: "Brought to you by the author of the Just Write Click blog, Anne Gentle."
     }
-  
-
   
 
   
