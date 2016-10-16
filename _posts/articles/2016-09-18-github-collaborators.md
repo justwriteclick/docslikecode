@@ -6,9 +6,9 @@ modified: Sat Sep 17 07:11:52 CDT 2016
 categories: articles
 tags: [collaboration, developers, github, git, writers]
 image:
-  feature: cat-mtischendorf.jpg
-  credit: Flickr mtischendorf
-  creditlink: https://flic.kr/p/dji3zy
+  feature: stockholmlibrary-marcus_hansson.jpg
+  credit: Flickr marcus_hansson
+  creditlink: https://flic.kr/p/8Lrfg
 comments: false
 share: true
 ---
