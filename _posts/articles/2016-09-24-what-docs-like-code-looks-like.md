@@ -8,7 +8,7 @@ tags: [developers, github, git, improvement, quality, testing, writers]
 image:
   feature: threeblackdots-playground.jpg
   credit: Flickr threeblackdots
-  creditlink: https://flic.kr/p/aAb4s8
+  creditlink: https://flic.kr/p/8tQAGQ
 youtube: YUbl_ucNPuA
 comments: false
 share: true
