@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Remodeling documentation",
+      "link"			: "http://docslikecode.com/articles/remodel-your-docs/",
+      "excerpt"		: "Make sure you have a punch list."
+    }
+  
+
+  
+    ,{
       "title"			: "Building Docs Like Code",
       "link"			: "http://docslikecode.com/articles/what-docs-like-code-looks-like/",
       "excerpt"		: "Let’s look at a live example."
