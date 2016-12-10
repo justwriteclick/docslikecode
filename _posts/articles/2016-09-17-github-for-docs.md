@@ -47,7 +47,7 @@ I hope I'm talking to people who care a lot about words. Let's start with some v
 * Issue: Defects, tasks, or feature requests.
 * Organization: Collection of group-owned repositories.
 * Pull Request: Comparison of edits to see if team wants to accept changes.
-* Push: Move changes branch-to-branch. The man page says "Update remote refs along with associated objects" but that's more technical than we need here.
+* Push: Move changes branch-to-branch. When you type `man git` at a Terminal prompt to read the [manual page for Git](https://www.kernel.org/pub/software/scm/git/docs/git.html), you see "Update remote refs along with associated objects," but that's more technical than we need here.
 * Repository: Collection of stored code or documentation that is written and built like code.
 * Review: Do a line-by-line comparison of a change, much like an editor would for documentation, and comment on improvements or changes.
 
