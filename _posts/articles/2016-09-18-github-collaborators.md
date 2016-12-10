@@ -15,7 +15,7 @@ share: true
 
 Let's admit it. Writing in isolation sucks. No one to bounce ideas off of, to tell you when you're flat-out wrong or a terrible typist. Happens in organizations all the time: assignments thrown over a wall, deliverables that are project-centric instead of user-centric. The hardest can be when deadlines set by development, not docs or quality assurance, so those deliverables are always squeezed for time at the end. Less context, less empathy, less collaboration. What to do?
 
-All these downfalls can be avoided when you collaborate where your readers and makers live -- on GitHub. I say, go beyond content curation and curate the audience itself! Write with and for the audience. Have a developer write for her fellow developers. Make sure users have a way to share tips with each other through the documentation.
+All these downfalls can be avoided when you collaborate where your readers and makers live&mdash;on GitHub. I say, go beyond content curation and curate the audience itself! Write with and for the audience. Have a developer write for her fellow developers. Make sure users have a way to share tips with each other through the documentation.
 
 As Andy Oram said so well in "Educating computer users: the need for community/author collaboration," "...the *value* in educational content lies in *context* (what immediate problem the reader is trying to solve) and *timeliness* (what’s true today will be outdated tomorrow)."
 

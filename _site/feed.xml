@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://docslikecode.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://docslikecode.com" />
-<updated>2016-11-27T11:22:09-06:00</updated>
+<updated>2016-12-10T09:09:42-06:00</updated>
 <id>http://docslikecode.com/</id>
 <author>
   <name>Anne Gentle</name>
@@ -60,7 +60,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;Using Python Sphinx? The OpenStack docs theme has some Javascript you could re-use to pre-populate an Issue template so the reporter sends the page URL, the source URL, the git SHA of the commit for that version of the page, and the release version value. See this &lt;a href=&quot;https://github.com/openstack/openstackdocstheme/blob/master/openstackdocstheme/theme/openstackdocs/static/js/docs.js#L119&quot;&gt;docs.js snippet&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Using a private repo for docs, but want to track bugs publically? Use &lt;a href=&quot;https://help.github.com/articles/issues-only-access-permissions/&quot;&gt;Issues-only Access Permissions&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Using a private repo for docs, but want to track bugs publicly? Use &lt;a href=&quot;https://help.github.com/articles/issues-only-access-permissions/&quot;&gt;Issues-only Access Permissions&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Want to add a bit of code to pre-create Issues to use as comments on every page? Free yourself from Disqus comments. Try this &lt;a href=&quot;http://zpbappi.com/jekyll-with-tags-archive-and-comments-in-github-pages/&quot;&gt;set of tips and sample code in a blog post&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -239,7 +239,7 @@
   <content type="html">
     &lt;p&gt;Let’s admit it. Writing in isolation sucks. No one to bounce ideas off of, to tell you when you’re flat-out wrong or a terrible typist. Happens in organizations all the time: assignments thrown over a wall, deliverables that are project-centric instead of user-centric. The hardest can be when deadlines set by development, not docs or quality assurance, so those deliverables are always squeezed for time at the end. Less context, less empathy, less collaboration. What to do?&lt;/p&gt;
 
-&lt;p&gt;All these downfalls can be avoided when you collaborate where your readers and makers live – on GitHub. I say, go beyond content curation and curate the audience itself! Write with and for the audience. Have a developer write for her fellow developers. Make sure users have a way to share tips with each other through the documentation.&lt;/p&gt;
+&lt;p&gt;All these downfalls can be avoided when you collaborate where your readers and makers live—on GitHub. I say, go beyond content curation and curate the audience itself! Write with and for the audience. Have a developer write for her fellow developers. Make sure users have a way to share tips with each other through the documentation.&lt;/p&gt;
 
 &lt;p&gt;As Andy Oram said so well in “Educating computer users: the need for community/author collaboration,” “…the &lt;em&gt;value&lt;/em&gt; in educational content lies in &lt;em&gt;context&lt;/em&gt; (what immediate problem the reader is trying to solve) and &lt;em&gt;timeliness&lt;/em&gt; (what’s true today will be outdated tomorrow).”&lt;/p&gt;
 
@@ -334,7 +334,7 @@ more treating docs like code makes sense.&lt;/p&gt;
   &lt;li&gt;Issue: Defects, tasks, or feature requests.&lt;/li&gt;
   &lt;li&gt;Organization: Collection of group-owned repositories.&lt;/li&gt;
   &lt;li&gt;Pull Request: Comparison of edits to see if team wants to accept changes.&lt;/li&gt;
-  &lt;li&gt;Push: Move changes branch-to-branch. The man page says “Update remote refs along with associated objects” but that’s more technical than we need here.&lt;/li&gt;
+  &lt;li&gt;Push: Move changes branch-to-branch. When you type &lt;code class=&quot;highlighter-rouge&quot;&gt;man git&lt;/code&gt; at a Terminal prompt to read the &lt;a href=&quot;https://www.kernel.org/pub/software/scm/git/docs/git.html&quot;&gt;manual page for Git&lt;/a&gt;, you see “Update remote refs along with associated objects,” but that’s more technical than we need here.&lt;/li&gt;
   &lt;li&gt;Repository: Collection of stored code or documentation that is written and built like code.&lt;/li&gt;
   &lt;li&gt;Review: Do a line-by-line comparison of a change, much like an editor would for documentation, and comment on improvements or changes.&lt;/li&gt;
 &lt;/ul&gt;
