@@ -59,6 +59,8 @@
   
 
   
+
+  
     ,{
       "title"			: "About Docs Like Code",
       "link"			: "http://docslikecode.com/about/",
@@ -68,6 +70,12 @@
 
   
 
+  
+    ,{
+      "title"			: "Get the Book",
+      "link"			: "http://docslikecode.com/book/",
+      "excerpt"		: "By Anne Gentle"
+    }
   
 
   
