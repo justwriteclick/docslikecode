@@ -11,7 +11,6 @@ modified: Wed Jan 04 25:15 CST 2017
 <p>We've transformed the way teams work together on docs, and we want to show you the best practices for writing docs using development tools and techniques.</p>
 <p><a href="http://lulu.com/" class="btn btn--light-outline btn--large"><i class='fa fa-book'></i> Buy Now</a></p>
 
-
 <h1>What's inside</h1>
 
 <p><strong>Why use GitHub for docs?</strong> If you're unsure of a good fit for your projects and teams, read about the potential wins with these techniques. Or, you may learn how to convince others who need to hear about the use cases.</p>
@@ -35,4 +34,4 @@ Ecommerce: Magento
 
 <p><a href="http://lulu.com/" class="btn btn--light-outline btn--large"><i class='fa fa-book'></i> Buy Now</a></p>
 
-
+{% include sign-up.html %}
