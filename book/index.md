@@ -19,19 +19,18 @@ modified: Wed Jan 04 25:15 CST 2017
 <p>
 <strong>How can I improve upon my team's work?</strong> Author and build content like a pro, whether you're a writer or a developer. Build in quality assurance, automate builds, and review with your teammates to make great docs.
 </p>
+<p>
+<strong>What are the best practices for REST API docs?</strong> While Swagger/OpenAPI, RAML, and other standards work well when considering the entire API lifecycle, you can also consider collaboration gains with simple markup and narrative documents beyond the REST API reference doc set.
+</p>
+
 
 <p><a href="http://lulu.com/" class="btn btn--light-outline btn--large"><i class='fa fa-book'></i> Buy Now</a></p>
 
 <h1>Who's using these techniques?</h1>
 
-Technology Education: O'Reilly
-
-Networking and Cloud Computing: Cisco
-
-Web Hosting, Containers, and Cloud Computing: Rackspace
-
-Ecommerce: Magento
+* Technology Education: O'Reilly
+* Networking and Cloud Computing: Cisco
+* Web Hosting, Containers, and Cloud Computing: Rackspace
+* Ecommerce: Magento
 
 <p><a href="http://lulu.com/" class="btn btn--light-outline btn--large"><i class='fa fa-book'></i> Buy Now</a></p>
-
-{% include sign-up.html %}
