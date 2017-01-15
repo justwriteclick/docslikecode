@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Coming Soon: Write Docs Like Code Ebook
+title: Coming Soon - Write Docs Like Code Ebook
 excerpt: "What do you want to know about these techniques?"
 modified: Thu Dec 29 20:07:26 CST 2016
 categories: articles
