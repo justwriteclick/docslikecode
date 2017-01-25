@@ -5,7 +5,7 @@ excerpt: "By Anne Gentle"
 modified: Wed Jan 04 25:15 CST 2017
 ---
 
-<img src="../../images/write-docs-like-code-cover.png" alt="Write Docs Like Code" align="right" height="176" width="281">
+<img src="../../images/docs-like-code-book.jpg" alt="Docs Like Code" align="right" height="200" width="319">
 
 <h1>About the book</h1>
 <p>We've transformed the way teams work together on docs, and we want to show you the best practices for writing docs using development tools and techniques.</p>
