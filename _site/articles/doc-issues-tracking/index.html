@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Quality Tracking with GitHub for Docs &#8211; Write, Version, Merge, Deploy. Let's Treat Docs Like Code.</title>
+<title>Quality Tracking with GitHub for Docs &#8211; Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.</title>
 <meta name="description" content="What do you do when people say, 'The Docs Suck.'?">
 <meta name="keywords" content="developers, github, git, improvement, quality, testing, writers">
 
@@ -17,23 +17,23 @@
 <meta name="twitter:creator" content="@annegentle">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://docslikecode.com/images/stacked-logs-mtischendorf.jpg">
+<meta name="twitter:image" content="http://localhost:4000/images/stacked-logs-mtischendorf.jpg">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Quality Tracking with GitHub for Docs">
 <meta property="og:description" content="What do you do when people say, 'The Docs Suck.'?">
-<meta property="og:url" content="http://docslikecode.com/articles/doc-issues-tracking/">
-<meta property="og:site_name" content="Write, Version, Merge, Deploy. Let's Treat Docs Like Code.">
+<meta property="og:url" content="http://localhost:4000/articles/doc-issues-tracking/">
+<meta property="og:site_name" content="Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.">
 
 <!-- Webmaster Tools verfication -->
 <meta name="google-site-verification" content="LDMHcKG0vxyyo7Tp6hA5xs3_lJYX7Spk9IqC4VZsitE">
 
 
 
-<link rel="canonical" href="http://docslikecode.com/articles/doc-issues-tracking/">
-<link href="http://docslikecode.com/feed.xml" type="application/atom+xml" rel="alternate" title="Write, Version, Merge, Deploy. Let's Treat Docs Like Code. Feed">
+<link rel="canonical" href="http://localhost:4000/articles/doc-issues-tracking/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code. Feed">
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -41,7 +41,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://docslikecode.com/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 <!-- Webfonts -->
 <script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
 
@@ -49,12 +49,12 @@
 
 <!-- HTML5 Shiv and Media Query Support -->
 <!--[if lt IE 9]>
-  <script src="http://docslikecode.com/assets/js/vendor/html5shiv.min.js"></script>
-  <script src="http://docslikecode.com/assets/js/vendor/respond.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
 <![endif]-->
 
 <!-- Modernizr -->
-<script src="http://docslikecode.com/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
 
 
 <!-- MathJax -->
@@ -63,17 +63,17 @@
 
 <!-- Icons -->
 <!-- 16x16 -->
-<link rel="shortcut icon" href="http://docslikecode.com/favicon.ico">
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
 <!-- 32x32 -->
-<link rel="shortcut icon" href="http://docslikecode.com/favicon.png">
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="http://docslikecode.com/images/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://docslikecode.com/images/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
 <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://docslikecode.com/images/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://docslikecode.com/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
 
 </head>
 
@@ -84,16 +84,16 @@
 	    <ul>
       
 		    
-		    <li><a href="http://docslikecode.com/about/" >About</a></li>
+		    <li><a href="http://localhost:4000/about/" >About</a></li>
 		  
 		    
-		    <li><a href="http://docslikecode.com/articles/" >Articles</a></li>
+		    <li><a href="http://localhost:4000/articles/" >Articles</a></li>
 		  
 		    
 		    <li><a href="http://justwrite.click/" target="_blank">Blog</a></li>
 		  
 		    
-		    <li><a href="http://docslikecode.com/search/" >Search</a></li>
+		    <li><a href="http://localhost:4000/search/" >Search</a></li>
 		  
 	    </ul>
 	</nav>
@@ -104,7 +104,7 @@
 <header class="masthead">
 	
 		<div class="wrap">
-			<a href="http://docslikecode.com/" class="site-logo" rel="home" title="Write, Version, Merge, Deploy. Let's Treat Docs Like Code."><img src="http://docslikecode.com/images/treat-docs-like-code.png" width="200" height="200" alt="Write, Version, Merge, Deploy. Let's Treat Docs Like Code. logo" class="animated fadeInDown"></a>
+			<a href="http://localhost:4000/" class="site-logo" rel="home" title="Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code."><img src="http://localhost:4000/images/treat-docs-like-code.png" width="200" height="200" alt="Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code. logo" class="animated fadeInDown"></a>
 		</div>
 	
 </header><!-- /.masthead -->
@@ -115,11 +115,11 @@
 
 <div id="main" role="main">
   <article class="hentry">
-    <img src="http://docslikecode.com/images/stacked-logs-mtischendorf.jpg" class="entry-feature-image" alt="Quality Tracking with GitHub for Docs" ><p class="image-credit">Image credit: <a href="https://flic.kr/p/aAb4s8" target="_blank">Flickr mtischendorf</a></p>
+    <img src="http://localhost:4000/images/stacked-logs-mtischendorf.jpg" class="entry-feature-image" alt="Quality Tracking with GitHub for Docs" ><p class="image-credit">Image credit: <a href="https://flic.kr/p/aAb4s8" target="_blank">Flickr mtischendorf</a></p>
     <div class="entry-wrapper">
       <header class="entry-header">
         <ul class="entry-tags">
-          <li><a href="http://docslikecode.com/tags/#developers" title="Pages tagged developers">developers</a></li><li><a href="http://docslikecode.com/tags/#github" title="Pages tagged github">github</a></li><li><a href="http://docslikecode.com/tags/#git" title="Pages tagged git">git</a></li><li><a href="http://docslikecode.com/tags/#improvement" title="Pages tagged improvement">improvement</a></li><li><a href="http://docslikecode.com/tags/#quality" title="Pages tagged quality">quality</a></li><li><a href="http://docslikecode.com/tags/#testing" title="Pages tagged testing">testing</a></li><li><a href="http://docslikecode.com/tags/#writers" title="Pages tagged writers">writers</a></li>
+          <li><a href="http://localhost:4000/tags/#developers" title="Pages tagged developers">developers</a></li><li><a href="http://localhost:4000/tags/#github" title="Pages tagged github">github</a></li><li><a href="http://localhost:4000/tags/#git" title="Pages tagged git">git</a></li><li><a href="http://localhost:4000/tags/#improvement" title="Pages tagged improvement">improvement</a></li><li><a href="http://localhost:4000/tags/#quality" title="Pages tagged quality">quality</a></li><li><a href="http://localhost:4000/tags/#testing" title="Pages tagged testing">testing</a></li><li><a href="http://localhost:4000/tags/#writers" title="Pages tagged writers">writers</a></li>
         </ul>
         
           <h1 class="entry-title">Quality Tracking with GitHub for Docs</h1>
@@ -128,20 +128,20 @@
       <footer class="entry-meta">
         
         
-          <img src="http://docslikecode.com/images/anne_gentle.jpg" class="bio-photo" alt="Anne Gentle bio photo"></a>
+          <img src="http://localhost:4000/images/anne_gentle.jpg" class="bio-photo" alt="Anne Gentle bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Anne Gentle</span></span>
         <span class="entry-date date published"><time datetime="2016-09-23T00:00:00-05:00"><i class="fa fa-calendar-o"></i> September 23, 2016</time></span>
         <span class="entry-date date modified"><time datetime="Fri Sep 23 21:03:14 CDT 2016"><i class="fa fa-pencil"></i> September 23, 2016</time></span>
         
         <span class="social-share-twitter">
-  <a href="https://twitter.com/intent/tweet?hashtags=developers,github,git,improvement,quality,testing,writers&amp;text=Quality%20Tracking%20with%20GitHub%20for%20Docs&amp;url=http://docslikecode.com/articles/doc-issues-tracking/&amp;via=annegentle" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+  <a href="https://twitter.com/intent/tweet?hashtags=developers,github,git,improvement,quality,testing,writers&amp;text=Quality%20Tracking%20with%20GitHub%20for%20Docs&amp;url=http://localhost:4000/articles/doc-issues-tracking/&amp;via=annegentle" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
 </span>
 <span class="social-share-facebook">
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://docslikecode.com/articles/doc-issues-tracking/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/articles/doc-issues-tracking/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
 </span>
 <span class="social-share-googleplus">
-  <a href="https://plus.google.com/share?url=http://docslikecode.com/articles/doc-issues-tracking/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+  <a href="https://plus.google.com/share?url=http://localhost:4000/articles/doc-issues-tracking/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
 </span>
 <!-- /.social-share -->
         
@@ -207,10 +207,10 @@
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="http://docslikecode.com/articles/github-collaborators/" class="btn" title="Collaborating on GitHub for Documentation">Previous</a>
+        <a href="http://localhost:4000/articles/github-collaborators/" class="btn" title="Collaborating on GitHub for Documentation">Previous</a>
       
       
-        <a href="http://docslikecode.com/articles/what-docs-like-code-looks-like/" class="btn" title="Building Docs Like Code">Next</a>
+        <a href="http://localhost:4000/articles/what-docs-like-code-looks-like/" class="btn" title="Building Docs Like Code">Next</a>
       
     </nav><!-- /.pagination -->
   </article>
@@ -233,19 +233,19 @@
 	
   
 	
-  <a href="http://docslikecode.com/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+  <a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
 </div><!-- /.social-icons -->
 
   </footer>
 </div><!-- /.footer-wrapper -->
 
 <script type="text/javascript">
-  var BASE_URL = 'http://docslikecode.com';
+  var BASE_URL = 'http://localhost:4000';
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://docslikecode.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="http://docslikecode.com/assets/js/scripts.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
 
 
 <!-- Asynchronous Google Analytics snippet -->
