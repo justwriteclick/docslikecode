@@ -41,7 +41,7 @@ more treating docs like code makes sense.
 I hope I'm talking to people who care a lot about words. Let's start with some vocabulary and definitions to build upon.
 
 * Branch: Indicator of divergence from base without changing the main line (or "trunk" if you like to visualize organic tree-structures to remember this term).
-* Commit: Point in time snapshot of repository with changes.
+* Commit: Point-in-time snapshot of repository with changes.
 * Fork (noun): Copy of the repository that is entirely yours in your namespace. In GitHub-land, forking does not have a negative connotation that it can in other contexts (such as taking an open source project in a new direction in a huff to get different contributors). Rather, it is a way to contribute openly and publicly with your account attributed.
 * Fork (verb): Making a copy of the repository.
 * Issue: Defects, tasks, or feature requests.
