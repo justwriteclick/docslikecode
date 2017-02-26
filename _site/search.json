@@ -3,7 +3,7 @@
   
     {
       "title"			: "Coming Soon - Write Docs Like Code Ebook",
-      "link"			: "http://localhost:4000/articles/coming-soon-writing-docs-like-code/",
+      "link"			: "http://docslikecode.com/articles/coming-soon-writing-docs-like-code/",
       "excerpt"		: "What do you want to know about these techniques?"
     }
   
@@ -11,7 +11,7 @@
   
     ,{
       "title"			: "Remodeling documentation",
-      "link"			: "http://localhost:4000/articles/remodel-your-docs/",
+      "link"			: "http://docslikecode.com/articles/remodel-your-docs/",
       "excerpt"		: "Make sure you have a punch list."
     }
   
@@ -19,7 +19,7 @@
   
     ,{
       "title"			: "Building Docs Like Code",
-      "link"			: "http://localhost:4000/articles/what-docs-like-code-looks-like/",
+      "link"			: "http://docslikecode.com/articles/what-docs-like-code-looks-like/",
       "excerpt"		: "Let’s look at a live example."
     }
   
@@ -27,7 +27,7 @@
   
     ,{
       "title"			: "Quality Tracking with GitHub for Docs",
-      "link"			: "http://localhost:4000/articles/doc-issues-tracking/",
+      "link"			: "http://docslikecode.com/articles/doc-issues-tracking/",
       "excerpt"		: "What do you do when people say, ‘The Docs Suck.’?"
     }
   
@@ -35,7 +35,7 @@
   
     ,{
       "title"			: "Collaborating on GitHub for Documentation",
-      "link"			: "http://localhost:4000/articles/github-collaborators/",
+      "link"			: "http://docslikecode.com/articles/github-collaborators/",
       "excerpt"		: "When you work with others, your deliverables win."
     }
   
@@ -43,7 +43,7 @@
   
     ,{
       "title"			: "The Vocabulary of GitHub for Documentation",
-      "link"			: "http://localhost:4000/articles/github-for-docs/",
+      "link"			: "http://docslikecode.com/articles/github-for-docs/",
       "excerpt"		: "What would happen if we treated docs like code?"
     }
   
@@ -59,9 +59,11 @@
   
 
   
+
+  
     ,{
       "title"			: "About Docs Like Code",
-      "link"			: "http://localhost:4000/about/",
+      "link"			: "http://docslikecode.com/about/",
       "excerpt"		: "Brought to you by the author of the Just Write Click blog, Anne Gentle."
     }
   
@@ -69,7 +71,11 @@
   
 
   
-
+    ,{
+      "title"			: "Get the Book",
+      "link"			: "http://docslikecode.com/book/",
+      "excerpt"		: "By Anne Gentle"
+    }
   
 
   
