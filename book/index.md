@@ -64,7 +64,6 @@ modified: Feb 26 16:22:06 CST 2017
 > <br />
 > &mdash; Eric Holscher, Cofounder of Read the Docs and Write the Docs
 
-
 <p><a href="http://www.lulu.com/content/e-book/docs-like-code/20327544" style="display: inline-block; 
   margin-bottom: 20px;
   padding: 8px 20px;
@@ -79,3 +78,17 @@ modified: Feb 26 16:22:06 CST 2017
   &:hover {
     background-color: #fff;
     color: #ffc858;"><i class='fa fa-book'></i> Buy Now</a></p>
+
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just finished <a href="https://twitter.com/annegentle">@annegentle</a>&#39;s new book, Docs Like Code, and it&#39;s outstanding for devs. If you value quality docs, see <a href="https://t.co/pVbhOcB3Bx">https://t.co/pVbhOcB3Bx</a></p>&mdash; Carol Willing (@WillingCarol) <a href="https://twitter.com/WillingCarol/status/836990174601101313">March 1, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/annegentle">@annegentle</a> My trick? Treating docs like code! 😉<a href="https://t.co/NuuTgJcs3M">https://t.co/NuuTgJcs3M</a></p>&mdash; Carolyn Van Slyck (@carolynvs) <a href="https://twitter.com/carolynvs/status/840775351299145728">March 12, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just finished &quot;Docs Like Code&quot; by <a href="https://twitter.com/annegentle">@annegentle</a> - Superb advice for modern technical writing. <a href="https://t.co/jI9jsA0OIy">https://t.co/jI9jsA0OIy</a></p>&mdash; Doug Hellmann (@doughellmann) <a href="https://twitter.com/doughellmann/status/838911867338772480">March 7, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This one just moved to the top of my reading list. A book on how to treat docs like code by <a href="https://twitter.com/annegentle">@annegentle</a>. Awesome!  &gt; <a href="https://t.co/nRkSZkhv5x">https://t.co/nRkSZkhv5x</a></p>&mdash; Patrick Andriessen (@napnamPat) <a href="https://twitter.com/napnamPat/status/838695213841403904">March 6, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
