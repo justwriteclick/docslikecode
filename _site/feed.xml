@@ -2,27 +2,99 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://docslikecode.com/feed.xml" />
-<link rel="alternate" type="text/html" href="http://docslikecode.com" />
-<updated>2017-03-18T08:55:30-05:00</updated>
-<id>http://docslikecode.com/</id>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2017-03-18T10:10:57-05:00</updated>
+<id>http://localhost:4000/</id>
 <author>
   <name>Anne Gentle</name>
-  <uri>http://docslikecode.com/</uri>
+  <uri>http://localhost:4000/</uri>
   <email>annegentle@justwriteclick.com</email>
 </author>
 
 
 <entry>
+  <title type="html"><![CDATA[Case Study - Pantheon, Rachel Whitton]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/pantheon-case-study/" />
+  <id>http://localhost:4000/articles/pantheon-case-study</id>
+  <updated>Sat Mar 18 09:50:27 CDT 2017T00:00:00-00:00</updated>
+  <published>2017-03-18T00:00:00-05:00</published>
+  
+  <author>
+    <name>Rachel Whitton</name>
+    <uri>http://localhost:4000</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Pantheon is a website management platform for Drupal and Wordpress. In this use case, their Technical Content Editor Rachel Whitton describes the use of GitHub for documentation as well as their workflow.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-site-or-sites-do-you-create-from-github-source&quot;&gt;What site or sites do you create from GitHub source?&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pantheon.io/docs&quot;&gt;pantheon.io/docs&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;what-are-the-repositories-that-build-the-deliverables&quot;&gt;What are the repositories that build the deliverables?&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/pantheon-systems/documentation&quot;&gt;github.com/pantheon-systems/documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;can-you-give-an-idea-of-the-size-such-as-how-many-pages-source-and-output-if-theyre-private-thats-fine-too-talk-about-what-led-to-that-decision&quot;&gt;Can you give an idea of the size, such as how many pages (source and output)? If they’re private, that’s fine too, talk about what led to that decision.&lt;/h4&gt;
+&lt;p&gt;Source files: 588 These are all publicly-editable source files.
+Output files: 602&lt;/p&gt;
+
+&lt;h4 id=&quot;when-did-your-migration-to-github-occur&quot;&gt;When did your migration to GitHub occur?&lt;/h4&gt;
+&lt;p&gt;We began the process in November of 2014 by creating a private repository for the content migration and initial development of a new static site (built with &lt;a href=&quot;https://sculpin.io&quot;&gt;Sculpin&lt;/a&gt;). The site went live in January 2015 and the repository went from private to public in April 2015.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-factors-led-your-team-to-choose-github-for-docs&quot;&gt;What factors led your team to choose GitHub for docs?&lt;/h4&gt;
+
+&lt;p&gt;We chose to host our documentation repository on GitHub to align ourselves with tools and workflows adopted by other teams across our organization for better collaboration. Our secondary goal was to tap into the collective intellect of our developer community by allowing public contributions. Over time, we began documenting upcoming features in the open prior to their full release which resulted in new levels of participation in the project on GitHub (feedback on product functionality and design, bug reports, etc).&lt;/p&gt;
+
+&lt;h4 id=&quot;what-type-of-audience-are-you-writing-for-do-your-readers-write-with-you-if-so-how&quot;&gt;What type of audience are you writing for? Do your readers write with you? If so, how?&lt;/h4&gt;
+
+&lt;p&gt;Pantheon’s audience for documentation consists primarily of developers and technical  advocates for digital agencies. Public contributions are most often initiated from a call to action on the site. Visitors start by clicking the Contribute button, then either edit the current page, report an issue, or suggest new content. Depending on the selection, a new tab for GitHub will open to either edit the page or open an issue using a pre-filled template. &lt;a href=&quot;https://github.com/pantheon-systems/documentation/blob/master/CONTRIBUTING.md#contributors&quot;&gt;We encourage all contributors to create a profile&lt;/a&gt; and attribute their work alongside any pull requests.&lt;/p&gt;
+
+&lt;h4 id=&quot;how-active-is-your-review-queue-how-often-do-you-publish&quot;&gt;How active is your review queue? How often do you publish?&lt;/h4&gt;
+
+&lt;p&gt;The documentation project receives an average of almost 40 commits per week. The site is continuously delivered upon each commit to the default branch.&lt;/p&gt;
+
+&lt;h4 id=&quot;do-you-merge-or-rebase-have-you-kept-the-same-workflow-always-how-long-has-the-workflow-been-in-place&quot;&gt;Do you merge or rebase? Have you kept the same workflow always? How long has the workflow been in place?&lt;/h4&gt;
+
+&lt;p&gt;It depends. Generally, our workflow is to merge into the default branch once updates have been peer reviewed on a “feature” branch. We use rebase as needed or as an alternative to merging when including work in progress from one feature branch on another during their simultaneous development to ensure changes are aligned and accounted for. Our workflow is constantly evolving to better serve the project.&lt;/p&gt;
+
+&lt;h4 id=&quot;whats-your-biggest-win-from-using-github-for-docs-tell-a-story&quot;&gt;What’s your biggest win from using GitHub for docs? Tell a story.&lt;/h4&gt;
+
+&lt;p&gt;We try our best to prevent gaps in documentation, but one area that’s really challenging for us is covering external integrations. I didn’t know it at the time, but making the move to GitHub set us up to receive high value contributions from other organizations. Chris Tietzel, CEO and Founder of Lockr, submitted an article (https://pantheon.io/docs/guides/lockr/) to the docs via GitHub after receiving support requests from users for help installing and integrating Lockr on Pantheon-hosted websites.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-would-you-warn-others-about-when-thinking-about-github-for-docs&quot;&gt;What would you warn others about when thinking about GitHub for docs?&lt;/h4&gt;
+
+&lt;p&gt;Think about the contributor and moderator experiences - don’t be afraid to adjust workflows as your project matures. Be aware that moderators won’t have write access to forks unless granted by the maintainer of the fork - this means you’ll need to have a plan for copy edits on Pull Requests from a fork that are initiated from non-org members. We handle these by using GitHub’s suggested workflow for merging locally on the command line: checkout a new branch, pull commits from the fork, make copy edits, stage and commit, switch to the default branch, then merge and push to GitHub. The Pull Request will update to reflect its merged status within the default branch.&lt;/p&gt;
+
+&lt;h4 id=&quot;would-you-suggest-migrating-content-or-only-building-new&quot;&gt;Would you suggest migrating content or only building new?&lt;/h4&gt;
+
+&lt;p&gt;It depends. We migrated a lot of content because it didn’t make sense to start over. I’d say migrate what you can but don’t be afraid to start fresh depending on the needs and goals of your project. If you do migrate, automate the process as much as possible. Your sanity will thank you.&lt;/p&gt;
+
+&lt;h4 id=&quot;do-you-have-automation-if-so-what-type-or-tooling-and-where-is-the-automation-in-the-workflow&quot;&gt;Do you have automation? If so, what type or tooling, and where is the automation in the workflow?&lt;/h4&gt;
+
+&lt;p&gt;Pantheon uses CircleCI for continuous integration which builds all commits pushed to GitHub then tests and deploys changes to either a staging environment or to production. Deployments to production occur via rsync after tests have run successfully. If any test fails (broken link, performance regression, etc.) The build will fail on CircleCI and the deployment to production is skipped until a passing build occurs. Branches other than our default branch get deployed to isolated cloud development environments for staging with unique and publicly accessible URLs. Deployments to staging environments happen before the test suite is run to help debug issues and/or failures. Once builds have been deployed to a staging environment, a comment is created on the commit in GitHub with a link to the changes for quick and easy peer review. Once a feature branch has been merged into the default, the associated staging environment is automatically deleted along with the branch. The automation procedures are scripted in Bash and configured in the &lt;code class=&quot;highlighter-rouge&quot;&gt;circle.yml&lt;/code&gt; file within the project’s root directory. The staging environments are created using Pantheon’s command line tool, &lt;a href=&quot;https://github.com/pantheon-systems/terminus&quot;&gt;Terminus&lt;/a&gt;, and our &lt;a href=&quot;https://pantheon.io/features/multidev-cloud-environments&quot;&gt;Multidev&lt;/a&gt; feature.&lt;/p&gt;
+
+&lt;p&gt;This workflow is not available to forks for security reasons. For details, see CircleCI’s documentation: &lt;a href=&quot;https://circleci.com/docs/fork-pr-builds/#security-implications-of-running-builds-for-pull-requests-from-forks&quot;&gt;Security Implications of Running Builds for Pull Requests from Forks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;are-there-any-questions-you-wish-you-had-asked-before-using-github-for-docs&quot;&gt;Are there any questions you wish you had asked before using GitHub for docs?&lt;/h4&gt;
+
+&lt;p&gt;How do the needs of open source software projects differ from those of a documentation project? Where does GitHub fail to fulfill the needs of documentation projects and how can those gaps be filled?&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/pantheon-case-study/&quot;&gt;Case Study - Pantheon, Rachel Whitton&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on March 18, 2017.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
   <title type="html"><![CDATA[Coming Soon - Write Docs Like Code Ebook]]></title>
-  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/coming-soon-writing-docs-like-code/" />
-  <id>http://docslikecode.com/articles/coming-soon-writing-docs-like-code</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/coming-soon-writing-docs-like-code/" />
+  <id>http://localhost:4000/articles/coming-soon-writing-docs-like-code</id>
   <updated>Thu Dec 29 20:07:26 CST 2016T00:00:00-00:00</updated>
   <published>2016-12-29T00:00:00-06:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri>http://docslikecode.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -68,21 +140,21 @@
 &lt;/div&gt;
 &lt;!--End mc_embed_signup--&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/coming-soon-writing-docs-like-code/&quot;&gt;Coming Soon - Write Docs Like Code Ebook&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on December 29, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/coming-soon-writing-docs-like-code/&quot;&gt;Coming Soon - Write Docs Like Code Ebook&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on December 29, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Remodeling documentation]]></title>
-  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/remodel-your-docs/" />
-  <id>http://docslikecode.com/articles/remodel-your-docs</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/remodel-your-docs/" />
+  <id>http://localhost:4000/articles/remodel-your-docs</id>
   <updated>Sat Nov 26 16:23:13 CST 2016T00:00:00-00:00</updated>
   <published>2016-11-26T00:00:00-06:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri>http://docslikecode.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -147,21 +219,21 @@
 &lt;/div&gt;
 &lt;!--End mc_embed_signup--&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/remodel-your-docs/&quot;&gt;Remodeling documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on November 26, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/remodel-your-docs/&quot;&gt;Remodeling documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on November 26, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Building Docs Like Code]]></title>
-  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/what-docs-like-code-looks-like/" />
-  <id>http://docslikecode.com/articles/what-docs-like-code-looks-like</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/what-docs-like-code-looks-like/" />
+  <id>http://localhost:4000/articles/what-docs-like-code-looks-like</id>
   <updated>Sun Sep 25 15:35:08 CDT 2016T00:00:00-00:00</updated>
   <published>2016-09-24T00:00:00-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri>http://docslikecode.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -207,21 +279,21 @@
 &lt;/div&gt;
 &lt;!--End mc_embed_signup--&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/what-docs-like-code-looks-like/&quot;&gt;Building Docs Like Code&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 24, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/what-docs-like-code-looks-like/&quot;&gt;Building Docs Like Code&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 24, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Quality Tracking with GitHub for Docs]]></title>
-  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/doc-issues-tracking/" />
-  <id>http://docslikecode.com/articles/doc-issues-tracking</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/doc-issues-tracking/" />
+  <id>http://localhost:4000/articles/doc-issues-tracking</id>
   <updated>Fri Sep 23 21:03:14 CDT 2016T00:00:00-00:00</updated>
   <published>2016-09-23T00:00:00-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri>http://docslikecode.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -279,21 +351,21 @@
 &lt;/div&gt;
 &lt;!--End mc_embed_signup--&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/doc-issues-tracking/&quot;&gt;Quality Tracking with GitHub for Docs&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 23, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/doc-issues-tracking/&quot;&gt;Quality Tracking with GitHub for Docs&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 23, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Collaborating on GitHub for Documentation]]></title>
-  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/github-collaborators/" />
-  <id>http://docslikecode.com/articles/github-collaborators</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/github-collaborators/" />
+  <id>http://localhost:4000/articles/github-collaborators</id>
   <updated>Sat Sep 17 07:11:52 CDT 2016T00:00:00-00:00</updated>
   <published>2016-09-18T00:00:00-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri>http://docslikecode.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -343,21 +415,21 @@
 &lt;/div&gt;
 &lt;!--End mc_embed_signup--&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/github-collaborators/&quot;&gt;Collaborating on GitHub for Documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 18, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/github-collaborators/&quot;&gt;Collaborating on GitHub for Documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 18, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[The Vocabulary of GitHub for Documentation]]></title>
-  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/github-for-docs/" />
-  <id>http://docslikecode.com/articles/github-for-docs</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/github-for-docs/" />
+  <id>http://localhost:4000/articles/github-for-docs</id>
   <updated>Sat Sep 17 07:11:52 CDT 2016T00:00:00-00:00</updated>
   <published>2016-09-17T00:00:00-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri>http://docslikecode.com</uri>
+    <uri>http://localhost:4000</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -367,13 +439,13 @@
 
 &lt;p&gt;Believe me, your fellow software builders are wondering, experimenting, or already starting down this road. I’ve seen this vision come to life and want to share my experiences so more people can learn these techniques.&lt;/p&gt;
 
-&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;http://docslikecode.com/images/git-logo.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/git-logo.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I’ve found that the principles inherent to the social web for coding work extremely well for documentation. The social web, leads to social coding, leads to social documentation.&lt;/p&gt;
 
 &lt;h1 id=&quot;what-is-github&quot;&gt;What is GitHub?&lt;/h1&gt;
 
-&lt;p class=&quot;pull-left&quot;&gt;&lt;img src=&quot;http://docslikecode.com/images/github-logo.png&quot; alt=&quot;GitHub&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;pull-left&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/github-logo.png&quot; alt=&quot;GitHub&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Like many tools, git and GitHub were created by fire — through a pressing need for performant and efficient source control management for theLinux kernel. Read the history in the excellent &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git&quot;&gt;Pro Git Book&lt;/a&gt;.&lt;/p&gt;
 
@@ -426,7 +498,7 @@ more treating docs like code makes sense.&lt;/p&gt;
 &lt;/div&gt;
 &lt;!--End mc_embed_signup--&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/github-for-docs/&quot;&gt;The Vocabulary of GitHub for Documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 17, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/github-for-docs/&quot;&gt;The Vocabulary of GitHub for Documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 17, 2016.&lt;/p&gt;
   </content>
 </entry>
 
