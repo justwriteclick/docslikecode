@@ -2,120 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2017-03-18T08:53:25-05:00</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="http://docslikecode.com/feed.xml" />
+<link rel="alternate" type="text/html" href="http://docslikecode.com" />
+<updated>2017-03-18T08:55:30-05:00</updated>
+<id>http://docslikecode.com/</id>
 <author>
   <name>Anne Gentle</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>http://docslikecode.com/</uri>
   <email>annegentle@justwriteclick.com</email>
 </author>
 
 
 <entry>
-  <title type="html"><![CDATA[Always Be Publishing]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/infoq/" />
-  <id>http://localhost:4000/articles/infoq</id>
-  <updated>Thu Mar 2 09:52:40 CST 2017T00:00:00-00:00</updated>
-  <published>2017-03-02T00:00:00-06:00</published>
-  
-  <author>
-    <name>Anne Gentle</name>
-    <uri>http://localhost:4000</uri>
-    <email>annegentle@justwriteclick.com</email>
-  </author>
-  <content type="html">
-    &lt;h1 id=&quot;always-be-publishing-continuous-integration-for-rest-api-docs&quot;&gt;Always Be Publishing: Continuous Integration for REST API Docs&lt;/h1&gt;
-
-&lt;p&gt;Key Takeaways&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;API documentation provides a critical path for predicting customer success.&lt;/li&gt;
-  &lt;li&gt;Collaborating on documentation close to the code provides better reviews, more automation efficiencies, and enables doc quality tests.&lt;/li&gt;
-  &lt;li&gt;Provide common docs frameworks, standards, automation, and tools to give teams an efficiency boost.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Let’s face it. Writing documentation can be downright boring sometimes. It is as exacting as the code itself. There are syntax errors and unwanted whitespace that you can introduce. Sometimes your ideas simply stop flowing, but you still need to fill in the blanks to make sure your docs are complete. With the growth of APIs as products, your documentation is more important than ever to create a successful API.&lt;/p&gt;
-
-&lt;p&gt;By writing documentation collaboratively as close to the code as possible, you can automate documentation tests, builds, and deployments. This approach provides many benefits: tested doc builds, continuous publishing, reviews of the docs and the code together, multiple outputs including tested code examples, release management, and prevents code from merging unless it has adequate documentation.&lt;/p&gt;
-
-&lt;h2 id=&quot;introduction-to-docs-cicd&quot;&gt;Introduction to Docs CI/CD&lt;/h2&gt;
-
-&lt;p&gt;For REST API documentation, three frameworks provide documentation output in the form of web pages, many of them interactive. These are OpenAPI(Swagger), RESTful API Modeling Language (RAML), and API Blueprint. OpenAPI, previously known as Swagger, is based on JSON, and because YAML is a superset of JSON, you can interchange the source files that describe the API. RAML is a YAML-based language to describe REST APIs. API Blueprint uses Markdown and can also adhere to &lt;a href=&quot;https://help.github.com/categories/writing-on-github/&quot;&gt;GitHub Flavored Markdown syntax&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Many programming languages have a documentation framework that integrates well with the code itself. Typically these are static site generators, such as Jekyll for Ruby, and Sphinx for Python. The source files for the docs are Markdown or reStructured Text (RST). With these static site generators, you can make beautiful documentation sites. In fact, there’s a &lt;a href=&quot;https://github.com/PharkMillups/beautiful-docs&quot;&gt;collection of links to beautiful docs on GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Because these doc source files can be transformed using scripts, you can continuously build the documentation with the same build jobs as the code. Jekyll sites are deployed by copying flat files from a static directory, so you can store a script to build the site in the code repo with other build files. You can also have a simple link checker to test for any broken links before deploying the site. The &lt;code class=&quot;highlighter-rouge&quot;&gt;htmlproofer&lt;/code&gt; is a Ruby library written to do just that.&lt;/p&gt;
-
-&lt;p&gt;The deployment mechanism provided by GitHub is called GitHub Pages. You have some options for triggering a docs deployment. You can automate builds from a &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch, from the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch, or always deploy docs from a &lt;code class=&quot;highlighter-rouge&quot;&gt;/docs&lt;/code&gt; directory on the &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; branch. Your GitHub repo has these options on the Settings page. While you can deploy to a custom domain name, one limitation for GitHub Pages currently is that you &lt;a href=&quot;https://github.com/isaacs/github/issues/156&quot;&gt;cannot serve directly through HTTPS&lt;/a&gt;, but as a free service it’s a good starting point. For production web sites, you can deploy from GitHub to a cloud server or VPS that has the security requirements you need. More or less, you are creating your own hosted web site.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-treat-docs-like-code&quot;&gt;Why treat docs like code?&lt;/h2&gt;
-
-&lt;p&gt;Writing with developers and for developers works well when the deliverables help developers. API documentation tasks provide a great example for why and when to treat docs like code. There are gains to be had when automating reference information, for example, and gains to be had by writing collaboratively. Also, one of the biggest success indicators for an API is the accuracy and helpfulness of the documentation. Here are some specific reasons to treat docs like code.&lt;/p&gt;
-
-&lt;p&gt;Collaboration: Having developers and technical writers write collaboratively provides both roles with valuable information. Developers want to write for an audience that resembles themselves, and can provide empathy for the reader. Writers have a special knack for organizing information, writing well, and revealing concepts and reference information in the proper order. Collaborating together in the same repository increases opportunities to both teach and learn.&lt;/p&gt;
-
-&lt;p&gt;Contributions: When you don’t “throw writing over the wall” to a tech writing team, you can broaden the number of contributors, even if the API itself is not a public one with public documentation. Or, you can enable more contributions from the end-users themselves by providing open source docs repos in version control systems like GitHub. Any interested developers, including customers, can subscribe to notifications on pull requests when the docs are in the repo with the code.&lt;/p&gt;
-
-&lt;p&gt;Track bugs: For higher-quality docs, provide a way to report documentation bugs directly on the output page. As Linus’s Law states, “given enough eyeballs, all bugs are shallow.” By providing those eyeballs a place to report the bug, you give more code-like quality tracking to the docs. Plus, with metrics in place through issue tracking, you can measure the quality of the docs and ensure resources are in place when needed to squash those bugs.&lt;/p&gt;
-
-&lt;p&gt;Reviews: When reviewing docs that are included with code, reviewers can block a change to the code when the documentation is insufficient. This review guidance provides the team with the power to make the docs high quality, even when they have to be in synch with fast-moving code.&lt;/p&gt;
-
-&lt;p&gt;Tests and builds: By having a matched staging build for reviews and a production build for delivery to readers, you can be confident your review of built documentation meets user needs.&lt;/p&gt;
-
-&lt;p&gt;Deployments and releases: With docs like code, realize you are separating builds from deployments. This way, you can have reviews on early drafts of documentation and it does not become contractual until the doc build is deployed and released. Or, you can choose to release some documents continuously to keep up with the code. For example, you may choose to write narrative documentation and tutorials that release continuously with every landed patch set. But for contractual documentation like an OpenAPI specification, you can only deploy new documentation when the API is considered released at a specific version.&lt;/p&gt;
-
-&lt;h2 id=&quot;example-tests-for-docs&quot;&gt;Example tests for docs&lt;/h2&gt;
-
-&lt;p&gt;You can test doc source files for quality and whether they build. You could also check for spelling or grammar, but typically human reviewers can do this also. The point for testing docs is to take that review burden off of human reviewers and let the automation save time so that more docs can be written and released.&lt;/p&gt;
-
-&lt;h3 id=&quot;link-check&quot;&gt;Link check&lt;/h3&gt;
-
-&lt;p&gt;With many static site generators, there are libraries specifically for checking all the links in a site. For example, when checking links on a Jekyll web site like &lt;a href=&quot;http://http://docslikecode.com&quot;&gt;docslikecode.com&lt;/a&gt;, the Travis CI job is simple:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env bash&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; -e &lt;span class=&quot;c&quot;&gt;# halt script on error&lt;/span&gt;
-
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll build
-bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;htmlproofer ./_site
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;With this type of test in place, human reviewers don’t have to take the time to click every link in a new patch. If an external link should be updated, the results of this test let you know. If an internal link breaks due to the patch itself, the contributor can fix it before a human even needs to review the patch.&lt;/p&gt;
-
-&lt;h3 id=&quot;json-format&quot;&gt;JSON format&lt;/h3&gt;
-
-&lt;p&gt;With REST API docs, the requests and responses are often JSON files and are valuable to readers so they can compare their own environment to the documentation. It’s critical that the examples are formatted correctly in case a reader needs to copy and paste the request. In OpenStack, we have a set of common documentation tools that contain a JSON tester and formatter. By running this test on incoming patches to the docs, reviewers can determine if the included JSON files are accurate and formatted correctly. Plus, it makes the patch creation easier for a contributor when they can run a simple command locally to ensure the JSON format is correct.&lt;/p&gt;
-
-&lt;h3 id=&quot;validated-requests-and-responses&quot;&gt;Validated requests and responses&lt;/h3&gt;
-
-&lt;p&gt;An advanced documentation test can provide checks for the example requests and responses included in the documentation. When treating docs like code, accuracy is often the highest value. So, by testing examples against a working API endpoint, you can show that the examples will work in the real world as well. This type of validation provides trusted documentation examples that work every time, because they won’t be published unless they pass the validation test.&lt;/p&gt;
-
-&lt;h3 id=&quot;build-check&quot;&gt;Build check&lt;/h3&gt;
-
-&lt;p&gt;Automating the documentation tests frees up reviewer time because they do not have to build the docs themselves to review the output. In addition, you can test the build for broken doc links or improperly-formatted JSON files, for example. It’s helpful to review both source documentation and output documentation for any oddities or problems.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Working on documentation collaboratively in the same repositories as the code base provides opportunity to better serve customers. By treating your API docs like code, you can find automation opportunities, gain efficiencies, speed up documentation builds, and enable more reviewers and contributors.&lt;/p&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/infoq/&quot;&gt;Always Be Publishing&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on March 02, 2017.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
   <title type="html"><![CDATA[Coming Soon - Write Docs Like Code Ebook]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/coming-soon-writing-docs-like-code/" />
-  <id>http://localhost:4000/articles/coming-soon-writing-docs-like-code</id>
+  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/coming-soon-writing-docs-like-code/" />
+  <id>http://docslikecode.com/articles/coming-soon-writing-docs-like-code</id>
   <updated>Thu Dec 29 20:07:26 CST 2016T00:00:00-00:00</updated>
   <published>2016-12-29T00:00:00-06:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://docslikecode.com</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -161,21 +68,21 @@ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;htmlproofer ./_site
 &lt;/div&gt;
 &lt;!--End mc_embed_signup--&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/coming-soon-writing-docs-like-code/&quot;&gt;Coming Soon - Write Docs Like Code Ebook&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on December 29, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/coming-soon-writing-docs-like-code/&quot;&gt;Coming Soon - Write Docs Like Code Ebook&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on December 29, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Remodeling documentation]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/remodel-your-docs/" />
-  <id>http://localhost:4000/articles/remodel-your-docs</id>
+  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/remodel-your-docs/" />
+  <id>http://docslikecode.com/articles/remodel-your-docs</id>
   <updated>Sat Nov 26 16:23:13 CST 2016T00:00:00-00:00</updated>
   <published>2016-11-26T00:00:00-06:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://docslikecode.com</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -240,21 +147,21 @@ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;htmlproofer ./_site
 &lt;/div&gt;
 &lt;!--End mc_embed_signup--&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/remodel-your-docs/&quot;&gt;Remodeling documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on November 26, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/remodel-your-docs/&quot;&gt;Remodeling documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on November 26, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Building Docs Like Code]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/what-docs-like-code-looks-like/" />
-  <id>http://localhost:4000/articles/what-docs-like-code-looks-like</id>
+  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/what-docs-like-code-looks-like/" />
+  <id>http://docslikecode.com/articles/what-docs-like-code-looks-like</id>
   <updated>Sun Sep 25 15:35:08 CDT 2016T00:00:00-00:00</updated>
   <published>2016-09-24T00:00:00-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://docslikecode.com</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -300,21 +207,21 @@ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;htmlproofer ./_site
 &lt;/div&gt;
 &lt;!--End mc_embed_signup--&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/what-docs-like-code-looks-like/&quot;&gt;Building Docs Like Code&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 24, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/what-docs-like-code-looks-like/&quot;&gt;Building Docs Like Code&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 24, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Quality Tracking with GitHub for Docs]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/doc-issues-tracking/" />
-  <id>http://localhost:4000/articles/doc-issues-tracking</id>
+  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/doc-issues-tracking/" />
+  <id>http://docslikecode.com/articles/doc-issues-tracking</id>
   <updated>Fri Sep 23 21:03:14 CDT 2016T00:00:00-00:00</updated>
   <published>2016-09-23T00:00:00-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://docslikecode.com</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -372,21 +279,21 @@ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;htmlproofer ./_site
 &lt;/div&gt;
 &lt;!--End mc_embed_signup--&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/doc-issues-tracking/&quot;&gt;Quality Tracking with GitHub for Docs&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 23, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/doc-issues-tracking/&quot;&gt;Quality Tracking with GitHub for Docs&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 23, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Collaborating on GitHub for Documentation]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/github-collaborators/" />
-  <id>http://localhost:4000/articles/github-collaborators</id>
+  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/github-collaborators/" />
+  <id>http://docslikecode.com/articles/github-collaborators</id>
   <updated>Sat Sep 17 07:11:52 CDT 2016T00:00:00-00:00</updated>
   <published>2016-09-18T00:00:00-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://docslikecode.com</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -436,21 +343,21 @@ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;htmlproofer ./_site
 &lt;/div&gt;
 &lt;!--End mc_embed_signup--&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/github-collaborators/&quot;&gt;Collaborating on GitHub for Documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 18, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/github-collaborators/&quot;&gt;Collaborating on GitHub for Documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 18, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[The Vocabulary of GitHub for Documentation]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/github-for-docs/" />
-  <id>http://localhost:4000/articles/github-for-docs</id>
+  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/github-for-docs/" />
+  <id>http://docslikecode.com/articles/github-for-docs</id>
   <updated>Sat Sep 17 07:11:52 CDT 2016T00:00:00-00:00</updated>
   <published>2016-09-17T00:00:00-05:00</published>
   
   <author>
     <name>Anne Gentle</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://docslikecode.com</uri>
     <email>annegentle@justwriteclick.com</email>
   </author>
   <content type="html">
@@ -460,13 +367,13 @@ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;htmlproofer ./_site
 
 &lt;p&gt;Believe me, your fellow software builders are wondering, experimenting, or already starting down this road. I’ve seen this vision come to life and want to share my experiences so more people can learn these techniques.&lt;/p&gt;
 
-&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/git-logo.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;http://docslikecode.com/images/git-logo.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I’ve found that the principles inherent to the social web for coding work extremely well for documentation. The social web, leads to social coding, leads to social documentation.&lt;/p&gt;
 
 &lt;h1 id=&quot;what-is-github&quot;&gt;What is GitHub?&lt;/h1&gt;
 
-&lt;p class=&quot;pull-left&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/github-logo.png&quot; alt=&quot;GitHub&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;pull-left&quot;&gt;&lt;img src=&quot;http://docslikecode.com/images/github-logo.png&quot; alt=&quot;GitHub&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Like many tools, git and GitHub were created by fire — through a pressing need for performant and efficient source control management for theLinux kernel. Read the history in the excellent &lt;a href=&quot;https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git&quot;&gt;Pro Git Book&lt;/a&gt;.&lt;/p&gt;
 
@@ -519,7 +426,7 @@ more treating docs like code makes sense.&lt;/p&gt;
 &lt;/div&gt;
 &lt;!--End mc_embed_signup--&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/github-for-docs/&quot;&gt;The Vocabulary of GitHub for Documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://localhost:4000&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 17, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/github-for-docs/&quot;&gt;The Vocabulary of GitHub for Documentation&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on September 17, 2016.&lt;/p&gt;
   </content>
 </entry>
 
