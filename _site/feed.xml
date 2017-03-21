@@ -4,13 +4,85 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://docslikecode.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://docslikecode.com" />
-<updated>2017-03-18T08:55:30-05:00</updated>
+<updated>2017-03-21T15:55:10-05:00</updated>
 <id>http://docslikecode.com/</id>
 <author>
   <name>Anne Gentle</name>
   <uri>http://docslikecode.com/</uri>
   <email>annegentle@justwriteclick.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Case Study - Pantheon, Rachel Whitton]]></title>
+  <link rel="alternate" type="text/html" href="http://docslikecode.com/articles/pantheon-case-study/" />
+  <id>http://docslikecode.com/articles/pantheon-case-study</id>
+  <updated>Sat Mar 18 09:50:27 CDT 2017T00:00:00-00:00</updated>
+  <published>2017-03-18T00:00:00-05:00</published>
+  
+  <author>
+    <name>Rachel Whitton</name>
+    <uri>http://docslikecode.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Pantheon is a website management platform for Drupal and WordPress. In this use case, their Technical Content Editor Rachel Whitton describes the use of GitHub for documentation as well as their workflow.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-site-or-sites-do-you-create-from-github-source&quot;&gt;What site or sites do you create from GitHub source?&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pantheon.io/docs&quot;&gt;pantheon.io/docs&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;what-are-the-repositories-that-build-the-deliverables&quot;&gt;What are the repositories that build the deliverables?&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/pantheon-systems/documentation&quot;&gt;github.com/pantheon-systems/documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;can-you-give-an-idea-of-the-size-such-as-how-many-pages-source-and-output-if-theyre-private-thats-fine-too-talk-about-what-led-to-that-decision&quot;&gt;Can you give an idea of the size, such as how many pages (source and output)? If they’re private, that’s fine too, talk about what led to that decision.&lt;/h4&gt;
+&lt;p&gt;Source files: 588 These are all publicly-editable source files.
+Output files: 602&lt;/p&gt;
+
+&lt;h4 id=&quot;when-did-your-migration-to-github-occur&quot;&gt;When did your migration to GitHub occur?&lt;/h4&gt;
+&lt;p&gt;We began the process in November of 2014 by creating a private repository for the content migration and initial development of a new static site (built with &lt;a href=&quot;https://sculpin.io&quot;&gt;Sculpin&lt;/a&gt;). The site went live in January 2015 and the repository went from private to public in April 2015.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-factors-led-your-team-to-choose-github-for-docs&quot;&gt;What factors led your team to choose GitHub for docs?&lt;/h4&gt;
+
+&lt;p&gt;We chose to host our documentation repository on GitHub to align ourselves with tools and workflows adopted by other teams across our organization for better collaboration. Our secondary goal was to tap into the collective intellect of our developer community by allowing public contributions. Over time, we began documenting upcoming features in the open prior to their full release which resulted in new levels of participation in the project on GitHub (feedback on product functionality and design, bug reports, etc).&lt;/p&gt;
+
+&lt;h4 id=&quot;what-type-of-audience-are-you-writing-for-do-your-readers-write-with-you-if-so-how&quot;&gt;What type of audience are you writing for? Do your readers write with you? If so, how?&lt;/h4&gt;
+
+&lt;p&gt;Pantheon’s audience for documentation consists primarily of developers and technical  advocates for digital agencies. Public contributions are most often initiated from a call to action on the site. Visitors start by clicking the Contribute button, then either edit the current page, report an issue, or suggest new content. Depending on the selection, a new tab for GitHub will open to either edit the page or open an issue using a pre-filled template. &lt;a href=&quot;https://github.com/pantheon-systems/documentation/blob/master/CONTRIBUTING.md#contributors&quot;&gt;We encourage all contributors to create a profile&lt;/a&gt; and attribute their work alongside any pull requests.&lt;/p&gt;
+
+&lt;h4 id=&quot;how-active-is-your-review-queue-how-often-do-you-publish&quot;&gt;How active is your review queue? How often do you publish?&lt;/h4&gt;
+
+&lt;p&gt;The documentation project receives an average of almost 40 commits per week. The site is continuously delivered upon each commit to the default branch.&lt;/p&gt;
+
+&lt;h4 id=&quot;do-you-merge-or-rebase-have-you-kept-the-same-workflow-always-how-long-has-the-workflow-been-in-place&quot;&gt;Do you merge or rebase? Have you kept the same workflow always? How long has the workflow been in place?&lt;/h4&gt;
+
+&lt;p&gt;It depends. Generally, our workflow is to merge into the default branch once updates have been peer reviewed on a “feature” branch. We use rebase as needed or as an alternative to merging when including work in progress from one feature branch on another during their simultaneous development to ensure changes are aligned and accounted for. Our workflow is constantly evolving to better serve the project.&lt;/p&gt;
+
+&lt;h4 id=&quot;whats-your-biggest-win-from-using-github-for-docs-tell-a-story&quot;&gt;What’s your biggest win from using GitHub for docs? Tell a story.&lt;/h4&gt;
+
+&lt;p&gt;We try our best to prevent gaps in documentation, but one area that’s really challenging for us is covering external integrations. I didn’t know it at the time, but making the move to GitHub set us up to receive high value contributions from other organizations. Chris Tietzel, CEO and Founder of Lockr, submitted an article (https://pantheon.io/docs/guides/lockr/) to the docs via GitHub after receiving support requests from users for help installing and integrating Lockr on Pantheon-hosted websites.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-would-you-warn-others-about-when-thinking-about-github-for-docs&quot;&gt;What would you warn others about when thinking about GitHub for docs?&lt;/h4&gt;
+
+&lt;p&gt;Think about the contributor and moderator experiences - don’t be afraid to adjust workflows as your project matures. Be aware that moderators won’t have write access to forks unless granted by the maintainer of the fork - this means you’ll need to have a plan for copy edits on Pull Requests from a fork that are initiated from non-org members. We handle these by using GitHub’s suggested workflow for merging locally on the command line: checkout a new branch, pull commits from the fork, make copy edits, stage and commit, switch to the default branch, then merge and push to GitHub. The Pull Request will update to reflect its merged status within the default branch.&lt;/p&gt;
+
+&lt;h4 id=&quot;would-you-suggest-migrating-content-or-only-building-new&quot;&gt;Would you suggest migrating content or only building new?&lt;/h4&gt;
+
+&lt;p&gt;It depends. We migrated a lot of content because it didn’t make sense to start over. I’d say migrate what you can but don’t be afraid to start fresh depending on the needs and goals of your project. If you do migrate, automate the process as much as possible. Your sanity will thank you.&lt;/p&gt;
+
+&lt;h4 id=&quot;do-you-have-automation-if-so-what-type-or-tooling-and-where-is-the-automation-in-the-workflow&quot;&gt;Do you have automation? If so, what type or tooling, and where is the automation in the workflow?&lt;/h4&gt;
+
+&lt;p&gt;Pantheon uses CircleCI for continuous integration which builds all commits pushed to GitHub then tests and deploys changes to either a staging environment or to production. Deployments to production occur via rsync after tests have run successfully. If any test fails (broken link, performance regression, etc.) The build will fail on CircleCI and the deployment to production is skipped until a passing build occurs. Branches other than our default branch get deployed to isolated cloud development environments for staging with unique and publicly accessible URLs. Deployments to staging environments happen before the test suite is run to help debug issues and/or failures. Once builds have been deployed to a staging environment, a comment is created on the commit in GitHub with a link to the changes for quick and easy peer review. Once a feature branch has been merged into the default, the associated staging environment is automatically deleted along with the branch. The automation procedures are scripted in Bash and configured in the &lt;code class=&quot;highlighter-rouge&quot;&gt;circle.yml&lt;/code&gt; file within the project’s root directory. The staging environments are created using Pantheon’s command line tool, &lt;a href=&quot;https://pantheon.io/docs/terminus/&quot;&gt;Terminus&lt;/a&gt;, and our &lt;a href=&quot;https://pantheon.io/features/multidev-cloud-environments&quot;&gt;Multidev&lt;/a&gt; feature.&lt;/p&gt;
+
+&lt;p&gt;This workflow is not available to forks for security reasons. For details, see CircleCI’s documentation: &lt;a href=&quot;https://circleci.com/docs/fork-pr-builds/#security-implications-of-running-builds-for-pull-requests-from-forks&quot;&gt;Security Implications of Running Builds for Pull Requests from Forks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;are-there-any-questions-you-wish-you-had-asked-before-using-github-for-docs&quot;&gt;Are there any questions you wish you had asked before using GitHub for docs?&lt;/h4&gt;
+
+&lt;p&gt;How do the needs of open source software projects differ from those of a documentation project? Where does GitHub fail to fulfill the needs of documentation projects and how can those gaps be filled?&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://docslikecode.com/articles/pantheon-case-study/&quot;&gt;Case Study - Pantheon, Rachel Whitton&lt;/a&gt; was originally published by Anne Gentle at &lt;a href=&quot;http://docslikecode.com&quot;&gt;Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.&lt;/a&gt; on March 18, 2017.&lt;/p&gt;
+  </content>
+</entry>
 
 
 <entry>
