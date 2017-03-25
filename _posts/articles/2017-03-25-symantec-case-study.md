@@ -130,3 +130,4 @@ On the other hand, because other doc components besides the Javadoc could only b
 We also didn't realize initially that we'd have to coordinate our doxygen build, which ran over only a small subset of the code, with multiple other doxygen builds over other parts of the code tree. I wound up working with lead devs on other coding projects to coordinate main page markup and config values so that we could all get the doc builds that we needed. This work was a bit fiddly, and produced an extra round of review with every Javadoc build to make sure that the right components were all properly included. 
 
 {% include sign-up.html %}
+
