@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Case Study - Balsamiq, Leon Barnard
-excerpt: "Leon Barnard, Designer and Writer (and Developer-in-training) at [Balsamiq](https://balsamiq.com/), describes how the second version of the Balsamiq Docs static site went beyond purely functional to do things the team didn't think Markdown and static sites could do."
-modified: Tue Apr  4 20:04:28 CDT 2017
+title: Multiple product versions - Balsamiq, Leon Barnard
+excerpt: "Learn useful techniques for static sites on GitHub from Leon Barnard, Designer and Writer at Balsamiq."
+modified: Tue Apr 4 20:04:28 CDT 2017
 categories: articles
 author: leon_barnard
 tags: [case study, balsamiq, static sites, use case, wireframes, github, docs, repos, hugo, tools, gif, animated gifs]
@@ -16,7 +16,11 @@ share: true
 
 # Use Case Part I: Balsamiq
 
-In this three-part series, Leon Barnard describes some great solutions to problems that many technical sites have faced. The three parts cover documenting multiple product versions, adding play and pause to animated GIFs, and providing flexibility and expansion options in lists of linked pages.
+Leon Barnard, Designer and Writer (and Developer-in-training) at [Balsamiq](https://balsamiq.com/), describes how the second version of the Balsamiq Docs static site went beyond purely functional to do things the team didn't think Markdown and static sites could do.
+
+In this three-part series, Leon describes some great solutions to problems that many technical sites have faced.
+
+The three parts cover documenting multiple product versions, adding play and pause to animated GIFs, and providing flexibility and expansion options in lists of linked pages.
 
 ## Background
 
