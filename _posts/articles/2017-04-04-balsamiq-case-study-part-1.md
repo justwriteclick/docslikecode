@@ -62,7 +62,8 @@ Instead of changing file formats, we leveraged the flexibility of Hugo to use th
 
 The code looks like this:
 
-```go
+{% raw %}
+
 {{ if .Params.include }}
   {{ $include := .Params.include }}
   {{ if eq .Params.editorversion 3 }}
@@ -85,7 +86,7 @@ The code looks like this:
   {{ .Content }}
 {{ end }}
 
-```
+{% endraw %}
 
 Hugo looks for two pieces of front matter. The first is the presence of a parameter called `include`. If that exists, it looks to see which version of the editor to use. Then it copies the content from *the file with the same name* from the core documentation folder ("\_v2" or "\_v3") specified in the editor version parameter.
 
