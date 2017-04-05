@@ -63,29 +63,29 @@ Instead of changing file formats, we leveraged the flexibility of Hugo to use th
 The code looks like this:
 
 {% raw %}
-
+<code>
 {{ if .Params.include }}
-  {{ $include := .Params.include }}
-  {{ if eq .Params.editorversion 3 }}
-    {{ range where .Site.Pages "Params.menu" "menub3editor" }}
-      {{ $file := .File.BaseFileName }}
-      {{ if eq $file $include }}
-        {{ .Content }}
-      {{ end }}
-    {{ end }}
-  {{ else if eq .Params.editorversion 2 }}
-    {{ range where .Site.Pages "Params.menu" "menub2editor" }}
-      {{ $file := .File.BaseFileName }}
-      {{ if eq $file $include }}
-        {{ .Content }}
-      {{ end }}
-    {{ end }}
-  {{ else }}
-    {{ end }}
+ {{ $include := .Params.include }}
+ {{ if eq .Params.editorversion 3 }}
+   {{ range where .Site.Pages "Params.menu" "menub3editor" }}
+     {{ $file := .File.BaseFileName }}
+     {{ if eq $file $include }}
+       {{ .Content }}
+     {{ end }}
+   {{ end }}
+ {{ else if eq .Params.editorversion 2 }}
+   {{ range where .Site.Pages "Params.menu" "menub2editor" }}
+     {{ $file := .File.BaseFileName }}
+     {{ if eq $file $include }}
+       {{ .Content }}
+     {{ end }}
+   {{ end }}
+ {{ else }}
+   {{ end }}
 {{ else }}
-  {{ .Content }}
+ {{ .Content }}
 {{ end }}
-
+</code>
 {% endraw %}
 
 Hugo looks for two pieces of front matter. The first is the presence of a parameter called `include`. If that exists, it looks to see which version of the editor to use. Then it copies the content from *the file with the same name* from the core documentation folder ("\_v2" or "\_v3") specified in the editor version parameter.
