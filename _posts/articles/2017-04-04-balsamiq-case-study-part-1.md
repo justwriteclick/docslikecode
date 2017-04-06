@@ -20,7 +20,7 @@ Leon Barnard, Designer and Writer (and Developer-in-training) at [Balsamiq](http
 
 In this three-part series, Leon describes some great solutions to problems that many technical sites have faced.
 
-The three parts cover documenting multiple product versions, adding play and pause to animated GIFs, and providing flexibility and expansion options in lists of linked pages.
+The three parts cover documenting multiple product versions, [adding play and pause to animated GIFs](http://docslikecode.com/articles/balsamiq-case-study-part-1/), and providing flexibility and expansion options in lists of linked pages.
 
 ## Background
 
