@@ -34,7 +34,7 @@ After the dust settled, we started imagining what we wanted for the next version
 
 Our product, [Balsamiq Mockups](https://balsamiq.com/), comes in multiple "flavors," as we often call them. There are two versions of the core product (the wireframe editor) that are sold as: a stand-alone desktop version, a hosted web version ("myBalsamiq"), and plugins for Google Drive and Atlassian Confluence and JIRA. 
 
-![]({{ site.url }}/images/balsamiq/select-product.png)
+![Select product]({{ site.url }}/images/balsamiq/select-product.png)
 
 That's seven different products that we sell, catered to different types of users. This is great for our customers, but a challenge for our docs.
 
@@ -44,11 +44,11 @@ For historical reasons, most of the common documentation is in the Desktop versi
 
 This is what the content folder in our [GitHub repo](https://github.com/balsamiq/docs.balsamiq.com) looked like, which meant that a lot of customers had this experience:
 
-![]({{ site.url }}/images/balsamiq/structure2.png)
+![Concept confusion]({{ site.url }}/images/balsamiq/structure2.png)
 
 For the next update to our docs, we decided that we needed to finally address this issue. We wanted a complete set of docs for each product version and platform.
 
-![]({{ site.url }}/images/balsamiq/structure3.png)
+![Concept combos]({{ site.url }}/images/balsamiq/structure3.png)
 
 But, of course, we didn't want to maintain seven copies of each article. We wanted to be able to write the docs once and have them show up across multiple versions.
 
@@ -56,7 +56,7 @@ A simple solution, I suppose, would have been to switch from Markdown to a file 
 
 I enlisted the help of our resident [Go](https://golang.org/) expert, [Luis](https://balsamiq.com/company/#luis), and he wrote some code to do just what we wanted. This code inside one of the Hugo templates allowed us to put help files in two hidden folders (called "\_v2" and "\_v3") that would get injected into files across multiple documentation folders each time the site was generated. The end result was that users could now find the information where they expected to find it.
 
-![]({{ site.url }}/images/balsamiq/structure5.png)
+![Content insertions]({{ site.url }}/images/balsamiq/structure5.png)
 
 Instead of changing file formats, we leveraged the flexibility of Hugo to use the meta data (front matter) from the Markdown file as a trigger to tell Hugo to insert content from one file to another.
 
@@ -90,7 +90,7 @@ The code looks like this:
 
 Hugo looks for two pieces of front matter. The first is the presence of a parameter called `include`. If that exists, it looks to see which version of the editor to use. Then it copies the content from *the file with the same name* from the core documentation folder ("\_v2" or "\_v3") specified in the editor version parameter.
 
-![]({{ site.url }}/images/balsamiq/structure6.png)
+![Mix and match]({{ site.url }}/images/balsamiq/structure6.png)
 
 If the `include` parameter isn't present, Hugo just uses the Markdown content in the file without copying content from elsewhere. This allows us to mix and match docs that are unique to one product with docs that share functionality with multiple products.
 
