@@ -2,7 +2,7 @@
 layout: post
 title: Animated GIFs Pause and Play - Balsamiq, Leon Barnard
 excerpt: "Learn useful techniques for static sites on GitHub from Leon Barnard, Designer and Writer at Balsamiq."
-modified: Thu Apr  6 08:10:45 CDT 2017
+modified: Sun Apr  9 08:10:45 CDT 2017
 categories: articles
 author: leon_barnard
 tags: [case study, balsamiq, static sites, use case, wireframes, github, docs, repos, hugo, tools, gif, animated gifs]
