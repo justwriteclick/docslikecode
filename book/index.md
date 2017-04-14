@@ -8,9 +8,9 @@ modified: Feb 26 16:22:06 CST 2017
 <img src="../../images/docs-like-code-book.jpg" alt="Docs Like Code" style="padding:14px;" align="right" height="200" width="319">
 
 <h1>About the book</h1>
-<p>We've transformed the way teams work together on docs, and we want to show you the best practices for writing docs using development tools and techniques.</p>
+<p>We've transformed the way teams work together on docs, and we want to show you the best practices for writing docs using development tools and techniques. Now available in both print and ebook, check out <i>Docs Like Code</i>.</p>
 
-<p><a href="http://www.lulu.com/content/e-book/docs-like-code/20327544" style="display: inline-block; 
+<p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block; 
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 14px;
@@ -37,7 +37,7 @@ modified: Feb 26 16:22:06 CST 2017
 <strong>What are the best practices for REST API docs?</strong> While Swagger/OpenAPI, RAML, and other standards work well when considering the entire API lifecycle, you can also consider collaboration gains with simple markup and narrative documents beyond the REST API reference doc set.
 </p>
 
-<p><a href="http://www.lulu.com/content/e-book/docs-like-code/20327544" style="display: inline-block; 
+<p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block; 
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 14px;
@@ -64,7 +64,7 @@ modified: Feb 26 16:22:06 CST 2017
 > <br />
 > &mdash; Eric Holscher, Cofounder of Read the Docs and Write the Docs
 
-<p><a href="http://www.lulu.com/content/e-book/docs-like-code/20327544" style="display: inline-block; 
+<p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block; 
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 14px;
