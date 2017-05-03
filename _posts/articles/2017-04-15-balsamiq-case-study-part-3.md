@@ -26,11 +26,11 @@ The last challenge is one that I had wanted to do for the first release of our n
 
 Let's look at the [Dropbox help site home page](https://www.dropbox.com/help) as an example:
 
-![](https://media.balsamiq.com/images/docslikecode/dropbox-help.png)
+![Dropbox help example](https://media.balsamiq.com/images/docslikecode/dropbox-help.png)
 
 I love the illustrations and layout. Very appealing and inviting. But as soon as you go a level deeper you get this:
 
-![](https://media.balsamiq.com/images/docslikecode/dropbox-help-toc.png)
+![Dropbox Table of Contents](https://media.balsamiq.com/images/docslikecode/dropbox-help-toc.png)
 
 A big ol' list of links. A wall of text. It's a very different feel from the page you came from.
 
@@ -40,13 +40,13 @@ They're limited because they don't know how many articles there will be in each 
 
 And this is exactly what we do on our documentation site within each product category currently:
 
-![]({{ site.url }}/images/balsamiq/desktop-toc-old.png)
+![Previous Balsamiq Table of Contents]({{ site.url }}/images/balsamiq/desktop-toc-old.png)
 
 But I really love the look of hard-coded landing pages like the Dropbox site. The illustrations, the grid layout, the way it directs you to the information that's most important. I wanted to see if we could make our second-level pages look more like that.
 
 To cut to the chase, here's what the upcoming version of our docs site will look like:
 
-![]({{ site.url }}/images/balsamiq/desktop-toc.png)
+![New Balsamiq Table of Contents]({{ site.url }}/images/balsamiq/desktop-toc.png)
 
 It feels more like a documentation site landing page, right? It has a featured articles section with the articles that are most relevant to new users, and the rest of the articles are split evenly in three columns. Yet none of it is hard-coded, even the featured "Getting Started" articles.
 
@@ -99,7 +99,7 @@ The variable called `$featuredRows` helps determine where the count should start
 
 And now to that "Getting Started" section at the top...
 
-![]({{ site.url }}/images/balsamiq/desktop-toc-getting-started.png)
+![Getting Started Section]({{ site.url }}/images/balsamiq/desktop-toc-getting-started.png)
 
 I wanted different images for each of the featured articles, but I just didn't like the idea of hard-coding any links or resources, in case we decided to change things later (and also because I'm stubborn). So, the top part of the code identifies the first three articles (ordered by weight), lists their names, links them up, and then grabs an image for each of them using the following code:
 
