@@ -153,6 +153,7 @@ function populateResultContent(html, item) {
     html = injectContent(html, item.link, '##Url##');
     html = injectContent(html, item.excerpt, '##Excerpt##');
     html = injectContent(html, item.date, '##Date##');
+    html = injectContent(html, item.tags, '##Tags##');
     return html;
 }
 
