@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Lists Get a Makeover - Balsamiq, Leon Barnard
-excerpt: "Learn useful techniques for static sites on GitHub from Leon Barnard, Designer and Writer at Balsamiq."
-modified: Sat Apr 15 22:34:44 CDT 2017
+excerpt: "Give list pages a makeover using Hugo, a static site generator, with source files on GitHub from Leon Barnard, Designer and Writer at Balsamiq."
+modified: Sat May 13 18:38:24 CDT 2017
 categories: articles
 author: leon_barnard
 tags: [case study, balsamiq, static sites, use case, wireframes, github, docs, repos, hugo, tools, gif, animated gifs]
