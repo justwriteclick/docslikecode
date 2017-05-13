@@ -1,8 +1,8 @@
 ---
 layout: landing
 title: Get the Book
-excerpt: "By Anne Gentle"
-modified: Feb 26 16:22:06 CST 2017
+excerpt: "Docs Like Code book in print and ebook. Paperback now available on Amazon, Barnes & Noble, Lulu, iBooks, and more. Learn about REST API docs, Swagger, OpenAPI, RAML, doc automation, templates, CI/CD for docs, GitHub Pages, reviews, and more."
+modified: Sat May 13 08:43:14 CDT 2017
 ---
 
 <img src="../../images/docs-like-code-book.jpg" alt="Docs Like Code" style="padding:14px;" align="right" height="200" width="319">
@@ -92,3 +92,6 @@ modified: Feb 26 16:22:06 CST 2017
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This one just moved to the top of my reading list. A book on how to treat docs like code by <a href="https://twitter.com/annegentle">@annegentle</a>. Awesome!  &gt; <a href="https://t.co/nRkSZkhv5x">https://t.co/nRkSZkhv5x</a></p>&mdash; Patrick Andriessen (@napnamPat) <a href="https://twitter.com/napnamPat/status/838695213841403904">March 6, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+<h1>Get the t-shirt!</h1>
+
+<a href="http://docslikecode.com/tshirt/">Coming soon - Docs Like Code t-shirts</a>!
