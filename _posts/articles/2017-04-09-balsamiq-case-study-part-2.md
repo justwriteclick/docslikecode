@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Animated GIFs Pause and Play - Balsamiq, Leon Barnard
-excerpt: "Learn useful techniques for static sites on GitHub from Leon Barnard, Designer and Writer at Balsamiq."
-modified: Sun Apr  9 08:10:45 CDT 2017
+excerpt: "Learn how to play and pause animated GIFs on static sites such as Hugo on GitHub from Leon Barnard, Designer and Writer at Balsamiq."
+modified: Sat May 13 18:37:48 CDT 2017
 categories: articles
 author: leon_barnard
 tags: [case study, balsamiq, static sites, use case, wireframes, github, docs, repos, hugo, tools, gif, animated gifs]

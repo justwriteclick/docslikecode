@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Remodeling documentation
-excerpt: "Make sure you have a punch list."
-modified: Sat Nov 26 16:23:13 CST 2016
+excerpt: "Make sure you have a punch list of doc bugs to get higher quality results."
+modified: Sat May 13 18:34:40 CDT 2017
 categories: articles
 tags: [issues, bugs, technical debt, github, git, backlog]
 image:

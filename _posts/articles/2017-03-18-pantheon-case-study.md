@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Case Study - Pantheon, Rachel Whitton
-excerpt: "In this use case, the Technical Content Editor at Pantheon, Rachel Whitton, describes their use of GitHub for documentation."
+excerpt: "In this use case, the Technical Content Editor at Pantheon, Rachel Whitton, describes their use of GitHub for documentation on a platform for WordPress and Drupal."
 modified: Sat Mar 18 09:50:27 CDT 2017
 categories: articles
 author: rachel_whitton

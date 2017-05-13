@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Multiple product versions - Balsamiq, Leon Barnard
-excerpt: "Learn useful techniques for static sites on GitHub from Leon Barnard, Designer and Writer at Balsamiq."
-modified: Tue Apr 4 20:04:28 CDT 2017
+excerpt: "Learn useful techniques for static sites such as Hugo on GitHub from Leon Barnard, Designer and Writer at Balsamiq. He describes documenting multiple versions of a product with a Go coded solution."
+modified: Sat May 13 18:37:07 CDT 2017
 categories: articles
 author: leon_barnard
 tags: [case study, balsamiq, static sites, use case, wireframes, github, docs, repos, hugo, tools, gif, animated gifs]
