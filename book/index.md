@@ -94,4 +94,4 @@ modified: Sat May 13 08:43:14 CDT 2017
 
 <h1>Get the t-shirt!</h1>
 
-<a href="http://docslikecode.com/tshirt/">Coming soon - Docs Like Code t-shirts</a>!
+<a href="http://just-write-click.myshopify.com/">Now available - Docs Like Code t-shirts</a>!
