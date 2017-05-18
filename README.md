@@ -11,7 +11,7 @@ You can directly submit a pull request using the fork-and-pull workflow to add a
 ## Theme Colophon
 Theme courtesy of https://mmistakes.github.io/so-simple-theme/
 
-## To Build Locally (Mac only)
+## To Build Locally (MacOS)
 
 Test your additions and changes to content by running a local build.
 
@@ -61,9 +61,9 @@ Once you have completed preparing your environment, then you can build locally a
 > ***TIP***  
 > Leave the serve terminal open and running. Every time you save changes to a file, it automatically regenerates the site so you can test the output immediately. The only file where changes require a restart is the `_config.yml` file.
 
-## To build locally (Docker required)
+## To Build Locally (Docker)
 
-1. Install Docker Community Version.
+1. Install [Docker Community Version](https://www.docker.com/community-edition).
 
 2. In the root directory where the `docslikecode` repo is cloned, create a file named `Dockerfile` containing:
 
