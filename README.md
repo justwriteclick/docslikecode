@@ -143,3 +143,8 @@ if !(docker-machine ls | grep "^$DOCKER_MACHINE_NAME "); then
 		      $DOCKER_IMAGE_NAME \
 		       serve --watch --drafts --force_polling -H 0.0.0.0
  ```
+5. If using Windows, launch Git Bash to run the `preview.sh` file. If using MacOS, launch a Terminal window to run the `preview.sh` file. Make sure to allow permissions to execute the `preview.sh` file, for example `chmod 600 preview.sh`.
+
+```
+$ ./preview.sh
+```
