@@ -20,3 +20,10 @@ leon_barnard:
   github: //github.com/balsamiqLeon
   twitter: leonbarnard
   bio: "Designer and Writer"
+
+adam_locke:
+  name: Adam Locke
+  avatar: http://docslikecode.com/images/adam_locke.jpg
+  github: //github.com/lockewritesdocs  
+  twitter: 
+  bio: "API Writer"
