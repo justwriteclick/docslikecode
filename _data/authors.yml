@@ -25,5 +25,11 @@ adam_locke:
   name: Adam Locke
   avatar: http://docslikecode.com/images/adam_locke.jpg
   github: //github.com/lockewritesdocs  
-  twitter: 
+  twitter: iamlockeness
   bio: "API Writer"
+
+diana_lakatos:
+  name: Diána Lakatos
+  avatar: https://pronovix.com/sites/default/files/styles/526x526/public/diana_lakatos.png
+  twitter: 
+  bio: "Senior Technical Writer"
