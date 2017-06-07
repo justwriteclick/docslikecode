@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Free and Open Source API Documentation Tools - Pronovix, Diána Lakatos
-excerpt: "Diána Lakatos, a technical writer with developer portal creation experts Pronovix, explores free and open source API documentation solutions. Her compiled results of the research was original posted on the Pronovix blog."
+excerpt: "Diána Lakatos, a technical writer with developer portal creation specialists Pronovix, explores free and open source API documentation solutions. Her compiled results of the research were originally posted on the Pronovix blog."
 modified: Sat May 13 18:38:24 CDT 2017
 categories: articles
 author: diana_lakatos
-tags: [case study, balsamiq, static sites, use case, wireframes, github, docs, repos, hugo, tools, gif, animated gifs]
+tags: [API documentation, API docs, documentation, docs, API documentation generators, open source]
 image:
   feature: api-documentation.png
   credit: Diána Lakatos, Pronovix
