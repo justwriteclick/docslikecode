@@ -44,7 +44,9 @@ using Swashbuckle.Swagger.XmlComments;
 ```
 
 Then, I add the following code (see example that follows), much of which is supplied in a Swashbuckle example file. In the `SwaggerGeneratorOptions` class, I specify the options that I want Swashbuckle to enable.
+
 * `schemaFilters` post-modify complex schemas in the generated output. You can modify schemas for a specific member type or across all member types. The `IModelFilter` is now the `ISchemaFilter`. We created an `IModelFilter` to fix some of the generated output.
+
 * `operationFilters` specifies options to modify the generated output. Each entry enables a different modification for operation descriptions.
 
 ```csharp
