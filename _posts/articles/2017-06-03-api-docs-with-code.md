@@ -147,7 +147,7 @@ I compiled the code and Swashbuckle generated an updated `swagger.json` file. Wi
 
 I opened a browser and entered `http://localhost:3123`, which is where DapperDox runs by default, and it worked! DapperDox displayed my `swagger.json` file and created interactive documentation that clearly displays the requests, responses, and query parameters for the API. I demoed the output for a few developers and support engineers, and they were over the moon.
 
-![DapperDox API reference screenshot](images/DapperDox_API_reference.png "DapperDox API reference screenshot")
+![DapperDox API reference screenshot](../../images/DapperDox_API_reference.png "DapperDox API reference screenshot")
 
 ## Next steps
 
