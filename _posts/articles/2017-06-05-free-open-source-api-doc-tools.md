@@ -34,11 +34,7 @@ Recently the Swagger standard changed its name to Open API, you can find out mor
 
 Use the Swagger ecosystem to create your API documentation: document APIs with JSON using the Swagger spec, and use the Web UI to dynamically convert it into API documentation in a web page. Your API documentation will be displayed through the Swagger UI, which provides a well-structured and good-looking interface.
 
-<<<<<<< HEAD
 <img src="../images/pronovix/swagger_ui_example.png" alt="Swagger UI example" width="800" />
-=======
-<img src="/sites/default/files/blogpostimages/swagger_ui_example.png" alt="developer&#39;s journey" width="800" />
->>>>>>> b45c28e... Adds draft of post from Diana Lakatos, Pronovix
 
 Example of an API documentation displayed with the Swagger UI
 
