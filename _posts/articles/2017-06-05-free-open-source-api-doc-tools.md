@@ -34,7 +34,7 @@ Recently the Swagger standard changed its name to Open API, you can find out mor
 
 Use the Swagger ecosystem to create your API documentation: document APIs with JSON using the Swagger spec, and use the Web UI to dynamically convert it into API documentation in a web page. Your API documentation will be displayed through the Swagger UI, which provides a well-structured and good-looking interface.
 
-<img src="../images/pronovix/swagger_ui_example.png" alt="Swagger UI example" width="800" />
+<img src="../../images/pronovix/swagger_ui_example.png" alt="Swagger UI example" width="800" />
 
 Example of an API documentation displayed with the Swagger UI
 
@@ -48,7 +48,7 @@ As today’s leading API ecosystem, it’s also the best documented and supporte
 
 With [DapperDox](http://dapperdox.io/) you can author readable guides and have them form part of a cohesive set of documentation along with the API specifications: You can inject relevant documentation into the rendered specification page.
 
-<img src="../images/pronovix/dapperdox_overview.png" alt="DapperDox Overview" width="800" />
+<img src="../../images/pronovix/dapperdox_overview.png" alt="DapperDox Overview" width="800" />
 
 To create your API documentation with DapperDox, point DapperDox at your **OpenAPI/Swagger** specifications, add some documentation in **Markdown** and let DapperDox do the rest.
 
@@ -58,7 +58,7 @@ To create your API documentation with DapperDox, point DapperDox at your **OpenA
 
 ReDoc aims to make deployment extremely easy, provides a wide support for OpenAPI objects, and offers interactive documentation for nested objects. You can include code samples via a third-party extension.
 
-<img src="../images/pronovix/redoc-demo.png" alt="Redoc Demo" width="800" />
+<img src="../../images/pronovix/redoc-demo.png" alt="Redoc Demo" width="800" />
 
 API documentation generators using the RAML specification
 ---------------------------------------------------------
@@ -73,7 +73,7 @@ To create your API documentation with RAML, you can choose open source tools lik
 
 [RAML 2 HTML](https://github.com/raml2html/raml2html) is a simple RAML to HTML documentation generator with theme support, written for Node.js.
 
-<img src="../images/pronovix/raml2html_demo.png" alt="RAML2HTML demo" width="800" />
+<img src="../../images/pronovix/raml2html_demo.png" alt="RAML2HTML demo" width="800" />
 
 Example of an API documentation displayed with RAML 2 HTML’s default theme
 
@@ -85,7 +85,7 @@ Using the [RAML API Console](https://github.com/mulesoft/api-console) you can cr
 
 There are two ways you can include the console: directly, or within an iframe.
 
-<img src="../images/pronovix/raml_console_demo.png" alt="RAML Console Demo" width="800" />
+<img src="../../images/pronovix/raml_console_demo.png" alt="RAML Console Demo" width="800" />
 
 Example of an API documentation displayed with the RAML API Console
 
@@ -100,7 +100,7 @@ Thanks to its broad adoption there is a wide range of tools built for API Bluepr
 
 [Snowboard](https://github.com/subosito/snowboard) is an API Blueprint parser and renderer. It offers a colourful default theme illustrating API request types and responses, and can also be used with custom templates.
 
-<img src="../images/pronovix/snowboard_example.png" alt="Snowboard example" width="800" />
+<img src="../../images/pronovix/snowboard_example.png" alt="Snowboard example" width="800" />
 
 Example of an API documentation displayed with Snowboard
 
@@ -108,7 +108,7 @@ Example of an API documentation displayed with Snowboard
 
 [Aglio](https://github.com/danielgtaylor/aglio) renders HTML from API Blueprint files, with support for custom colors, templates and themes.
 
-<img src="../images/pronovix/aglio_example.png" alt="Aglio example" width="800" />
+<img src="../../images/pronovix/aglio_example.png" alt="Aglio example" width="800" />
 
 Example of an API documentation displayed with Aglio (Cyborg two-column theme)
 
