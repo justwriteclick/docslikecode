@@ -5,7 +5,7 @@ locale: en_US
 description: When you want to write more content, create accurate technical docs, iterate with collaborators, test drafts, merge, build, and deploy docs.
 logo: treat-docs-like-code.png
 #url: http://127.0.0.1:4000
-url: http://docslikecode.com
+url: https://docslikecode.com
 
 # Jekyll configuration
 

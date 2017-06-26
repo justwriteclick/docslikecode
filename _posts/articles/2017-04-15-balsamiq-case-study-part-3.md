@@ -16,9 +16,9 @@ share: true
 
 # Use Case Part III: Balsamiq
 
-After sorting through two [other](http://docslikecode.com/articles/balsamiq-case-study-part-1/) [challenges](http://docslikecode.com/articles/balsamiq-case-study-part-2/) with moving to their current static docs site generator, Leon Barnard at Balsamiq tackles ongoing maintenance of list pages where the lists should be appealing to click and use.
+After sorting through two [other](https://docslikecode.com/articles/balsamiq-case-study-part-1/) [challenges](https://docslikecode.com/articles/balsamiq-case-study-part-2/) with moving to their current static docs site generator, Leon Barnard at Balsamiq tackles ongoing maintenance of list pages where the lists should be appealing to click and use.
 
-Check out the prior two parts of this series, including [how to use conditional text with Markdown to document multiple product releases](http://docslikecode.com/articles/balsamiq-case-study-part-1/), and [simplify source files while providing animated gif files that include a play and pause action](http://docslikecode.com/articles/balsamiq-case-study-part-2/).
+Check out the prior two parts of this series, including [how to use conditional text with Markdown to document multiple product releases](https://docslikecode.com/articles/balsamiq-case-study-part-1/), and [simplify source files while providing animated gif files that include a play and pause action](https://docslikecode.com/articles/balsamiq-case-study-part-2/).
 
 ## Challenge #3: Giving the list pages a makeover
 
