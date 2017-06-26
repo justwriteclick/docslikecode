@@ -2,14 +2,14 @@
 
 rachel_whitton:
   name: Rachel Whitton
-  avatar: http://pantheon.io/sites/default/files/styles/540x540_top/public/RachelNew.jpg
+  avatar: https://pantheon.io/sites/default/files/styles/540x540_top/public/RachelNew.jpg
   github: //github.com/rachelwhitton
   twitter: rachwhitton
   bio: "Technical Content Writer"
 
 jennifer_rondeau:
   name: Jennifer Rondeau
-  avatar: http://docslikecode.com/images/jennifer_rondeau.png
+  avatar: https://docslikecode.com/images/jennifer_rondeau.png
   github: //github.com/bradamant3
   twitter: bradamante
   bio: "Technical Writing Manager"
@@ -23,7 +23,7 @@ leon_barnard:
 
 adam_locke:
   name: Adam Locke
-  avatar: http://docslikecode.com/images/adam_locke.jpg
+  avatar: https://docslikecode.com/images/adam_locke.jpg
   github: //github.com/lockewritesdocs  
   twitter: iamlockeness
   bio: "API Writer"
