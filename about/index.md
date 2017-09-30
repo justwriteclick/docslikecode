@@ -23,6 +23,4 @@ Looking for a way to invigorate your documentation team and grow that team to in
 
 ## Ready to learn more? 
 
-Sign up here for three lessons in treating docs like code and a free review checklist.
-
 {% include sign-up.html %}
