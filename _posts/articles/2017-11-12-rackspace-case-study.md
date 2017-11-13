@@ -2,7 +2,7 @@
 layout: post
 title: Transforming Developer and Support Documentation with Docs Like Code
 excerpt: "At Rackspace, we recently modernized our customer documentation, implementing a model that treats documents like code."
-modified: Sun Oct 29 11:42:46 CDT 2017
+modified: Sun Nov 12 19:49:57 CST 2017
 categories: articles
 author: margaret_eker
 tags: [github, git, rackspace, support, collaboration, transformation]
