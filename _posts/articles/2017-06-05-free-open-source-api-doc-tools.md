@@ -67,7 +67,7 @@ API documentation generators using the RAML specification
 
 RAML is built on broadly-used standards such as YAML and JSON, and is language neutral with tools for: Java, Javascript, .Net, PHP, Python, Ruby, etc.
 
-To create your API documentation with RAML, you can choose open source tools like the [API Console](http://raml.org/projects/projects#q:api%20console) or [RAML 2 HTML](http://raml.org/projects/projects#q:raml%20to%20html). Documentation can be generated quickly and on the fly. With parsers available for many languages you can create your own custom docs and interactive scripts like e.Pages and Spotify.
+To create your API documentation with RAML, you can choose open source tools like the [API Console](https://github.com/mulesoft/api-console) or [RAML 2 HTML](https://github.com/raml2html/raml2html). Documentation can be generated quickly and on the fly. With parsers available for many languages you can create your own custom docs and interactive scripts like e.Pages and Spotify.
 
 ### RAML 2 HTML
 
