@@ -24,7 +24,7 @@ leon_barnard:
 adam_locke:
   name: Adam Locke
   avatar: https://docslikecode.com/images/adam_locke.jpg
-  github: //github.com/lockewritesdocs  
+  github: //github.com/lockewritesdocs
   twitter: iamlockeness
   bio: "API Writer"
 
@@ -32,12 +32,19 @@ diana_lakatos:
   name: Diána Lakatos
   avatar: https://pronovix.com/sites/default/files/styles/526x526/public/diana_lakatos.png
   github: //github.com/diana-lakatos
-  twitter: 
+  twitter:
   bio: "Senior Technical Writer"
 
 margaret_eker:
   name: Margaret Eker
   avatar: https://docslikecode.com/images/margaret-eker.jpg
   github: //github.com/meker12
-  twitter: 
+  twitter:
   bio: "Senior Technical Writer"
+
+tom_johnson:
+  name: Tom Johnson
+  avatar: https://docslikecode.com/images/tom-johnson.jpg
+  github: //github.com/tomjoht
+  twitter: http://twitter.com/tomjohnson
+  bio: "Technical Writer"
