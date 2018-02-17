@@ -7,7 +7,7 @@ categories: articles
 author: tom_johnson
 tags: [engineering, security, github, git, jekyll, static site, change, culture, teamwork, collaboration, development]
 image:
-  feature: laurencehorton-traintracks.jpg
+  feature: laurencehorten-traintracks.jpg
   credit: Flickr laurencehorton
   creditlink: https://flic.kr/p/e3AsFw
 comments: false
