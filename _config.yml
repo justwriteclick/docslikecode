@@ -6,6 +6,7 @@ description: When you want to write more content, create accurate technical docs
 logo: treat-docs-like-code.png
 #url: http://127.0.0.1:4000
 url: https://www.docslikecode.com
+theme: jekyll-theme-so-simple
 
 # Jekyll configuration
 
@@ -15,7 +16,7 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
