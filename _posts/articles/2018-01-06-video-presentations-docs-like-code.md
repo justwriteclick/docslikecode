@@ -2,14 +2,13 @@
 layout: post
 title: Video Presentations about Docs Like Code
 excerpt: "In the last three years of Write the Docs conferences, you can learn from others experiences using docs like code techniques."
-modified: Sat Jan  6 10:29:44 CST 2018
+last_modified_at: Sat Jan  6 10:29:44 CST 2018
 categories: articles
 author: anne_gentle
 tags: [writethedocs, video, conferences, github, git, collaboration, transformation]
 image:
-  feature: wtd-eur-2017.jpg
-  credit: Flickr writethedocs
-  creditlink: https://flic.kr/p/LqxXHE
+  path: /images/wtd-eur-2017.jpg
+  caption: "[Flickr writethedocs](https://flic.kr/p/LqxXHE)"
 comments: false
 share: true
 youtubeIdJodie: Mzu-c-FoOdw
@@ -48,5 +47,3 @@ Even when I don't make it to the conference in person, the video recordings are 
 {% include youtube.html id=page.youtubeIdRiona %}
 
 All this to say, the docs-like-code concepts are widely practiced in our industry, and each conference provides more inspiring examples. Perhaps you can watch these presentations and be inspired to integrate code and doc techniques.
-
-

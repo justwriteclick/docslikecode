@@ -2,11 +2,10 @@
 layout: page
 title: About Docs Like Code
 excerpt: "Brought to you by the author of the Just Write Click blog, Anne Gentle."
-modified: Wed Nov 23 19:25:15 CST 2016
+last_modified_at: Wed Nov 23 19:25:15 CST 2016
 image:
-  feature: robot-in-grass.jpg
-  credit: Flickr, hddod By NC ND 2.0
-  creditlink: https://www.flickr.com/photos/hddod/7229001564/
+  path: /images/robot-in-grass.jpg
+  caption: "[Flickr, hddod By NC ND 2.0](https://www.flickr.com/photos/hddod/7229001564/)"
 ---
 
 Looking for a way to invigorate your documentation team and grow that team to include developers, designers, and writers of all backgrounds? Plus, how about inviting some robots into the mix for good measure? Let's treat docs like code.
@@ -21,6 +20,6 @@ Looking for a way to invigorate your documentation team and grow that team to in
 * Trusting team members to value documentation, respect end-users needs, and advocate for the best deliverables for consumers of the documentation.
 * Automating and integrating documentation builds so you and your teams can focus on content.
 
-## Ready to learn more? 
+## Ready to learn more?
 
 {% include sign-up.html %}

@@ -2,7 +2,7 @@
 layout: landing
 title: Get the Book
 excerpt: "Docs Like Code book in print and ebook. Paperback now available on Amazon, Barnes & Noble, Lulu, iBooks, and more. Learn about REST API docs, Swagger, OpenAPI, RAML, doc automation, templates, CI/CD for docs, GitHub Pages, reviews, and more."
-modified: Sat May 13 08:43:14 CDT 2017
+last_modified_at: Sat May 13 08:43:14 CDT 2017
 ---
 
 <img src="../../images/docs-like-code-book.jpg" alt="Docs Like Code" style="padding:14px;" align="right" height="200" width="319">
@@ -10,7 +10,7 @@ modified: Sat May 13 08:43:14 CDT 2017
 <h1>About the book</h1>
 <p>We've transformed the way teams work together on docs, and we want to show you the best practices for writing docs using development tools and techniques. Now available in both print and ebook, check out <i>Docs Like Code</i>.</p>
 
-<p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block; 
+<p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 14px;
@@ -37,7 +37,7 @@ modified: Sat May 13 08:43:14 CDT 2017
 <strong>What are the best practices for REST API docs?</strong> While Swagger/OpenAPI, RAML, and other standards work well when considering the entire API lifecycle, you can also consider collaboration gains with simple markup and narrative documents beyond the REST API reference doc set.
 </p>
 
-<p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block; 
+<p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 14px;
@@ -54,8 +54,8 @@ modified: Sat May 13 08:43:14 CDT 2017
 
 <h1>Who's using these techniques?</h1>
 
-> “I met with one of the devs today to go over a Pull Request that I had submitted with editorial comments, and in the course of conversation, I mentioned that I had not been working directly with developers for very long. 
-> 
+> “I met with one of the devs today to go over a Pull Request that I had submitted with editorial comments, and in the course of conversation, I mentioned that I had not been working directly with developers for very long.
+>
 > He replied that he'd worked with technical editors in the past who were not very helpful, but that I was different. In fact, he assumed I was a developer at first because I was working in GitHub, effortlessly creating PRs!”
 > <br />
 > &mdash; _Kelly Holcomb, Senior Technical Editor, Rackspace_
@@ -64,7 +64,7 @@ modified: Sat May 13 08:43:14 CDT 2017
 > <br />
 > &mdash; Eric Holscher, Cofounder of Read the Docs and Write the Docs
 
-<p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block; 
+<p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 14px;

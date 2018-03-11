@@ -2,14 +2,13 @@
 layout: post
 title: Free and Open Source API Documentation Tools - Pronovix, Diána Lakatos
 excerpt: "Diána Lakatos, a technical writer with developer portal creation specialists Pronovix, explores free and open source API documentation solutions. Her compiled results of the research were originally posted on the Pronovix blog."
-modified: Wed Jun 14 07:51:24 CDT 2017
+last_modified_at: Wed Jun 14 07:51:24 CDT 2017
 categories: articles
 author: diana_lakatos
 tags: [API documentation, API docs, documentation, docs, API documentation generators, open source]
 image:
-  feature: api-documentation.png
-  credit: Diána Lakatos, Pronovix
-  creditlink: https://pronovix.com
+  path: /images/api-documentation.png
+  caption: "[Diána Lakatos, Pronovix](https://pronovix.com)"
 comments: true
 share: true
 ---

@@ -2,13 +2,12 @@
 layout: post
 title: The Vocabulary of GitHub for Documentation
 excerpt: "What would happen if we treated docs like code?"
-modified: Sat Sep 17 07:11:52 CDT 2016
+last_modified_at: Sat Sep 17 07:11:52 CDT 2016
 categories: articles
 tags: [github, git, definitions, repository, branch, fork, pull request]
 image:
-  feature: guarded-lightbulb-rob-sinclair.jpg
-  credit: Flickr rob-sinclair
-  creditlink: https://flic.kr/p/8J2gDY
+  path: /images/guarded-lightbulb-rob-sinclair.jpg
+  caption: "[Flickr rob-sinclair](https://flic.kr/p/8J2gDY)"
 comments: false
 share: true
 ---

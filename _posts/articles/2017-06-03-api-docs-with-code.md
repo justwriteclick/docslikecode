@@ -2,14 +2,13 @@
 layout: post
 title: Documenting APIs with Swagger - Lucas Systems, Adam Locke
 excerpt: "Integrating Swagger/OpenAPI files from code with documentation."
-modified: Fri Jun  9 07:16:05 CDT 2017
+last_modified_at: Fri Jun  9 07:16:05 CDT 2017
 categories: articles
 author: adam_locke
 tags: [case study, swagger, openapi, dapperdox, use case, api, docs, repos, tools]
 image:
-  feature: crocieristi-pirate-ship.jpg
-  credit: Flickr crocieristi
-  creditlink: https://flic.kr/p/pg2K91
+  path: /images/crocieristi-pirate-ship.jpg
+  caption: "[Flickr crocieristi](https://flic.kr/p/pg2K91)"
 comments: true
 share: true
 ---

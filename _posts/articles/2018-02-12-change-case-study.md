@@ -2,14 +2,13 @@
 layout: post
 title: "Case study: Switching tools to docs-as-code"
 excerpt: Changing from a content management system to Jekyll and all the change that undertaking took.
-modified: Mon Feb 12 09:06:03 CST 2018
+last_modified_at: Mon Feb 12 09:06:03 CST 2018
 categories: articles
 author: tom_johnson
 tags: [engineering, security, github, git, jekyll, static site, change, culture, teamwork, collaboration, development]
 image:
-  feature: laurencehorten-traintracks.jpg
-  credit: Flickr laurencehorton
-  creditlink: https://flic.kr/p/e3AsFw
+  path: /images/laurencehorten-traintracks.jpg
+  caption: "[Flickr laurencehorton](https://flic.kr/p/e3AsFw)"
 comments: false
 share: true
 ---

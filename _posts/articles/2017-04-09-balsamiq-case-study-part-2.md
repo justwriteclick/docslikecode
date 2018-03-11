@@ -2,14 +2,13 @@
 layout: post
 title: Animated GIFs Pause and Play - Balsamiq, Leon Barnard
 excerpt: "Learn how to play and pause animated GIFs on static sites such as Hugo on GitHub from Leon Barnard, Designer and Writer at Balsamiq."
-modified: Sat May 13 18:37:48 CDT 2017
+last_modified_at: Sat May 13 18:37:48 CDT 2017
 categories: articles
 author: leon_barnard
 tags: [case study, balsamiq, static sites, use case, wireframes, github, docs, repos, hugo, tools, gif, animated gifs]
 image:
-  feature: rogerjones-wireframe.jpg
-  credit: Flickr rogerjones
-  creditlink: https://flic.kr/p/i4ZAW
+  path: /images/rogerjones-wireframe.jpg
+  caption: "[Flickr rogerjones](https://flic.kr/p/i4ZAW)"
 comments: true
 share: true
 ---
@@ -20,7 +19,7 @@ After learning about [documenting multiple product versions with a static site g
 
 ## Background
 
-[Balsamiq set up a new documentation site](https://blog.balsamiq.com/new-documentation-site/) about a year and a half ago. We converted our old, flaky documentation system over to a "docs like code" system using [Hugo](http://gohugo.io/), [Gulp](http://gulpjs.com/), and [GitHub](https://github.com/), with content written in Markdown. The conversion took a while, so in the end we were pleased simply to get working. 
+[Balsamiq set up a new documentation site](https://blog.balsamiq.com/new-documentation-site/) about a year and a half ago. We converted our old, flaky documentation system over to a "docs like code" system using [Hugo](http://gohugo.io/), [Gulp](http://gulpjs.com/), and [GitHub](https://github.com/), with content written in Markdown. The conversion took a while, so in the end we were pleased simply to get working.
 
 Once it was part of our daily workflow, and we could begin to look to the future, we started envisioning the next version. In doing so, we recognized the limitations and looked for solutions that kept writers writing and readers reading. This series tells the tale of three of these problem areas and how we solved the challenges.
 
@@ -46,7 +45,7 @@ Triggering the gifplayer code is as easy as adding a CSS class to an image. Like
 
 But native Markdown doesn't support adding CSS. Of course, Markdown *does* support inline HTML, and we *could* have just written HTML whenever we wanted to add an animated GIF. But, again, **I'm stubborn**. I like my Markdown to be clean. I didn't want to go down a slippery slope of adding special cases for departing from pure Markdown.
 
-Now, there are two parameters that you give an image in Markdown: the file name, which I needed to tell it where the file is, and alt text, which we often leave blank (I know... accessibility). So I decided to customize the jquery function that initialized gifplayer. Instead of looking for images with a CSS class called 'gif', it would look for images with  alt text set to 'gif'. 
+Now, there are two parameters that you give an image in Markdown: the file name, which I needed to tell it where the file is, and alt text, which we often leave blank (I know... accessibility). So I decided to customize the jquery function that initialized gifplayer. Instead of looking for images with a CSS class called 'gif', it would look for images with  alt text set to 'gif'.
 
 Like this:
 
@@ -70,4 +69,3 @@ it triggers the gifplayer script!
 Sorry, we didn't implement the pause/play capability on this site, so that banana is gonna keep on dancing. You can see the pause/play solution in action on our Balsamiq article on [common workarounds](https://support.balsamiq.com/tutorials/workarounds/#link-to-alternates).
 
 {% include sign-up.html %}
-
