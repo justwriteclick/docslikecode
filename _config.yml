@@ -1,14 +1,25 @@
 # Site wide configuration
 
-title: Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.
+title: Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code
 locale: en-US
 description: When you want to write more content, create accurate technical docs, iterate with collaborators, test drafts, merge, build, and deploy docs.
-logo: treat-docs-like-code.png
+logo: /images/treat-docs-like-code.png
 #url: http://127.0.0.1:4000
 url: https://www.docslikecode.com
 theme: jekyll-theme-so-simple
 search_full_content: true
 tag_archive_path: "/tags/#"
+footer_links:
+  - title: Twitter
+    url: https://twitter.com/annegentle
+    icon: fab fa-twitter-square
+  - title: GitHub
+    url: https://github.com/justwriteclick
+    icon: fab fa-github-square
+  - title: Feed
+    url: feed.xml
+    icon: fas fa-rss-square
+
 # Jekyll configuration
 
 permalink:   /:categories/:title/
@@ -43,7 +54,7 @@ comments: false
 twitter: annegentle
 google_analytics: UA-85706588-1
 
-# Site owner
+# Site author, previously was site.owner
 author:
   name: Anne Gentle
   picture: anne_gentle.jpg
