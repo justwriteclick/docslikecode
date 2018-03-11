@@ -57,7 +57,7 @@ google_analytics: UA-85706588-1
 # Site author, previously was site.owner
 author:
   name: Anne Gentle
-  picture: anne_gentle.jpg
+  picture: /images/anne_gentle.jpg
   email: annegentle@justwriteclick.com
   disqus-shortname:
   facebook:

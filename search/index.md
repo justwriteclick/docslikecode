@@ -1,11 +1,8 @@
 ---
 layout: search
 title: "Search"
-date:
-modified:
-excerpt:
 image:
-  feature:
-search_omit: true
+  path: /images/so-simple-sample-image-7.jpg
+search: false
 sitemap: false
 ---
