@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: About Docs Like Code
 excerpt: "Brought to you by the author of the Just Write Click blog, Anne Gentle."
 last_modified_at: Wed Nov 23 19:25:15 CST 2016
