@@ -2,13 +2,12 @@
 layout: post
 title: Collaborating on GitHub for Documentation
 excerpt: "When you work with others, your deliverables win."
-modified: Sat Sep 17 07:11:52 CDT 2016
+last_modified_at: Sat Sep 17 07:11:52 CDT 2016
 categories: articles
 tags: [collaboration, developers, github, git, writers]
 image:
-  feature: stockholmlibrary-marcus_hansson.jpg
-  credit: Flickr marcus_hansson
-  creditlink: https://flic.kr/p/8Lrfg
+  path: /images/stockholmlibrary-marcus_hansson.jpg
+  caption: "[Flickr marcus_hansson](https://flic.kr/p/8Lrfg)"
 comments: false
 share: true
 ---

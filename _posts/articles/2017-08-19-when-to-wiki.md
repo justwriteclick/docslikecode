@@ -2,14 +2,13 @@
 layout: post
 title: What about wikis? Content management and change management
 excerpt: "Anne Gentle, the original wiki aficionado from the mid-2000s, discusses their relevance today."
-modified: Sat Aug 19 20:07:50 CDT 2017
+last_modified_at: Sat Aug 19 20:07:50 CDT 2017
 categories: articles
 author: anne_gentle
 tags: [documentation, docs, wiki, open source]
 image:
-  feature: spacewalk-nasa2explore.jpg
-  credit: NASA Johnson
-  creditlink: https://flic.kr/p/iKTgKf
+  path: /images/spacewalk-nasa2explore.jpg
+  caption: "[NASA Johnson](https://flic.kr/p/iKTgKf)"
 comments: true
 share: true
 ---

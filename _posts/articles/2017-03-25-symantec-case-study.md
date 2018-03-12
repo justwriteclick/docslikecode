@@ -2,14 +2,13 @@
 layout: post
 title: Case Study - Symantec, Jennifer Rondeau
 excerpt: "Jennifer Rondeau, Technical Writing Manager at Capital One, talks about her experiences as a Principal Information Developer at Symantec integrating code and documentation tightly."
-modified: Sat Mar 25 15:51:58 CDT 2017
+last_modified_at: Sat Mar 25 15:51:58 CDT 2017
 categories: articles
 author: jennifer_rondeau
 tags: [case study, javadoc, doxygen, use case, github, docs, repos, workflows, tools]
 image:
-  feature: ehktang-yellow-reflection.jpg
-  credit: Flickr ehktang
-  creditlink: https://flic.kr/p/bpTk6k
+  path: /images/ehktang-yellow-reflection.jpg
+  caption: "[Flickr ehktang](https://flic.kr/p/bpTk6k)"
 comments: true
 share: true
 ---
@@ -119,7 +118,7 @@ The web services project was pretty well contained, too &mdash; I continued to w
 
 The biggest difficulty came when we moved from SOAP to REST. Code comments don't work so well as source content for REST web services documentation, and it took us a while to figure out what to use instead. The tooling that we eventually settled on, spring-restdocs, required even tighter integration of dev and doc effort because the main doc files are written by hand, but the example requests and responses are generated from a documentation method that's added to the mock tests. So dev has to write the test method, either dev or the writer creates the main source files that include the examples, and then any reference information must be maintained manually outside the code, but within the code framework. These issues were still being addressed when I left the company.
 
-Generally the kind of approach that we took is at least initially writer-intensive, and therefore not extensible without careful planning and attention to the nuances of load balancing. For the first set of web services that we shipped, I worked on the project full-time. For updates the following year, we had enough of a system in place that I could work on the updates about half time. But juggling a developer workflow and a separate documentation workflow was quite a challenge, especially when I came back to the developer workflow after nearly a year of work in the separate doc flow. Developer tools and configurations had changed, and I had to learn them all over again. I don't necessarily recommend an all-or-nothing approach (all developer tools all the time or else none), but it's important for everyone &mdash; doc teams and dev teams &mdash; to understand the difficulties of jumping into and out of different workflows and toolchains. 
+Generally the kind of approach that we took is at least initially writer-intensive, and therefore not extensible without careful planning and attention to the nuances of load balancing. For the first set of web services that we shipped, I worked on the project full-time. For updates the following year, we had enough of a system in place that I could work on the updates about half time. But juggling a developer workflow and a separate documentation workflow was quite a challenge, especially when I came back to the developer workflow after nearly a year of work in the separate doc flow. Developer tools and configurations had changed, and I had to learn them all over again. I don't necessarily recommend an all-or-nothing approach (all developer tools all the time or else none), but it's important for everyone &mdash; doc teams and dev teams &mdash; to understand the difficulties of jumping into and out of different workflows and toolchains.
 
 ## What you wish you knew
 
@@ -127,7 +126,6 @@ The biggest thing we didn't do was integrate the Javadoc build completely into t
 
 On the other hand, because other doc components besides the Javadoc could only be built manually, more automation could have solved only part of the problem of keeping content up-to-date on the server. Ultimately, the decision not to automate the Javadoc made sense &mdash; there are always pain points on either side of a decision like this.
 
-We also didn't realize initially that we'd have to coordinate our doxygen build, which ran over only a small subset of the code, with multiple other doxygen builds over other parts of the code tree. I wound up working with lead devs on other coding projects to coordinate main page markup and config values so that we could all get the doc builds that we needed. This work was a bit fiddly, and produced an extra round of review with every Javadoc build to make sure that the right components were all properly included. 
+We also didn't realize initially that we'd have to coordinate our doxygen build, which ran over only a small subset of the code, with multiple other doxygen builds over other parts of the code tree. I wound up working with lead devs on other coding projects to coordinate main page markup and config values so that we could all get the doc builds that we needed. This work was a bit fiddly, and produced an extra round of review with every Javadoc build to make sure that the right components were all properly included.
 
 {% include sign-up.html %}
-

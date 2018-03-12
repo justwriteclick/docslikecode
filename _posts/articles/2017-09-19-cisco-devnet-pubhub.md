@@ -2,28 +2,27 @@
 layout: post
 title: DevOps-friendly Docs Publishing for APIs
 excerpt: "From Mandy Whaley's presentation at All Day DevOps 2017."
-modified: Tue Sep 29 13:36:15 CDT 2017
+last_modified_at: Tue Sep 29 13:36:15 CDT 2017
 categories: articles
 author: anne_gentle
 tags: [documentation, docs, api, rest api, standards, openapi, raml, swagger, stripe]
 image:
-  feature: david-huang-366041.jpg
-  credit: Photo by David Huang on Unsplash
-  creditlink: https://unsplash.com/collections/964729/milky-way-galaxy?photo=R3E2kEIC-G4
+  path: /images/david-huang-366041.jpg
+  caption: "[Photo by David Huang on Unsplash](https://unsplash.com/collections/964729/milky-way-galaxy?photo=R3E2kEIC-G4)"
 comments: true
 share: true
 ---
 
 Here at Cisco, we have a developer program called DevNet that focuses on making Cisco APIs easier to use as well as work with developers and Cisco partners in many technology areas including IoT, Collaboration, and Software Defined Networking. The Cisco DevNet team loves working with developers, network administrators, and collaborators of all kinds. Mandy Whaley is the Director of Developer Experience for DevNet. I wanted to share details about Cisco's docs-like-code solution, PubHub, to publish both internally and externally here at Cisco. So, I used her presentation and dug into the technology as well. Here's the story of how PubHub was developed for publishing content for DevNet.
 
-> APIs need great docs. Many organizations end up with a jungle of wiki pages, 
-> Swagger docs and API consoles, and maybe just a few secret documents trapped 
+> APIs need great docs. Many organizations end up with a jungle of wiki pages,
+> Swagger docs and API consoles, and maybe just a few secret documents trapped
 > in chat room somewhere... Keeping docs updated and in sync with code can be a > challenge.
-> 
-> We’ve been working on a project at Cisco DevNet to help solve this problem 
-> for engineering teams across Cisco. 
-> 
-> The goal is to create a forward looking developer and API doc publishing 
+>
+> We’ve been working on a project at Cisco DevNet to help solve this problem
+> for engineering teams across Cisco.
+>
+> The goal is to create a forward looking developer and API doc publishing
 > pipeline that:
 >
 > 1. Has a developer friendly editing flow.
