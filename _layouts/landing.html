@@ -8,13 +8,21 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
   {% include head.html %}
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {% if page.entries_layout == 'grid' %}page--wide{% endif %} {{ page.title | slugify }}">
-    {% include skip-links.html %}
-    {% include navigation.html %}
-    {{ content }}
+  <body class="layout--default">
+   <main id="main" class="main-content" aria-label="Content">
+    <article>
+      <div class="page-wrapper">
+        <div class="page-content">
+       {% include skip-links.html %}
+       {% include navigation.html %}
 
+       {{ content }}
+       </div>
+     </div>
     {% include footer.html %}
     {% include scripts.html %}
+    </article>
+   </main>
   </body>
 
 </html>
