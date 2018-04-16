@@ -37,6 +37,7 @@ google_fonts:
     weights: "400,400i,700,700i"
   - name: "Lora"
     weights: "400,400i,700,700i"
+google_analytics: UA-85706588-1
 kramdown:
   input: GFM
   auto_ids: true
@@ -71,7 +72,6 @@ author:
   weibo:
   google:
     plus: AnneGentle
-
     verify: LDMHcKG0vxyyo7Tp6hA5xs3_lJYX7Spk9IqC4VZsitE
     ad-client:
     ad-slot:
