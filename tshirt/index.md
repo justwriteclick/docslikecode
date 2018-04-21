@@ -11,3 +11,5 @@ last_modified_at: Sat May 13 08:39:50 CDT 2017
 ---
 
 Get <a href="http://just-write-click.myshopify.com/">t-shirts</a> now!
+
+{% include sign-up.html %}
