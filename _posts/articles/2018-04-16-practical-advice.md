@@ -54,31 +54,33 @@ For the print layout, I had a great experience with UpWork and was also able to 
 
 ## List of tools and services
 
-| Tools   | Site                       |
-|---------|----------------------------|           
-| Calibre | https://calibre-ebook.com/ |
-| Canva   | https://www.canva.com/     |             
-| GitBook |
-GitHub
-Lulu
-Mailchimp
-Upwork
+| Tools     | Site                       |
+|-----------|----------------------------|           
+| Calibre   | https://calibre-ebook.com/ |
+| Canva     | https://www.canva.com/     |             
+| GitBook   | https://www.gitbook.com/   |
+| GitHub    | https://github.com/        |
+| Lulu      | https://www.lulu.com/      |
+| Mailchimp | https://mailchimp.com/     |
+| Printful  | https://www.printful.com/  |
+| Shopify   | https://www.shopify.com/   |
+| Upwork    | https://www.upwork.com/    |
 
 ## Ongoing and startup costs
 
-Here’s a high-level overview of the startup costs for creating a book like Docs Like Code.
+Here’s a high-level overview of the startup costs for creating a book like *Docs Like Code*.
+I calculated the starting costs for six or five months, when I needed a monthly subscription for a service.
 
-Domain name registration (docslikecode.com and docsascode.com):	$20/year
-GitHub for Private repo: 							$42 ($7/month x 6)
-GitBooks for Private repo: 							$35 ($7/month x 5)
-Canva for Work (cover art):							$0 ($12/month x 0)
-Lulu cost: 									$82 for 15 printed
-Editing/Writing:								$250 at Justine’s
-Design for PDF layout:							$250
-MailChimp (ongoing):					 			$42 ($7/month x 6)
-Twitter ads:									$25 for four days ads
-Total costs (does not include my time):					$746
-
-First week Lulu revenue: 					$497.63
-First week profit: 						$104.63
-Printed copies sold: 5 for $100, all others given away	$17.67
+| Service                    |  Costs              |
+|----------------------------|---------------------|                                     
+| Domain name registration   |	$20/year           |
+| GitHub for Private repo    |  $42 ($7/month x 6) |
+| GitBooks for Private repo  |  $35 ($7/month x 5) |
+| GitHub Pages for website   |  $0                 |
+| Canva for Work (cover art) |  $0 trial           |
+| Lulu (printed copies) 		 |  $82 for 15 printed |
+| Editing/Writing						 |	$250 celebration   |
+| Design for PDF layout 		 |  $250               |
+| MailChimp (ongoing) 			 |	$42 ($7/month x 6) |
+| Twitter ads 							 |	$25 for ads        |
+| **Total startup costs**    |  **$746**           |
