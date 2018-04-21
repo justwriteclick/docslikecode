@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Practical Advice On Publishing A Technical Book"
+title: "Practical Advice On Publishing A Technical Book using GitHub and GitBook"
 excerpt: What does it take to publish a technical book using GitHub? Let's dig into tools, processes, revenue, and costs.
-last_modified_at: Mon Apr 16 10:59:26 CDT 2018
+last_modified_at: Fri Apr 20 21:01:44 CDT 2018
 categories: articles
 author: anne_gentle
 tags: [book, publishing, github, git, gitbook, lulu, self-publishing, collaboration, design, layout]
@@ -21,7 +21,7 @@ In my recent experience with *Docs Like Code*, the process led me to choosing to
 
 ## Reaching out to current contacts
 
-First, I reached out to Andy Oram, a senior editor at O'Reilly who knows me from a couple of open source projects, asking if he thought O'Reilly would want a book proposal. He said he'd be happy to read what I had, but didn't see the initial concept fitting into their current catalog. Really great of him to offer to help out, and I think I simply thanked him and kept going with my idea.
+First, I reached out to Andy Oram, a senior editor at O'Reilly who knows me from a couple of open source projects, asking if he thought O'Reilly would want a book proposal. He said he'd be happy to read what I had, but didn't see the initial concept fitting into their current catalog. Really great of him to offer to help out, and I simply thanked him and kept going with my idea.
 
 In parallel, I reached out to the publisher for my first book, *Conversation and Community*. His name is Richard Hamilton and he runs [XML Press](https://xmlpress.com). When he looked at his schedule,
 he couldn't read through at the draft copy for about 3 months. Well, I thought that the timing was essential, and I didn't want to wait that long, knowing both the market and my own availability.
@@ -54,17 +54,17 @@ For the print layout, I had a great experience with UpWork and was also able to 
 
 ## List of tools and services
 
-| Tools     | Site                       |
-|-----------|----------------------------|           
-| Calibre   | https://calibre-ebook.com/ |
-| Canva     | https://www.canva.com/     |             
-| GitBook   | https://www.gitbook.com/   |
-| GitHub    | https://github.com/        |
-| Lulu      | https://www.lulu.com/      |
-| Mailchimp | https://mailchimp.com/     |
-| Printful  | https://www.printful.com/  |
-| Shopify   | https://www.shopify.com/   |
-| Upwork    | https://www.upwork.com/    |
+| Tools     | Site                                                             |
+|-----------|------------------------------------------------------------------|           
+| Calibre   | [https://www.calibre-ebook.com/](https://www.calibre-ebook.com/) |
+| Canva     | [https://www.canva.com/](https://www.canva.com/)                 |             
+| GitBook   | [https://www.gitbook.com/](https://www.gitbook.com/)             |
+| GitHub    | [https://www.github.com/](https://www.github.com/)               |
+| Lulu      | [https://www.lulu.com/](https://www.lulu.com/)                   |
+| Mailchimp | [https://www.mailchimp.com/](https://www.mailchimp.com/)         |
+| Printful  | [https://www.printful.com/](https://www.printful.com/)           |
+| Shopify   | [https://www.shopify.com/](https://www.shopify.com/)             |
+| Upwork    | [https://www.upwork.com/](https://www.upwork.com/)               |
 
 ## Ongoing and startup costs
 
@@ -83,4 +83,9 @@ I calculated the starting costs for six or five months, when I needed a monthly 
 | Design for PDF layout 		 |  $250               |
 | MailChimp (ongoing) 			 |	$42 ($7/month x 6) |
 | Twitter ads 							 |	$25 for ads        |
-| **Total startup costs**    |  **$746**           |
+| Stickers                   |  $82 for 200        |
+| **Total startup costs**    |  **$828**           |
+
+Based on Lulu reporting, I see the book brought in about $2500 in 12 months of the first and second edition being available. So while the startup costs are not nothing, I did see a profit from the effort. Really, though, the effort is paid off in helping others see the benefits I've observed and in sharing and learning. Let me know what you think about this method, the tools, and of course, the resulting book, *Docs Like Code*.
+
+{% include sign-up.html %}
