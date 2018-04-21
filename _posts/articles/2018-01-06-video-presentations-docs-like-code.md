@@ -47,3 +47,5 @@ Even when I don't make it to the conference in person, the video recordings are 
 {% include youtube.html id=page.youtubeIdRiona %}
 
 All this to say, the docs-like-code concepts are widely practiced in our industry, and each conference provides more inspiring examples. Perhaps you can watch these presentations and be inspired to integrate code and doc techniques.
+
+{% include sign-up.html %}
