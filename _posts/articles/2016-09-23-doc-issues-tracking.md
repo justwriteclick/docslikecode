@@ -16,7 +16,7 @@ A definitive aspect of a docs-like-code philosophy is attention to quality and a
 
 ## What do you do when people say, "The Docs Suck."?
 
-It's a pretty simple ask:
+It's a pretty simple request:
 
 1. Tell me which page.
 1. Tell me your expectations for that page.
