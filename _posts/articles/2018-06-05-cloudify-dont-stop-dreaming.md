@@ -69,7 +69,7 @@ Release day arrived. I scheduled it on a Sunday to minimize disruption, of cours
 
 I finally merged the changes from my side-branch into the master branch and things went pretty smoothly. Some tweaks were required but nothing so bad that I needed to rollback again. Unfortunately, a few more days of struggle with redirections of old URLs using AWS S3 only brought frustration. Then, I found that I could add an alias to each page so that Hugo published HTML files at the old URL locations to redirect to the new URLs. I can safely say that was the final step that brought the project to a successful conclusion.
 
-![New Cloudify docs](images/cloudify/new-cloudify-docs.png)
+![New Cloudify docs](../../images/cloudify/new-cloudify-docs.png)
 
 ## Success at last!
 
