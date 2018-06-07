@@ -26,6 +26,7 @@ So this is the story…
 The first task I received when I arrived at the company seemed simple. “Our sidebar table of contents (TOC) has a long list of top-level categories that are not well organized and confusing to our customers.” Well, sounds easy enough. To get started, we’ll make a hierarchy that simplifies those categories into 5 groups that basically match 5 types of users. Once we get that quick win we can then look at the content in the categories and combine information in the different topics to condense the content into fewer topics. I figured I could have that done in a week with a lot of buffer. My boss said, “Great!”
 
 ![Old Cloudify docs](../../images/cloudify/old-cloudify-docs.png)
+
 ([Old Cloudify Docs Site](https://docs.cloudify.co/4.2.0))
 
 Now, here are the pitfalls that I met along the way:
@@ -47,6 +48,7 @@ After a few weeks of struggling to learn where everything was and getting nowher
 Then I looked for a Hugo theme that looked good for documentation and found DocDock. It had a lot of the things that I wanted, including TOC based on directory structure , a main landing page, expanding blocks, single-sourced excerpts, and greatly improved search functionality. When I added the theme to my repo, the site built right away. Great, finally something that worked smoothly! I showed the result to my boss and we agreed that there was a lot of hope here. I told her that I think we could get a fully-functioning POC in a week. Turned out to be a little optimistic.
 
 ![Hugo Docdock theme](../../images/cloudify/hugo-docdock.png)
+
 ([DocDock Theme Site](http://docdock.netlify.com/))
 
 Some of the challenges that I faced were:
@@ -72,6 +74,7 @@ Release day arrived. I scheduled it on a Sunday to minimize disruption, of cours
 I finally merged the changes from my side-branch into the master branch and things went pretty smoothly. Some tweaks were required but nothing so bad that I needed to rollback again. Unfortunately, a few more days of struggle with redirections of old URLs using AWS S3 only brought frustration. Then, I found that I could add an alias to each page so that Hugo published HTML files at the old URL locations to redirect to the new URLs. I can safely say that was the final step that brought the project to a successful conclusion.
 
 ![New Cloudify docs](../../images/cloudify/new-cloudify-docs.png)
+
 ([New Cloudify Docs Site](https://docs.cloudify.co/))
 
 ## Success at last!
