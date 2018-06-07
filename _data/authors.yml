@@ -48,3 +48,10 @@ tom_johnson:
   github: //github.com/tomjoht
   twitter: http://twitter.com/tomjohnson
   bio: "Technical Writer"
+
+ben_mansheim:
+  name: Ben Mansheim
+  picture: https://docslikecode.com/images/ben-mansheim.jpg
+  github: //github.com/bmansheim
+  twitter:
+  bio: "Technical Writer"

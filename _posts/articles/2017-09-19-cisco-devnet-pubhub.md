@@ -40,7 +40,7 @@ What did the DevNet team come up with? Let's take a look.
 
 ## What site or sites do you create from a set of Git-based repositories?
 
-The site is [developer.cisco.com](https://developer.cisco.com), and content comes from multiple repository sources, with multiple source types including markdown, RAML, and OpenAPI buit with YAML or JSON.
+The site is [developer.cisco.com](https://developer.cisco.com), and content comes from multiple repository sources, with multiple source types including markdown, RAML, and OpenAPI built with YAML or JSON.
 
 There's also [learninglabs.cisco.com](https://learninglabs.cisco.com), which is also built from repositories containing markdown for content, and JSON files for navigation elements.
 
