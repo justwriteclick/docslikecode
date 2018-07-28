@@ -161,3 +161,5 @@ Each time that the code builds, the `swagger.json` file updates with the most cu
 Static site generators are all the rage, and for good reason. Providing a lightweight framework that can be deployed quickly is a huge asset when documenting APIs, especially external-facing documentation. Numerous options are available, but DapperDox felt like the right fit for our needs.
 
 The pain of determining why DapperDox was broken and the additional coding required to fix the problem was worth the effort, and we are poised to integrate this process into the next set of APIs that our team develops.
+
+{% include sign-up.html %}

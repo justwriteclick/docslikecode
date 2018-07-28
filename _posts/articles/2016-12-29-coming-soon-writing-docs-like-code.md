@@ -12,7 +12,7 @@ comments: true
 share: true
 ---
 
-I'm working hard on a new book with two collaborators, Diane Skwish and Kelly Holcomb, titled "Write Docs Like Code." We're editing and organizing like mad now, working hard to get all our experiences and best practices written down for the world to see. So I ask you, what do you want to know about writing docs like code?
+I've been working hard on a new book with two collaborators, Diane Skwish and Kelly Holcomb, titled "Docs Like Code." We're editing and organizing like mad now, working hard to get all our experiences and best practices written down for the world to see. So I ask you, what do you want to know about writing docs like code?
 
 Here are some of the topics:
 
@@ -27,6 +27,6 @@ Here are some of the topics:
 * Tutorials: Get started with docs like code
 * What about wikis?
 
-When you treat docs as code, what are your biggest barriers? Your looming concerns? Let me know so we can address these in the book itself. Sign up below to find out when the book is available.
+When you treat docs as code, what are your biggest barriers? Your looming concerns? Let me know so we can address these. Sign up below to learn more together.
 
 {% include sign-up.html %}
