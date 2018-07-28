@@ -1,7 +1,11 @@
 ---
-layout: post
+layout: collection
 title: Static Site Generator with CICD for Docs
-excerpt: "Brought to you by the author of the Just Write Click blog, Anne Gentle."
+excerpt: "Choose your own adventure to learn more techniques."
+layout: collection
+permalink: /adventure/
+collection: adventures
+entries_layout: grid
 last_modified_at: Sat Jul 28 10:56:38 CDT 2018
 ---
 
