@@ -12,6 +12,7 @@ image:
 comments: true
 share: true
 ---
+{% include sign-up.html %}
 
 Open source API documentation generators
 ========================================
@@ -295,3 +296,5 @@ An **Application Programming Interface (API)** is a set of clearly defined metho
 -   **API providers**: To provide an overview of free and open source tools for companies that want to share, update or customize their API docs or developer portal.
 -   **Developer portal builders**: To provide an independent review of existing developer portal solutions that developer teams tasked with building developer portals can use as a reference in discussions with their clients, to make it easier to select the one that best fits their needs.
 -   **Technical writers**: To create a resource that tech writers can use to select the API documentation infrastructure that fits best with their existing authoring workflows.
+
+{% include sign-up.html %}
