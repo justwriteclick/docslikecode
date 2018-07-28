@@ -67,3 +67,5 @@ Because the system is meant for individual teams to review their own content, th
 ## Do you have automation? If so, what type or tooling, and where is the automation in the workflow?
 
 Yes, absolutely as that's one of the drivers for the system, is to enable automation and integration into existing CI/CD workflows to keep in sync with code changes. The PubHub system uses Apache Kafka to manage notifications on updates for each repo and then publish them as static files. The automation for publishing is triggered when the team makes a "release" of the repository, indicating that the content is ready for public consumption.
+
+{% include sign-up.html %}
