@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code
+title: Let's Treat Docs Like Code
 locale: en-US
-description: When you want to write more content, create accurate technical docs, iterate with collaborators, test drafts, merge, build, and deploy docs.
+description: Read stories, learn through adventures, share with others.
 logo: /images/treat-docs-like-code.png
 #url: http://127.0.0.1:4000
 url: https://www.docslikecode.com
