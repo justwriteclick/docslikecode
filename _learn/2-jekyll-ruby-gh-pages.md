@@ -1,9 +1,9 @@
 ---
 title: "Set Up Ruby with Jekyll"
 image:
-  path: /images/chocolate-chip-cookies-lg.jpg
-  thumbnail: /images/chocolate-chip-cookies-400x200.jpg
-  caption: "Photo from [Pexels](https://www.pexels.com)"
+  path: /images/learn/jekyll-docs-page.png
+  thumbnail: /images/learn/ruby-logo400x200.png
+  caption: "Screenshot using Minimal Mistakes theme"
 ---
 
 To prepare your environment to build Jekyll sites locally, follow the instructions for either Windows or MacOS.

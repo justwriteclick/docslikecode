@@ -1,9 +1,9 @@
 ---
 title: "GitHub for documentation sites"
 image:
-  path: /images/chocolate-chip-cookies-lg.jpg
-  thumbnail: /images/chocolate-chip-cookies-400x200.jpg
-  caption: "Photo from [Pexels](https://www.pexels.com)"
+  path: /images/learn/mikecogh-trains.jpg
+  thumbnail: /images/learn/github-logo400x200.png
+  caption: "Photo from [Flickr:mikecogh](https://flic.kr/p/pEn3RB)"
 ---
 
 Learning GitHub or any source control system backed by `git` for documentation sites takes some time and practice. This set of lessons uses the Terminal rather than the desktop application or the web site UI, though both are valid ways to do a GitHub workflow.

@@ -1,9 +1,9 @@
 ---
 title: "Set Up Sphinx with Python"
 image:
-  path: /images/chocolate-chip-cookies-lg.jpg
-  thumbnail: /images/chocolate-chip-cookies-400x200.jpg
-  caption: "Photo from [Pexels](https://www.pexels.com)"
+  path: /images/learn/sphinx-docs-page.png
+  thumbnail: /images/learn/python-logo400x200.png
+  caption: "Screenshot from Read the Docs theme"
 ---
 
 There are two major versions of Python active today, Python 2 and Python 3. Sphinx works with either version. Python 3 is the current and recommended version, however many scripts and programs were written in Python 2 and have yet to be upgraded.

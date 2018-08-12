@@ -1,12 +1,12 @@
 ---
 title: "Advanced topics"
 image:
-  path: /images/chocolate-chip-cookies-lg.jpg
-  thumbnail: /images/chocolate-chip-cookies-400x200.jpg
-  caption: "Photo from [Pexels](https://www.pexels.com)"
+  path: /images/so-simple-sample-image-4.jpg
+  thumbnail: /images/site-logo.png
+  caption: "Photo from [Flickr:cogdog](https://flic.kr/p/4n9EFu)"
 ---
 
-Themes for for static site generators often provide the advanced user experience features such as search. You also analytize the theme to make decisions on the authoring side, such as a table format for large data tables. What about printed outputs, such as PDF? Or versions for the output and the source? Any performance gains you can make with the builds themselves? Themes are only one part of this analysis.
+Themes for static site generators often provide the advanced user experience features such as search. You also analyze the theme to make decisions on the authoring side, such as a table format for large data tables. What about printed outputs, such as PDF? Or versions for the output and the source? Any performance gains you can make with the builds themselves? Themes are one part of this analysis.
 
 These advanced topics may have different underlying implementations with dependencies on parts of the entire system. Some requirements depend on the static site generator, some depend on the theme, some depend on the source format itself. For each topic, let's look at considerations and options for each tool.
 
@@ -111,14 +111,12 @@ If you also output PDF using LaTeX with Sphinx, be aware that there's a column s
 
 ```
 .. tabularcolumns:: |l|c|p{5cm}|
-
 +--------------+---+-----------+
 |  simple text | 2 | 3         |
-+--------------+---+-----------+x
++--------------+---+-----------+
 ```
 
 ## Templating and data-based layouts and lists
-
 
 Jekyll uses the [Liquid templating engine](https://shopify.github.io/liquid/), originally built by Shopify, written in Ruby.
 
@@ -138,37 +136,9 @@ versions:
     url: http://docs.example.com/1.7/
 ```
 
-Then, to create a drop-down menu for versions with an unordered list, use a `for` loop:
-
-```
-{% for link in site.data.navigation.versions %}
-```
-
-Here's an example list that displays a drop-down menu:
-
-```
-<ul class="versions-list">
-              {% for link in site.data.navigation.versions %}
-                {% if link.url contains site.baseurl %}
-                  {% assign class = 'versions-dropdown__current' %}
-                {% endif %}
-                <li class="versions-list__item {{ class }}">
-                <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
-                </li>
-              {% endfor %}
-        </ul>
-```
+Then, to create a drop-down menu for versions with an unordered list, use a `for` loop.
 
 The Read the Docs theme for Sphinx does something similar to indicate the version, using values from the `conf.py` file for the project and a definition list rather than an unordered list:
-
-```
-<dl>
-        <dt>{{ _('Versions') }}</dt>
-        {% for slug, url in versions %}
-          <dd><a href="{{ url }}">{{ slug }}</a></dd>
-        {% endfor %}
-      </dl>
-```
 
 ## Translations
 

@@ -1,9 +1,9 @@
 ---
 title: "Set Up Automated Tests for Docs"
 image:
-  path: /images/chocolate-chip-cookies-lg.jpg
-  thumbnail: /images/chocolate-chip-cookies-400x200.jpg
-  caption: "Photo from [Pexels](https://www.pexels.com)"
+  path: /images/learn/travis-ci-logo400x200.png
+  thumbnail: /images/learn/travis-ci-logo400x200.png
+  caption: "Logo from [Travis CI](https://travis-ci.org)"
 ---
 
 You have choices for continuous integration systems that can run documentation tests. For this exercise, let's make a set of minimal tests: build the docs, and check the links and image references.
@@ -48,11 +48,11 @@ You can store an `.htmltest.yml` file in the root of the project to configure `h
 DirectoryPath: public
 ```
 
-## Test with TravisCI
+## Test with Travis CI
 
- First you must set up a TravisCI account at https://travis-ci.org by connecting to your GitHub account.
+ First you must set up a Travis CI account at https://travis-ci.org by connecting to your GitHub account.
 
- Open source and public repositories are free to use with TravisCI. Read more about plans and pricing at https://travis-ci.com/plans if you need to build docs in private repos.
+ Open source and public repositories are free to use with Travis CI. Read more about plans and pricing at https://travis-ci.com/plans if you need to build docs in private repos.
 
 ### Enable Travis builds for your GitHub repository
 

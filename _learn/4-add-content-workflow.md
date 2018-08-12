@@ -1,9 +1,9 @@
 ---
 title: "Working with content in GitHub repositories"
 image:
-  path: /images/chocolate-chip-cookies-lg.jpg
-  thumbnail: /images/chocolate-chip-cookies-400x200.jpg
-  caption: "Photo from [Pexels](https://www.pexels.com)"
+  path: /images/learn/octocat.png
+  thumbnail: /images/learn/octocat-github-logo400x200.png
+  caption: "Logo from [GitHub](https://github.com)"
 ---
 
 This section goes through the workflow for adding content, editing pages, and generally working on a docs site in a GitHub repo.

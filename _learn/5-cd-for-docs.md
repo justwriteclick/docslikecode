@@ -1,9 +1,9 @@
 ---
 title: "Continuous Deployment (CD) for Documentation Sites"
 image:
-  path: /images/chocolate-chip-cookies-lg.jpg
-  thumbnail: /images/chocolate-chip-cookies-400x200.jpg
-  caption: "Photo from [Pexels](https://www.pexels.com)"
+  path: /images/learn/netlify-logo400x200.png
+  thumbnail: /images/learn/netlify-logo400x200.png
+  caption: "[Netlify logo](https://netlify.com)"
 ---
 
 Continuous deployment lets you build the docs on another system and then place the files where the web server can serve them. CD can include both the building of the HTML files as well as deploying them to a host.

@@ -3,14 +3,14 @@
 - title: About
   url: /about/
 
-- title: Adventure
-  url: /adventure/
-
 - title: Articles
   url: /articles/
 
 - title: Book
   url: /book/
+
+- title: Learn
+  url: /learn/
 
 - title: Search
   url: /search/
