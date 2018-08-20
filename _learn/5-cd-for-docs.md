@@ -89,5 +89,5 @@ Once you have a Hugo site working locally, you can set up continous deployment o
 1. Grant access by clicking **Authorize Netlify**.
 1. Enter your GitHub password to grant access.
 1. In the next window, choose the repository that you want to deploy. Of course, you want to choose the one that has Hugo-based documentation source files.
-1. In the Netlify window, choose which branch to deploy from (such as `master`), the command to use (Hugo, which by default uses version 0.17), and the directory the deployed files are in (`public` by default). If you want to use Hugo 0.20 or another specific version, you should later enter it in a `netlify.toml` file in your repository.
+1. In the Netlify window, choose which branch to deploy from (such as `master`), the command to use (Hugo, which by default uses version 0.17), and the directory the deployed files are in (`public` by default). If you want to use Hugo 0.20 or a later specific version, you should later enter it in a `netlify.toml` file in your repository. Or, click **Advanced** and then **New variable** if you want to use the `HUGO_VERSION=0.47` variable.
 1. Click **Deploy site**.
