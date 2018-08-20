@@ -10,6 +10,7 @@ Themes for static site generators often provide the advanced user experience fea
 
 These advanced topics may have different underlying implementations with dependencies on parts of the entire system. Some requirements depend on the static site generator, some depend on the theme, some depend on the source format itself. For each topic, let's look at considerations and options for each tool.
 
+Examining themes
 Search options
 Performance considerations
 Print or PDF output

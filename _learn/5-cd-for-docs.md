@@ -45,8 +45,19 @@ Since this lesson is intended to be prescriptive, let's go through the manual se
 1. Finish by clicking **Add webhook**.
 1. You can verify if the webhook is working at the bottom of the GitHub page under **Recent Deliveries**. If you see a `Response 200`, then the webhook is correctly configured.
 
+>Note: You can configure a Sphinx project to use Markdown as source files. You update your `conf.py` file with this line when you want to use Markdown (`.md`) rather than ReStructured Text (`.rst`) files. Here's an example:
+   ```
+   # The suffix(es) of source filenames.
+   # You can specify multiple suffix as a list of string:
+   source_suffix = ['.rst', '.md']
+   source_parsers = {
+      '.md': 'recommonmark.parser.CommonMarkParser',
+   }
+   ```
 
 ## CICD: Deploy a Jekyll Project using GitHub Pages
+
+[GitHub Pages](https://pages.github.com/) is a hosted offering from GitHub itself so you can make web sites by building from GitHub repositories. For your GitHub account, you get one site and with an organization account you get another site, plus you can have unlimited project sites.
 
 Because GitHub Pages supports building sites using a gem-based theme, you can add a line to your `Gemfile` in your repo and then deploy using GitHub Pages from the branch of your choosing in your repository settings.
 
@@ -65,6 +76,18 @@ remote_theme: "mmistakes/minimal-mistakes"
 ```
 
 By default, you are specifying the `master` branch of the Minimal Mistakes theme with this configuration. You can also "pin" to a specific release by using `"mmistakes/minimal-mistakes@4.9.0"` instead of `"mmistakes/minimal-mistakes"`. I'd recommend using a specific release if you have an active docs site because it helps you with troubleshooting output. Your output remains stable when you pin to a release value and you can test first before a theme upgrade.
-1. Create a commit and push these changes to your GitHub repository. Once merged to the branch configured in your repo, the changes show up immediately at username.github.io/project-name.
+1. Create a commit and push these changes to your GitHub repository. Once merged to the branch configured in your repo, the changes show up in a few seconds at username.github.io/project-name.
 
 ## CICD: Deploy a Hugo Project using Netlify
+
+Once you have a Hugo site working locally, you can set up continous deployment on Netlify with a free account.
+
+1. [Sign up for free first](https://app.netlify.com/signup).
+1. Next, go to https://app.netlify.com/.
+1. Click **New site from Git**. One great feature of Netlify is that it can deploy from GitHub, GitLab, or BitBucket, no small feat!
+1. Click **GitHub** for this tutorial, but definitely feel free to explore other options later.
+1. Grant access by clicking **Authorize Netlify**.
+1. Enter your GitHub password to grant access.
+1. In the next window, choose the repository that you want to deploy. Of course, you want to choose the one that has Hugo-based documentation source files.
+1. In the Netlify window, choose which branch to deploy from (such as `master`), the command to use (Hugo, which by default uses version 0.17), and the directory the deployed files are in (`public` by default). If you want to use Hugo 0.20 or another specific version, you should later enter it in a `netlify.toml` file in your repository.
+1. Click **Deploy site**.
