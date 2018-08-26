@@ -91,7 +91,7 @@ Most people use Virtual Environments because it's a recommended practice when wo
     ```
 
     ```
-    (py3-sphinx) $ Python 3.6.5
+    (py3-sphinx) $ Python 3.7.0
     ```
 
 ## Install Sphinx in the Virtual Environment
