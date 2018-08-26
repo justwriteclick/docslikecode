@@ -54,25 +54,29 @@ DirectoryPath: public
 
  Open source and public repositories are free to use with Travis CI. Read more about plans and pricing at https://travis-ci.com/plans if you need to build docs in private repos.
 
+ Next, configure your docs repository to use Travis to run your test scripts, such as the link checker.
+
 ### Enable Travis builds for your GitHub repository
 
  1. Log in to https://travis-ci.com and go to your profile.
  1. Look for the repository in the list that you want to enable doc builds.
  1. Toggle the switch for that repository.
+ 1. Next, make sure you have scripts available to run as tests for each pull request.
 
 ### Create automation scripts in your repository
 
 For Sphinx, let's set up a script that only checks links, both external and internal.
 
-In your file editor, create and save a `linkcheck.sh` file in a `scripts` directory that contains:
-
-```
-!/usr/bin/env bash
-# halt script on error
-set -e
-# Build locally, deleting any existing doctrees, and then check links
-sphinx-build -E -W -b linkcheck source build
-```
+1. In your file editor, create a `linkcheck.sh` file in a `scripts` directory.
+1. Edit the file so that it contains the following bash commands to make the script:
+  ```
+  !/usr/bin/env bash
+  # halt script on error
+  set -e
+  # Build locally, deleting any existing doctrees, and then check links
+  sphinx-build -E -W -b linkcheck source build
+  ```
+1. Save the `linkcheck.sh` file in a `scripts` directory.
 
 ### Configure the Travis build with a .travis.yml file
 
@@ -89,16 +93,48 @@ python:
   script: ./scripts/linkcheck.sh
 ```
 
-For Jekyll, follow the steps in this documentation:
- https://jekyllrb.com/docs/continuous-integration/travis-ci/
+For Jekyll, follow the steps in this Jekyll documentation page, [Travis Ci](https://jekyllrb.com/docs/continuous-integration/travis-ci/).
 
+To see a working example of Jekyll with TravisCI, look at the [versions-jekyll](https://github.com/justwriteclick/versions-jekyll/) repository. Here's the `.travis.yml` file:
+```
+language: ruby
+rvm:
+- 2.2.5
 
+script: ./script/build-travis.sh
 
-### Test with Circle CI
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
-https://circleci.com/docs/2.0/project-walkthrough/ See also https://circleci.com/blog/markdown-proofer/
+sudo: false # routes build to container-based infrastructure for a faster build
+```
 
+The `/script/build-travis.sh` file contains these lines. Notice that the script passes in the `_config.yml` file.
+```
+#!/usr/bin/env bash
+set -e # halt script on error
 
-https://github.com/pantheon-systems/documentation/blob/master/scripts/merge_conflicts.sh
-and
-https://github.com/pantheon-systems/documentation/blob/master/circle.yml
+bundle exec jekyll build --config _config.yml
+```
+
+If you wanted to check links instead, you could make a link checking script like so:
+```
+#!/usr/bin/env bash
+set -e # halt script on error
+
+bundle exec jekyll build
+bundle exec htmlproofer ./_site
+```
+
+Look for more inspiration beyond link checking in the additional resources section. Enjoy higher-quality doc builds with some quality tests up front!
+
+## Additional resources
+
+[Test the Docs](https://testthedocs.org/)
+
+Pantheon docs examples
+* [Merge conflict test](https://github.com/pantheon-systems/documentation/blob/master/scripts/merge_conflicts.sh)
+* [CircleCI example configuration](https://github.com/pantheon-systems/documentation/blob/master/circle.yml)
+
+[How we spotted--and fixed--11 errors in our docs with our new markdown proofer](https://circleci.com/blog/markdown-proofer/)

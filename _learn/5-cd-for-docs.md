@@ -80,7 +80,7 @@ By default, you are specifying the `master` branch of the Minimal Mistakes theme
 
 ## CICD: Deploy a Hugo Project using Netlify
 
-Once you have a Hugo site working locally, you can set up continous deployment on Netlify with a free account.
+Once you have a Hugo site working locally, you can set up continuous deployment on Netlify with a free account.
 
 1. [Sign up for free first](https://app.netlify.com/signup).
 1. Next, go to https://app.netlify.com/.
@@ -92,3 +92,9 @@ Once you have a Hugo site working locally, you can set up continous deployment o
 1. In the Netlify window, choose which branch to deploy from (such as `master`), the command to use (Hugo, which by default uses version 0.17), and the directory the deployed files are in (`public` by default).
    > Note: If you want to use Hugo 0.20 or a later specific version, you should later enter it in a `netlify.toml` file in your repository. Or, click **Advanced** and then **New variable** if you want to use the `HUGO_VERSION=0.47` variable in the `[context.deploy-preview.environment]` and `[context.production.environment]` sections.
 1. Click **Deploy site**.
+
+## Additional resources
+
+[TravisCI Core Concepts for Beginners](https://docs.travis-ci.com/user/for-beginners)
+
+[Convert AsciiDoc to HTML/PDF & publish to GitHub Pages with Travis CI and Asciidoctor Docker containers](http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html)

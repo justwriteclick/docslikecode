@@ -75,6 +75,14 @@ There's also the benchmark command, documented on the [gohugo.io site](https://g
 
 ## Print or PDF output
 
+How difficult or straightforward is it to create a print or PDF format? You may want to investigate and test solutions beyond this article, as requirements and print tolerances can vary widely.
+
+### Jekyll PDF options
+
+In the Jekyll Documentation Theme site, Tom Johnson suggests buying a license for Prince XML ($500) in order to create print-ready PDF files with the Jekyll Documentation Theme. The PDF layout and styles are set using CSS. Considering that the only gem solution doesn't seem to make a PDF of multiple pages, the third-party solution is probably the way to go.
+
+### Sphinx PDF output
+
 When you use Read the Docs builds for deployment, you automatically get versioned documentation based on releases, as well as PDF output for the entire site. The PDF formatting is based on [LaTex](https://www.latex-project.org/), an open source typesetting system.
 
 ## Table layout and formatting

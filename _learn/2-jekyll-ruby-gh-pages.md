@@ -170,3 +170,8 @@ Once you've prepared your environment, you can build locally and review the site
 
 > ***TIP***
 > Leave the serve terminal open and running. Every time you save changes to a file, it automatically regenerates the site so you can test the output as you write. That said, if you change the `_config.yml` file, you must stop (ctrl-c) and then re-run the serve command to see changes.
+
+# Additional resources
+[Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/)
+[Lynda.com Web foundations, GitHub Pages](https://www.lynda.com/Web-Development-tutorials/GitHub-pages/609031/654613-4.html)
+[Jekyll documentation about GitHub Pages](https://jekyllrb.com/docs/github-pages/)

@@ -31,51 +31,48 @@ You can also set up Docker and then use this [Docker image](https://hub.docker.c
 
 ## Starting a Hugo site
 
-For a Hugo static site, you can choose your specific theme after you create the source files. The theme we'll use in this tutorial is hugo-theme-learn(). To start a new site in the current folder, run:
+For a Hugo static site, you can choose your specific theme after you create the source files. The theme we'll use in this tutorial is [hugo-theme-learn](https://themes.gohugo.io/hugo-theme-learn/). To start a new site in the current folder, run:
 
    ```
    $ hugo new site docs-as-code
    ```
 
 1. Take a look at the files created in the directory with an `ls` command:
-
-```
-$ ls -A
-archetypes	content		layouts		themes
-config.toml	data		static
-```
+  ```
+  $ ls -A
+  archetypes	content		layouts		themes
+  config.toml	data		static
+  ```
 1. Edit `config.toml` in any text editor you like to get started. Choose a title for your site and the theme, in our case, `hugo-theme-learn`. The theme name in your configuration file must match the name of the specific theme directory inside the `/themes` directory, so we will add those files in the next step.
-
-```
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "Learning Hugo Site"
-theme = "hugo-theme-learn"
-```
+  ```
+  baseURL = "http://example.org/"
+  languageCode = "en-us"
+  title = "Learning Hugo Site"
+  theme = "hugo-theme-learn"
+  ```
 1. To get the theme files in the `/themes` directory, change to the themes directory, and then use a `git clone` command to get the required theme files.
-```
-$ cd themes
-$ git clone https://github.com/matcornic/hugo-theme-learn.git
-```
+  ```
+  $ cd themes
+  $ git clone https://github.com/matcornic/hugo-theme-learn.git
+  ```
 1. For Hugo, the `content` folder contains the site source content. For your home page, make an `_index.md` document in the `content` folder and write it with Markdown content. Switch back up one level since you just cloned the theme files.
-```
-$ cd ..
-$ hugo new _index.md
-```
+  ```
+  $ cd ..
+  $ hugo new _index.md
+  ```
 1. Next, add a new page using the `hugo` command, `hugo new`:
-```
-$ hugo new prerequisites.md
-/Users/agentle/src/hugo-example/doc-machine/content/prerequisites.md created
-```
+  ```
+  $ hugo new prerequisites.md
+  /Users/agentle/src/hugo-example/doc-machine/content/prerequisites.md created
+  ```
 1. You can keep adding files with the `hugo new` command so that the Markdown files are pre-populated with the front matter:
-
-```
----
-title: "Prerequisites"
-date: 2018-06-16T10:38:19-05:00
-draft: true
----
-```
+  ```
+  ---
+  title: "Prerequisites"
+  date: 2018-06-16T10:38:19-05:00
+  draft: true
+  ---
+  ```
 
 ## Build a Hugo site locally
 

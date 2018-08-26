@@ -86,35 +86,35 @@ Now, your local environment is all ready for new changes.
 When you're the only person working in a repo, you can use a simple workflow, where you simply create a branch for whatever amount of work you want to do, and then merge that branch to the master branch when you want to publish. If you're on a small team, each team member can do the same, keeping the workflow simple, where the `master` branch is the one that is published each time. Here's a walkthrough for a branch and pull workflow.
 
 1. Every time you work in a folder that's a GitHub repo, run a `git status` command to figure out if you have any changes on the branch you're working within.
-```
-$ git status
-```
+  ```
+  $ git status
+  ```
 1. Once you know what changes you have on a local branch, decide whether to keep working in that branch, or start over with the current `master` branch. To start again with a new copy of master from the remote, run these commands to update your master branch locally.
-```
-$ git checkout master
-$ git remote update
-$ git pull origin master
-```
+  ```
+  $ git checkout master
+  $ git remote update
+  $ git pull origin master
+  ```
 1. Next, create a new branch to make new changes in:
-```
-$ git checkout -b new-branch
-```
+  ```
+  $ git checkout -b new-branch
+  ```
 1. Make your edits in the files, and add new files if needed.
 1. Double-check that the changes are what you expect, by building locally.
 
     These are the basic build commands on the three SSGs:
-    Sphinx:
+    **Sphinx**:
     ```
     $ make html
     ```
-    Open build/html/index.html in your browser.
+    Open `build/html/index.html` in your browser.
 
-    Jekyll:
+    **Jekyll**:
     ```
     $ bundle exec jekyll serve
     ```
     Open http://127.0.0.1:4000 in your browser.
-    Hugo:
+    **Hugo**:
     ```
     $ hugo server
     ```
@@ -123,14 +123,18 @@ $ git checkout -b new-branch
     Repeat the editing and building steps to your satisfaction.
 
 1. Once you have the changes you need, commit to the branch:
-```
-$ git commit -a -m "These are my changes, such as edits"
-```
+  ```
+  $ git commit -a -m "These are my changes, such as edits"
+  ```
 1. Now, push your changes to the remote so that you can create a pull request.
-```
-$ git push origin new-branch
-```
+  ```
+  $ git push origin new-branch
+  ```
 1. Open the GitHub.com repository URL to open the Pull Request, comparing `new-branch` to `master`.
 1. On the Pull Request in GitHub, make sure that your continuous integration tests pass.
 1. Once you are satisfied with all the changes, merge the changes to the `master` branch by clicking the Merge button on GitHub.
 1. Now, look for the continuous deployment site online on readthedocs.org, GitHub Pages, or Netlify.
+1. Don't forget to reset your local branch to the `master` branch that is now available in the newly-merged master on GitHub! This is the same as in step 2 above, but uses semi-colons so you can run the commands all in one line.
+  ```
+  $ git checkout master; git remote update; git pull origin master
+  ```

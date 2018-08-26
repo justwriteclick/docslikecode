@@ -245,21 +245,14 @@ _site
 .DS_Store
 ```
 
-For Hugo, you want to ignore these files and folders. The `static` folder could be named `public`, depending on your configuration
+For Hugo, you want to ignore these files and folders. The `static` folder could be named `public`, depending on your configuration.
 ```
 static
+public # depends on configuration
 .DS_Store
 ```
 
-## Next, set up your Static Site Generator locally
-
-Hugo -
-Jekyll -
-Sphinx -
-
-
-![Hugo docs page](images/hugo-docs-page.png)
-
-![Jekyll docs page](images/jekyll-docs-page.png)
-
-![Sphinx docs page](images/sphinx-docs-page.png)
+## Additional resources
+[Learning Git and GitHub resources on help.github.com](https://help.github.com/articles/git-and-github-learning-resources/)
+[GitHub Guides](https://guides.github.com/)
+[Pro Git](https://git-scm.com/book/en/v2)
