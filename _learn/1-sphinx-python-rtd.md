@@ -10,19 +10,19 @@ There are two major versions of Python active today, Python 2 and Python 3. Sphi
 
 Mac OS includes a version of Python 2 by default, but it is NOT the latest version of Python 2. Install the latest version of Python 2 using `homebrew`, a package manager on Mac.
 
-#### Installing Python 2.7.14 on Mac
+#### Installing Python 2.7.x on Mac
 
-1. Open a terminal and use `brew` to install Python 2.7.14.
+1. Open a terminal and use `brew` to install Python 2.7.x.
 
     ```
     brew install python@2
     ```
 
-#### Installing Python 3.6.5
+#### Installing Python 3.x
 
 You also want the latest version of Python 3 available.
 
-1. Open a terminal and use brew to install Python 3.6.5.
+1. Open a terminal and use brew to install the latest Python 3.x (currently 3.7).
 
     ```
     brew install python
@@ -36,20 +36,18 @@ You also want the latest version of Python 3 available.
     ```
     python2.7 -V
     ```
-
+    Expected output for August 2018:
     ```
-    # Expected Output
-    Python 2.7.14
+    Python 2.7.15
     ```
 1. Verify that Python 3 is correctly installed.
 
     ```
-    python3.6 -V
+    python3.7 -V
     ```
-
+    Expected output for August 2018:
     ```
-    # Expected Output
-    Python 3.6.5
+    Python 3.7.0
     ```
 
 1. Check the version set as the default version, the version of Python that is executed when you simply enter `python`.  The default version of Python remains a Python 2.7 version.
@@ -57,20 +55,19 @@ You also want the latest version of Python 3 available.
     ```
     python -V
     ```
-
+    Expected output for August 2018:
     ```
-    # Expected Output
-    Python 2.7.14
+    Python 2.7.15
     ```
 ## Set Up Virtual Environment
 
 Let's ensure that you know how to create Python Virtual Environments for each version of Python. These [Python Virtual Environments](https://docs.python.org/3/tutorial/venv.html) provide a method of creating isolated "environments" where you can work with specific versions of Python along with independent sets of libraries and dependencies.
 
-Most people use Virtual Environments because it's a recommended practice when working in Python.
+Most people use Virtual Environments because it's a recommended practice when working in Python to ensure a known starting point or state.
 
 **Python 3**
 
-1. First create a Python 3 virtual environment using the `venv` module included with Python 3. Notice using `python3.6` to be clear which version of Python you want.
+1. First create a Python 3 virtual environment using the `venv` module included with Python 3. Notice the example uses `python3.7` to be clear which version of Python you want.
 
     ```
     python3.6 -m venv py3-sphinx
