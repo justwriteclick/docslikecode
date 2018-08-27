@@ -3,7 +3,6 @@ title: "Advanced topics"
 image:
   path: /images/so-simple-sample-image-4.jpg
   thumbnail: /images/site-logo.png
-  caption: "Photo from [Flickr:cogdog](https://flic.kr/p/4n9EFu)"
 ---
 
 Themes for static site generators often provide the advanced user experience features such as search. You also analyze the theme to make decisions on the authoring side, such as a table format for large data tables. What about printed outputs, such as PDF? Or versions for the output and the source? Any performance gains you can make with the builds themselves? Themes are one part of this analysis.
@@ -79,11 +78,15 @@ How difficult or straightforward is it to create a print or PDF format? You may 
 
 ### Jekyll PDF options
 
-In the Jekyll Documentation Theme site, Tom Johnson suggests buying a license for Prince XML ($500) in order to create print-ready PDF files with the Jekyll Documentation Theme. The PDF layout and styles are set using CSS. Considering that the only gem solution doesn't seem to make a PDF of multiple pages, the third-party solution is probably the way to go.
+In the Jekyll Documentation Theme site, Tom Johnson suggests buying a license for Prince XML ($500) in order to create print-ready PDF files with the Jekyll Documentation Theme. The PDF layout and styles are set using CSS. Considering that the only gem solution, [jekyll-pdf](https://github.com/abeMedia/jekyll-pdf), makes PDF files of single pages rather than a collection, the third-party solution is probably the way to go.
 
 ### Sphinx PDF output
 
-When you use Read the Docs builds for deployment, you automatically get versioned documentation based on releases, as well as PDF output for the entire site. The PDF formatting is based on [LaTex](https://www.latex-project.org/), an open source typesetting system.
+When you use Read the Docs builds for deployment, you automatically get versioned documentation based on releases, as well as PDF output for the entire site. The PDF formatting is based on [LaTex](https://www.latex-project.org/), an open source typesetting system. It has page numbering, linking, and footnotes.
+
+### Hugo PDF output
+
+Hugo supports many [custom output formats through templates](https://gohugo.io/templates/output-formats/), but as of right now no one has written a series of templates for PDF, based on the discussions in various Issues. ([#1360 Generate concatenated document for Kindle/PDF generation](https://github.com/gohugoio/hugo/issues/1360)) ([#3530 Add alternative rendering format for LaTeX](https://github.com/gohugoio/hugo/issues/3530)). You could also use Prince XML as a solution here, similar to Jekyll.
 
 ## Table layout and formatting
 
@@ -158,20 +161,3 @@ You can also deploy Jekyll gem-based sites using free hosting options as alterna
 * GitLab also offers GitLab Pages, read more [about how to set it up to learn how](https://about.gitlab.com/2016/04/07/gitlab-pages-setup/).
 
 *  [Netlify](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/) provides the same capability as GitHub and GitLab with the Ruby gem configuration described in this tutorial and in the [Minimal Mistakes theme documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#ruby-gem-method).
-
-## Examining themes
-
-Here's a short list of questions you may want to ask about the theme you use for a static site generator.
-
-* Versions - Many themes do not have a version picker by default. You might want a drop-down list or navigation that could include version. The Sphinx Read the Docs theme does have one and it works great. For Jekyll, look at the [versions-jekyll repository](https://github.com/justwriteclick/versions-jekyll) to see a couple of implementation ideas.
-* Search - Is the search in a prominent location and if needed, can you move it around? Does the search work on mobile devices?
-* Responsive and mobile design in the theme - Does the theme use thoughtful navigation and search when on a small screen?
-* Navigation and configuration possibilities - Does the theme have a sidebar, breadcrumbs, and an in-page table of contents? Can you turn on or off each based on the page layout or page template or whether the person is using a mobile browser or tablet?
-* Images - Are images automatically resized when looking at them on a mobile browser or resized browser window? Are alt tags and captions considered in the design?
-* Tables - Do tables work on different browsers? If PDF or epub is another output option, do the tables still work on a particular page size or do you need to adjust how tables are made in the source file itself for good results in the output?
-* Admonitions or notes - Are there designs for output of levels of admonition, such as warning, information, and note?
-* Comment engines and social media support - Which comment engines are supported and do they work with what other organizations use in your company or group? If you want Twitter cards for your documentation pags, are they available through the theme?
-* Localization support - When translations are available, are they simple to get to and does the theme itself have the ability to be localized, such as for the search form, can the word "Search" be localized?
-* Customization - How straightforward is it to add your logo or a header that's common to multiple web sites? Can you learn how to maintain the theme's customizations yourself or will you need to rely on a web developer for maintenance and any enhancements such as adding a version drop-down list? For example, the Jekyll theme "Minimal Mistakes" is "skinnable," meaning you can [configure various color variations](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) for that theme.
-* Theme delivery for new theme versions - How easy is it to upgrade the theme files? Can you make regular updates through a version-control system and know exactly which theme you have in use?
-* Code syntax and highlighting - For code examples, can you set the exact highlight you want to use, such as JavaScript or Python or Bash? Does the code snippet have a copy icon for copying only the code and not copying a prompt?

@@ -135,5 +135,19 @@ Most people use Virtual Environments because it's a recommended practice when wo
   ```
   $ make html
   ```
-1. In your browser, open the `build/html/index.html` file to take a look at your Sphinx site locally. You can also look at `build/html/prerequisites.html` and `build/html/about.html`.
-1. Make sure you commit your changes to the Git repository by following the steps in "Add the Project to GitHub."
+1. In your browser, open the `build/html/index.html` file to take a look at your Sphinx site locally. You can also look at `build/html/prerequisites.html` and `build/html/about.html` though they won't be linked to the main page until you add them as a link or in a table of contents entry.
+1. Edit the `source/index.rst` file to include links to the additional pages. Here is an example:
+  ```
+  .. toctree::
+     :maxdepth: 2
+     :caption: Contents:
+
+     about.rst
+     prerequisites.rst
+  ```
+1. Build again to see these changes locally:
+  ```
+  $ make html
+  ```
+1. In your browser, refresh the `build/html/index.html` page to see the new Contents with two entries linked.
+1. Make sure you commit your changes to the Git repository by following the steps in "Working with content in GitHub repositories."
