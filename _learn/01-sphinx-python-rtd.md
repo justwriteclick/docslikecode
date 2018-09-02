@@ -6,9 +6,9 @@ image:
   caption: "Screenshot from Read the Docs theme"
 ---
 
-There are two major versions of Python active today, Python 2 and Python 3. Sphinx works with either version. Python 3 is the current and recommended version, however many scripts and programs were written in Python 2 and have yet to be upgraded.
+Sphinx works with either major versions of Python active today, Python 2 and Python 3. Python 3 is the current and recommended version. Sphinx is a documentation tool that creates HTML, CSS, and JavaScript files from [ReStructured](http://docutils.sourceforge.net/rst.html) text files.
 
-Mac OS includes a version of Python 2 by default, but it is NOT the latest version of Python 2. Install the latest version of Python 2 using `homebrew`, a package manager on Mac.
+In case you need both versions, this tutorial walks through both on a Mac. Refer to the [Downloads on the Python site](https://www.python.org/downloads/windows/) for Windows.
 
 #### Installing Python 2.7.x on Mac
 
@@ -110,6 +110,8 @@ Most people use Virtual Environments because it's a recommended practice when wo
 
 ## Create a Basic Sphinx Project
 
+You can also get familiar with [ReStructured text](http://docutils.sourceforge.net/docs/user/rst/quickstart.html), a plain text markup syntax system that you use to write content in Sphinx documentation. Sphinx can also accept [Markdown](https://commonmark.org/help/) files.
+
 1. Create a new directory for your project:
   ```
   (py3-sphinx) $ mkdir do-docs-as-code
@@ -151,3 +153,8 @@ Most people use Virtual Environments because it's a recommended practice when wo
   ```
 1. In your browser, refresh the `build/html/index.html` page to see the new Contents with two entries linked.
 1. Make sure you commit your changes to the Git repository by following the steps in "Working with content in GitHub repositories."
+
+## Additional resources
+
+[Sphinx Python Documentation Generator](http://www.sphinx-doc.org/en/stable/)
+[ReStructured text documentation](http://docutils.sourceforge.net/rst.html)

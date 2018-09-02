@@ -6,7 +6,7 @@ image:
   caption: "Screenshot using Minimal Mistakes theme"
 ---
 
-To prepare your environment to build Jekyll sites locally, follow the instructions for either Windows or MacOS.
+Jekyll is a Static Site Generator that typically accepts [Markdown](http://commonmark.org/help/) for authoring. [Jekyll](https://jekyllrb.com/) has its own documentation site and a [Quickstart](https://jekyllrb.com/docs/). To prepare your environment to build Jekyll sites locally, follow the instructions for either Windows or MacOS.
 
 ## Set up Ruby and Jekyll on Windows with Docker
 
@@ -172,6 +172,8 @@ Once you've prepared your environment, you can build locally and review the site
 > Leave the serve terminal open and running. Every time you save changes to a file, it automatically regenerates the site so you can test the output as you write. That said, if you change the `_config.yml` file, you must stop (ctrl-c) and then re-run the serve command to see changes.
 
 # Additional resources
+
+[Markdown reference](http://commonmark.org/help/)
 [Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/)
 [Lynda.com Web foundations, GitHub Pages](https://www.lynda.com/Web-Development-tutorials/GitHub-pages/609031/654613-4.html)
 [Jekyll documentation about GitHub Pages](https://jekyllrb.com/docs/github-pages/)

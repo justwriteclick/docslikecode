@@ -123,3 +123,8 @@ themeVariant = "green"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 ```
+
+## Additional resources
+
+[Hugo Quickstart](https://gohugo.io/getting-started/quick-start/)
+[Hugo Themes web site](https://themes.gohugo.io/)
