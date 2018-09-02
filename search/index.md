@@ -6,3 +6,6 @@ image:
 search: false
 sitemap: false
 ---
+
+
+{% include sign-up.html %}

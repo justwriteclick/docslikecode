@@ -2,7 +2,7 @@
 
 title: Let's Treat Docs Like Code
 locale: en-US
-description: Read stories, learn through adventures, share with others.
+description: Read stories, learn through practice, share with others.
 logo: /images/treat-docs-like-code.png
 #url: http://127.0.0.1:4000
 url: https://www.docslikecode.com
@@ -25,9 +25,6 @@ footer_links:
 permalink:   /:categories/:title/
 markdown:    kramdown
 highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: compressed
 plugins:
   - jekyll-sitemap
   - jekyll-gist
@@ -47,6 +44,31 @@ kramdown:
   enable_coderay: false
 
 mathjax: false
+
+# Collection for workshops and tutorials
+collections:
+  learn:
+    output: true
+    permalink: /:collection/:path/
+
+# Front Matter Defaults
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comments: false
+      share: true
+  # Workshop defaults
+  - scope:
+      path: "_learn"
+      type: learn
+    values:
+      layout: post
+      comments: true
+      share: true
 
 include: [".htaccess"]
 exclude: ["_drafts", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
