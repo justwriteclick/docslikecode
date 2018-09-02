@@ -28,7 +28,7 @@ Once you have a simple set of pages, you can set up continuous deployment on the
 1. Once you have a connected account, go to your profile on readthedocs.org and click **My Projects** to see a list of your repositories that Read the Docs service can access.
 1. To import your new project, click the **+** import icon next to the repository name. Click **Import Manually** if you do not see the repository listed after refreshing your accounts.
 
-### CICD: Deploy a Sphinx project to readthedocs.org
+### Next: Deploy a Sphinx project to readthedocs.org
 
 When you have a local project you want to deploy to a web site, you can set up the configuration for Continuous Deployment (CD) on readthedocs.org.
 
@@ -55,7 +55,7 @@ Since this lesson is intended to be prescriptive, let's go through the manual se
    }
    ```
 
-## CICD: Deploy a Jekyll Project using GitHub Pages
+## Deploy a Jekyll Project using GitHub Pages
 
 [GitHub Pages](https://pages.github.com/) is a hosted offering from GitHub itself so you can make web sites by building from GitHub repositories. For your GitHub account, you get one site and with an organization account you get another site, plus you can have unlimited project sites.
 
@@ -78,7 +78,7 @@ remote_theme: "mmistakes/minimal-mistakes"
 By default, you are specifying the `master` branch of the Minimal Mistakes theme with this configuration. You can also "pin" to a specific release by using `"mmistakes/minimal-mistakes@4.9.0"` instead of `"mmistakes/minimal-mistakes"`. I'd recommend using a specific release if you have an active docs site because it helps you with troubleshooting output. Your output remains stable when you pin to a release value and you can test first before a theme upgrade.
 1. Create a commit and push these changes to your GitHub repository. Once merged to the branch configured in your repo, the changes show up in a few seconds at username.github.io/project-name.
 
-## CICD: Deploy a Hugo Project using Netlify
+## Deploy a Hugo Project using Netlify
 
 Once you have a Hugo site working locally, you can set up continuous deployment on Netlify with a free account.
 

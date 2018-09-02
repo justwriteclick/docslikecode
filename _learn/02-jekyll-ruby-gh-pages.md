@@ -167,11 +167,12 @@ Once you've prepared your environment, you can build locally and review the site
 1. Use the **Server address** URL  `http://127.0.0.1:4000/latest/` in a browser to preview the content.
 
 1. Press `Ctrl+C` in the serve terminal to stop the server.
+    > ***TIP***
+    > Leave the serve terminal open and running. Every time you save changes to a file, it automatically regenerates the site so you can test the output as you write. That said, if you change the `_config.yml` file, you must stop (ctrl-c) and then re-run the serve command to see changes.
 
-> ***TIP***
-> Leave the serve terminal open and running. Every time you save changes to a file, it automatically regenerates the site so you can test the output as you write. That said, if you change the `_config.yml` file, you must stop (ctrl-c) and then re-run the serve command to see changes.
+1. Don't forget to add the files to a commit and then commit the changes so that you can track the changes and work with others on GitHub. Refer to [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/).
 
-# Additional resources
+## Additional resources
 
 [Markdown reference](http://commonmark.org/help/)
 [Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/)

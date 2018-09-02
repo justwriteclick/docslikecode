@@ -152,7 +152,7 @@ You can also get familiar with [ReStructured text](http://docutils.sourceforge.n
   $ make html
   ```
 1. In your browser, refresh the `build/html/index.html` page to see the new Contents with two entries linked.
-1. Make sure you commit your changes to the Git repository by following the steps in "Working with content in GitHub repositories."
+1. Make sure you commit your changes to the Git repository by following the steps in [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/).
 
 ## Additional resources
 
