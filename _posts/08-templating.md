@@ -11,31 +11,9 @@ Templates within static site generators enable you to use variables or metadata 
 * Hugo has a packaged templating engine similar to liquid, but Go-based. Read more in [Introduction to Hugo Templating](https://gohugo.io/templates/introduction/).
 * Sphinx uses Python for any extensibility you need. I find it helpful to browse through the [Read the Docs Theme](https://github.com/rtfd/sphinx_rtd_theme) to find examples of templating.
 
-When using a templating engine like Liquid in Jekyll, you can access the version value from a data file such as in the `_data` folder in a `navigation.yml` file. For example, when the URLs for versions are built to static folders with the version value, you can then put the version values into a data format along with the URls:
+When using a templating engine like Liquid in Jekyll, you can access the version value from a data file. Read more in the Liquid documentation about [Iteration](https://shopify.github.io/liquid/tags/iteration/).
 
-```
-versions:
-  - title: "Latest (1.8)"
-    url: http://docs.example.com/latest/
-  - title: "Version 1.8"
-    url: http://docs.example.com/1.8/
-  - title: "Version 1.7"
-    url: http://docs.example.com/1.7/
-```
-
-Then, to create a drop-down menu for versions with an unordered list, use a `for` loop. You can see an example of this in the `versions-jekyll` repository at https://github.com/justwriteclick/versions-jekyll.
-
-The Read the Docs theme for Sphinx does something similar to indicate the version, using values from the `conf.py` file for the project and a definition list rather than an unordered list:
-
-```
-      <dl>
-        <dt>{{ _('Versions') }}</dt>
-        {% for slug, url in versions %}
-          <dd><a href="{{ url }}">{{ slug }}</a></dd>
-        {% endfor %}
-      </dl>
-```
-
+The Read the Docs theme for Sphinx uses Python variables to indicate the version, using values from the `conf.py` file for the project and a definition list rather than an unordered list.
 
 ## Additional resources
 
