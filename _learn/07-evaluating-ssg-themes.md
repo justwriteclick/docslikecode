@@ -5,7 +5,9 @@ image:
   thumbnail: /images/learn/ssg-themes400x225.png
 ---
 
-Themes for static site generators often provide the advanced user experience features such as search. You also analyze the theme to make decisions on the authoring side, such as a table format for large data tables. What about printed outputs, such as PDF? Or versions for the output and the source? Any performance gains you can make with the builds themselves? Themes are one part of this analysis.
+Themes for static site generators often provide the advanced user experience features such as search. You also analyze the theme to make decisions on the authoring side, such as a table format for large data tables.
+
+What about printed outputs, such as PDF? Or versions for the output and the source? Any performance gains you can make with the builds themselves? Themes are one part of this analysis.
 
 Here's a short list of questions you may want to ask about the theme you use for a static site generator.
 

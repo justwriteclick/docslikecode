@@ -1,8 +1,8 @@
 ---
-title: "Static Site Generator search options"
+title: "Evaluating Static Site Generator search options"
 image:
   path: /images/learn/ssg-search-options.png
-  thumbnail: /images/ssg-search-options400x225.png
+  thumbnail: /images/learn/ssg-search-options400x225.png
 ---
 
 Most static site generators provide a browser-side search capability, where the list of indexed keywords for search are built at the same time as the output. Learn more about considerations for each SSG in the following sections.
