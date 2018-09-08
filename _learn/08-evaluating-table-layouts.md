@@ -1,9 +1,11 @@
 ---
 title: "Evaluating table layouts and formatting"
 image:
-  path: /images/so-simple-sample-image-4.jpg
-  thumbnail: /images/site-logo.png
+  path: /images/learn/table-layout.png
+  thumbnail: /images/learn/table-layout400x225.png
 ---
+
+Table layout can be an annoying and difficult aspect of using simple markdown as documentation source. That said, when using Markdown or RST tables you can compare changes to simple tables more easily during reviews.
 
 One of the most helpful tools when creating tables for Markdown or RST is the Tables Generator at https://www.tablesgenerator.com/markdown_tables. You can draw tables or paste table data and then render the ASCII-based output for pasting into your document source file.
 
