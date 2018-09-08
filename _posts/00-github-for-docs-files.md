@@ -12,7 +12,7 @@ Learning GitHub or any source control system backed by `git` for documentation s
 
 You can learn how to sign up for a GitHub account and pricing plans on [help.github.com](https://help.github.com/articles/signing-up-for-a-new-github-account/).
 
-You can do all these docs-as-code tutorials with a free GitHub account.
+You can do all these docs-as-code tutorials with a free GitHub account. I recommend using SSH keys rather than entering your password for each `git` command that requires authentication. Read about [Connecting to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/) in the GitHub user documentation.
 
 ## Learn basic Terminal and Git Bash commands
 

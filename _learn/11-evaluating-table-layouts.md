@@ -1,8 +1,8 @@
 ---
 title: "Evaluating table layouts and formatting"
 image:
-  path: /images/so-simple-sample-image-4.jpg
-  thumbnail: /images/site-logo.png
+  path: /images/learn/table-layout.jpg
+  thumbnail: /images/table-layout400x225.png
 ---
 
 One of the most helpful tools when creating tables for Markdown or RST is the Tables Generator at https://www.tablesgenerator.com/markdown_tables. You can draw tables or paste table data and then render the ASCII-based output for pasting into your document source file.
