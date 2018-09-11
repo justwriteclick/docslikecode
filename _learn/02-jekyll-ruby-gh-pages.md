@@ -1,5 +1,5 @@
 ---
-title: "Set Up Ruby with Jekyll"
+title: "Set Up Jekyll with Ruby"
 image:
   path: /images/learn/jekyll-docs-page.png
   thumbnail: /images/learn/ruby-logo400x200.png
