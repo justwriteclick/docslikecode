@@ -1,5 +1,5 @@
 ---
-title: "Set Up Go with Hugo"
+title: "Set Up Hugo"
 image:
   path: /images/learn/hugo-docs-page.png
   thumbnail: /images/learn/go-logo400x200.png
