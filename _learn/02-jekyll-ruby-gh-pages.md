@@ -46,6 +46,12 @@ alias jekyll-serve="docker run --rm --volume=$(pwd):/srv/jekyll -p 4000:4000  je
 
 When you start Git Bash the next time, the `.bash_profile` is automatically run and then the two commands, `jekyll` and `jekyll-serve` become available in Git Bash, run in Docker.
 
+## Set up Ruby and Jekyll on Windows Subsystem for Linux
+
+You must be running Windows 10 x64 Creators Update Home, Pro, or Enterprise (non-LTSB SKU) or later in order to install Windows Subsystem for Linux (WSL). Use the [WSL instructions](https://docs.microsoft.com/en-us/windows/wsl/about) to install WSL.
+
+Then you can install Jekyll using the [Jekyll instructions for the Linux distribution you chose](https://jekyllrb.com/docs/installation/) such as [Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/) or [Fedora](https://jekyllrb.com/docs/installation/other-linux/).
+
 ## Set up Ruby and Jekyll on MacOS
 
 1. Install Homebrew. See the [Homebrew site](https://brew.sh) for instructions.
