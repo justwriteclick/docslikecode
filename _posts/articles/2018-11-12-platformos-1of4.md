@@ -7,7 +7,7 @@ categories: articles
 author: diana_lakatos
 tags: [developer documentation, Design Thinking, Information Architecture, docs, documentation, UX]
 image:
-  path: /images/platformos/dianalakatos.png
+  path: /images/platformos/platformos_part1/part1_cover.jpg
   caption: "[Courtesy Platform OS blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platform-os-part-1-information-architecture)"
 comments: false
 share: true
