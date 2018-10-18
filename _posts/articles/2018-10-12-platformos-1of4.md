@@ -7,7 +7,7 @@ categories: articles
 author: diana_lakatos
 tags: [developer documentation, Design Thinking, Information Architecture, docs, documentation, UX]
 image:
-  path: /images/platformos_part1/part1_cover.jpg
+  path: /images/platformos/platformos_part1/part1_cover.jpg
   caption: "[Courtesy Platform OS blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platform-os-part-1-information-architecture)"
 comments: false
 share: true
@@ -38,7 +38,7 @@ Because of the strategic role our documentation plays in the adoption and use of
 
 All throughout the process, we used the user-centered, solution-based [Design Thinking](https://en.wikipedia.org/wiki/Design_thinking) method.  
 
-![](/images/platformos_part1/design_thinking.png)
+![](/images/platformos/platformos_part1/design_thinking.png)
 
 At the start, we explored our audience, our documentation needs, existing and missing content through in-depth interviews and workshops. In Design Thinking terms, this was the **Empathize** phase. Then, we defined personas and our Content Inventory (**Define**), and shared our ideas for content and features through a Card Sorting exercise (**Ideate**). Based on our findings, we created a sitemap and prioritized content needs. Layouts, wireframes, and content production (**Prototype**) started based on the results of our discovery phase.
 
@@ -59,7 +59,7 @@ We found out that we have the following four main personas:
 * Site Builders
 * Marketplace Owners
 
-![](/images/platformos_part1/protopersonas.jpg)
+![](/images/platformos/platformos_part1/protopersonas.jpg)
 
 _Descriptions of our proto-personas with sample photos and names to make them easier to relate and refer to_
 
@@ -67,7 +67,7 @@ _Descriptions of our proto-personas with sample photos and names to make them ea
 
 Taking into account our proto-personas’ needs and sites we considered our inspiration, we created a detailed list of content from our previous documentation site, and identified missing, reusable, and non-reusable content for our future site.   
 
-![](/images/platformos_part1/content_inventory.png)
+![](/images/platformos/platformos_part1/content_inventory.png)
 
 _Content Inventory ready for the Card Sorting Session_
 
@@ -75,9 +75,9 @@ _Content Inventory ready for the Card Sorting Session_
 
 Through a [Card Sorting](https://www.usability.gov/how-to-and-tools/methods/card-sorting.html) exercise, we defined connected elements, and mapped out the best site structure for our goals and proto-personas.
 
-![](/images/platformos_part1/cardsorting.png)
+![](/images/platformos/platformos_part1/cardsorting.png)
 
-![](/images/platformos_part1/cardsorting2.png)
+![](/images/platformos/platformos_part1/cardsorting2.png)
 
 _Screens from [Mural](https://mural.co/) during our Card Sorting sessions_  
 
@@ -85,7 +85,7 @@ _Screens from [Mural](https://mural.co/) during our Card Sorting sessions_
 
 Based on the Content Inventory and the results of the Card Sorting sessions, we outlined a sitemap for our future site. Our sitemap shows the structure of the site. We can also use it as a roadmap to keep track of site improvements, content needs, and project phases, because following our iterative approach, we created several sitemaps — one for each phase of the process (e.g. alpha, beta, etc.).
 
-![](/images/platformos_part1/sitemap.png)
+![](/images/platformos/platformos_part1/sitemap.png)
 
 _Sample page from our sitemap_  
 
@@ -95,11 +95,11 @@ We have already changed some parts of our sitemap based on new information we ga
 
 Now that we had data about the personas and our sitemap, we put the data into the proper context and outlined coherent stories. These stories, similar to user journeys, show the order of actions taken by the user personas during their interaction with the site. During the Card Sorting sessions, we explored areas of interest for each user persona. This helped us see where to focus first to help them from the beginning. We also validated the importance of these areas to assign higher priorities to the ones that need more attention. We then displayed their interaction with the site on the sitemap.
 
-![](/images/platformos_part1/userjourneys1.png)
+![](/images/platformos/platformos_part1/userjourneys1.png)
 
 _Exploring areas of interest based on the persona’s actions taken on the site_  
 
-![](/images/platformos_part1/sitemap_userjourneys.png)
+![](/images/platformos/platformos_part1/sitemap_userjourneys.png)
 
 _Persona interactions with the site displayed on the sitemap_  
 
