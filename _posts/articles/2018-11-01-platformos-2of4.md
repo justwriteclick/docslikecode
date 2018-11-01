@@ -2,7 +2,7 @@
 layout: post
 title: "Building Our Documentation Site on Platform OS — Part 2: Content Production and Layouts"
 excerpt: Welcome to part 2 of our article series where we discuss how content production started, and how we created the layouts and navigation for the site.
-last_modified_at: Fri Oct 12 22:01:44 CDT 2018
+last_modified_at: Thu Nov 01 22:01:44 CDT 2018
 categories: articles
 author: diana_lakatos
 tags: [developer documentation, Content-First Design, community, style guide, templates, editorial workflow, wireframes, docs, documentation, UX]
