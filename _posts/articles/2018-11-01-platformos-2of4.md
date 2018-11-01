@@ -49,7 +49,8 @@ Our style guide is just as much a work in progress as our documentation, but weâ
 
 Our site uses Liquid pages, but to make editing easier for contributors, we write documentation content in GitHub Flavored Markdown and use a Markdown converter to turn it into Liquid. Our [templates](https://github.com/mdyd-dev/nearme-documentation/tree/master/marketplace_builder/views/pages/doc-templates) include all non-changeable content, and placeholders with explanations for the parts to add. Placeholders provide information on the recommended format (e.g. title), and any requirements or limitations (e.g. maximum number of characters). Recurring sections, like the question block at the bottom of each page, are added using a partial.  
 
-```ruby
+{% raw %}
+```
 ---
 converter: markdown
 metadata:
@@ -100,6 +101,7 @@ Congratulations! You have [what the user has achieved].
 
 {% include 'shared/questions_section' %}
 ```
+{% endraw %}
 
 _Tutorial template_
 
