@@ -2,13 +2,12 @@
 layout: post
 title: Building Docs Like Code
 excerpt: "Let's look at a live example."
-modified: Sun Sep 25 15:35:08 CDT 2016
+last_modified_at: Sun Sep 25 15:35:08 CDT 2016
 categories: articles
 tags: [developers, github, git, improvement, quality, testing, writers]
 image:
-  feature: threeblackdots-playground.jpg
-  credit: Flickr threeblackdots
-  creditlink: https://flic.kr/p/8tQAGQ
+  path: /images/threeblackdots-playground.jpg
+  caption: "[Flickr threeblackdots](https://flic.kr/p/8tQAGQ)"
 youtube: YUbl_ucNPuA
 comments: false
 share: true

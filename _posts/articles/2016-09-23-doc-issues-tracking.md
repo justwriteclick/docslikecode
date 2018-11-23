@@ -2,13 +2,12 @@
 layout: post
 title: Quality Tracking with GitHub for Docs
 excerpt: "What do you do when people say, 'The Docs Suck.'?"
-modified: Fri Sep 23 21:03:14 CDT 2016
+last_modified_at: Fri Sep 23 21:03:14 CDT 2016
 categories: articles
 tags: [developers, github, git, improvement, quality, testing, writers]
 image:
-  feature: stacked-logs-mtischendorf.jpg
-  credit: Flickr mtischendorf
-  creditlink: https://flic.kr/p/aAb4s8
+  path: /images/stacked-logs-mtischendorf.jpg
+  caption: "[Flickr mtischendorf](https://flic.kr/p/aAb4s8)"
 comments: false
 share: true
 ---
@@ -17,7 +16,7 @@ A definitive aspect of a docs-like-code philosophy is attention to quality and a
 
 ## What do you do when people say, "The Docs Suck."?
 
-It's a pretty simple ask:
+It's a pretty simple request:
 
 1. Tell me which page.
 1. Tell me your expectations for that page.

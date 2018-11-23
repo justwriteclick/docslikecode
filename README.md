@@ -2,11 +2,15 @@
 
 ## The Website
 
-This website is intended to offer stories and articles about how to treat docs like code, and lessons learned along the way. 
+This website is intended to offer stories and articles about how to treat docs like code, and lessons learned along the way. You are welcome to tell your story here as well.
 
 ## To Contribute
 
 You can directly submit a pull request using the fork-and-pull workflow to add an article, or submit to the [justwriteclick/docs-like-code-stories](https://github.com/justwriteclick/docs-like-code-stories) repo if you want to follow a question-and-answer template.
+
+Pushing to the `build` branch lets you preview the build output using Netlify. You must log into Netlify to view the preview deploy.
+
+Pushing to the `master` branch builds output to https://www.docslikecode.com using Netlify. Auto publishing is on as a setting in Netlify, so deploys from master are published automatically.
 
 ## Theme Colophon
 Theme courtesy of https://mmistakes.github.io/so-simple-theme/

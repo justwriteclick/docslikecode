@@ -2,13 +2,12 @@
 layout: post
 title: Remodeling documentation
 excerpt: "Make sure you have a punch list of doc bugs to get higher quality results."
-modified: Sat May 13 18:34:40 CDT 2017
+last_modified_at: Sat May 13 18:34:40 CDT 2017
 categories: articles
 tags: [issues, bugs, technical debt, github, git, backlog]
 image:
-  feature: mtischendorf-logpile.jpg
-  credit: Flickr mtischendorf
-  creditlink: https://flic.kr/p/aAb4s8
+  path: /images/mtischendorf-logpile.jpg
+  caption: "[Flickr mtischendorf](https://flic.kr/p/aAb4s8)"
 comments: false
 share: true
 ---
@@ -21,7 +20,7 @@ This house was awful. Every single surface was ugly, out-dated, and circa 1973. 
 
 Let’s look at your code base and your doc base as a great house with a good layout and foundational “bones.” You still need that “punch list” to hand to your contractor. When you move towards more docs like code techniques, make sure you treat your doc base like a code base, and track defects. Get that “punch list” done.
 
-With a code base, you know how much remodeling you need to do. The same thinking can work well for docs. How dated have your docs become? How accurate are the docs compared to the rest of the code base? How can you make the site livable and vibrant again? 
+With a code base, you know how much remodeling you need to do. The same thinking can work well for docs. How dated have your docs become? How accurate are the docs compared to the rest of the code base? How can you make the site livable and vibrant again?
 
 Let’s give your readers the chance to do those quality checks for you as easily as possible: by reporting the bug on the page where they found it.
 
@@ -33,11 +32,11 @@ This technique works well when:
 * You want your docs to be more trustworthy by chipping away at a bug backlog.
 * You have a private GitHub repo for documentation, but you want to enable public bug reports with tracking back to your docs repo.
 
-Your quick win is to look at your current docs site, any given page. Is there a way to report a bug publicly, to add to the “punch list?” 
+Your quick win is to look at your current docs site, any given page. Is there a way to report a bug publicly, to add to the “punch list?”
 
-1. Bare minimum starter level would be an email address link from every page. 
-1. Level up by adding a link to your GitHub source repo Issues page so readers can report bugs. 
-1. Better yet, write a quick bit of code to embed on every output doc page so that the issue is pre-filled with relevant information. 
+1. Bare minimum starter level would be an email address link from every page.
+1. Level up by adding a link to your GitHub source repo Issues page so readers can report bugs.
+1. Better yet, write a quick bit of code to embed on every output doc page so that the issue is pre-filled with relevant information.
 
 Here are some resources to get your first punch in that punch list:
 

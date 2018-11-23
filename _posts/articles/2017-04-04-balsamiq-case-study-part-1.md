@@ -2,14 +2,13 @@
 layout: post
 title: Multiple product versions - Balsamiq, Leon Barnard
 excerpt: "Learn useful techniques for static sites such as Hugo on GitHub from Leon Barnard, Designer and Writer at Balsamiq. He describes documenting multiple versions of a product with a Go coded solution."
-modified: Sat May 13 18:37:07 CDT 2017
+last_modified_at: Sat May 13 18:37:07 CDT 2017
 categories: articles
 author: leon_barnard
 tags: [case study, balsamiq, static sites, use case, wireframes, github, docs, repos, hugo, tools, gif, animated gifs]
 image:
-  feature: therefore-wireframe.jpg
-  credit: Flickr therefore
-  creditlink: https://flic.kr/p/7ewunt
+  path: /images/therefore-wireframe.jpg
+  caption: "[Flickr therefore](https://flic.kr/p/7ewunt)"
 comments: true
 share: true
 ---
@@ -20,7 +19,7 @@ Leon Barnard, Designer and Writer (and Developer-in-training) at [Balsamiq](http
 
 In this three-part series, Leon describes some great solutions to problems that many technical sites have faced.
 
-The three parts cover documenting multiple product versions, [adding play and pause to animated GIFs](http://docslikecode.com/articles/balsamiq-case-study-part-2/), and providing flexibility and expansion options in lists of linked pages.
+The three parts cover documenting multiple product versions, [adding play and pause to animated GIFs](https://docslikecode.com/articles/balsamiq-case-study-part-2/), and providing flexibility and expansion options in lists of linked pages.
 
 ## Background
 
@@ -32,15 +31,15 @@ After the dust settled, we started imagining what we wanted for the next version
 
 ## Challenge #1: Documenting multiple product versions
 
-Our product, [Balsamiq Mockups](https://balsamiq.com/), comes in multiple "flavors," as we often call them. There are two versions of the core product (the wireframe editor) that are sold as: a stand-alone desktop version, a hosted web version ("myBalsamiq"), and plugins for Google Drive and Atlassian Confluence and JIRA. 
+Our product, [Balsamiq Mockups](https://balsamiq.com/), comes in multiple "flavors," as we often call them. There are two versions of the core product (the wireframe editor) that are sold as: a stand-alone desktop version, a hosted web version ("myBalsamiq"), and plugins for Google Drive and Atlassian Confluence and JIRA.
 
 ![Select product]({{ site.url }}/images/balsamiq/select-product.png)
 
 That's seven different products that we sell, catered to different types of users. This is great for our customers, but a challenge for our docs.
 
-The majority of our documentation is how to use one of the two core wireframe editors. Very little has to do with platform-specific features. So, seven products that we sell, but only two main sets of documentation. 
+The majority of our documentation is how to use one of the two core wireframe editors. Very little has to do with platform-specific features. So, seven products that we sell, but only two main sets of documentation.
 
-For historical reasons, most of the common documentation is in the Desktop version docs. If you used our product on a different platform, you had to know to go to the Desktop docs. 
+For historical reasons, most of the common documentation is in the Desktop version docs. If you used our product on a different platform, you had to know to go to the Desktop docs.
 
 This is what the content folder in our [GitHub repo](https://github.com/balsamiq/docs.balsamiq.com) looked like, which meant that a lot of customers had this experience:
 
@@ -97,4 +96,3 @@ If the `include` parameter isn't present, Hugo just uses the Markdown content in
 It took some effort to get it set up, but now we don't even think about it. It's really easy for the content writers, and we'll be able to extend it when we add yet more versions in the future (we already are, in fact).
 
 {% include sign-up.html %}
-

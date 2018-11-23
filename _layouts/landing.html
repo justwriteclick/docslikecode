@@ -1,35 +1,28 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-<head>
-{% include head.html %}
-</head>
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.0.1
+    Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
+  {% include head.html %}
 
-<body id="page">
+  <body class="layout--default">
+   <main id="main" class="main-content" aria-label="Content">
+    <article>
+      <div class="page-wrapper">
+        <div class="page-content">
+       {% include skip-links.html %}
+       {% include navigation.html %}
 
-<div id="main" role="main">
-  <article class="entry">
-    {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
-    <div class="entry-wrapper">
-      <header class="entry-header">
-        <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
-      </header>
-      <div class="entry-content">
-        {{ content }}
-      </div><!-- /.entry-content -->
-    </div><!-- /.entry-wrapper -->
-  </article>
-</div><!-- /#main -->
-
-<div class="footer-wrapper">
-  <footer role="contentinfo" class="entry-wrapper">
+       {{ content }}
+       </div>
+     </div>
     {% include footer.html %}
-  </footer>
-</div><!-- /.footer-wrapper -->
+    {% include scripts.html %}
+    </article>
+   </main>
+  </body>
 
-{% include scripts.html %}
-
-</body>
 </html>

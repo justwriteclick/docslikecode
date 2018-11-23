@@ -2,21 +2,56 @@
 
 rachel_whitton:
   name: Rachel Whitton
-  avatar: http://pantheon.io/sites/default/files/styles/540x540_top/public/RachelNew.jpg
+  picture: https://pantheon.io/sites/default/files/styles/540x540_top/public/RachelNew.jpg
   github: //github.com/rachelwhitton
   twitter: rachwhitton
   bio: "Technical Content Writer"
 
 jennifer_rondeau:
   name: Jennifer Rondeau
-  avatar: http://docslikecode.com/images/jennifer_rondeau.png
+  picture: https://docslikecode.com/images/jennifer_rondeau.png
   github: //github.com/bradamant3
   twitter: bradamante
   bio: "Technical Writing Manager"
 
 leon_barnard:
   name: Leon Barnard
-  avatar: https://pbs.twimg.com/profile_images/855131146195042304/isNkZpYS.jpg
+  picture: https://pbs.twimg.com/profile_images/855131146195042304/isNkZpYS.jpg
   github: //github.com/balsamiqLeon
   twitter: leonbarnard
   bio: "Designer and Writer"
+
+adam_locke:
+  name: Adam Locke
+  picture: https://docslikecode.com/images/adam_locke.jpg
+  github: //github.com/lockewritesdocs
+  twitter: iamlockeness
+  bio: "API Writer"
+
+diana_lakatos:
+  name: Diána Lakatos
+  picture: https://pronovix.com/sites/default/files/styles/526x526/public/diana_lakatos.png
+  github: //github.com/diana-lakatos
+  twitter:
+  bio: "Senior Technical Writer"
+
+margaret_eker:
+  name: Margaret Eker
+  picture: https://docslikecode.com/images/margaret-eker.jpg
+  github: //github.com/meker12
+  twitter:
+  bio: "Senior Technical Writer"
+
+tom_johnson:
+  name: Tom Johnson
+  picture: https://docslikecode.com/images/tom-johnson.jpg
+  github: //github.com/tomjoht
+  twitter: http://twitter.com/tomjohnson
+  bio: "Technical Writer"
+
+ben_mansheim:
+  name: Ben Mansheim
+  picture: https://docslikecode.com/images/ben-mansheim.jpg
+  github: //github.com/bmansheim
+  twitter:
+  bio: "Technical Writer"

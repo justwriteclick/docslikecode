@@ -1,25 +1,40 @@
 # Site wide configuration
 
-title: Write, Review, Test, Merge, Build, Deploy, Repeat. <br> Let's Treat Docs Like Code.
-locale: en_US
-description: When you want to write more content, create accurate technical docs, iterate with collaborators, test drafts, merge, build, and deploy docs.
-logo: treat-docs-like-code.png
+title: Let's Treat Docs Like Code
+locale: en-US
+description: Read stories, learn through practice, share with others.
+logo: /images/treat-docs-like-code.png
 #url: http://127.0.0.1:4000
-url: http://docslikecode.com
+url: https://www.docslikecode.com
+theme: jekyll-theme-so-simple
+search_full_content: true
+tag_archive_path: "/tags/#"
+footer_links:
+  - title: Twitter
+    url: https://twitter.com/annegentle
+    icon: fab fa-twitter-square
+  - title: GitHub
+    url: https://github.com/justwriteclick
+    icon: fab fa-github-square
+  - title: Feed
+    url: feed.xml
+    icon: fas fa-rss-square
 
 # Jekyll configuration
 
 permalink:   /:categories/:title/
 markdown:    kramdown
 highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+google_analytics: UA-85706588-1
 kramdown:
   input: GFM
   auto_ids: true
@@ -28,33 +43,58 @@ kramdown:
   toc_levels: 1..2
   enable_coderay: false
 
-mathjax: true
+mathjax: false
+
+# Collection for workshops and tutorials
+collections:
+  learn:
+    output: true
+    permalink: /:collection/:path/
+
+# Front Matter Defaults
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comments: false
+      share: true
+  # Workshop defaults
+  - scope:
+      path: "_learn"
+      type: learn
+    values:
+      layout: post
+      comments: true
+      share: true
 
 include: [".htaccess"]
 exclude: ["_drafts", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
 
 comments: false
+twitter: annegentle
+google_analytics: UA-85706588-1
 
-# Site owner
-owner:
+# Site author, previously was site.owner
+author:
   name: Anne Gentle
-  avatar: anne_gentle.jpg
+  picture: /images/anne_gentle.jpg
   email: annegentle@justwriteclick.com
   disqus-shortname:
-  twitter: annegentle
-  facebook: 
+  facebook:
   github: justwriteclick
   stackexchange:
   linkedin:
   instagram:
   flickr:
-  tumblr: 
+  tumblr:
   pinterest:
   weibo:
   google:
     plus: AnneGentle
-    analytics: UA-85706588-1
     verify: LDMHcKG0vxyyo7Tp6hA5xs3_lJYX7Spk9IqC4VZsitE
-    ad-client: 
+    ad-client:
     ad-slot:
-  bing-verify: 
+  bing-verify:
