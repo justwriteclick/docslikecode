@@ -26,9 +26,9 @@ In a choose your own adventure series, you first pick the look for the site, the
 
 You may also test the docs by with Continuous Integration (CI) systems like TravisCI or CircleCI. If you need to work within existing CI systems, choose a tool that other teams use within your organization, and your choice of output is not limited by the CI system. In other words, the test frameworks in TravisCI or CircleCI do not dictate your deployment system.
 
-Here are three example documentation sites you can write and build using an SSG with CICD.
+In the [Learn section of the site](https://docslikecode.com/learn/), there are three example documentation sites you can write and build using an SSG with CICD.
 
-Choose your adventure and start one of these sites - and learn ways to treat docs like code along the journey.
+Choose your adventure and start one of these sites - and learn how to do docs as code along the journey.
 
 ## Ready to learn more?
 
