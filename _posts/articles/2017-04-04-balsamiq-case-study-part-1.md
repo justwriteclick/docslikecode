@@ -23,7 +23,7 @@ The three parts cover documenting multiple product versions, [adding play and pa
 
 ## Background
 
-A year and a half ago [we ditched our flaky content management system](https://blog.balsamiq.com/new-documentation-site/) and converted our documentation site over to a "docs like code" system using [Hugo](http://gohugo.io/), [Gulp](http://gulpjs.com/), and [GitHub](https://github.com/), with content written in Markdown. It was a long process and we were happy just to see it up and running.
+A year and a half ago [we ditched our flaky content management system](https://blog.balsamiq.com/new-documentation-site/) and converted our documentation site over to a "docs like code" system using [Hugo](https://gohugo.io/), [Gulp](https://gulpjs.com/), and [GitHub](https://github.com/), with content written in Markdown. It was a long process and we were happy just to see it up and running.
 
 After the dust settled, we started imagining what we wanted for the next version, and realized that the system we had built had limitations that we would have to overcome. This is a story of three challenges and how we solved them.
 

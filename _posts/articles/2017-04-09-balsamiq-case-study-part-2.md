@@ -19,7 +19,7 @@ After learning about [documenting multiple product versions with a static site g
 
 ## Background
 
-[Balsamiq set up a new documentation site](https://blog.balsamiq.com/new-documentation-site/) about a year and a half ago. We converted our old, flaky documentation system over to a "docs like code" system using [Hugo](http://gohugo.io/), [Gulp](http://gulpjs.com/), and [GitHub](https://github.com/), with content written in Markdown. The conversion took a while, so in the end we were pleased simply to get working.
+[Balsamiq set up a new documentation site](https://blog.balsamiq.com/new-documentation-site/) about a year and a half ago. We converted our old, flaky documentation system over to a "docs like code" system using [Hugo](https://gohugo.io/), [Gulp](https://gulpjs.com/), and [GitHub](https://github.com/), with content written in Markdown. The conversion took a while, so in the end we were pleased simply to get working.
 
 Once it was part of our daily workflow, and we could begin to look to the future, we started envisioning the next version. In doing so, we recognized the limitations and looked for solutions that kept writers writing and readers reading. This series tells the tale of three of these problem areas and how we solved the challenges.
 
@@ -64,7 +64,7 @@ So, now, if we write:
 ```
 it triggers the gifplayer script!
 
-![party](http://rubentd.com/img/banana.gif)
+![party]({{ site.url }}/images/balsamiq/banana.gif)
 
 Sorry, we didn't implement the pause/play capability on this site, so that banana is gonna keep on dancing. You can see the pause/play solution in action on our Balsamiq article on [common workarounds](https://support.balsamiq.com/tutorials/workarounds/#link-to-alternates).
 
