@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Building Our Documentation Site on Platform OS — Part 1: Information Architecture"
-excerpt: This article series describes our process for building the Platform OS documentation site, with in-depth insights into our approach, decisions, and plans. In this part, we share how we started, how we got to know our audience, how we figured out what content we need, and how we outlined a sitemap for our documentation site.
+title: "Building Our Documentation Site on PlatformOS — Part 1: Information Architecture"
+excerpt: This article series describes our process for building the PlatformOS documentation site, with in-depth insights into our approach, decisions, and plans. In this part, we share how we started, how we got to know our audience, how we figured out what content we need, and how we outlined a sitemap for our documentation site.
 last_modified_at: Fri Oct 12 21:01:44 CDT 2018
 categories: articles
 author: diana_lakatos
 tags: [developer documentation, Design Thinking, Information Architecture, docs, documentation, UX]
 image:
   path: /images/platformos/platformos_part1/part1_cover.jpg
-  caption: "[Courtesy Platform OS blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platform-os-part-1-information-architecture)"
+  caption: "[Courtesy PlatformOS blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platform-os-part-1-information-architecture)"
 comments: false
 share: true
 ---
 
-This article series describes our process of building our [documentation site](https://documentation.platform-os.com/) for [Platform OS](https://www.platform-os.com/), with in-depth insights into our approach, decisions, and plans. We have planned four parts for this series, each describing a unique aspect of our journey:  
+This article series describes our process of building our [documentation site](https://documentation.platform-os.com/) for [PlatformOS](https://www.platform-os.com/), with in-depth insights into our approach, decisions, and plans. We have planned four parts for this series, each describing a unique aspect of our journey:  
 
 * Part 1: **Information Architecture**  
   In this part, we share how we started, how we got to know our audience, how we figured out what content we need, and how we outlined a sitemap for our documentation site.
@@ -24,7 +24,7 @@ This article series describes our process of building our [documentation site](h
 * Part 4: **Implementation**  
   In this part, we take a look under the hood, and discuss the technologies we used, how we built our auto-generated API Reference, and how we pull content and related information from Github. We also share our future plans with you.  
 
-All these articles together will show you a complete framework for building a documentation site on Platform OS.
+All these articles together will show you a complete framework for building a documentation site on PlatformOS.
 
 We are continuously working on our documentation, but decided to make it public early on to get valuable feedback and show you the whole process, so please expect the documentation site to change and evolve while you learn more about it through these articles. At the time of the publication of this article, our documentation site is in alpha.  
 
@@ -109,6 +109,6 @@ This concluded our Information Architecture phase. We have discovered and organi
 
 _We involved [UX Strategist Katalin Nagygyörgy](https://www.linkedin.com/in/nagygyorgykatalin/) in our process from the start. Through our collaboration, we could extract and collect all the necessary information using tried and true research methodologies and UX best practices._
 
-_This article was originally written for the [Platform OS Blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platform-os-part-1-information-architecture)._
+_This article was originally written for the [PlatformOS Blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platformos-part-1-information-architecture)._
 
 {% include sign-up.html %}
