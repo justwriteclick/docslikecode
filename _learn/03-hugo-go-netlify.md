@@ -1,5 +1,6 @@
 ---
-title: "Set Up Hugo"
+title: "Set Up Hugo with Go"
+layout: page
 image:
   path: /images/learn/hugo-docs-page.png
   thumbnail: /images/learn/go-logo400x200.png
@@ -125,7 +126,19 @@ themeVariant = "green"
 home = [ "HTML", "RSS", "JSON"]
 ```
 
-## Additional resources
+## What's next
 
-[Hugo Quickstart](https://gohugo.io/getting-started/quick-start/)
-[Hugo Themes web site](https://themes.gohugo.io/)
+* [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/)
+* [Continuous Deployment (CD) for Documentation Sites](https://www.docslikecode.com/learn/05-cd-for-docs/)
+* [Set Up Automated Tests for Docs](https://www.docslikecode.com/learn/06-test-docs-as-code/)
+
+## Evaluating options
+
+* [Evaluating Static Site Generator themes](https://www.docslikecode.com/learn/07-evaluating-ssg-themes/)
+* [Evaluating table layouts and formatting](https://www.docslikecode.com/learn/08-evaluating-table-layouts/)
+* [Evaluating Static Site Generator search options](https://www.docslikecode.com/learn/09-ssg-search-implementations/)
+
+## Additional references
+
+* [Hugo Quickstart](https://gohugo.io/getting-started/quick-start/)
+* [Hugo Themes web site](https://themes.gohugo.io/)

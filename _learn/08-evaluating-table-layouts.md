@@ -1,5 +1,6 @@
 ---
 title: "Evaluating table layouts and formatting"
+layout: page
 image:
   path: /images/learn/table-layout.png
   thumbnail: /images/learn/table-layout400x225.png
@@ -46,3 +47,8 @@ If you also output PDF using LaTeX with Sphinx, be aware that there's a column s
 ```
 
 Your editor may also have helpful tools for managing tables, such as the [Markdown Table Editor in Atom](https://atom.io/packages/markdown-table-editor), which can resize all rows and columns while you type. Plus, it enables keybindings that you can use to navigate between cells and rows.
+
+## Evaluating other options
+
+* [Evaluating Static Site Generator themes](https://www.docslikecode.com/learn/07-evaluating-ssg-themes/)
+* [Evaluating Static Site Generator search options](https://www.docslikecode.com/learn/09-ssg-search-implementations/)

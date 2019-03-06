@@ -1,5 +1,6 @@
 ---
 title: "Working with content in GitHub repositories"
+layout: page
 image:
   path: /images/learn/octocat.png
   thumbnail: /images/learn/octocat-github-logo400x200.png
@@ -138,3 +139,19 @@ When you're the only person working in a repo, you can use a simple workflow, wh
   ```
   $ git checkout master; git remote update; git pull origin master
   ```
+
+## What's next
+
+* [Continuous Deployment (CD) for Documentation Sites](https://www.docslikecode.com/learn/05-cd-for-docs/)
+* [Set Up Automated Tests for Docs](https://www.docslikecode.com/learn/06-test-docs-as-code/)
+
+## Evaluating options
+
+* [Evaluating Static Site Generator themes](https://www.docslikecode.com/learn/07-evaluating-ssg-themes/)
+* [Evaluating table layouts and formatting](https://www.docslikecode.com/learn/08-evaluating-table-layouts/)
+* [Evaluating Static Site Generator search options](https://www.docslikecode.com/learn/09-ssg-search-implementations/)
+
+## Additional references
+
+* [Comparing Git Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
+* [Git Branching - Branching Workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)

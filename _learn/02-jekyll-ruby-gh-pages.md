@@ -1,5 +1,6 @@
 ---
 title: "Set Up Jekyll with Ruby"
+layout: page
 image:
   path: /images/learn/jekyll-docs-page.png
   thumbnail: /images/learn/ruby-logo400x200.png
@@ -178,9 +179,21 @@ Once you've prepared your environment, you can build locally and review the site
 
 1. Don't forget to add the files to a commit and then commit the changes so that you can track the changes and work with others on GitHub. Refer to [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/).
 
-## Additional resources
+## What's next
 
-[Markdown reference](http://commonmark.org/help/)
-[Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/)
-[Lynda.com Web foundations, GitHub Pages](https://www.lynda.com/Web-Development-tutorials/GitHub-pages/609031/654613-4.html)
-[Jekyll documentation about GitHub Pages](https://jekyllrb.com/docs/github-pages/)
+* [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/)
+* [Continuous Deployment (CD) for Documentation Sites](https://www.docslikecode.com/learn/05-cd-for-docs/)
+* [Set Up Automated Tests for Docs](https://www.docslikecode.com/learn/06-test-docs-as-code/)
+
+## Evaluating options
+
+* [Evaluating Static Site Generator themes](https://www.docslikecode.com/learn/07-evaluating-ssg-themes/)
+* [Evaluating table layouts and formatting](https://www.docslikecode.com/learn/08-evaluating-table-layouts/)
+* [Evaluating Static Site Generator search options](https://www.docslikecode.com/learn/09-ssg-search-implementations/)
+
+## Additional references
+
+* [Markdown reference](http://commonmark.org/help/)
+* [Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/)
+* [Lynda.com Web foundations, GitHub Pages](https://www.lynda.com/Web-Development-tutorials/GitHub-pages/609031/654613-4.html)
+* [Jekyll documentation about GitHub Pages](https://jekyllrb.com/docs/github-pages/)
