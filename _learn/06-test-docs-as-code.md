@@ -1,5 +1,6 @@
 ---
 title: "Set Up Automated Tests for Docs"
+layout: page
 image:
   path: /images/learn/travis-ci-logo400x200.png
   thumbnail: /images/learn/travis-ci-logo400x200.png
@@ -129,12 +130,21 @@ bundle exec htmlproofer ./_site
 
 Look for more inspiration beyond link checking in the additional resources section. Enjoy higher-quality doc builds with some quality tests up front!
 
-## Additional resources
+## What's next
 
-[Test the Docs](https://testthedocs.org/)
+* [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/)
+* [Continuous Deployment (CD) for Documentation Sites](https://www.docslikecode.com/learn/05-cd-for-docs/)
 
-Pantheon docs examples
-* [Merge conflict test](https://github.com/pantheon-systems/documentation/blob/master/scripts/merge_conflicts.sh)
-* [CircleCI example configuration](https://github.com/pantheon-systems/documentation/blob/master/circle.yml)
+## Evaluating options
 
-[How we spotted--and fixed--11 errors in our docs with our new markdown proofer](https://circleci.com/blog/markdown-proofer/)
+* [Evaluating Static Site Generator themes](https://www.docslikecode.com/learn/07-evaluating-ssg-themes/)
+* [Evaluating table layouts and formatting](https://www.docslikecode.com/learn/08-evaluating-table-layouts/)
+* [Evaluating Static Site Generator search options](https://www.docslikecode.com/learn/09-ssg-search-implementations/)
+
+## Additional references
+
+* [Test the Docs](https://testthedocs.org/)
+* Pantheon docs examples
+  * [Merge conflict test](https://github.com/pantheon-systems/documentation/blob/master/scripts/merge_conflicts.sh)
+  * [CircleCI example configuration](https://github.com/pantheon-systems/documentation/blob/master/circle.yml)
+* [How we spotted--and fixed--11 errors in our docs with our new markdown proofer](https://circleci.com/blog/markdown-proofer/)
