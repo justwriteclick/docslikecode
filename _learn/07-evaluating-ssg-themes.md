@@ -1,5 +1,6 @@
 ---
 title: "Evaluating Static Site Generator themes"
+layout: page
 image:
   path: /images/learn/ssg-themes.png
   thumbnail: /images/learn/ssg-themes400x225.png
@@ -49,3 +50,8 @@ How easy is it to upgrade the theme files? Can you make regular updates through 
 
 ## Versions
 Many themes do not have a version picker by default. You might want a drop-down list or navigation that could include version. The Sphinx Read the Docs theme does have one and it works great. For Jekyll, look at the [versions-jekyll repository](https://github.com/justwriteclick/versions-jekyll) to see a couple of implementation ideas.
+
+## Evaluating other options
+
+* [Evaluating table layouts and formatting](https://www.docslikecode.com/learn/08-evaluating-table-layouts/)
+* [Evaluating Static Site Generator search options](https://www.docslikecode.com/learn/09-ssg-search-implementations/)

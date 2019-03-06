@@ -1,5 +1,6 @@
 ---
 title: "Set Up Sphinx with Python"
+layout: page
 image:
   path: /images/learn/sphinx-docs-page.png
   thumbnail: /images/learn/python-logo400x200.png
@@ -154,7 +155,19 @@ You can also get familiar with [ReStructured text](http://docutils.sourceforge.n
 1. In your browser, refresh the `build/html/index.html` page to see the new Contents with two entries linked.
 1. Make sure you commit your changes to the Git repository by following the steps in [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/).
 
-## Additional resources
+## What's next
 
-[Sphinx Python Documentation Generator](http://www.sphinx-doc.org/en/stable/)
-[ReStructured text documentation](http://docutils.sourceforge.net/rst.html)
+* [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/)
+* [Continuous Deployment (CD) for Documentation Sites](https://www.docslikecode.com/learn/05-cd-for-docs/)
+* [Set Up Automated Tests for Docs](https://www.docslikecode.com/learn/06-test-docs-as-code/)
+
+## Evaluating options
+
+* [Evaluating Static Site Generator themes](https://www.docslikecode.com/learn/07-evaluating-ssg-themes/)
+* [Evaluating table layouts and formatting](https://www.docslikecode.com/learn/08-evaluating-table-layouts/)
+* [Evaluating Static Site Generator search options](https://www.docslikecode.com/learn/09-ssg-search-implementations/)
+
+## Additional references
+
+* [Sphinx Python Documentation Generator](http://www.sphinx-doc.org/en/stable/)
+* [ReStructured text documentation](http://docutils.sourceforge.net/rst.html)
