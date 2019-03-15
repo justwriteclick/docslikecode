@@ -1,6 +1,6 @@
 ---
 title: "Evaluating Static Site Generator themes"
-layout: page
+layout: learn
 image:
   path: /images/learn/ssg-themes.png
   thumbnail: /images/learn/ssg-themes400x225.png

@@ -1,6 +1,6 @@
 ---
 title: "Set Up Jekyll with Ruby"
-layout: page
+layout: learn
 image:
   path: /images/learn/jekyll-docs-page.png
   thumbnail: /images/learn/ruby-logo400x200.png
@@ -172,7 +172,7 @@ Once you've prepared your environment, you can build locally and review the site
    ```
 
 1. Use the **Server address** URL  `http://127.0.0.1:4000/latest/` in a browser to preview the content.
-
+   ![Example Jekyll site]( /images/learn/jekyll-docs-page.png)
 1. Press `Ctrl+C` in the serve terminal to stop the server.
     > ***TIP***
     > Leave the serve terminal open and running. Every time you save changes to a file, it automatically regenerates the site so you can test the output as you write. That said, if you change the `_config.yml` file, you must stop (ctrl-c) and then re-run the serve command to see changes.

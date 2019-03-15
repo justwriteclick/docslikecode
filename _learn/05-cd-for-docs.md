@@ -1,6 +1,6 @@
 ---
 title: "Continuous Deployment (CD) for Documentation Sites"
-layout: page
+layout: learn
 image:
   path: /images/learn/netlify-logo400x200.png
   thumbnail: /images/learn/netlify-logo400x200.png
