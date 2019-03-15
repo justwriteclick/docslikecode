@@ -1,6 +1,6 @@
 ---
 title: "Set Up Automated Tests for Docs"
-layout: page
+layout: learn
 image:
   path: /images/learn/travis-ci-logo400x200.png
   thumbnail: /images/learn/travis-ci-logo400x200.png

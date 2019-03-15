@@ -1,6 +1,6 @@
 ---
 title: "Set Up Hugo with Go"
-layout: page
+layout: learn
 image:
   path: /images/learn/hugo-docs-page.png
   thumbnail: /images/learn/go-logo400x200.png
@@ -105,11 +105,10 @@ For Hugo, it's important to know that draft pages are only served when using the
       Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
       Press Ctrl+C to stop
    ```
-
 1. Open the **Web Server** URL, `http://localhost:1313/` in your local browser to view the site.
-
-1. Press `Ctrl+C` in the server terminal to stop the Hugo server.
-1. You can add your files to a Git commit. Refer to [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/) for a documentation workflow with your Hugo site.
+    ![Example Hugo site](/images/learn/hugo-docs-page.png)
+3. Press `Ctrl+C` in the server terminal to stop the Hugo server.
+4. You can add your files to a Git commit. Refer to [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/) for a documentation workflow with your Hugo site.
 
 ## Modify the Hugo theme
 
