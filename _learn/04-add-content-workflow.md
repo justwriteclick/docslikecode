@@ -1,6 +1,6 @@
 ---
 title: "Working with content in GitHub repositories"
-layout: page
+layout: learn
 image:
   path: /images/learn/octocat.png
   thumbnail: /images/learn/octocat-github-logo400x200.png

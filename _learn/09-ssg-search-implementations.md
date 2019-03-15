@@ -1,6 +1,6 @@
 ---
 title: "Evaluating Static Site Generator search options"
-layout: page
+layout: learn
 image:
   path: /images/learn/ssg-search-options.png
   thumbnail: /images/learn/ssg-search-options400x225.png

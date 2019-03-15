@@ -1,6 +1,6 @@
 ---
 title: "Evaluating table layouts and formatting"
-layout: page
+layout: learn
 image:
   path: /images/learn/table-layout.png
   thumbnail: /images/learn/table-layout400x225.png
