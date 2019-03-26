@@ -5,18 +5,20 @@ excerpt: "Docs Like Code book in print and ebook. Paperback now available on Ama
 last_modified_at: Sat May 13 08:43:14 CDT 2017
 ---
 
-<img src="../../images/docs-like-code-book.jpg" alt="Docs Like Code" style="padding:14px;" align="right" height="200" width="319">
 
-<h1>About the book</h1>
+<h1>Get Started with Docs as Code</h1>
+
+<img src="../../images/docs-like-code-book.jpg" alt="Docs Like Code" style="padding:14px;" align="right" height="200" width="319">
 <p>We've transformed the way teams work together on docs, and we want to show you the best practices for writing docs using development tools and techniques. Now available in both print and ebook, check out <i>Docs Like Code</i>.</p>
+
 
 <p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 14px;
-  background-color: #64baaa;
+  background-color: #fc5720;
   color: #fff;
-  border: 2px solid #64baaa !important;
+  border: 2px solid #fc5720 !important;
   border-radius: 3px;
   &:visited {
     color: #fff;
@@ -68,9 +70,9 @@ last_modified_at: Sat May 13 08:43:14 CDT 2017
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 14px;
-  background-color: #ffc858;
+  background-color: #fc5720;
   color: #fff;
-  border: 2px solid #ffc858 !important;
+  border: 2px solid #fc5720 !important;
   border-radius: 3px;
   &:visited {
     color: #fff;
@@ -92,6 +94,6 @@ last_modified_at: Sat May 13 08:43:14 CDT 2017
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This one just moved to the top of my reading list. A book on how to treat docs like code by <a href="https://twitter.com/annegentle">@annegentle</a>. Awesome!  &gt; <a href="https://t.co/nRkSZkhv5x">https://t.co/nRkSZkhv5x</a></p>&mdash; Patrick Andriessen (@napnamPat) <a href="https://twitter.com/napnamPat/status/838695213841403904">March 6, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<h1>Get the t-shirt!</h1>
+<h2>Get the t-shirt!</h2>
 
 <a href="http://just-write-click.myshopify.com/">Now available - Docs Like Code t-shirts</a>!
