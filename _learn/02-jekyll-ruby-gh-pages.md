@@ -29,7 +29,7 @@ Let's make an alias though so you can follow the rest of the commands in this in
 ```
 $ git config core.editor notepad
 ```
-The, you can type this in Git Bash to edit the `.bash_profile` file in Notepad:
+Then, you can type this in Git Bash to edit the `.bash_profile` file in Notepad:
 ```
 $ notepad .bash_profile
 ```
