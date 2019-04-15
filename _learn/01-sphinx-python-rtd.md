@@ -71,7 +71,7 @@ Most people use Virtual Environments because it's a recommended practice when wo
 1. First create a Python 3 virtual environment using the `venv` module included with Python 3. Notice the example uses `python3.7` to be clear which version of Python you want.
 
     ```
-    python3.6 -m venv py3-sphinx
+    python3.7 -m venv py3-sphinx
     ```
 
 1. Now "activate" the environment. Look for the name of the virtual environment enclosed in parenthesis after activation.
