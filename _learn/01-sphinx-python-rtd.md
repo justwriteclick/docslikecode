@@ -88,11 +88,11 @@ Most people use Virtual Environments because it's a recommended practice when wo
 1. Now verify that `python` is now linked to Python 3.
 
     ```
-    (py3-sphinx) $ python -V
+    (py3-sphinx) $ python3.7 -V
     ```
 
     ```
-    (py3-sphinx) $ Python 3.7.0
+    (py3-sphinx) $ Python 3.7.2
     ```
 
 ## Install Sphinx in the Virtual Environment
