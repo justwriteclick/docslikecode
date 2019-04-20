@@ -65,8 +65,9 @@ When GitHub sees a `.nojekyll` file, it serves the root `index.html` file. Read 
 ## Create a "docsource" or "docsrc" folder for the source files
 
 Now, in the root of your repository, you can create a source folder for your doc builds:
-    * If you're working with code and docs in the same repo, you can name the folder `docsource` or `docsrc`.
-    * If your repo is for only documentation, you can name the folder `source`.
+
+  - If you're working with code and docs in the same repo, you can name the folder `docsource` or `docsrc`.
+  - If your repo is for only documentation, you can name the folder `source`.
 
 Next, make sure that your `conf.py` file has been set up with these source and destination directories. The Sphinx documentation has a good [Configuration section](http://www.sphinx-doc.org/en/master/usage/configuration.html).
 
@@ -74,11 +75,11 @@ Next, make sure that your `conf.py` file has been set up with these source and d
 
 Here's another pro tip I found while browsing [Issues in the Sphinx repository itself](https://github.com/sphinx-doc/sphinx/issues/3382#issuecomment-470772316). Since you want to keep the source and output separate, but still be able to both publish on GitHub Pages and preview builds locally, you can add an option to your `Makefile` to do both.
 
-    ```
-    github:
-        @make html
-        @cp -a _build/html/. ../docs
-    ```
+```
+  github:
+      @make html
+      @cp -a _build/html/. ../docs
+```
 
 Now you can run `make github` from the doc source directory to generate a local preview and move the docs where GitHub wants to serve them from.
 
