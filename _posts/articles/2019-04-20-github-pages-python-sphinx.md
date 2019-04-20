@@ -14,9 +14,9 @@ share: true
 
 If you prefer to write in ReStructured Text instead of Markdown for your technical documentation, you're in good company. There are quite a few benefits to using Sphinx, Python, RST, and Sphinx extensions because these tools are custom-built with developer documentation in mind.
 
-Another great offering is GitHub Pages, with automatic publishing when a known branch, such as master or gh-pages is updated.
+Another great offering is GitHub Pages, with automatic publishing when a known branch, such as the `master` or `gh-pages` branch is updated.
 
-So, how about the best of both? Let's dive into two key configurations that enable you to publish Python Sphinx pages to GitHub Pages.
+So, how about the best of both? Let's dive into the key configurations that enable you to publish Python Sphinx pages to GitHub Pages.
 
 ## Naming the GitHub repository can affect the resulting URL
 
