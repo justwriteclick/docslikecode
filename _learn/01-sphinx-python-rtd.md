@@ -124,6 +124,7 @@ You can also get familiar with [ReStructured text](http://docutils.sourceforge.n
 1. Answer all the questions from the prompts.
   You can choose enter to pick all the defaults and get a working project in the current directory (`.`).
   >Some notes for the context of this tutorial:
+  * If you create a working directory in your home directory, such as `~/src/`, then you can use a `git clone` command in the `src` directory every time. For this tutorial, you can create a directory for your project, such as `~/src/project-name-here`. This directory becomes your root path.
   * You can either use a directory named `_build` within the root path, or have separate `source` and `build` directories, which is the default. To see an example directory structure with a `source` directory, refer to this [justwriteclick/rockthedocs-demo](https://github.com/justwriteclick/rockthedocs-demo) repo on GitHub.
   * When answering the questions, note that you can choose "githubpages set to yes" to create a `.nojekyll` file to publish the document on GitHub pages. In our case, though, our example builds to Read the Docs, so you can use the defaults throughout.
 
