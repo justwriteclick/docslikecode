@@ -121,7 +121,7 @@ Besides the ones detailed above, there are plenty of different open source API d
 -   [Slate](https://github.com/lord/slate): Slate helps you create responsive API documentation with a clean, intuitive design. Although it’s built in Ruby, when you write docs with Slate, you're just writing Markdown, which makes it simple to edit and understand. By default, your Slate-generated documentation is hosted in a public Github repository, which makes it simple for other developers to make pull requests to your docs if they find typos or other problems. Of course, if you don't want to use GitHub, you can also host your docs elsewhere.
 -   [Whiteboard](https://github.com/mpociot/whiteboard): A NodeJS based project started from Slate.
 -   [apiDoc](http://apidocjs.com/): Inline documentation for RESTful web APIs, that creates a documentation from API annotations in your source code.
--   [CUUBEZ API Visualizer](http://apivisualizer.cuubez.com/): Java based API solution to visualize the documentation of RESTful web APIs. This API visualizing framework supports all JAXRS based java REST frameworks and non-JAXRS java based REST frameworks that are currently available in the industry.
+-   [CUUBEZ API Visualizer](https://github.com/cuubez/api-visualizer): Java based API solution to visualize the documentation of RESTful web APIs. This API visualizing framework supports all JAXRS based java REST frameworks and non-JAXRS java based REST frameworks that are currently available in the industry.
 -   [Apidox](http://apidox.net/): XML powered live interactive API documentation and browsing for RESTful APIs.
 -   [Carte](https://github.com/Wiredcraft/carte): A simple Jekyll based documentation website for APIs. Designed as a boilerplate to build your own documentation, heavily inspired by Swagger and I/O docs.
 -   [Docbox](https://github.com/tmcw/docbox): A responsive website generated from Markdown documentation content. It’s dynamically updated with React.
@@ -137,9 +137,11 @@ Although very handy, API documentation generators are not the only way to render
 
 A couple of documentation tools you can check out:
 
+<!-- No longer available as of May 2019.
 -   [Dexy](http://www.dexy.it/): Dexy is a multi-purpose project automation tool with lots of features designed to work with documents. It does the repetitive parts for you, and thus makes it easier to create technical documents. Many developers use it to document APIs, because combined with other open source tools, Dexy is able to run your example code, save the results, fetch data from an API, and post your docs to a blog or a wiki.
+-->
 -   [Docco](https://jashkenas.github.io/docco/): Docco is a quick-and-dirty documentation generator. It produces an HTML document that displays your comments intermingled with your code.
--   [Doxygen](http://www.stack.nl/~dimitri/doxygen/): Doxygen is the de facto standard tool for generating documentation from annotated C++ sources, but it also supports other popular programming languages such as C, Objective-C, C\#, PHP, Java, Python, IDL, Fortran, VHDL, Tcl, and to some extent D. To document your API, generate an online HTML documentation browser or an offline reference manual, and configure Doxygen to extract the code structure from your source files.
+-   [Doxygen](http://doxygen.nl/): Doxygen is the de facto standard tool for generating documentation from annotated C++ sources, but it also supports other popular programming languages such as C, Objective-C, C\#, PHP, Java, Python, IDL, Fortran, VHDL, Tcl, and to some extent D. To document your API, generate an online HTML documentation browser or an offline reference manual, and configure Doxygen to extract the code structure from your source files.
 
 We mentioned these tools to give you an idea of how you can use general documentation tools for API documentation, but there are many more to choose from, if you’d like to follow this approach.
 
@@ -241,7 +243,7 @@ Markdown (Ruby)</td>
 <td>Whiteboard</td>
 <td>NodeJS based Slate alternative</td>
 <td>NodeJS</td>
-<td><a href="https://wifidistribution.com/docs/">Whiteboard demo</a></td>
+<td>Whiteboard demo was from wifidistribution.com/docs, no longer available as of May 2019</td>
 </tr>
 <tr class="odd">
 <td>apiDoc</td>
@@ -253,7 +255,7 @@ Markdown (Ruby)</td>
 <td>CuuBEZ API Visualizer</td>
 <td>Visualize the documentation of RESTful web APIs</td>
 <td>Java</td>
-<td><a href="http://apivisualizerold.cuubez.com/demo.html">CuuBEZ API Visualizer demo</a></td>
+<td><a href="https://github.com/cuubez/api-visualizer">CuuBEZ API Visualizer repo</a></td>
 </tr>
 <tr class="odd">
 <td>Apidox</td>

@@ -12,7 +12,7 @@ last_modified_at: Sat May 13 08:43:14 CDT 2017
 <p>We've transformed the way teams work together on docs, and we want to show you the best practices for writing docs using development tools and techniques. Now available in both print and ebook, check out <i>Docs Like Code</i>.</p>
 
 
-<p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
+<p><a href="https://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 14px;
@@ -39,7 +39,7 @@ last_modified_at: Sat May 13 08:43:14 CDT 2017
 <strong>What are the best practices for REST API docs?</strong> While Swagger/OpenAPI, RAML, and other standards work well when considering the entire API lifecycle, you can also consider collaboration gains with simple markup and narrative documents beyond the REST API reference doc set.
 </p>
 
-<p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
+<p><a href="https://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 14px;
@@ -66,7 +66,7 @@ last_modified_at: Sat May 13 08:43:14 CDT 2017
 > <br />
 > &mdash; Eric Holscher, Cofounder of Read the Docs and Write the Docs
 
-<p><a href="http://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
+<p><a href="https://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 14px;
@@ -93,7 +93,3 @@ last_modified_at: Sat May 13 08:43:14 CDT 2017
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This one just moved to the top of my reading list. A book on how to treat docs like code by <a href="https://twitter.com/annegentle">@annegentle</a>. Awesome!  &gt; <a href="https://t.co/nRkSZkhv5x">https://t.co/nRkSZkhv5x</a></p>&mdash; Patrick Andriessen (@napnamPat) <a href="https://twitter.com/napnamPat/status/838695213841403904">March 6, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<h2>Get the t-shirt!</h2>
-
-<a href="http://just-write-click.myshopify.com/">Now available - Docs Like Code t-shirts</a>!
