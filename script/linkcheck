@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# halt script on error
+set -e
+# clean
+rm -rf _site
+# Build locally, then check links in built output
+# Builds only /latest, not older versions
+bundle exec jekyll build -d _site
+bundle exec htmlproofer ./_site --url-ignore "#"

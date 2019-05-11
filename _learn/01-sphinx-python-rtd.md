@@ -172,5 +172,5 @@ You can also get familiar with [ReStructured text](http://docutils.sourceforge.n
 
 ## Additional references
 
-* [Sphinx Python Documentation Generator](http://www.sphinx-doc.org/en/stable/)
+* [Sphinx Python Documentation Generator](https://www.sphinx-doc.org/en/stable/)
 * [ReStructured text documentation](http://docutils.sourceforge.net/rst.html)

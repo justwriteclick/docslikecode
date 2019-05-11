@@ -36,7 +36,7 @@ One area I did skip on for this book was a professional-level index, which Kelly
 
 ## Design materials and promotional work
 
-I also was able to do all the design imagery myself, including the book cover. This part was thanks to [Canva](https://www.canva.com/) and some nice templates that service has online. I used the free trial for Canva to make the book cover and stickers and [t-shirt](http://www.docslikecode.com/tshirt/) design.
+I also was able to do all the design imagery myself, including the book cover. This part was thanks to [Canva](https://www.canva.com/) and some nice templates that service has online. I used the free trial for Canva to make the book cover and stickers and t-shirt design. (Updated to add: the t-shirt store cost $300/year which was not profitable so I stopped offering t-shirts in 2019.)
 
 That said, I was not willing to take on the layout work myself. So, when [Gitbook](https://www.gitbook.com/) did not output a PDF that I considered "print-ready", I went to [Upwork](https://www.upwork.com). I wanted more fine-tuned layout and design for the print copy, including proper page breaks and nice tables. So I hired a designer with access to Indesign who could take the epub and turn it into a print book.
 
