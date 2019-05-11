@@ -7,7 +7,7 @@ image:
   caption: "Screenshot using Minimal Mistakes theme"
 ---
 
-Jekyll is a Static Site Generator that typically accepts [Markdown](http://commonmark.org/help/) for authoring. [Jekyll](https://jekyllrb.com/) has its own documentation site and a [Quickstart](https://jekyllrb.com/docs/). To prepare your environment to build Jekyll sites locally, follow the instructions for either Windows or MacOS.
+Jekyll is a Static Site Generator that typically accepts [Markdown](https://commonmark.org/help/) for authoring. [Jekyll](https://jekyllrb.com/) has its own documentation site and a [Quickstart](https://jekyllrb.com/docs/). To prepare your environment to build Jekyll sites locally, follow the instructions for either Windows or MacOS.
 
 ## Set up Ruby and Jekyll on Windows with Docker
 
@@ -193,7 +193,7 @@ Once you've prepared your environment, you can build locally and review the site
 
 ## Additional references
 
-* [Markdown reference](http://commonmark.org/help/)
+* [Markdown reference](https://commonmark.org/help/)
 * [Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/)
 * [Lynda.com Web foundations, GitHub Pages](https://www.lynda.com/Web-Development-tutorials/GitHub-pages/609031/654613-4.html)
 * [Jekyll documentation about GitHub Pages](https://jekyllrb.com/docs/github-pages/)

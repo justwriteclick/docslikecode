@@ -85,7 +85,7 @@ As with many large projects, people disagreed and actively disliked some project
 
 While these challenges could have easily derailed our project, a major reason we succeeded is the support we got from our leaders, including Jesse Noller, director of engineering; Ian White, our senior manager at project kickoff, and our current senior manager, Laura Clymer.
 
-We also leveraged Rackspace’s close relationship with the OpenStack community. [Anne Gentle](https://justwriteclick.com/) provided expert guidance that continues to inspire our effort to develop a strong, collaborative documentation culture. Another key support was the [Write the Docs community](http://www.writethedocs.org/).
+We also leveraged Rackspace’s close relationship with the OpenStack community. [Anne Gentle](https://justwriteclick.com/) provided expert guidance that continues to inspire our effort to develop a strong, collaborative documentation culture. Another key support was the [Write the Docs community](https://www.writethedocs.org/).
 
 Early on, Rackspace writers attended a Write the Docs conference in Portland. We learned valuable lessons and were motivated by the success of similar projects at other companies. WTD also provided useful information about establishing collaborative relationships across teams and developing the multidisciplinary skills required for collaborative work. The WTD community continues to be a source of guidance and moral support as we navigate continuing challenges.
 
@@ -93,17 +93,17 @@ Early on, Rackspace writers attended a Write the Docs conference in Portland. We
 
 Are you or your team interested in adopting a docs like code model or improving your documentation development process in general?
 
-The [WTD website](http://www.writethedocs.org/) is a great place to begin, with links to conference presentations, a documentation guide and information about conferences and meet ups.
+The [WTD website](https://www.writethedocs.org/) is a great place to begin, with links to conference presentations, a documentation guide and information about conferences and meet ups.
 
-Considering the docs as code model from different perspectives provides valuable insights about the mechanics of the model as well as cultural and process considerations. Evan Goer provides a developer perspective in [Thinking of Documentation as Code](http://www.slideshare.net/evangoer/yuiconf-2013documentationiscode).
+Considering the docs as code model from different perspectives provides valuable insights about the mechanics of the model as well as cultural and process considerations. Evan Goer provides a developer perspective in [Thinking of Documentation as Code](https://www.slideshare.net/evangoer/yuiconf-2013documentationiscode).
 
-For a perspective that consider both the writer and developer perspective, see [Docs as Code: The Missing Manual](http://www.slideshare.net/MargaretEker/docs-ascodemissingmanual-66429726), a presentation that I co-presented at the Write the Docs 2016 European conference. Our talk focused on optimizing the docs as code model by mapping writing and code workflows to identify gaps and opportunities for additional collaboration and automation, particularly test automation.
+For a perspective that consider both the writer and developer perspective, see [Docs as Code: The Missing Manual](https://www.slideshare.net/MargaretEker/docs-ascodemissingmanual-66429726), a presentation that I co-presented at the Write the Docs 2016 European conference. Our talk focused on optimizing the docs as code model by mapping writing and code workflows to identify gaps and opportunities for additional collaboration and automation, particularly test automation.
 
-At the same conference, [Rachel Whitton’s talk Delivering High-Velocity Docs that Keep Pace with Rapid Release Cycles](http://www.slideshare.net/RachelWhitton3/delivering-highvelocity-docs-that-keep-pace-with-rapid-release-cycles) captured the details of implementing a docs as code model from the writing and operations perspective.
+At the same conference, [Rachel Whitton’s talk Delivering High-Velocity Docs that Keep Pace with Rapid Release Cycles](https://www.slideshare.net/RachelWhitton3/delivering-highvelocity-docs-that-keep-pace-with-rapid-release-cycles) captured the details of implementing a docs as code model from the writing and operations perspective.
 
-Finally, another great resource is Anne Gentle’s [Docs like Code project](http://docslikecode.com/) that aims to share information and capture best practices for creating documentation collaboratively using code systems.
+Finally, another great resource is Anne Gentle’s [Docs like Code project](https://docslikecode.com/) that aims to share information and capture best practices for creating documentation collaboratively using code systems.
 
-Are you treating docs like code, or thinking about transforming your documentation processes? We’d love to hear your thoughts and experiences. If you have questions or want to know more about contributing to Rackspace documentation, see our [Contributor Guidelines](http://rackerlabs.github.io/docs-rackspace/contributor-collateral/index.html) or e-mail us at devdoc@rackspace.com.
+Are you treating docs like code, or thinking about transforming your documentation processes? We’d love to hear your thoughts and experiences. If you have questions or want to know more about contributing to Rackspace documentation, see our [Contributor Guidelines](https://rackerlabs.github.io/docs-rackspace/contributor-collateral/index.html) or e-mail us at devdoc@rackspace.com.
 
 Originally published November 11, 2016, on the [Rackspace Blog](https://blog.rackspace.com/transforming-developer-and-support-documentation-with-docs-like-code).
 

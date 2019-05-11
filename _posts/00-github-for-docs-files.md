@@ -108,7 +108,7 @@ The terms sound confusing at first. Here's a list of vocabulary words to help yo
   <dt>push</dt>
   <dd>
     <p>
-      Move your local committed changes to a remote location, such as <a href="http://www.github.com">GitHub.com</a>, so that other people can access them.
+      Move your local committed changes to a remote location, such as <a href="https://www.github.com">GitHub.com</a>, so that other people can access them.
     </p>
   </dd>
   <dt>remote</dt>

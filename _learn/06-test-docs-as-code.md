@@ -146,5 +146,4 @@ Look for more inspiration beyond link checking in the additional resources secti
 * [Test the Docs](https://testthedocs.org/)
 * Pantheon docs examples
   * [Merge conflict test](https://github.com/pantheon-systems/documentation/blob/master/scripts/merge_conflicts.sh)
-  * [CircleCI example configuration](https://github.com/pantheon-systems/documentation/blob/master/circle.yml)
-* [How we spotted--and fixed--11 errors in our docs with our new markdown proofer](https://circleci.com/blog/markdown-proofer/)
+  * [How we spotted--and fixed--11 errors in our docs with our new markdown proofer](https://circleci.com/blog/markdown-proofer/)
