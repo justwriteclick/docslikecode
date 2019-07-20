@@ -20,7 +20,7 @@ So, how about the best of both? Let's dive into the key configurations that enab
 
 ## Naming the GitHub repository can affect the resulting URL
 
-If you want a URL like `<username>.github.io` or ``<orgname>.github.io`, name the repo `<username>.github.io` or `<orgname>.github.io`. Then, by default, GitHub Pages publishes to the URL matching the repo name.
+If you want a URL like `<username>.github.io` or `<orgname>.github.io`, name the repo `<username>.github.io` or `<orgname>.github.io`. Then, by default, GitHub Pages publishes to the URL matching the repo name.
 
 ## Enable GitHub Pages for the GitHub repository
 
