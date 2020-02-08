@@ -6,58 +6,36 @@ image:
   caption: "Python and Sphinx"
 ---
 
-Sphinx works with either major versions of Python active today, Python 2 and Python 3. Python 3 is the current and recommended version. Sphinx is a documentation tool that creates HTML, CSS, and JavaScript files from [ReStructured](http://docutils.sourceforge.net/rst.html) text files.
+Sphinx works with either major versions of Python active today, Python 2 and Python 3. Python 3 is the current and recommended version, and Python 2 is an unsupported Python version. Sphinx is a documentation tool that creates HTML, CSS, and JavaScript files from [ReStructured](http://docutils.sourceforge.net/rst.html) text files.
 
-In case you need both versions, this tutorial walks through both on a Mac. Refer to the [Downloads on the Python site](https://www.python.org/downloads/windows/) for Windows.
+In case you need both versions, refer to the [Downloads on the Python site](https://www.python.org/downloads/).
 
-#### Installing Python 2.7.x on Mac
+## Prerequisites
 
-1. Open a terminal and use `brew` to install Python 2.7.x.
+* MacOS or a Linux-based environment in which to install Python.
+* Homebrew installed on MacOS. Get installation instructions from https://brew.sh/.
 
-    ```
-    brew install python@2
-    ```
+## Installing Python 3.x
 
-#### Installing Python 3.x
+You want the latest version of Python 3 available.
 
-You also want the latest version of Python 3 available.
-
-1. Open a terminal and use brew to install the latest Python 3.x (currently 3.7).
+1. Open a terminal and use `brew` to install the latest Python 3.x (currently 3.7).
 
     ```
     brew install python
     ```
 
-#### Verifying Python 2 and Python 3
+### Verifying the Python installation
 
 1. Open a terminal.
-1. Verify that Python 2 is correctly installed.
-
-    ```
-    python2.7 -V
-    ```
-    Expected output for August 2018:
-    ```
-    Python 2.7.15
-    ```
 1. Verify that Python 3 is correctly installed.
-
-    ```
-    python3.7 -V
-    ```
-    Expected output for August 2018:
-    ```
-    Python 3.7.0
-    ```
-
-1. Check the version set as the default version, the version of Python that is executed when you simply enter `python`. The default version of Python remains a Python 2.7 version.
 
     ```
     python -V
     ```
-    Expected output for August 2018:
+    Expected output for February 2020:
     ```
-    Python 2.7.15
+    Python 3.7.6
     ```
 
 ## Set Up Virtual Environment
@@ -68,10 +46,10 @@ Most people use Virtual Environments because it's a recommended practice when wo
 
 **Python 3**
 
-1. First create a Python 3 virtual environment using the `venv` module included with Python 3. Notice the example uses `python3.7` to be clear which version of Python you want.
+1. First create a Python 3 virtual environment using the `venv` module included with Python 3.
 
     ```
-    python3.7 -m venv py3-sphinx
+    python -m venv py3-sphinx
     ```
 
 1. Now "activate" the environment. Look for the name of the virtual environment enclosed in parenthesis after activation.
@@ -88,11 +66,11 @@ Most people use Virtual Environments because it's a recommended practice when wo
 1. Now verify that `python` is now linked to Python 3.
 
     ```
-    (py3-sphinx) $ python3.7 -V
+    (py3-sphinx) $ python -V
     ```
 
     ```
-    (py3-sphinx) $ Python 3.7.2
+    (py3-sphinx) $ Python 3.7.6
     ```
 
 ## Install Sphinx in the Virtual Environment
