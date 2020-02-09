@@ -1,8 +1,8 @@
 ---
-title: "Print, PDF, or epub output"
+title: "Evaluating print, PDF, or epub output"
 image:
-  path: /images/so-simple-sample-image-4.jpg
-  thumbnail: /images/site-logo.png
+  path: /images/learn/print-pdf-epub.png
+  thumbnail: /images/learn/print-pdf-epub400x225.png
 ---
 
 How difficult or straightforward is it to create a print or PDF format? You may want to investigate and test solutions beyond this article, as requirements and print tolerances can vary widely.
