@@ -1,11 +1,14 @@
 ---
 title: "Evaluating print, PDF, or epub output"
+layout: learn
 image:
   path: /images/learn/print-pdf-epub.png
   thumbnail: /images/learn/print-pdf-epub400x225.png
 ---
 
 How difficult or straightforward is it to create a print or PDF format? You may want to investigate and test solutions beyond this article, as requirements and print tolerances can vary widely.
+
+>Note: For the _Docs Like Code_ book, I have written an article about how I created print-ready PDF and Amazon-supported ebook files such as the MOBI format. Read more in [Practical Advice On Publishing A Technical Book using GitHub and GitBook](https://www.docslikecode.com/articles/practical-advice/).
 
 ### Jekyll PDF options
 

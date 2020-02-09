@@ -50,7 +50,7 @@ To me, after reading the [origin story for Lulu](http://www.lulu.com/about/our-s
 
 Finding a freelance editor would be a huge leg up on the writing process itself, especially if you also need a bit of developmental editing for the book idea.
 
-For the print layout, I had a great experience with UpWork and was also able to keep the same person for work I needed one for the second edition. I learned from using a freelance site that I can find and manage freelancers for projects that I want to get done but don’t want to carve out time or buy tools for myself to finish them.
+For the print layout, I had a great experience with UpWork and was also able to hire the same person to work on the second edition. I learned from using a freelance site that I can find and manage freelancers for projects that I want to get done but don’t want to carve out time or buy tools for myself to finish them.
 
 ## List of tools and services
 
