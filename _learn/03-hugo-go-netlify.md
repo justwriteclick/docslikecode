@@ -11,6 +11,12 @@ To build Hugo sites locally, install Homebrew and Hugo. You do not need to insta
 
 Since Hugo is built on Go, you can use the binary for your operating system. No need to maintain a development environment. Upgrades are easy too, get a new binary and install it and you're upgraded.
 
+## Prerequisites
+* Windows, MacOS, or a Linux-based environment.
+* On MacOS, you will install [Homebrew](https://brew.sh).
+* On Windows, you must install Docker.
+* On Windows, you must install [Git for Windows](https://gitforwindows.org/) which includes Git Bash.
+
 ## Set up Hugo on Windows with Git Bash and Docker
 
 You can also set up Docker and then use this [Docker image](https://hub.docker.com/r/jguyomard/hugo-builder/), and set up alias commands for `hugo` running in Docker, but using the same `hugo` commands in Git Bash on Windows.

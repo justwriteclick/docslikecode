@@ -9,6 +9,12 @@ image:
 
 Jekyll is a Static Site Generator that typically accepts [Markdown](https://commonmark.org/help/) for authoring. [Jekyll](https://jekyllrb.com/) has its own documentation site and a [Quickstart](https://jekyllrb.com/docs/). To prepare your environment to build Jekyll sites locally, follow the instructions for either Windows or MacOS.
 
+## Prerequisites
+* Windows, MacOS, or a Linux-based environment.
+* On MacOS, you will install [Homebrew](https://brew.sh).
+* On Windows, you must install Docker.
+* On Windows, you must install [Git for Windows](https://gitforwindows.org/) which includes Git Bash.
+
 ## Set up Ruby and Jekyll on Windows with Docker
 
 On Windows, first install [Docker](https://docs.docker.com/docker-for-windows/) and [Git Bash](https://gitforwindows.org/), so that you are able to use Linux-based Docker images and commands. Then follow these steps to set up Jekyll and Ruby.
