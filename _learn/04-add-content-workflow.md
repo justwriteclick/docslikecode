@@ -9,6 +9,13 @@ image:
 
 This section goes through the workflow for adding content, editing pages, and generally working on a docs site in a GitHub repo.
 
+## Prerequisites
+
+* A GitHub, GitLab, or other Git online account.
+* A Git repository already created online in one of those services (GitHub, GitLab, or other) and already cloned locally.
+
+These steps are shown from within a directory that contains the Git repository files.
+
 ## Add content to the site
 
 Once you have created files required by your static site generator, you can start writing. Begin with the index, or home page.
