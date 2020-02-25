@@ -1,5 +1,6 @@
 ---
 title: "Evaluating Static Site Generator search options"
+layout: learn
 image:
   path: /images/learn/ssg-search-options.png
   thumbnail: /images/learn/ssg-search-options400x225.png
@@ -24,3 +25,8 @@ home = [ "HTML", "RSS", "JSON"]
 ```
 
 You can also configure Algolia, a software-as-a-service (SaaS) search solution, in Hugo, according to this [blog post](https://forestry.io/blog/search-with-algolia-in-hugo/).
+
+## Evaluating other options
+
+* [Evaluating Static Site Generator themes](https://www.docslikecode.com/learn/07-evaluating-ssg-themes/)
+* [Evaluating table layouts and formatting](https://www.docslikecode.com/learn/08-evaluating-table-layouts/)

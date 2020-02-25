@@ -1,5 +1,6 @@
 ---
 title: "Continuous Deployment (CD) for Documentation Sites"
+layout: learn
 image:
   path: /images/learn/netlify-logo400x200.png
   thumbnail: /images/learn/netlify-logo400x200.png
@@ -101,8 +102,18 @@ You can also deploy documentation sites using free hosting options as alternativ
 
 *  [Netlify](https://www.netlify.com) provides the same capability as GitHub and GitLab with the Ruby gem configuration described in [this tutorial](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/) and in the [Minimal Mistakes theme documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#ruby-gem-method).
 
-## Additional resources
+## What's next
 
-[TravisCI Core Concepts for Beginners](https://docs.travis-ci.com/user/for-beginners)
+* [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/)
+* [Set Up Automated Tests for Docs](https://www.docslikecode.com/learn/06-test-docs-as-code/)
 
-[Convert AsciiDoc to HTML/PDF & publish to GitHub Pages with Travis CI and Asciidoctor Docker containers](http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html)
+## Evaluating options
+
+* [Evaluating Static Site Generator themes](https://www.docslikecode.com/learn/07-evaluating-ssg-themes/)
+* [Evaluating table layouts and formatting](https://www.docslikecode.com/learn/08-evaluating-table-layouts/)
+* [Evaluating Static Site Generator search options](https://www.docslikecode.com/learn/09-ssg-search-implementations/)
+
+## Additional references
+
+* [TravisCI Core Concepts for Beginners](https://docs.travis-ci.com/user/for-beginners)
+* [Convert AsciiDoc to HTML/PDF & publish to GitHub Pages with Travis CI and Asciidoctor Docker containers](http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html)

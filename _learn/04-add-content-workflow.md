@@ -1,5 +1,6 @@
 ---
 title: "Working with content in GitHub repositories"
+layout: learn
 image:
   path: /images/learn/octocat.png
   thumbnail: /images/learn/octocat-github-logo400x200.png
@@ -7,6 +8,13 @@ image:
 ---
 
 This section goes through the workflow for adding content, editing pages, and generally working on a docs site in a GitHub repo.
+
+## Prerequisites
+
+* A GitHub, GitLab, or other Git online account.
+* A Git repository already created online in one of those services (GitHub, GitLab, or other) and already cloned locally.
+
+These steps are shown from within a directory that contains the Git repository files.
 
 ## Add content to the site
 
@@ -138,3 +146,19 @@ When you're the only person working in a repo, you can use a simple workflow, wh
   ```
   $ git checkout master; git remote update; git pull origin master
   ```
+
+## What's next
+
+* [Continuous Deployment (CD) for Documentation Sites](https://www.docslikecode.com/learn/05-cd-for-docs/)
+* [Set Up Automated Tests for Docs](https://www.docslikecode.com/learn/06-test-docs-as-code/)
+
+## Evaluating options
+
+* [Evaluating Static Site Generator themes](https://www.docslikecode.com/learn/07-evaluating-ssg-themes/)
+* [Evaluating table layouts and formatting](https://www.docslikecode.com/learn/08-evaluating-table-layouts/)
+* [Evaluating Static Site Generator search options](https://www.docslikecode.com/learn/09-ssg-search-implementations/)
+
+## Additional references
+
+* [Comparing Git Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
+* [Git Branching - Branching Workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)

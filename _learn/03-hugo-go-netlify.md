@@ -1,5 +1,6 @@
 ---
-title: "Set Up Hugo"
+title: "Set Up Hugo with Go"
+layout: learn
 image:
   path: /images/learn/hugo-docs-page.png
   thumbnail: /images/learn/go-logo400x200.png
@@ -9,6 +10,12 @@ image:
 To build Hugo sites locally, install Homebrew and Hugo. You do not need to install Go to use Hugo as your static site generator. These instructions are for a Mac or Linux system, but you can also read the Windows installation instructions on the [gohugo.io](https://gohugo.io/getting-started/installing#windows) site.
 
 Since Hugo is built on Go, you can use the binary for your operating system. No need to maintain a development environment. Upgrades are easy too, get a new binary and install it and you're upgraded.
+
+## Prerequisites
+* Windows, MacOS, or a Linux-based environment.
+* On MacOS, you will install [Homebrew](https://brew.sh).
+* On Windows, you must install Docker.
+* On Windows, you must install [Git for Windows](https://gitforwindows.org/) which includes Git Bash.
 
 ## Set up Hugo on Windows with Git Bash and Docker
 
@@ -104,11 +111,10 @@ For Hugo, it's important to know that draft pages are only served when using the
       Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
       Press Ctrl+C to stop
    ```
-
 1. Open the **Web Server** URL, `http://localhost:1313/` in your local browser to view the site.
-
-1. Press `Ctrl+C` in the server terminal to stop the Hugo server.
-1. You can add your files to a Git commit. Refer to [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/) for a documentation workflow with your Hugo site.
+    ![Example Hugo site](/images/learn/hugo-docs-page.png)
+3. Press `Ctrl+C` in the server terminal to stop the Hugo server.
+4. You can add your files to a Git commit. Refer to [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/) for a documentation workflow with your Hugo site.
 
 ## Modify the Hugo theme
 
@@ -125,7 +131,19 @@ themeVariant = "green"
 home = [ "HTML", "RSS", "JSON"]
 ```
 
-## Additional resources
+## What's next
 
-[Hugo Quickstart](https://gohugo.io/getting-started/quick-start/)
-[Hugo Themes web site](https://themes.gohugo.io/)
+* [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/)
+* [Continuous Deployment (CD) for Documentation Sites](https://www.docslikecode.com/learn/05-cd-for-docs/)
+* [Set Up Automated Tests for Docs](https://www.docslikecode.com/learn/06-test-docs-as-code/)
+
+## Evaluating options
+
+* [Evaluating Static Site Generator themes](https://www.docslikecode.com/learn/07-evaluating-ssg-themes/)
+* [Evaluating table layouts and formatting](https://www.docslikecode.com/learn/08-evaluating-table-layouts/)
+* [Evaluating Static Site Generator search options](https://www.docslikecode.com/learn/09-ssg-search-implementations/)
+
+## Additional references
+
+* [Hugo Quickstart](https://gohugo.io/getting-started/quick-start/)
+* [Hugo Themes web site](https://themes.gohugo.io/)

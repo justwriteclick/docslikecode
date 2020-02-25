@@ -1,12 +1,19 @@
 ---
 title: "Set Up Jekyll with Ruby"
+layout: learn
 image:
   path: /images/learn/jekyll-docs-page.png
   thumbnail: /images/learn/ruby-logo400x200.png
   caption: "Screenshot using Minimal Mistakes theme"
 ---
 
-Jekyll is a Static Site Generator that typically accepts [Markdown](http://commonmark.org/help/) for authoring. [Jekyll](https://jekyllrb.com/) has its own documentation site and a [Quickstart](https://jekyllrb.com/docs/). To prepare your environment to build Jekyll sites locally, follow the instructions for either Windows or MacOS.
+Jekyll is a Static Site Generator that typically accepts [Markdown](https://commonmark.org/help/) for authoring. [Jekyll](https://jekyllrb.com/) has its own documentation site and a [Quickstart](https://jekyllrb.com/docs/). To prepare your environment to build Jekyll sites locally, follow the instructions for either Windows or MacOS.
+
+## Prerequisites
+* Windows, MacOS, or a Linux-based environment.
+* On MacOS, you will install [Homebrew](https://brew.sh).
+* On Windows, you must install Docker.
+* On Windows, you must install [Git for Windows](https://gitforwindows.org/) which includes Git Bash.
 
 ## Set up Ruby and Jekyll on Windows with Docker
 
@@ -28,7 +35,7 @@ Let's make an alias though so you can follow the rest of the commands in this in
 ```
 $ git config core.editor notepad
 ```
-The, you can type this in Git Bash to edit the `.bash_profile` file in Notepad:
+Then, you can type this in Git Bash to edit the `.bash_profile` file in Notepad:
 ```
 $ notepad .bash_profile
 ```
@@ -171,16 +178,28 @@ Once you've prepared your environment, you can build locally and review the site
    ```
 
 1. Use the **Server address** URL  `http://127.0.0.1:4000/latest/` in a browser to preview the content.
-
+   ![Example Jekyll site]( /images/learn/jekyll-docs-page.png)
 1. Press `Ctrl+C` in the serve terminal to stop the server.
     > ***TIP***
     > Leave the serve terminal open and running. Every time you save changes to a file, it automatically regenerates the site so you can test the output as you write. That said, if you change the `_config.yml` file, you must stop (ctrl-c) and then re-run the serve command to see changes.
 
 1. Don't forget to add the files to a commit and then commit the changes so that you can track the changes and work with others on GitHub. Refer to [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/).
 
-## Additional resources
+## What's next
 
-[Markdown reference](http://commonmark.org/help/)
-[Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/)
-[Lynda.com Web foundations, GitHub Pages](https://www.lynda.com/Web-Development-tutorials/GitHub-pages/609031/654613-4.html)
-[Jekyll documentation about GitHub Pages](https://jekyllrb.com/docs/github-pages/)
+* [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/)
+* [Continuous Deployment (CD) for Documentation Sites](https://www.docslikecode.com/learn/05-cd-for-docs/)
+* [Set Up Automated Tests for Docs](https://www.docslikecode.com/learn/06-test-docs-as-code/)
+
+## Evaluating options
+
+* [Evaluating Static Site Generator themes](https://www.docslikecode.com/learn/07-evaluating-ssg-themes/)
+* [Evaluating table layouts and formatting](https://www.docslikecode.com/learn/08-evaluating-table-layouts/)
+* [Evaluating Static Site Generator search options](https://www.docslikecode.com/learn/09-ssg-search-implementations/)
+
+## Additional references
+
+* [Markdown reference](https://commonmark.org/help/)
+* [Documentation Theme for Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/)
+* [Lynda.com Web foundations, GitHub Pages](https://www.lynda.com/Web-Development-tutorials/GitHub-pages/609031/654613-4.html)
+* [Jekyll documentation about GitHub Pages](https://jekyllrb.com/docs/github-pages/)

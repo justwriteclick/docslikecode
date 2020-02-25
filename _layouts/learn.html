@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.0.1
+    Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
+  {% include head.html %}
+
+  <body class="layout--default">
+   <main id="main" class="main-content" aria-label="Content">
+    <article>
+      <div class="page-wrapper">
+        <div class="page-content">
+       {% include skip-links.html %}
+       {% include navigation.html %}
+       <h1>{{ page.title }}</h1>
+       <div>
+        <img src="{{ page.image.thumbnail }}" alt="{{ page.image.caption }}">
+       </div>
+       {{ content }}
+
+       {% include sign-up.html %}
+
+       </div>
+     </div>
+    {% include footer.html %}
+    {% include scripts.html %}
+    </article>
+   </main>
+  </body>
+
+</html>

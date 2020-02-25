@@ -16,7 +16,7 @@ jennifer_rondeau:
 
 leon_barnard:
   name: Leon Barnard
-  picture: https://pbs.twimg.com/profile_images/855131146195042304/isNkZpYS.jpg
+  picture: https://media.balsamiq.com/img/company/team/2017/bio/leon.jpg
   github: //github.com/balsamiqLeon
   twitter: leonbarnard
   bio: "Designer and Writer"
@@ -46,7 +46,7 @@ tom_johnson:
   name: Tom Johnson
   picture: https://docslikecode.com/images/tom-johnson.jpg
   github: //github.com/tomjoht
-  twitter: http://twitter.com/tomjohnson
+  twitter: https://twitter.com/tomjohnson
   bio: "Technical Writer"
 
 ben_mansheim:
