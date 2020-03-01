@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building Our Documentation Site on PlatformOS — Part 2: Content Production and Layouts"
+title: "Building Our Documentation Site on platformOS — Part 2: Content Production and Layouts"
 excerpt: Welcome to part 2 of our article series where we discuss how content production started, and how we created the layouts and navigation for the site.
 last_modified_at: Thu Nov 01 22:01:44 CDT 2018
 categories: articles
@@ -8,12 +8,12 @@ author: diana_lakatos
 tags: [developer documentation, Content-First Design, community, style guide, templates, editorial workflow, wireframes, docs, documentation, UX]
 image:
   path: /images/platformos/platformos_part2/part2_cover.jpg
-  caption: "[Courtesy PlatformOS Blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platform-os-part-2-content-production-and-layouts)"
+  caption: "[Courtesy platformOS Blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platform-os-part-2-content-production-and-layouts)"
 comments: false
 share: true
 ---
 
-Welcome to part 2 of our article series where we describe the process of building the [PlatformOS documentation site](https://documentation.platform-os.com/) from discovery to development, with in-depth insights into our approach, decisions, plans, and technical implementation.
+Welcome to part 2 of our article series where we describe the process of building the [platformOS documentation site](https://documentation.platform-os.com/) from discovery to development, with in-depth insights into our approach, decisions, plans, and technical implementation.
 
 Now that you’ve seen how we explored the needs of our audience, outlined the types of content we’d work on, and created a sitemap in part 1, let’s move on to discuss how content production started, and how we created the layouts and navigation for the site.  
 
@@ -136,12 +136,12 @@ _Wireframe for the tutorial topic type_
 
 As you can see from the process so far, we put our focus on audience, content, and UX — leaving visual design for later.
 
-Both the Design Thinking approach, and the Content-First approach we described in this article push visual design to a later stage. At the same time, the branding of PlatformOS is still in the making — with the help of the wonderful [Yiying Lu](https://www.linkedin.com/in/yiyinglu/). This means, that by the time our branding is done, we will have a working documentation site tested with real users, continuously improved based on relevant feedback. We believe that this way we could focus on the most important aspects for each phase, and our documentation site will have a solid foundation that the design can enhance. This is why, for now, we went with a very simple, clean design.  
+Both the Design Thinking approach, and the Content-First approach we described in this article push visual design to a later stage. At the same time, the branding of platformOS is still in the making — with the help of the wonderful [Yiying Lu](https://www.linkedin.com/in/yiyinglu/). This means, that by the time our branding is done, we will have a working documentation site tested with real users, continuously improved based on relevant feedback. We believe that this way we could focus on the most important aspects for each phase, and our documentation site will have a solid foundation that the design can enhance. This is why, for now, we went with a very simple, clean design.  
 
 We hope you enjoyed learning about how we started content production, how we built our editorial workflow, and how we created wireframes for our documentation site. **Stay tuned to learn more about the community aspects of our docs in part 3 of our series!**
 
 _We involved [UX Strategist Katalin Nagygyörgy](https://www.linkedin.com/in/nagygyorgykatalin/) in our process from the start. Through our collaboration, we could extract and collect all the necessary information using tried and true research methodologies and UX best practices._
 
-_This article was originally written for the [PlatformOS Blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platformos-part-2-content-production-and-layouts)._
+_This article was originally written for the [platformOS Blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platformos-part-2-content-production-and-layouts)._
 
 {% include sign-up.html %}

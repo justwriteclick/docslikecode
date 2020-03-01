@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building Our Documentation Site on PlatformOS — Part 3: Community"
+title: "Building Our Documentation Site on platformOS — Part 3: Community"
 excerpt: Welcome to part 3 of our article series where we explore how we collaborate with our community.
 last_modified_at: Thu Nov 25 22:01:44 CDT 2018
 categories: articles
@@ -8,12 +8,12 @@ author: diana_lakatos
 tags: [developer documentation, contributor experience, community, style guide, templates, editorial workflow, docs, documentation]
 image:
   path: /images/platformos/platformos_part3/part3_cover.jpg
-  caption: "[Courtesy PlatformOS Blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platformos-part-3-community)"
+  caption: "[Courtesy platformOS Blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platformos-part-3-community)"
 comments: false
 share: true
 ---
 
-In this [article series](/articles/platformos-1of4) we describe the process of building the [PlatformOS documentation site](https://documentation.platform-os.com/) from discovery to development, with in-depth insights into our approach, decisions, plans, and technical implementation. Welcome to part 3, where we explore how we collaborate with our community. 
+In this [article series](/articles/platformos-1of4) we describe the process of building the [platformOS documentation site](https://documentation.platform-os.com/) from discovery to development, with in-depth insights into our approach, decisions, plans, and technical implementation. Welcome to part 3, where we explore how we collaborate with our community. 
 
 # Community-driven documentation
 
@@ -52,9 +52,9 @@ In order to encourage collaboration and keep our community up-to-date with what 
 
 Our main communication channel for now is a dedicated Slack channel, where community members **ask questions, share ideas, and get to know our team members and each other**.
 
-Here, they can ask questions about anything related to PlatformOS, and someone from our team, or another community member who has the answer will jump in to reply. We get a wide variety of questions from business related enquiries like pricing to specific questions about development.
+Here, they can ask questions about anything related to platformOS, and someone from our team, or another community member who has the answer will jump in to reply. We get a wide variety of questions from business related enquiries like pricing to specific questions about development.
 
-This is also the place where both we and our community members **share news**. We let them know of new **features planned, bugs fixed, articles posted, and new docs added, and they show what they’re building on PlatformOS**. This constant exchange of information is extremely valuable for all involved: community members can share what they’ve learned, plan their module development in sync with our roadmap and each other’s projects, and allocate their resources according to what’s going on in the business and the wider community.   
+This is also the place where both we and our community members **share news**. We let them know of new **features planned, bugs fixed, articles posted, and new docs added, and they show what they’re building on platformOS**. This constant exchange of information is extremely valuable for all involved: community members can share what they’ve learned, plan their module development in sync with our roadmap and each other’s projects, and allocate their resources according to what’s going on in the business and the wider community.   
 
 The Slack channel also provides a great opportunity for community members to start conversations, share relevant news and articles, and engage with like-minded professionals.
 
@@ -76,13 +76,13 @@ _A documentation status report in our Slack channel_
 
 ## Weekly video conferencing 
 
-Initiated by our community, Town Hall is a weekly video conference over [Zoom](https://zoom.us/), where community members and the PlatformOS team share news, demo features and modules, and have the opportunity to engage in real-time, face-to-face conversation. 
+Initiated by our community, Town Hall is a weekly video conference over [Zoom](https://zoom.us/), where community members and the platformOS team share news, demo features and modules, and have the opportunity to engage in real-time, face-to-face conversation. 
 
 Our team and community members are distributed over different continents, so we try to accommodate participants in different time zones by rotating the time of this event so that everyone has the chance to participate. We also share the recording of each meeting. 
 
 ![](/images/platformos/platformos_part3/town_hall.jpg) 
 
-_Town Hall meeting: A community member demoing an application he developed on PlatformOS_
+_Town Hall meeting: A community member demoing an application he developed on platformOS_
 
 ## Surveys
 
@@ -103,15 +103,15 @@ As our community grows, we are preparing to scale with it. Here are some of our 
 
 * **Topic wish list**: A feature that allows community members to add topics they’d like to see documented.
 * **Voting on topics**: Vote on topics, and we will start working on the topics with the most votes.
-* **Community site**: Our community members are active on many channels now, including on some of their own initiatives, like an Airtable for keeping track of community members, questions and answers, and community activities. Although it works for now, we are planning to give the PlatformOS community a home — a site similar to Intel Devmesh, a developer community site we built for Intel on PlatformOS.
-* **Community Manager**: In the near future, we are hiring a Community Manager to give the PlatformOS community dedicated attention from an experienced professional.
+* **Community site**: Our community members are active on many channels now, including on some of their own initiatives, like an Airtable for keeping track of community members, questions and answers, and community activities. Although it works for now, we are planning to give the platformOS community a home — a site similar to Intel Devmesh, a developer community site we built for Intel on platformOS.
+* **Community Manager**: In the near future, we are hiring a Community Manager to give the platformOS community dedicated attention from an experienced professional.
 * **Gamification**: After building a solid user flow, we are planning to  strengthen it with gamification elements to help and reward the user’s journey from onboarding to mastering the site. 
-* **Devcon**: We are planning a PlatformOS Devcon for 2019, a proper get-together for our community members with workshops and presentations by our team members and experienced members of our community.
+* **Devcon**: We are planning a platformOS Devcon for 2019, a proper get-together for our community members with workshops and presentations by our team members and experienced members of our community.
 
-Now that you’ve seen how we discovered the needs of our target audience, planned content and layout for our documentation site, and connected with our community, all that’s left from our series is to show you how we implemented our documentation site on PlatformOS. See you again in part 4! 
+Now that you’ve seen how we discovered the needs of our target audience, planned content and layout for our documentation site, and connected with our community, all that’s left from our series is to show you how we implemented our documentation site on platformOS. See you again in part 4! 
 
 _We involved [UX Strategist Katalin Nagygyörgy](https://www.linkedin.com/in/nagygyorgykatalin/) in our process from the start. Through our collaboration, we could extract and collect all the necessary information using tried and true research methodologies and UX best practices._
 
-_This article was originally written for the [PlatformOS Blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platformos-part-3-community)._
+_This article was originally written for the [platformOS Blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platformos-part-3-community)._
 
 {% include sign-up.html %}
