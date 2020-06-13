@@ -1,9 +1,11 @@
 [build]
 
-[context.production]
   publish = "_site/"
-  command = "jekyll build"
-  environment = { JEKYLL_ENV = "production" }
+
+  [context.production]
+    publish = "_site/"
+    command = "jekyll build"
+    environment = { JEKYLL_ENV = "production" }
 
 
 [[plugins]]
