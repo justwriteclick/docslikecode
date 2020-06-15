@@ -19,9 +19,7 @@ Theme courtesy of https://mmistakes.github.io/so-simple-theme/
 
 Test your additions and changes to content by running a local build.
 
-On macOS after Catalina, you can
-
-On a macOS prior to Catalina, you need to install brew, bundler.io, and Ruby version manager:
+On macOS you need to install brew, bundler.io, and Ruby version manager so that you can use a particular version of Ruby:
 
 1. Use brew to install a Ruby version manager.
 
