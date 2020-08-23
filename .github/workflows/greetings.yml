@@ -1,0 +1,13 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Thanks for logging an issue. If you would like to fix it yourself, that''s fine. Assign yourself and send in a PR.'
+        pr-message: 'Thanks for sending a pull request. You can message me on LinkedIn or Twitter if I don''t respond here quickly.'
