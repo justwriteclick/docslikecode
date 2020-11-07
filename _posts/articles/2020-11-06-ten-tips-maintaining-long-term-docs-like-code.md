@@ -7,7 +7,7 @@ categories: articles
 author: gary_niemen
 tags: [cicd, backstage, spotify, github, git, portal, internal, documentation, developer, docs]
 image:
-  path: /images/soundboard-han.ailes.jpg
+  path: /images/spotify/soundboard-han.ailes.jpg
   caption: "[Flickr han.ailes](https://flic.kr/p/oVPTVm)"
 comments: false
 share: true
@@ -19,17 +19,17 @@ I remember about two years ago sitting here watching a Write the Docs video. Wel
 
 I remember seeing this adoption curve and saying to myself: We need to do this. I want that curve.
 
-![image](/images/adoption1.png)
+![image](/images/spotify/adoption1.png)
 
 And just a few months later, we had built and released TechDocs, Spotify’s docs-like-code solution for internal technical documentation. And a few months after that, we had the curve that I had longed for. Nice gradient, eh?
 
-![image](/images/adoption2.png)
+![image](/images/spotify/adoption2.png)
 
 We were fortunate in that there were several synchronous moments that helped us, but overall, we moved fast because we were able to make use of preexisting infrastructure, such as [Backstage](https://backstage.io/) (our homegrown and now open sourced developer portal) and Tingle, Spotify’s CI/CD tool. We also made use of the open source static site generator, [MkDocs](https://www.mkdocs.org/).
 
 In just two short years, writing docs in Markdown in our enterprise version of GitHub has become standard practice. We have over 3,000 doc sites from across the organisation, all showing up and searchable in Backstage. And most of the feedback we get from engineers is positive with the odd request for a small tweak or improvement.
 
-![image](/images/techdocs.png)
+![image](/images/spotify/techdocs.png)
 
 Time to put our feet up, right?
 
