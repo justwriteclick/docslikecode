@@ -55,3 +55,10 @@ ben_mansheim:
   github: //github.com/bmansheim
   twitter:
   bio: "Technical Writer"
+
+gary_niemen:
+  name: Gary Niemen
+  picture: https://docslikecode.com/images/gary-niemen.png
+    github: //github.com/garyniemen
+    twitter:
+    bio: "Product Manager for TechDocs, a docs-like-code solution at Spotify"
