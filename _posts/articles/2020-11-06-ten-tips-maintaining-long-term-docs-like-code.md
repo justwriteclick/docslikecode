@@ -13,23 +13,21 @@ comments: false
 share: true
 ---
 
-<!-- By Gary Niemen, Product Manager for TechDocs, Spotify’s docs-like-code solution -->
-
-I remember about two years ago sitting here watching a Write the Docs video. Well, not precisely “here” because we sat in offices in those days and in 2020 I'm in my home office working for Spotify. If you haven't heard of it, Spotify is a digital music, podcast, and video streaming service providing access to content from artists around the world. I was watching, wide-eyed and a bit confused, a video of [Riona MacNamara’s talk from Write the Docs 2015](https://youtu.be/EnB8GtPuauw). In the talk, Riona described how she and another technical writer used a docs-like-code approach to change Google engineering culture around technical documentation.
+I remember about two years ago sitting here watching a Write the Docs video. Well, not precisely “here” because we sat in offices in those days and in 2020 I'm in my home office. I was watching, wide-eyed and a bit confused, a video of [Riona MacNamara’s talk from Write the Docs 2015](https://youtu.be/EnB8GtPuauw). In the talk, Riona described how she and another technical writer used a docs-like-code approach to change Google engineering culture around technical documentation.
 
 I remember seeing this adoption curve and saying to myself: We need to do this. I want that curve.
 
-![image](/images/spotify/adoption1.png)
+![running total: projects & authors from Documentation, Disrupted ](/images/spotify/adoption1.png)
 
 And just a few months later, we had built and released TechDocs, Spotify’s docs-like-code solution for internal technical documentation. And a few months after that, we had the curve that I had longed for. Nice gradient, eh?
 
-![image](/images/spotify/adoption2.png)
+![Adoption Stats](/images/spotify/adoption2.png)
 
-We were fortunate in that there were several synchronous moments that helped us, but overall, we moved fast because we were able to make use of preexisting infrastructure, such as [Backstage](https://backstage.io/) (our homegrown and now open sourced developer portal) and Tingle, Spotify’s CI/CD tool. We also made use of the open source static site generator, [MkDocs](https://www.mkdocs.org/).
+ If you haven't heard of it, Spotify is a digital music, podcast, and video streaming service providing access to content from artists around the world. We were fortunate in that there were several synchronous moments that helped us, but overall, we moved fast because we were able to make use of preexisting infrastructure, such as [Backstage](https://backstage.io/) (our homegrown and now open sourced developer portal) and Tingle, Spotify’s CI/CD tool. We also made use of the open source static site generator, [MkDocs](https://www.mkdocs.org/).
 
 In just two short years, writing docs in Markdown in our enterprise version of GitHub has become standard practice. We have over 3,000 doc sites from across the organisation, all showing up and searchable in Backstage. And most of the feedback we get from engineers is positive with the odd request for a small tweak or improvement.
 
-![image](/images/spotify/techdocs.png)
+![TechDocs Documentation screenshot](/images/spotify/techdocs.png)
 
 Time to put our feet up, right?
 
