@@ -19,7 +19,7 @@ Since Hugo is built on Go, you can use the binary for your operating system. No 
 
 ## Set up Hugo on Windows with Git Bash and Docker
 
-You can also set up Docker and then use this [Docker image](https://hub.docker.com/r/jguyomard/hugo-builder/), and set up alias commands for `hugo` running in Docker, but using the same `hugo` commands in Git Bash on Windows.
+You can also set up Docker and then use this [Docker image](https://hub.docker.com/r/jguyomard/hugo-builder/) to install Hugo. With the Docker image, you set up alias commands for `hugo` running in Docker, but can work in Git Bash and follow this tutorial using the same `hugo` commands in Git Bash on Windows.
 
 ## Set up Hugo on MacOS
 1. Install Homebrew. See the [Homebrew site](https://brew.sh) for instructions.
@@ -33,7 +33,7 @@ You can also set up Docker and then use this [Docker image](https://hub.docker.c
 
    ```
    $ hugo version
-   Hugo Static Site Generator v0.42.1 darwin/amd64
+   Hugo Static Site Generator v0.74.3/extended darwin/amd64 BuildDate: unknown
    ```
 
 ## Starting a Hugo site
@@ -42,6 +42,7 @@ For a Hugo static site, you can choose your specific theme after you create the 
 
    ```
    $ hugo new site docs-as-code
+   $ cd docs-as-code
    ```
 
 1. Take a look at the files created in the directory with an `ls` command:
@@ -50,6 +51,13 @@ For a Hugo static site, you can choose your specific theme after you create the 
   archetypes	content		layouts		themes
   config.toml	data		static
   ```
+  
+1. Initialize the current directory as a Git repository, which will enable you to bring the theme in as a Git submodule. 
+   ```
+   $ git init
+   Initialized empty Git repository in /Users/annegentle/src/src/hugo-example/.git/
+   ```
+
 1. Edit `config.toml` in any text editor you like to get started. Choose a title for your site and the theme, in our case, `hugo-theme-learn`. The theme name in your configuration file must match the name of the specific theme directory inside the `/themes` directory, so we will add those files in the next step.
   ```
   baseURL = "http://example.org/"
@@ -57,10 +65,9 @@ For a Hugo static site, you can choose your specific theme after you create the 
   title = "Learning Hugo Site"
   theme = "hugo-theme-learn"
   ```
-1. To get the theme files in the `/themes` directory, change to the themes directory, and then use a `git clone` command to get the required theme files.
+1. To get the theme files in the `/themes` directory, and keep them updated, use a `git submodules` command to get the required theme files as well as keep them updated.
   ```
-  $ cd themes
-  $ git clone https://github.com/matcornic/hugo-theme-learn.git
+  $ git submodule add https://github.com/matcornic/hugo-theme-learn.git themes/hugo-theme-learn
   ```
 1. For Hugo, the `content` folder contains the site source content. For your home page, make an `_index.md` document in the `content` folder and write it with Markdown content. Switch back up one level since you just cloned the theme files.
   ```
@@ -87,7 +94,7 @@ Once you've prepared your local system, you can build locally and review the sit
 
 For Hugo, it's important to know that draft pages are only served when using the `-D` parameter.
 
-1. Run the `hugo server` command with the `-D` parameter.
+1. Run the `hugo server` command with the `-D` parameter (to serve draft pages).
 
    ```
    $ hugo server -D
@@ -111,7 +118,7 @@ For Hugo, it's important to know that draft pages are only served when using the
       Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
       Press Ctrl+C to stop
    ```
-1. Open the **Web Server** URL, `http://localhost:1313/` in your local browser to view the site.
+2. Open the **Web Server** URL, `http://localhost:1313/` in your local browser to view the site. (By default, the theme may be purple instead of green.)
     ![Example Hugo site](/images/learn/hugo-docs-page.png)
 3. Press `Ctrl+C` in the server terminal to stop the Hugo server.
 4. You can add your files to a Git commit. Refer to [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/) for a documentation workflow with your Hugo site.
