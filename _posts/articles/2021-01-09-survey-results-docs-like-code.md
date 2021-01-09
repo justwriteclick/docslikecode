@@ -2,7 +2,7 @@
 layout: post
 title: Survey Results for learning and teaching docs-like-code techniques
 excerpt: "Review the results of a mid-2020 survey about learning and teaching team mates and yourself how to work with docs like code, Git, and GitHub for technical documentation."
-last_modified_at: Wed Jan  6 11:30:36 CST 2021
+last_modified_at: Sat Jan  9 13:39:05 CST 2021
 categories: articles
 author: anne_gentle
 tags: [github, git, learning, teaching, documentation, developer, docs-like-code, onboarding]
@@ -13,15 +13,13 @@ comments: false
 share: true
 ---
 
-I asked three questions in a survey emailed to my mailing list and got nearly 40 responses.
+I asked three questions in a survey emailed to my mailing list and got more than 30 responses. Thanks to everyone who took the time to share their stories and respond. Here are the three questions:
 
-Here are the three questions:
+* Question 1: When you talk to your leaders about docs-as-code, can they describe the benefits as well as the difficulties?
 
-Question 1: When you talk to your leaders about docs-as-code, can they describe the benefits as well as the difficulties?
+* Question 2: How do you onboard people who are new to your docs tools and processes?
 
-Question 2: How do you onboard people who are new to your docs tools and processes?
-
-Question 3: What tips or discussions (from any source) was most helpful to you when learning docs-as-code techniques?
+* Question 3: What tips or discussions (from any source) was most helpful to you when learning docs-as-code techniques?
 
 Docs-as-code processes are still new in the field and it seems many of the responses are split, with no overwhelming patterns in any single area. Let's look into the data and charts for the first two questions.
 
@@ -30,13 +28,18 @@ Docs-as-code processes are still new in the field and it seems many of the respo
 ![](/images/survey-charts/leadership-docs-tools.png)
 
 **Legend**
-26.8% Yes, my leader started our processes and makes it possible for us to use our current tools and processes.
-19.5% Yes, my leader can provide their leadership complete justification for our choices.
-19.5% No, I work in an environment where my tool selection does not need justification from a management chain.
-19.5% No, my leadership chain doesn't really know what I do or why I use certain tools.
-14.6% It depends on which leader I'm talking to.
 
-In a way, nearly all the responses could be viewed as "leadership either supports the selection does not get in the way of tool selection." For about 65% of the responses, either leadership can justify, started the processes, or isn't a deciding factor.
+**26.8**% Yes, my leader started our processes and makes it possible for us to use our current tools and processes.
+
+**19.5**% Yes, my leader can provide their leadership complete justification for our choices.
+
+**19.5**% No, I work in an environment where my tool selection does not need justification from a management chain.
+
+**19.5**% No, my leadership chain doesn't really know what I do or why I use certain tools.
+
+**14.6**% It depends on which leader I'm talking to.
+
+In a way, nearly all the responses could be viewed as "leadership either supports the selection does not get in the way of tool selection." For about two-thirds of the responses, either leadership can justify, started the processes, or isn't a deciding factor.
 
 Looking at the number of lone writer responses in the next question, this indicator makes sense as five of thirty-five respondents noted that they were the only writer in the organization, which would make up 14% of all responses. Let's take a look.
 
@@ -45,12 +48,18 @@ Looking at the number of lone writer responses in the next question, this indica
 ![](/images/survey-charts/how-onboard-docs.png)
 
 **Legend**
-14.6% Internal write-up only
-20.2% Meeting only
-1.1% Pre-built environment only
-5.6% Lone writer
-23.6% Internal write up and meeting
-34.8% Internal write-up, meeting, and pre-built environment
+
+**14.6**% Internal write-up only
+
+**20.2**% Meeting only
+
+**1.1**% Pre-built environment only
+
+**5.6**% Lone writer
+
+**23.6**% Internal write up and meeting
+
+**34.8**% Internal write-up, meeting, and pre-built environment
 
 My favorite answer to this question was one I hadn't considered, where the person is a lone writer, but works with the devs to get the docs working in the source code repo. It's along the lines of "It's complicated."
 
