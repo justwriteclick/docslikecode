@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Survey Results for learning and teaching docs-like-code techniques
+title: Survey results for learning and teaching docs-like-code techniques
 excerpt: "Review the results of a mid-2020 survey about learning and teaching team mates and yourself how to work with docs like code, Git, and GitHub for technical documentation."
 last_modified_at: Sat Jan  9 13:39:05 CST 2021
 categories: articles
