@@ -1,0 +1,117 @@
+I"V'<p>If you prefer to write in ReStructured Text instead of Markdown for your technical documentation, you’re in good company. There are quite a few benefits to using Sphinx, Python, RST, and Sphinx extensions because these tools are custom-built with developer documentation in mind.</p>
+
+<p>Another great offering is GitHub Pages, with automatic publishing when a known branch, such as the <code class="language-plaintext highlighter-rouge">master</code> or <code class="language-plaintext highlighter-rouge">gh-pages</code> branch is updated.</p>
+
+<p>So, how about the best of both? Let’s dive into the key configurations that enable you to publish Python Sphinx pages to GitHub Pages.</p>
+
+<h2 id="naming-the-github-repository-can-affect-the-resulting-url">Naming the GitHub repository can affect the resulting URL</h2>
+
+<p>If you want a URL like <code class="language-plaintext highlighter-rouge">&lt;username&gt;.github.io</code> or <code class="language-plaintext highlighter-rouge">&lt;orgname&gt;.github.io</code>, name the repo <code class="language-plaintext highlighter-rouge">&lt;username&gt;.github.io</code> or <code class="language-plaintext highlighter-rouge">&lt;orgname&gt;.github.io</code>. Then, by default, GitHub Pages publishes to the URL matching the repo name.</p>
+
+<h2 id="enable-github-pages-for-the-github-repository">Enable GitHub Pages for the GitHub repository</h2>
+
+<blockquote>
+  <p>Note: You must have admin privileges on the repository to see the <strong>Settings</strong> tab.</p>
+</blockquote>
+
+<ol>
+  <li>Go to the repository on the GitHub website and make sure you are logged in.</li>
+  <li>Add a <code class="language-plaintext highlighter-rouge">/docs</code> directory to the <code class="language-plaintext highlighter-rouge">master</code> branch. Otherwise you do not get the <strong>master branch /docs folder</strong> for the Source option in the drop-down list.</li>
+  <li>Click the <strong>Settings</strong> tab. You first go to the Options section.</li>
+  <li>Scroll down to the <strong>GitHub Pages</strong> section and choose the drop-down list under Source.
+    <blockquote>
+      <p>Note: Your choices will differ based on whether you’re in a User repo or an Org repo. <a href="https://help.github.com/en/articles/user-organization-and-project-pages">Read all about the differences in the GitHub docs</a>.</p>
+    </blockquote>
+  </li>
+  <li>To keep source and output HTML separate, choose <strong>master branch /docs folder</strong> for Source.</li>
+</ol>
+
+<p>Next, you set up the <code class="language-plaintext highlighter-rouge">.nojekyll</code> file to indicate you aren’t using Jekyll as your static site generator in this repository.</p>
+
+<h2 id="add-a-nojekyll-file-in-the-docs-directory">Add a .nojekyll file in the /docs directory</h2>
+
+<p>When GitHub sees a <code class="language-plaintext highlighter-rouge">.nojekyll</code> file, it serves the root <code class="language-plaintext highlighter-rouge">index.html</code> file. Read more in the <a href="https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/">original blog post about this feature</a>.</p>
+
+<blockquote>
+  <p>Note: I’d recommend using the <code class="language-plaintext highlighter-rouge">/docs</code> directory on the <code class="language-plaintext highlighter-rouge">master</code> branch, so that you are sure to keep source and output HTML separate. You could also use a <code class="language-plaintext highlighter-rouge">_build</code> directory in the root of your repo as the served HTML.</p>
+</blockquote>
+
+<ol>
+  <li>Create a new branch locally, named <code class="language-plaintext highlighter-rouge">docs-config</code> in this example, based on <code class="language-plaintext highlighter-rouge">master</code>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git checkout -b docs-config
+</code></pre></div>    </div>
+  </li>
+  <li>Create an empty dot file, named <code class="language-plaintext highlighter-rouge">.nojekyll</code> within the <code class="language-plaintext highlighter-rouge">/docs</code> folder of your repo. A dot file has a period prefix and may not be visible in all text editors or your Finder windows, so be aware and don’t panic if you can’t “see” it later.</li>
+  <li>Use the add command to make sure Git starts tracking the file:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git add docs/.nojekyll
+</code></pre></div>    </div>
+  </li>
+  <li>Commit the change with the <code class="language-plaintext highlighter-rouge">-a</code> option to add new files to the commit, and the <code class="language-plaintext highlighter-rouge">-m</code> option for a message:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git commit -a -m "Adds a .nojekyll file for docs builds"
+</code></pre></div>    </div>
+  </li>
+  <li>Push the change to the remote, in this case named “origin”, so you can compare the change to <code class="language-plaintext highlighter-rouge">master</code>.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git push origin docs-config
+</code></pre></div>    </div>
+  </li>
+  <li>On the GitHub website, go to your repository and create a Pull Request.</li>
+  <li>Merge the Pull Request to add the <code class="language-plaintext highlighter-rouge">.nojekyll</code> file to the <code class="language-plaintext highlighter-rouge">master</code> branch.</li>
+</ol>
+
+<h2 id="create-a-docsource-or-docsrc-folder-for-the-source-files">Create a “docsource” or “docsrc” folder for the source files</h2>
+
+<p>Now, in the root of your repository, you can create a source folder for your doc builds:</p>
+
+<ul>
+  <li>If you’re working with code and docs in the same repo, you can name the folder <code class="language-plaintext highlighter-rouge">docsource</code> or <code class="language-plaintext highlighter-rouge">docsrc</code>.</li>
+  <li>If your repo is for only documentation, you can name the folder <code class="language-plaintext highlighter-rouge">source</code>.</li>
+</ul>
+
+<p>Next, make sure that your <code class="language-plaintext highlighter-rouge">conf.py</code> file has been set up with these source and destination directories. The Sphinx documentation has a good <a href="http://www.sphinx-doc.org/en/master/usage/configuration.html">Configuration section</a>.</p>
+
+<h2 id="make-sure-you-can-still-build-sphinx-locally-for-reviews">Make sure you can still build Sphinx locally for reviews</h2>
+
+<p>Here’s another pro tip I found while browsing <a href="https://github.com/sphinx-doc/sphinx/issues/3382#issuecomment-470772316">Issues in the Sphinx repository itself</a>. Since you want to keep the source and output separate, but still be able to both publish on GitHub Pages and preview builds locally, you can add an option to your <code class="language-plaintext highlighter-rouge">Makefile</code> to do both.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  github:
+      @make html
+      @cp -a _build/html/. ../docs
+</code></pre></div></div>
+
+<p>Now you can run <code class="language-plaintext highlighter-rouge">make github</code> from the doc source directory to generate a local preview and move the docs where GitHub wants to serve them from.</p>
+
+<blockquote>
+  <p>Note: Realize that there’s a <code class="language-plaintext highlighter-rouge">conf.py</code> setting for both where the <code class="language-plaintext highlighter-rouge">make</code> command is run and where files are built to. Read up in the <a href="http://www.sphinx-doc.org/en/master/usage/configuration.html">Configuration section</a> of the Sphinx docs for all the details.</p>
+</blockquote>
+
+<h2 id="pull-it-all-together">Pull it all together</h2>
+
+<p>I’ve been working on a talk titled, “Make an Instant Web Site with Webhooks” for DevNet Create. In it, I show how to publish and host on GitHub Pages, which is built to use Jekyll by default, using Python Sphinx instead. I’ve got a GitHub repository set up at <a href="https://github.com/annegentle/create-demo">annegentle/create-demo</a> as a demonstration. I’ll post the slides when it’s done. In the meantime, we’d love to see you next week! Visit the <a href="https://developer.cisco.com/devnetcreate/2019">DevNet Create site</a> for more information.</p>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+/* 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+<blockquote>
+<div id="mc_embed_signup">
+<form action="//justwriteclick.us1.list-manage.com/subscribe/post?u=3828f8d87d82289b96ff8fd19&amp;id=cc1d483d59" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div id="mc_embed_signup_scroll">
+			<i class="fa fa-envelope-square"></i>
+	<label for="mce-EMAIL">Enter your email for free lessons plus a review checklist in a neat PDF file.</label>
+
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" />
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3828f8d87d82289b96ff8fd19_cc1d483d59" tabindex="-1" value="" /></div>
+    <div class="clear"><input type="submit" value="Join now" name="subscribe" id="mc-embedded-subscribe" class="btn btn--inverse" /></div>
+    </div>
+</form>
+</div>
+</blockquote>
+<!--End mc_embed_signup-->
+
+:ET

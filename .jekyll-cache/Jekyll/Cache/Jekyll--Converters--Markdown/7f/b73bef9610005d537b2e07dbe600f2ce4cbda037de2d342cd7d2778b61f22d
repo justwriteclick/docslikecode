@@ -1,0 +1,163 @@
+I".)<p>This section goes through the workflow for adding content, editing pages, and generally working on a docs site in a GitHub repo.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>A GitHub, GitLab, or other Git online account.</li>
+  <li>A Git repository already created online in one of those services (GitHub, GitLab, or other) and already cloned locally.</li>
+</ul>
+
+<p>These steps are shown from within a directory that contains the Git repository files.</p>
+
+<h2 id="add-content-to-the-site">Add content to the site</h2>
+
+<p>Once you have created files required by your static site generator, you can start writing. Begin with the index, or home page.</p>
+
+<p>For Sphinx, you can write in either Restructured Text (<code class="language-plaintext highlighter-rouge">.rst</code>) or Markdown (<code class="language-plaintext highlighter-rouge">.md</code>). For Jekyll and Hugo, you write your source files in Markdown.</p>
+
+<p>Introduce your documentation and what you intend for the reader to find on the docs site. Explain some background, and feel free to add more pages with the <code class="language-plaintext highlighter-rouge">.rst</code> or <code class="language-plaintext highlighter-rouge">.md</code> file extension.</p>
+
+<p>You can organize your source documentation files in folders, and those folder names become part of the URL for the documentation page.</p>
+
+<p>A simple starter set of files could look like this for Sphinx:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source/index.rst
+source/prerequisites.rst
+source/how-to-create-a-project.rst
+source/reference-list.rst
+</code></pre></div></div>
+
+<p>Or this for Jekyll:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>index.html
+_pages/prerequisites.md
+_pages/how-to-create-a-project.md
+_pages/reference-list.md
+</code></pre></div></div>
+<p>Or this for Hugo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>content/_index.md
+content/prerequisites.md
+content/how-to-create-a-project.md
+content/reference-list.md
+</code></pre></div></div>
+
+<p>Once you have your starter files, you want to create a new branch and add them to another commit.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git checkout -b new-branch
+Switched to a new branch 'new-branch'
+$ git add .
+$ git commit -a -m "Adds initial set of doc files"
+[new-branch b5ce0d9] Adds initial set of doc files
+ 3 files changed, 3 insertions(+)
+ create mode 100644 how-to-create-a-project.rst
+ create mode 100644 prerequisites.rst
+ create mode 100644 reference-list.rst
+$ git push origin new-branch
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 573 bytes | 573.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To github.com:annegentle/do-docs-as-code.git
+ * [new branch]      new-branch -&gt; new-branch
+</code></pre></div></div>
+
+<h2 id="creating-a-pull-request-for-the-new-branch">Creating a pull request for the new branch</h2>
+
+<ol>
+  <li>Next, go to the GitHub URL for the new repo, <code class="language-plaintext highlighter-rouge">do-docs-as-code</code>. For example, with a username, <code class="language-plaintext highlighter-rouge">annegentle</code>, the URL would be https://github.com/annegentle/do-docs-as-code. You should see a new yellow notifier on the <strong>Code</strong> tab:
+<code class="language-plaintext highlighter-rouge">Your recently pushed branches: new-branch (5 minutes ago)</code></li>
+  <li>Click the <strong>Compare &amp; pull request</strong> button.</li>
+  <li>On the Open a Pull Request window, observe that your commit message becomes filled in the web form, comparing your <code class="language-plaintext highlighter-rouge">new-branch</code> to the base <code class="language-plaintext highlighter-rouge">master</code> branch.</li>
+  <li>Click <strong>Create pull request</strong>.</li>
+  <li>Once GitHub checks for merge compatibility, you should see a green button and click it, <strong>Merge pull request</strong>.</li>
+  <li>Click <strong>Confirm merge</strong> to merge your new-branch into the master branch on GitHub.</li>
+  <li>Notice that your local copy of the master branch does not yet contain these changes. In your Terminal window, run these commands to update your master branch locally.</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git checkout master
+$ git remote update
+$ git pull origin master
+</code></pre></div></div>
+<p>Now, your local environment is all ready for new changes.</p>
+<ol>
+  <li>Repeat these steps each time you want to make a new branch, make a commit, make a PR, merge it, and then get your local all set up to begin again!</li>
+</ol>
+
+<h2 id="editing-the-site-with-a-branch-and-pull-request-workflow">Editing the site with a branch and pull request workflow</h2>
+
+<p>When you’re the only person working in a repo, you can use a simple workflow, where you simply create a branch for whatever amount of work you want to do, and then merge that branch to the master branch when you want to publish. If you’re on a small team, each team member can do the same, keeping the workflow simple, where the <code class="language-plaintext highlighter-rouge">master</code> branch is the one that is published each time. Here’s a walkthrough for a branch and pull workflow.</p>
+
+<ol>
+  <li>Every time you work in a folder that’s a GitHub repo, run a <code class="language-plaintext highlighter-rouge">git status</code> command to figure out if you have any changes on the branch you’re working within.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ git status
+</code></pre></div>    </div>
+  </li>
+  <li>Once you know what changes you have on a local branch, decide whether to keep working in that branch, or start over with the current <code class="language-plaintext highlighter-rouge">master</code> branch. To start again with a new copy of master from the remote, run these commands to update your master branch locally.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ git checkout master
+  $ git remote update
+  $ git pull origin master
+</code></pre></div>    </div>
+  </li>
+  <li>Next, create a new branch to make new changes in:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ git checkout -b new-branch
+</code></pre></div>    </div>
+  </li>
+  <li>Make your edits in the files, and add new files if needed.</li>
+  <li>
+    <p>Double-check that the changes are what you expect, by building locally.</p>
+
+    <p>These are the basic build commands on the three SSGs:
+ <strong>Sphinx</strong>:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ make html
+</code></pre></div>    </div>
+    <p>Open <code class="language-plaintext highlighter-rouge">build/html/index.html</code> in your browser.</p>
+
+    <p><strong>Jekyll</strong>:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ bundle exec jekyll serve
+</code></pre></div>    </div>
+    <p>Open http://127.0.0.1:4000 in your browser.
+ <strong>Hugo</strong>:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ hugo server
+</code></pre></div>    </div>
+    <p>Open http://127.0.0.1:1313 in your browser.</p>
+
+    <p>Repeat the editing and building steps to your satisfaction.</p>
+  </li>
+  <li>Once you have the changes you need, commit to the branch:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ git commit -a -m "These are my changes, such as edits"
+</code></pre></div>    </div>
+  </li>
+  <li>Now, push your changes to the remote so that you can create a pull request.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ git push origin new-branch
+</code></pre></div>    </div>
+  </li>
+  <li>Open the GitHub.com repository URL to open the Pull Request, comparing <code class="language-plaintext highlighter-rouge">new-branch</code> to <code class="language-plaintext highlighter-rouge">master</code>.</li>
+  <li>On the Pull Request in GitHub, make sure that your continuous integration tests pass.</li>
+  <li>Once you are satisfied with all the changes, merge the changes to the <code class="language-plaintext highlighter-rouge">master</code> branch by clicking the Merge button on GitHub.</li>
+  <li>Now, look for the continuous deployment site online on readthedocs.org, GitHub Pages, or Netlify.</li>
+  <li>Don’t forget to reset your local branch to the <code class="language-plaintext highlighter-rouge">master</code> branch that is now available in the newly-merged master on GitHub! This is the same as in step 2 above, but uses semi-colons so you can run the commands all in one line.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ git checkout master; git remote update; git pull origin master
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="whats-next">What’s next</h2>
+
+<ul>
+  <li><a href="https://www.docslikecode.com/learn/05-cd-for-docs/">Continuous Deployment (CD) for Documentation Sites</a></li>
+  <li><a href="https://www.docslikecode.com/learn/06-test-docs-as-code/">Set Up Automated Tests for Docs</a></li>
+</ul>
+
+<h2 id="evaluating-options">Evaluating options</h2>
+
+<ul>
+  <li><a href="https://www.docslikecode.com/learn/07-evaluating-ssg-themes/">Evaluating Static Site Generator themes</a></li>
+  <li><a href="https://www.docslikecode.com/learn/08-evaluating-table-layouts/">Evaluating table layouts and formatting</a></li>
+  <li><a href="https://www.docslikecode.com/learn/09-ssg-search-implementations/">Evaluating Static Site Generator search options</a></li>
+</ul>
+
+<h2 id="additional-references">Additional references</h2>
+
+<ul>
+  <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Comparing Git Workflows</a></li>
+  <li><a href="https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows">Git Branching - Branching Workflows</a></li>
+</ul>
+:ET

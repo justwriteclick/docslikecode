@@ -1,0 +1,295 @@
+I"�]<p>In this article series we describe the process of building our <a href="https://www.platformos.com/blog/post/blog/platformos-developer-portal-wins-uk-technical-communication-award">award-winning</a> developer documentation site from discovery to development, with in-depth insights into our approach, decisions, plans, and technical implementation.</p>
+
+<ul>
+  <li><a href="/articles/platformos-1of4">Part 1: Information Architecture</a></li>
+  <li><a href="/articles/platformos-2of4">Part 2: Content Production and Layouts</a></li>
+  <li><a href="/articles/platformos-3of4">Part 3: Community</a></li>
+</ul>
+
+<p>Welcome to part 4, where we take a look under the hood, discuss the technologies we used, how we built our auto-generated API Reference, and how we use GitHub for our docs as code workflow and more.</p>
+
+<h2 id="platformos-instance">platformOS Instance</h2>
+
+<p>When developing a platformOS site or app, the process starts with setting up Instances.  Instances have a URL, and they represent different development environments, like staging or production. For our own sites, like our documentation, we spin up the Instance and work in our codebase directly, but you can build a platformOS site using various CMS solutions built on platformOS (e.g. <a href="https://www.siteglide.com">Siteglide</a> or <a href="https://www.insites.io">Insites</a>) if you don’t want to fiddle with code.</p>
+
+<p>Our documentation site has a staging instance for development and testing and a production Instance — the live site if all tests are green. It works with continuous integration and continuous deployment: it automatically runs tests, deploys to staging and then to production. Once done, it sends us a Slack notification. To support a small footprint deployment process, we use an asynchronous event-driven JavaScript runtime, Node.js.</p>
+
+<p>Our <a href="https://documentation.platformos.com/how-platformos-works/platformos-workflow/codebase">codebase</a> is <a href="https://github.com/mdyd-dev/nearme-documentation">on GitHub</a>. Besides standard web technologies like HTML, CSS, JavaScript (including JSON and AJAX), we use a couple of languages like YAML, Liquid, and GraphQL in our code. </p>
+
+<h2 id="pages-and-layouts">Pages and layouts</h2>
+
+<p>Documentation topics and other content like our Style Guide or Contributor Guide are Liquid pages, and the structure of pages is described in layouts. Pages have conditional sections, where you can decide what will be auto-generated for that particular page by setting specific flags in page metadata.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>metadata:
+  title: Contact
+  description: Send us a message, and we will get back to you as soon as possible.
+  questions: false
+  feedback: false
+  toc: true
+  breadcrumbs: false
+</code></pre></div></div>
+
+<ul>
+  <li>questions:  questions section on the bottom with contact us button - default: true</li>
+  <li>feedback: block on the bottom of the page allowing readers to leave feedback - default: true</li>
+  <li>toc:  table of contents inserted on the right side - default: false</li>
+  <li>breadcrumbs: path to current page from the root of our site - default: true</li>
+</ul>
+
+<p>Steps in tutorials are auto-generated: place <code class="language-plaintext highlighter-rouge">&lt;div data-autosteps&gt;&lt;/div&gt;</code> inside of the page, and it will generate steps from h2 headings on that page.</p>
+
+<h2 id="docs-as-code">Docs as code</h2>
+
+<p>We work with the <a href="https://www.writethedocs.org/guide/docs-as-code/">docs as code</a> approach, which means that we treat our documentation content the same way as we treat our code. Documentation content goes through the same workflow stages and review process in the same tool, which is GitHub in our case.</p>
+
+<p>We extended this approach to all aspects of our documentation site, and now we handle the whole editorial workflow and project management in the same tool. We keep track of content needs and content production on the Issues interface and kanban board of our documentation repository on GitHub. All of it is public, so you can watch issues and contribute to them, too.</p>
+
+<h2 id="contribution">Contribution</h2>
+
+<p>Contributors can contribute in different ways:</p>
+
+<ul>
+  <li>Contribute to an issue, add questions, suggestions, or other comments </li>
+  <li>Open an issue</li>
+  <li>Edit content or code and send a pull request </li>
+</ul>
+
+<p>Users can contribute immediately from the page where they discover a problem or miss something by clicking on the feedback card. They can choose from two ways: 1. adding feedback or 2. contributing via GitHub. Clicking the “Contribute to this page” link opens the topic in the GitHub editor. </p>
+
+<p><img src="/images/platformos/platformos_part4/feedback_block.png" alt="" /></p>
+
+<h2 id="auto-generated-api-reference">Auto-generated API reference</h2>
+
+<p>The information architecture of our <a href="https://documentation.platformos.com/api-reference/rest-api/customizations">API reference</a> was based on an API documentation template we built using the results of our discovery phase, API documentation best practices, existing templates (that we also contributed back to) and feedback from our community.</p>
+
+<p>Our REST API documentation is auto-generated, always up-to-date, and remote. We download the JSON file, parse it, and render and cache the view on the server. JavaScript is only used to highlight code snippets (asynchronously) and generate the table of contents.</p>
+
+<h3 id="implementation">Implementation</h3>
+
+<h4 id="table-of-contents">Table of Contents</h4>
+
+<p>We build the ToC on our API reference using a script that looks for headings in the content,  and generates a list linking to them, to make it easier and quicker to jump to the content you’re interested in. This only happens when an author of a page sets toc: true in the page metadata. This way we can control which pages will get this helper and which don’t - some pages are just too short to benefit from it.</p>
+
+<p><img src="/images/platformos/platformos_part4/toc.png" alt="" /></p>
+
+<h4 id="deep-links">Deep links</h4>
+
+<p>It is very convenient to link to specific sections of the page when you want to share a piece of information from a documentation page. Making links by hand and updating their anchors when text changes is very cumbersome, so we opted to automate that as well.</p>
+
+<p>The link icon is added automatically to h2 and h3 headers, and the icons shows up when a user hovers over the heading.</p>
+
+<p><img src="/images/platformos/platformos_part4/deep_links.png" alt="" /></p>
+
+<h2 id="automated-tests">Automated tests</h2>
+
+<p>As part of continuous integration and continuous deployment, we automatically run tests on our documentation site on each push to master. These are the steps of our deployment process including testing:</p>
+
+<ol>
+  <li>Build</li>
+  <li>Deploy to staging</li>
+  <li>Run tests on staging</li>
+  <li>If tests passed: deploy to production</li>
+  <li>If tests failed: notify Slack, do not deploy</li>
+</ol>
+
+<p><img src="/images/platformos/platformos_part4/deployment_process.png" alt="" /></p>
+
+<p>We use the <a href="https://devexpress.github.io/testcafe">TestCafe</a> framework for testing, because</p>
+
+<ol>
+  <li>it’s fast, concurrency is supported</li>
+  <li>both tests and the framework are written in JavaScript</li>
+  <li>it comes with a Docker image so it’s easy to run on CI</li>
+  <li>it has good documentation</li>
+  <li>it is easy to extend with basic JavaScript knowledge</li>
+  <li>it supports remote browsers (ie. BrowserStack, SauceLabs)</li>
+  <li>it supports PageObject out of the box, which makes code organization easier</li>
+  <li>it produces artifacts from failed tests (screenshots/video) on CI</li>
+  <li>it has Roles which helps when there is a need to test two different users interacting</li>
+  <li>waiting for the network works well, which is rare.</li>
+</ol>
+
+<p>You can find <a href="https://documentation.platformos.com/best-practices/qa/installing-testcafe">extensive documentation on how to install and use TestCafe</a> on our documentation site, including topics on writing tests, using the Page Object model and testing performance.</p>
+
+<p>When testing our documentation site, we check these elements:</p>
+
+<ul>
+  <li>Menu</li>
+  <li>Lack of Liquid errors</li>
+  <li>Presence of contributors</li>
+  <li>Table of contents</li>
+</ul>
+
+<p>We also <strong>test the platformOS Liquid output</strong> by comparing the output of filters/tags with what we expect and catch regressions. Last line of defense after examples MP tests and integration tests in the platform.</p>
+
+<p>We <strong>test broken links</strong> with a broken link checker that we run every 12 hours. The broken link checker reports the results to our dedicated Slack channel.</p>
+
+<p>In the near future, we are planning to implement <strong>performance testing with real user metrics</strong>.</p>
+
+<p>If you’d be interested in learning more about our process and tools, check out our article series on QA and testing:</p>
+
+<ul>
+  <li><a href="https://www.platformos.com/blog/post/blog/qa-and-testing-best-practices-part-1-our-qa-process">QA and Testing Best Practices — Part 1: Our QA Process</a></li>
+  <li><a href="https://www.platformos.com/blog/post/blog/qa-and-testing-best-practices-part-2-tips-and-tricks">QA and Testing Best Practices — Part 2: Tips and Tricks</a></li>
+  <li><a href="https://www.platformos.com/blog/post/blog/qa-and-testing-best-practices-part-3-speeding-up-development-and-troubleshooting">QA and Testing Best Practices — Part 3: Speeding Up Development and Troubleshooting</a></li>
+  <li><a href="https://www.platformos.com/blog/post/blog/qa-and-testing-best-practices-part-4-performance-testing">QA and Testing Best Practices — Part 4: Performance Testing</a></li>
+</ul>
+
+<h2 id="performance">Performance</h2>
+
+<p>If you read our article about <a href="https://www.platformos.com/blog/post/blog/code-quality-and-performance-best-practices-for-your-platformos-site">Code Quality and Performance Best Practices for Your platformOS Site</a>, you know how good performance can help you keep visitors on your site, provide the best user experience, and rank high in search results. Our documentation is a high-performance site with a Google PageSpeed Insights score of 100 for both Mobile and Desktop, so we thought it could be helpful to dive a bit deeper into what tools we use and how we achieved this amazing performance.</p>
+
+<h3 id="measure-early-measure-often">Measure early, measure often</h3>
+
+<p>Before you start optimizing, you have an amazing opportunity to measure your current application performance using available tools. We recommend looking at them in this order:</p>
+
+<ul>
+  <li><a href="https://web.dev/">https://web.dev/</a>: very easily digestible summary, uses <a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a> underneath</li>
+  <li><a href="https://developers.google.com/speed/pagespeed/insights/">https://developers.google.com/speed/pagespeed/insights/</a>: more detailed report, with additional recommendations, uses Lighthouse underneath</li>
+  <li><a href="https://www.webpagetest.org/">https://www.webpagetest.org/</a>: you can choose client location, record video, force multiple views to test caching, network speed and others — highly recommended if you know what you are looking for</li>
+  <li><a href="https://github.com/GoogleChrome/lighthouse-ci">https://github.com/GoogleChrome/lighthouse-ci</a>: run Lighthouse on your CI to test performance continuously</li>
+  <li><a href="https://techglimpse.com/chrome-developer-tools-improve-site-speed/">Developer Tools</a>: all of the above, inside any Chromium based browser, uses Lighthouse underneath</li>
+</ul>
+
+<p>Export reports and repeat some of the measurements every month to see your progress. This can help correlate KPIs with web performance — but keep in mind that correlation does not equal causation.</p>
+
+<h3 id="front-end-checklist--track-your-progress">Front-end checklist — track your progress</h3>
+
+<p><a href="https://frontendchecklist.io/">Front-end checklist</a> is an excellent tool to track your front-end improvements progress. Checklists work well in teams if you can split work across multiple people. One person can handle SEO, while others can work on images and the performance sections of this checklist. All of them ultimately bring your application closer to being a successful project — making performance improvements a team effort makes the whole process even more satisfying.</p>
+
+<p>Smashing Magazine recently published the <a href="https://www.smashingmagazine.com/2019/01/front-end-performance-checklist-2019-pdf-pages/">Front-End Performance Checklist 2019</a>. We highly recommend to read it from start to finish and come back to it often as a reference. It is available online and in various document formats. Most of the techniques used on our documentation page are described or at least mentioned in this article, so it should help you understand what we did.</p>
+
+<p>There is also a community driven <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist">Front-End Performance Checklist</a> that is basically a list of things to remember with links to resources that explain how to achieve the desired effects.</p>
+
+<h3 id="the-most-important-performance-questions-when-developing">The most important performance questions when developing</h3>
+
+<p>When you have control over both the server-side and the front-end, you have great power — which comes with great responsibility. Choose what you do on the backend wisely.</p>
+
+<p>Doing more on the backend will slow down your <a href="https://varvy.com/pagespeed/ttfb.html">Time To First Byte</a>, but usually will mean less side effects and quicker <a href="https://calibreapp.com/blog/time-to-interactive/">Time To Interactive</a>. When you do more on the backend, after your feature is done, try caching the result if it can be done so easily and reliably. Sometimes caching is the only reason to move a feature from the backend to the frontend. For example, on our documentation page, we could not cache the main navigation because it had an active class on the current page menu, so we moved this part of the feature to JavaScript and saved around 50-100ms on rendering. 50ms doesn’t sound like much, but in this case it was an over 15% improvement.</p>
+
+<p>If you decide to write some features in JavaScript, it will make your page bigger. Browsers will need to download, parse, execute and render that feature. This will usually mean quicker first meaningful paint, because you are basically lazy loading a feature from the server to asynchronous JavaScript. If you go this route, try not to block the main thread and use the <a href="https://philipwalton.com/articles/idle-until-urgent/">Idle until urgent</a> pattern by Philip Walton for minimized impact. Also see this <a href="https://www.youtube.com/watch?v=9vGr3JvbahY">video by Paul Lewis</a> for more visual explanation.</p>
+
+<h3 id="what-to-avoid-how-to-fix-mistakes">What to avoid, how to fix mistakes</h3>
+
+<p>The most common mistakes we see in the wild are around build processes and decisions on dependencies.</p>
+
+<p>Looking at the list below will help you think about  the balance between size, convenience, and maintainability:</p>
+
+<p>Do you really need the whole Bootstrap? Or any CSS framework at all? Maybe purgeCSS can help get rid off unused code.</p>
+
+<ul>
+  <li>Do you really need a JavaScript framework?</li>
+  <li>Can you format dates using modern APIs and provide conditional polyfill for legacy browsers?</li>
+  <li>What if you introduce a new developer to the project?</li>
+  <li>Is there any alternative that will not be dependency-heavy or will leverage native APIs?</li>
+</ul>
+
+<p>Using some development and asset building techniques allows you to mitigate the downsides of including some dependencies. We think these are the most impactful:</p>
+
+<ul>
+  <li>Dynamic code splitting (with lazy loading chunks that are used on specific sites)</li>
+  <li>Tree shaking (smaller bundles)</li>
+  <li>Serving ES6 bundles to browsers that understand them, because it is smaller in size, and ES5 transpiled code to old browsers. Read more about this technique in <a href="https://medium.com/ghostcoder/using-es6-modules-in-the-browser-5dce9ca9e911">Using ES6 modules in the browser</a>.</li>
+  <li>Using modern features and Conditional polyfills (progressive enhancement) — verify browser support at <a href="http://caniuse.com/">caniuse.com</a></li>
+</ul>
+
+<p>Jump to the <a href="https://www.smashingmagazine.com/2019/01/front-end-performance-checklist-2019-pdf-pages/#quick-wins">Quick Wins</a> section from the Front-End Performance Checklist 2019 to read about the recommended 12 low-hanging fruits.</p>
+
+<h3 id="what-we-did-to-achieve-100100">What we did to achieve 100/100</h3>
+
+<p>Let’s explore the steps we took to ensure outstanding performance that made the perfect score possible for our documentation on Google Page Speed Insights:</p>
+
+<ul>
+  <li>We replaced font icons with SVG icons. This improves rendering quality, it’s smaller and more flexible.</li>
+  <li>We self-hosted Google fonts. The fonts are also optimized to include only characters used on the website. This means instead of additional 2 HTTP requests and over 400KB to download, there is no HTTP request (apart from the font files themselves) and only 20KB to download.</li>
+  <li>We reduced third-party requests to an absolute minimum, even non-blocking ones. They can break performance of your website very quickly.</li>
+  <li>We use two external tools: The excellent <a href="http://polyfill.io">polyfill.io</a> service and sentry. We decided to self-host raven (sentry client) to save DNS lookups. One day we might decide to move to a self-hosted polyfill service as it is <a href="https://github.com/Financial-Times/polyfill-service">open source</a>.</li>
+  <li>We strip every package we use to the bare minimum using both manual and automatic methods, like <a href="https://github.com/mdyd-dev/nearme-documentation/blob/f4d78da3c108a119aa2c899a1526ff5394e9c9ee/src/css/vendor.scss">selective imports for bootstrap</a>.</li>
+  <li>We split code using <a href="https://webpack.js.org/guides/code-splitting/#dynamic-imports">webpack’s dynamic imports</a> to asynchronously load heavy dependencies on demand (<a href="https://github.com/mdyd-dev/nearme-documentation/blob/f4d78da3c108a119aa2c899a1526ff5394e9c9ee/src/js/syntaxHighlighting.js">prismjs</a>).</li>
+  <li>We <a href="https://github.com/mdyd-dev/nearme-documentation/blob/f4d78da3c108a119aa2c899a1526ff5394e9c9ee/marketplace_builder/views/partials/layouts/javascripts.liquid">preload resources</a> using the meta tag (JS, CSS, sometimes JSON with data).</li>
+  <li>We use <a href="https://github.com/mdyd-dev/nearme-documentation/blob/f4d78da3c108a119aa2c899a1526ff5394e9c9ee/marketplace_builder/views/partials/layouts/prefetch.liquid">DNS-prefetching</a> for domains that we will use (our CDN, polyfill service).</li>
+  <li>We sometimes use <a href="https://github.com/mdyd-dev/nearme-documentation/blob/f4d78da3c108a119aa2c899a1526ff5394e9c9ee/marketplace_builder/views/pages/home.liquid#L24">inline SVG</a> images to avoid http requests.</li>
+  <li>We <a href="https://github.com/mdyd-dev/nearme-documentation/blob/f4d78da3c108a119aa2c899a1526ff5394e9c9ee/marketplace_builder/views/partials/layouts/contributors.liquid">cache github contributors in the database</a> to move this feature to server side and remove missing contributors when a user enters the page.</li>
+</ul>
+
+<p>All of the above steps allowed us to get great results in both benchmarks and real user testing: </p>
+
+<p><strong>Desktop results 100/100</strong></p>
+
+<table>
+<tbody>
+<tr>
+<td>First Meaningful Paint</td>
+<td>300ms</td>
+</tr>
+<tr>
+<td>Time To Interactive</td>
+<td>600ms</td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="/images/platformos/platformos_part4/page_speed_desktop.jpg" alt="" /></p>
+
+<p><strong>Mobile results 100/100</strong></p>
+
+<table>
+<tbody>
+<tr>
+<td>First Meaningful Paint</td>
+<td>1.6s</td>
+</tr>
+<tr>
+<td>Time To Interactive</td>
+<td>1.8s</td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="/images/platformos/platformos_part4/page_speed_mobile.png" alt="" /></p>
+
+<p>In the future, we are planning to use service workers to cache whatever can be cached for offline usage. We will also rewrite the frontend to TailwindCSS to get rid of Bootstrap.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>We hope you enjoyed our article series about how we built our documentation site on platformOS. We provided some insights into our processes and implementation, but we are continuously changing and improving all aspects of our documentation, so by the time you read these articles, some things might have changed.</p>
+
+<p>We collect user feedback through Slack channels, the feedback block, user research and interviews to make sure our documentation fits our users’ needs. Some areas we would like to focus on in the next phase:</p>
+
+<ul>
+  <li>Onboarding: We will do a full overhaul of our onboarding, and have three distinct user journeys for the three main segments of our target audience (non-technical, semi-technical, technical).</li>
+  <li>Design adjustments: We got a lot of valuable feedback on our design from both users and award juries, and we’re in the process of rolling out our branding to all of our sites, so we will do a design update on our documentation as well. </li>
+  <li>Examples: The more examples, the better. We are continuously working on adding more examples and considering to incorporate our example library into our documentation site.</li>
+</ul>
+
+<p>We’ve come a long way but there’s still a lot we can improve. Stay tuned, because we will write more articles to support you on your journey with platformOS.</p>
+
+<p><em>This article was co-authored by Pawel Kowalski, Front-End Developer and Performance Advocate at platformOS, and was originally written for the <a href="https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platformos-part-2-content-production-and-layouts">PlatformOS Blog</a>.</em></p>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+/* 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+<blockquote>
+<div id="mc_embed_signup">
+<form action="//justwriteclick.us1.list-manage.com/subscribe/post?u=3828f8d87d82289b96ff8fd19&amp;id=cc1d483d59" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div id="mc_embed_signup_scroll">
+			<i class="fa fa-envelope-square"></i>
+	<label for="mce-EMAIL">Enter your email for free lessons plus a review checklist in a neat PDF file.</label>
+
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" />
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3828f8d87d82289b96ff8fd19_cc1d483d59" tabindex="-1" value="" /></div>
+    <div class="clear"><input type="submit" value="Join now" name="subscribe" id="mc-embedded-subscribe" class="btn btn--inverse" /></div>
+    </div>
+</form>
+</div>
+</blockquote>
+<!--End mc_embed_signup-->
+
+:ET

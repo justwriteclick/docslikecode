@@ -1,0 +1,177 @@
+I"�O<h1 id="a-pirates-life-for-me-documenting-apis-with-swagger">A Pirate’s Life for Me: Documenting APIs with Swagger</h1>
+
+<p>Our team starting developing a new API (in C#), which I took as an opportunity to implement Swagger (now the OpenAPI Specification), an open source project used to describe and document RESTful APIs. I wanted to show our developers and support engineers that injecting documentation into the code can reduce response time, mitigate errors, and decrease the point of entry for new hires. To illustrate those gains, I needed to develop a proof of concept.</p>
+
+<h2 id="why-swagger">Why Swagger?</h2>
+
+<p>Swagger is open source and includes a UI to display your API documentation, which can be built from source code or manually in JSON. Swashbuckle, a combination of ApiExplorer and Swagger UI, enables Swagger for .NET environments, which was just what we needed.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> This article applies to .NET environments. Swashbuckle uses <a href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore">a different package</a> for .NET Core environments.</p>
+</blockquote>
+
+<h2 id="prepare-to-swashbuckle">Prepare to Swashbuckle</h2>
+
+<p>Swashbuckle requires a bit of coding to implement, but using <a href="https://fsprojects.github.io/Paket/">Paket</a> helps to manage .NET dependencies. With Paket, I can add the necessary Swashbuckle NuGet packages to my API project and ensure that they are current. If I need to add more packages, I can install and manage those packages through Paket.</p>
+
+<p>After installing Paket, I run the following command to add Swashbuckle as a dependency to my C# project.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>paket add nuget Swashbuckle.Core project &lt;projectName&gt;
+</code></pre></div></div>
+
+<p>Now that Swashbuckle is available to my project, I can add Swashbuckle to the <code class="language-plaintext highlighter-rouge">Startup.cs</code> file, which is the application startup file for the API. I add each of the following Swashbuckle libraries so that the solution can access the necessary methods.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">Swashbuckle.Application</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Swashbuckle.Swagger.Annotations</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Swashbuckle.Swagger</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Swashbuckle.Swagger.XmlComments</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Then, I add the following code (see example that follows), much of which is supplied in a Swashbuckle example file. In the <code class="language-plaintext highlighter-rouge">SwaggerGeneratorOptions</code> class, I specify the options that I want Swashbuckle to enable.</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">schemaFilters</code> post-modify complex schemas in the generated output. You can modify schemas for a specific member type or across all member types. The <code class="language-plaintext highlighter-rouge">IModelFilter</code> is now the <code class="language-plaintext highlighter-rouge">ISchemaFilter</code>. We created an <code class="language-plaintext highlighter-rouge">IModelFilter</code> to fix some of the generated output.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">operationFilters</code> specifies options to modify the generated output. Each entry enables a different modification for operation descriptions.</p>
+  </li>
+</ul>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">namespace</span> <span class="nn">LinkInterface</span>
+<span class="p">{</span>
+  <span class="k">public</span> <span class="k">class</span> <span class="nc">Startup</span>
+  <span class="p">{</span>
+<span class="c1">//Enables Swashbuckle and related Swagger options.</span>
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">generateSwagger</span><span class="p">(</span><span class="n">HttpConfiguration</span> <span class="n">config</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">config</span><span class="p">.</span><span class="nf">EnsureInitialized</span><span class="p">();</span>
+      <span class="kt">var</span> <span class="n">swaggerProvider</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">SwaggerGenerator</span><span class="p">(</span>
+      <span class="n">config</span><span class="p">.</span><span class="n">Services</span><span class="p">.</span><span class="nf">GetApiExplorer</span><span class="p">(),</span>
+      <span class="n">config</span><span class="p">.</span><span class="n">Formatters</span><span class="p">.</span><span class="n">JsonFormatter</span><span class="p">.</span><span class="n">SerializerSettings</span><span class="p">,</span>
+      <span class="k">new</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="n">Info</span><span class="p">&gt;</span> <span class="p">{</span>
+        <span class="n">version</span> <span class="p">=</span> <span class="s">"v1"</span><span class="p">,</span> <span class="n">title</span> <span class="p">=</span> <span class="s">"My API"</span><span class="p">,</span> <span class="n">description</span> <span class="p">=</span> <span class="s">"Provides an interface
+</span>        <span class="n">between</span> <span class="n">our</span> <span class="n">API</span> <span class="n">and</span> <span class="n">third</span><span class="p">-</span><span class="n">party</span> <span class="n">services</span><span class="s">"
+</span>      <span class="p">}</span>
+      <span class="k">new</span> <span class="nf">SwaggerGeneratorOptions</span><span class="p">(</span>
+    <span class="c1">//Apply your Swagger options here.</span>
+        <span class="n">schemaIdSelector</span><span class="p">:</span> <span class="p">(</span><span class="n">type</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">type</span><span class="p">.</span><span class="nf">FriendlyId</span><span class="p">(</span><span class="k">true</span><span class="p">),</span>
+    <span class="c1">//Implements the SwaggerTitleFilter class, which generates title members</span>
+    <span class="c1">//in the definitions model of the swagger.json file.</span>
+        <span class="n">modelFilters</span><span class="p">:</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">IModelFilter</span><span class="p">&gt;(){</span><span class="k">new</span> <span class="nf">SwaggerTitleFilter</span><span class="p">()},</span>
+        <span class="n">conflictingActionsResolver</span><span class="p">:</span> <span class="p">(</span><span class="n">apiDescriptions</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">apiDescriptions</span><span class="p">.</span><span class="nf">GetEnumerator</span><span class="p">().</span><span class="n">Current</span><span class="p">,</span>
+        <span class="n">schemaFilters</span><span class="p">:</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">ISchemaFilter</span><span class="p">&gt;(){</span><span class="k">new</span> <span class="nf">ApplySwaggerSchemaFilterAttributes</span><span class="p">()},</span>
+        <span class="n">operationFilters</span><span class="p">:</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">IOperationFilter</span><span class="p">&gt;()</span>
+          <span class="p">{</span>
+        <span class="c1">//Enables XML comments and writes them to the MyAPI.XML file. These comments</span>
+        <span class="c1">//are included in the generated swagger.json file.</span>
+            <span class="k">new</span> <span class="nf">ApplyXmlActionComments</span><span class="p">(</span><span class="s">"MyAPI.XML"</span><span class="p">),</span>
+        <span class="c1">//Enables the SwaggerResponse output class, to specify multiple</span>
+        <span class="c1">//response codes for the API.</span>
+            <span class="k">new</span> <span class="nf">ApplySwaggerResponseAttributes</span><span class="p">()</span>
+          <span class="p">}</span>
+        <span class="p">);</span>
+
+        <span class="kt">var</span> <span class="n">swaggerString</span> <span class="p">=</span> <span class="n">JsonConvert</span><span class="p">.</span><span class="nf">SerializeObject</span><span class="p">(</span>
+          <span class="n">swaggerDoc</span><span class="p">,</span>
+          <span class="n">Formatting</span><span class="p">.</span><span class="n">Indented</span><span class="p">,</span>
+          <span class="k">new</span> <span class="n">JsonSerializerSettings</span>
+          <span class="p">{</span>
+            <span class="n">NullValueHandling</span> <span class="p">=</span> <span class="n">NullValueHandling</span><span class="p">.</span><span class="n">Ignore</span><span class="p">,</span>
+            <span class="n">Converters</span> <span class="p">=</span> <span class="k">new</span><span class="p">[]</span> <span class="p">{</span><span class="k">new</span> <span class="nf">VendorExtensionsConverter</span><span class="p">()}</span>
+          <span class="p">}</span>
+        <span class="p">);</span>
+
+    <span class="c1">//Writes the swagger.json file to the \output directory so that it can</span>
+    <span class="c1">//be consumed by statis site generators.</span>
+        <span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">StreamWriter</span> <span class="n">file</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="nf">StreamWriter</span><span class="p">(</span><span class="s">"swagger.json"</span><span class="p">);</span>
+        <span class="n">file</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">swaggerString</span><span class="p">);</span>
+        <span class="n">file</span><span class="p">.</span><span class="nf">Close</span><span class="p">();</span>
+      <span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>After enabling these options, I <em>could</em> include code that enables the Swagger UI, but that interface looks a bit outdated. Also, I want to incorporate additional documentation written in Markdown, which the Swagger UI does not support. After reading online forums and posting questions to the <a href="http://www.writethedocs.org/slack/">Write The Docs channel on Slack</a>, I discovered DapperDox.</p>
+
+<h2 id="using-dapperdox">Using DapperDox</h2>
+
+<p><a href="http://dapperdox.io/">DapperDox</a> is an open source documentation framework for OpenAPI specifications. Instead of having Swashbuckle publish our API specification in the Swagger UI, I added the following code to the <code class="language-plaintext highlighter-rouge">Startup.cs</code> file. This code writes the Swagger specification to a <code class="language-plaintext highlighter-rouge">swagger.json</code> file.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">StreamWriter</span> <span class="n">file</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="nf">StreamWriter</span><span class="p">(</span><span class="s">"swagger.json"</span><span class="p">);</span>
+      <span class="n">file</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">swaggerString</span><span class="p">);</span>
+      <span class="n">file</span><span class="p">.</span><span class="nf">Close</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>DapperDox reads this file and displays it in its own UI. I installed DapperDox and pointed it at my <code class="language-plaintext highlighter-rouge">swagger.json</code> file, and saw nothing but error messages in my command prompt.</p>
+
+<p>Reading through the <a href="http://dapperdox.io/docs/spec-resource-definitions">DapperDox documentation</a>, I discovered that <em>“When specifying a resource schema object…DapperDox requires that the optional schema object title member is present.”</em> This requirement was problematic, because Swashbuckle does not include a method for adding members to a schema in the generated <code class="language-plaintext highlighter-rouge">swagger.json</code> file. Additionally, it took some tinkering in the code for me to realize that the missing title member on the <code class="language-plaintext highlighter-rouge">definitions</code> model is what caused DapperDox to break.</p>
+
+<h2 id="fixing-the-output">Fixing the output</h2>
+
+<p>The Swashbuckle documentation offered little help in this regard, so I turned to one of our developers. After reviewing the code together, my developer counterpart created a <code class="language-plaintext highlighter-rouge">SwaggerTitleFilter</code> method that adds a <code class="language-plaintext highlighter-rouge">title</code> member to the <code class="language-plaintext highlighter-rouge">definitions</code> model in the resulting <code class="language-plaintext highlighter-rouge">swagger.json</code> file. The title member displays in the generated documentation as a link to the referenced object, creating a hyperlink between the two objects.</p>
+
+<p>The following code implements an <code class="language-plaintext highlighter-rouge">IModelFilter</code> that causes Swashbuckle to generate a title member for any schema. The <code class="language-plaintext highlighter-rouge">SwaggerTitleFilter</code> was referenced in the previous code sample</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">namespace</span> <span class="nn">MyAPI.Swagger</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">SwaggerTitleFilter</span> <span class="p">:</span> <span class="n">IModelFilter</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="k">void</span> <span class="nf">Apply</span><span class="p">(</span><span class="n">Schema</span> <span class="n">schema</span><span class="p">,</span>  <span class="n">ModelFilterContext</span> <span class="n">mfc</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">schema</span><span class="p">.</span><span class="n">vendorExtensions</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="s">"title"</span><span class="p">,</span> <span class="n">mfc</span><span class="p">.</span><span class="n">SystemType</span><span class="p">.</span><span class="n">Name</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>I compiled the code and Swashbuckle generated an updated <code class="language-plaintext highlighter-rouge">swagger.json</code> file. With the <code class="language-plaintext highlighter-rouge">title</code> member added to the <code class="language-plaintext highlighter-rouge">swagger.json</code> output, I pointed DapperDox at the directory containing my <code class="language-plaintext highlighter-rouge">swagger.json</code> file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.\dapperdox -spec-dir=C:\Bitbucket\APIproject\source
+</code></pre></div></div>
+
+<p>I opened a browser and entered <code class="language-plaintext highlighter-rouge">http://localhost:3123</code>, which is where DapperDox runs by default, and it worked! DapperDox displayed my <code class="language-plaintext highlighter-rouge">swagger.json</code> file and created interactive documentation that clearly displays the requests, responses, and query parameters for the API. I demoed the output for a few developers and support engineers, and they were over the moon.</p>
+
+<p><img src="../../images/DapperDox_API_reference.png" alt="DapperDox API reference screenshot" title="DapperDox API reference screenshot" /></p>
+
+<h2 id="next-steps">Next steps</h2>
+
+<p>With this framework in place, we can extend Swashbuckle to future APIs and use DapperDox to host the <code class="language-plaintext highlighter-rouge">swagger.json</code> file for each. The resulting output lives with the code, and provides documentation that developers and support engineers can access locally by running a single command.</p>
+
+<p>To add documentation beyond just the generated JSON output, DapperDox works incredibly well. I can author short tutorials that describe how to integrate our API with third-party services, which developers can easily review and modify through pull requests. As the API grows, we can add a README file that describes enhancements, modifications, and new integration points. Non-API documentation will live in an <code class="language-plaintext highlighter-rouge">\assets</code> directory, which DapperDox includes at build time.</p>
+
+<p>Each time that the code builds, the <code class="language-plaintext highlighter-rouge">swagger.json</code> file updates with the most current information. Developers and support engineers just run the <code class="language-plaintext highlighter-rouge">.\dapperdox</code> command and specify the directory where the <code class="language-plaintext highlighter-rouge">swagger.json</code> file lives. As the code changes, so does the documentation, so technical debt approaches zero.</p>
+
+<h2 id="lessons-learned">Lessons learned</h2>
+
+<p>Static site generators are all the rage, and for good reason. Providing a lightweight framework that can be deployed quickly is a huge asset when documenting APIs, especially external-facing documentation. Numerous options are available, but DapperDox felt like the right fit for our needs.</p>
+
+<p>The pain of determining why DapperDox was broken and the additional coding required to fix the problem was worth the effort, and we are poised to integrate this process into the next set of APIs that our team develops.</p>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+/* 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+<blockquote>
+<div id="mc_embed_signup">
+<form action="//justwriteclick.us1.list-manage.com/subscribe/post?u=3828f8d87d82289b96ff8fd19&amp;id=cc1d483d59" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div id="mc_embed_signup_scroll">
+			<i class="fa fa-envelope-square"></i>
+	<label for="mce-EMAIL">Enter your email for free lessons plus a review checklist in a neat PDF file.</label>
+
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" />
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3828f8d87d82289b96ff8fd19_cc1d483d59" tabindex="-1" value="" /></div>
+    <div class="clear"><input type="submit" value="Join now" name="subscribe" id="mc-embedded-subscribe" class="btn btn--inverse" /></div>
+    </div>
+</form>
+</div>
+</blockquote>
+<!--End mc_embed_signup-->
+
+:ET

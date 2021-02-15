@@ -1,0 +1,21 @@
+I"ù
+<p>How difficult or straightforward is it to create a print or PDF format? You may want to investigate and test solutions beyond this article, as requirements and print tolerances can vary widely.</p>
+
+<h3 id="jekyll-options">Jekyll options</h3>
+
+<p>In the Jekyll Documentation Theme site, Tom Johnson suggests buying a license for Prince XML ($500) in order to create print-ready PDF files with the <a href="https://idratherbewriting.com/documentation-theme-jekyll/">Jekyll Documentation Theme</a>. The PDF layout and styles are set using CSS. Considering that the only gem solution, <a href="https://github.com/abeMedia/jekyll-pdf">jekyll-pdf</a>, makes PDF files of single pages rather than a collection, the third-party solution is probably the way to go. You could look into the <a href="https://github.com/chrisanthropic/Open-Publisher">Open-Publisher</a> project, which is using Jekyll to create outputs that can be used as Pandoc inputs. <a href="http://pandoc.org/">Pandoc</a> is a super handy conversion tool that can convert many formats to other formats, and has templating capabilities that can help.</p>
+
+<h3 id="sphinx-options">Sphinx options</h3>
+
+<p>When you use Read the Docs builds for deployment, you automatically get versioned documentation based on releases, as well as PDF output for the entire site. The PDF formatting is based on <a href="https://www.latex-project.org/">LaTex</a>, an open source typesetting system. It has page numbering, linking, and footnotes.</p>
+
+<p>You also notice you get an Epub output when you use <a href="https://readthedocs.org/">Read the Docs</a>. Sphinx does have advantages over other static site generators for book-like output options since the Read the Docs theme is so thorough.</p>
+
+<h3 id="hugo-options">Hugo options</h3>
+
+<p>Hugo supports many <a href="https://gohugo.io/templates/output-formats/">custom output formats through templates</a>, but as of right now no one has written a series of templates for PDF, based on the discussions in various Issues, such as <a href="https://github.com/gohugoio/hugo/issues/1360">#1360 Generate concatenated document for Kindle/PDF generation</a> and <a href="https://github.com/gohugoio/hugo/issues/3530">#3530 Add alternative rendering format for LaTeX</a>. You could also use Prince XML as a solution here, similar to Jekyll.</p>
+
+<h2 id="other-options">Other options?</h2>
+
+<p>For the <em>Docs Like Code</em> book, I have written an article about how I created print-ready PDF and Amazon-supported ebook files such as the MOBI format. Read more in <a href="https://www.docslikecode.com/articles/practical-advice/">Practical Advice On Publishing A Technical Book using GitHub and GitBook</a>. GitBook has since changed their overall pricing and support plan, but is certainly worth investigating.</p>
+:ET

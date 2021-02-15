@@ -1,0 +1,58 @@
+I"^<p>In the new year I want to keep learning more about docs like code, and I know that I’ve learned a lot from the Write the Docs community and presentations.</p>
+
+<p>Top of mind for me right now is that the 2018 conference in Portland Oregon is in May, 6-8 to be exact, and the <a href="http://www.writethedocs.org/conf/portland/2018/cfp/">call for proposals closes next Wednesday</a>, January 10, 2018. You can register and buy your ticket - or tickets for your whole team - <a href="http://www.writethedocs.org/conf/portland/2018/">online now</a>.</p>
+
+<p>Even when I don’t make it to the conference in person, the video recordings are super helpful to learn from others. Here’s a collection of the relevant talks over the years:</p>
+
+<h3 id="2017-us-conference">2017 US conference</h3>
+
+<p><a href="https://www.youtube.com/watch?v=Mzu-c-FoOdw">Jodie Putrino</a> presented “Treating documentation like code: a practical account” to share her experiences at F5 Networks.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mzu-c-FoOdw" frameborder="0" allowfullscreen=""></iframe>
+
+<h3 id="2016-us-conference">2016 US conference</h3>
+
+<p><a href="https://www.youtube.com/watch?v=Y2TGwUPb8R4">A panel</a> of folks from Rackspace, Microsoft, Balsamiq, and Twitter talked about how they are adopting these practices.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y2TGwUPb8R4" frameborder="0" allowfullscreen=""></iframe>
+
+<h3 id="2016-eu-conference">2016 EU conference</h3>
+
+<p><a href="https://www.youtube.com/watch?v=JvRd7MmAxPw">Margaret Eker and Jennifer Roundeau</a> talked about the “Missing Manual” for docs like code.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JvRd7MmAxPw" frameborder="0" allowfullscreen=""></iframe>
+
+<p><a href="https://www.youtube.com/watch?v=dHdBsNxtKeI">Rachel Whitten</a> talked about docs-as-code in practice.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dHdBsNxtKeI" frameborder="0" allowfullscreen=""></iframe>
+
+<h3 id="2015-us-conference">2015 US conference</h3>
+
+<p><a href="https://www.youtube.com/watch?v=EnB8GtPuauw">Riona MacNamara</a> spoke about how adopting docs like code has completely transformed how Google does documentation.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EnB8GtPuauw" frameborder="0" allowfullscreen=""></iframe>
+
+<p>All this to say, the docs-like-code concepts are widely practiced in our industry, and each conference provides more inspiring examples. Perhaps you can watch these presentations and be inspired to integrate code and doc techniques.</p>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+/* 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+<blockquote>
+<div id="mc_embed_signup">
+<form action="//justwriteclick.us1.list-manage.com/subscribe/post?u=3828f8d87d82289b96ff8fd19&amp;id=cc1d483d59" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div id="mc_embed_signup_scroll">
+			<i class="fa fa-envelope-square"></i>
+	<label for="mce-EMAIL">Enter your email for free lessons plus a review checklist in a neat PDF file.</label>
+
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" />
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3828f8d87d82289b96ff8fd19_cc1d483d59" tabindex="-1" value="" /></div>
+    <div class="clear"><input type="submit" value="Join now" name="subscribe" id="mc-embedded-subscribe" class="btn btn--inverse" /></div>
+    </div>
+</form>
+</div>
+</blockquote>
+<!--End mc_embed_signup-->
+
+:ET

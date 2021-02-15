@@ -1,0 +1,46 @@
+I""<p>Table layout can be an annoying and difficult aspect of using simple markdown as documentation source. That said, when using Markdown or RST tables you can compare changes to simple tables more easily during reviews.</p>
+
+<p>One of the most helpful tools when creating tables for Markdown or RST is the Tables Generator at https://www.tablesgenerator.com/markdown_tables. You can draw tables or paste table data and then render the ASCII-based output for pasting into your document source file.</p>
+
+<p>For example, here is an empty five-column table in Markdown, ready for you to insert cell data and spaces.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|  |  |  |  |  |
+|:-|:-|:-|:-|:-|
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+</code></pre></div></div>
+
+<p>When using Markdown for tables, you do not have access to block-level formatting. If you need a second paragraph, you can use <code class="language-plaintext highlighter-rouge">&lt;br&gt;</code> inside of a Markdown table. For more complex tables, many people use HTML inside of Markdown files.</p>
+
+<p>For RST, there are several options for table markup that is super simple while still allowing for nice table output.</p>
+
+<p>Simple tables can be made with dashes and plus signs and pipe symbols. Use spaces to indicate the size of cells. However these can be difficult to hand-type and maintain with changes over time. So, look for other table syntax ideas to make it easier to maintain the tables.</p>
+
+<p>The <a href="https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html#tables">RST documentation</a> has several table syntax examples. Over time I have found that the most useful way to maintain table data in columns and rows is the <code class="language-plaintext highlighter-rouge">csv-table</code> directive. Indicate header rows and labels in the cells, along with the widths of each column. Then enter the data in a CSV-like stye. Here’s an example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.. csv-table:: a title
+   :header: "name", "firstname", "age"
+   :widths: 20, 20, 10
+
+   "Smith", "John", 40
+   "Smith", "John, Junior", 20
+</code></pre></div></div>
+
+<p>If you also output PDF using LaTeX with Sphinx, be aware that there’s a column specification for tabular data. Then you can use centimeters for width like so:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.. tabularcolumns:: |l|c|p{5cm}|
++--------------+---+-----------+
+|  simple text | 2 | 3         |
++--------------+---+-----------+
+</code></pre></div></div>
+
+<p>Your editor may also have helpful tools for managing tables, such as the <a href="https://atom.io/packages/markdown-table-editor">Markdown Table Editor in Atom</a>, which can resize all rows and columns while you type. Plus, it enables keybindings that you can use to navigate between cells and rows.</p>
+
+<h2 id="evaluating-other-options">Evaluating other options</h2>
+
+<ul>
+  <li><a href="https://www.docslikecode.com/learn/07-evaluating-ssg-themes/">Evaluating Static Site Generator themes</a></li>
+  <li><a href="https://www.docslikecode.com/learn/09-ssg-search-implementations/">Evaluating Static Site Generator search options</a></li>
+</ul>
+:ET

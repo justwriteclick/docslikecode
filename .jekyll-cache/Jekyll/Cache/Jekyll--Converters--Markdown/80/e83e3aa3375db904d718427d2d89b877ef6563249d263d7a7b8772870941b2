@@ -1,0 +1,224 @@
+I"�7<p>Jekyll is a Static Site Generator that typically accepts <a href="https://commonmark.org/help/">Markdown</a> for authoring. <a href="https://jekyllrb.com/">Jekyll</a> has its own documentation site and a <a href="https://jekyllrb.com/docs/">Quickstart</a>. To prepare your environment to build Jekyll sites locally, follow the instructions for either Windows or MacOS.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+  <li>Windows, MacOS, or a Linux-based environment.</li>
+  <li>On MacOS, you will install <a href="https://brew.sh">Homebrew</a>.</li>
+  <li>On Windows, you must install Docker.</li>
+  <li>On Windows, you must install <a href="https://gitforwindows.org/">Git for Windows</a> which includes Git Bash.</li>
+</ul>
+
+<h2 id="set-up-ruby-and-jekyll-on-windows-with-docker">Set up Ruby and Jekyll on Windows with Docker</h2>
+
+<p>On Windows, first install <a href="https://docs.docker.com/docker-for-windows/">Docker</a> and <a href="https://gitforwindows.org/">Git Bash</a>, so that you are able to use Linux-based Docker images and commands. Then follow these steps to set up Jekyll and Ruby.</p>
+
+<ol>
+  <li>Open Git Bash.</li>
+  <li>Make sure that Docker commands run in Git Bash by checking the version value:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker --version
+</code></pre></div>    </div>
+  </li>
+  <li>Next, get a copy of the Jekyll Docker image that has all the gems for GitHub Pages deployment with this command:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker pull jekyll/jekyll:pages
+</code></pre></div>    </div>
+  </li>
+  <li>Now, you can run Jekyll with Ruby within the Docker image with one command, aliased and run in Git Bash.</li>
+</ol>
+
+<p>Let’s make an alias though so you can follow the rest of the commands in this instruction set. Open Git Bash and then set up Notepad as your default editor by typing:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git config core.editor notepad
+</code></pre></div></div>
+<p>Then, you can type this in Git Bash to edit the <code class="language-plaintext highlighter-rouge">.bash_profile</code> file in Notepad:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ notepad .bash_profile
+</code></pre></div></div>
+
+<p>Or, open <code class="language-plaintext highlighter-rouge">.bash_profile</code> in the Vim editor if you prefer to remain in Git Bash:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vim .bash_profile
+</code></pre></div></div>
+<ol>
+  <li>Next, copy these two commands into the <code class="language-plaintext highlighter-rouge">.bash_profile</code> file:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alias jekyll="docker run --rm --volume=$(pwd):/srv/jekyll -p 4000:4000  jekyll/jekyll:pages jekyll"
+alias jekyll-serve="docker run --rm --volume=$(pwd):/srv/jekyll -p 4000:4000  jekyll/jekyll:pages jekyll serve --watch --incremental --force_polling"
+</code></pre></div>    </div>
+  </li>
+  <li>Save the <code class="language-plaintext highlighter-rouge">.bash_profile</code> file and close the editor. On Vim, you save and close by entering command by pressing the <strong>esc</strong> key and then typing <strong>colon</strong>* + <strong>w</strong> + <strong>q</strong>, <code class="language-plaintext highlighter-rouge">:wq</code>, and then pressing <strong>enter</strong>.</li>
+</ol>
+
+<p>When you start Git Bash the next time, the <code class="language-plaintext highlighter-rouge">.bash_profile</code> is automatically run and then the two commands, <code class="language-plaintext highlighter-rouge">jekyll</code> and <code class="language-plaintext highlighter-rouge">jekyll-serve</code> become available in Git Bash, run in Docker.</p>
+
+<h2 id="set-up-ruby-and-jekyll-on-windows-subsystem-for-linux">Set up Ruby and Jekyll on Windows Subsystem for Linux</h2>
+
+<p>You must be running Windows 10 x64 Creators Update Home, Pro, or Enterprise (non-LTSB SKU) or later in order to install Windows Subsystem for Linux (WSL). Use the <a href="https://docs.microsoft.com/en-us/windows/wsl/about">WSL instructions</a> to install WSL.</p>
+
+<p>Then you can install Jekyll using the <a href="https://jekyllrb.com/docs/installation/">Jekyll instructions for the Linux distribution you chose</a> such as <a href="https://jekyllrb.com/docs/installation/ubuntu/">Ubuntu</a> or <a href="https://jekyllrb.com/docs/installation/other-linux/">Fedora</a>.</p>
+
+<h2 id="set-up-ruby-and-jekyll-on-macos">Set up Ruby and Jekyll on MacOS</h2>
+
+<ol>
+  <li>Install Homebrew. See the <a href="https://brew.sh">Homebrew site</a> for instructions.</li>
+  <li>
+    <p>Use Homebrew to install a Ruby version manager.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ brew install rbenv ruby-build
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Add rbenv to bash so that it loads every time you open a terminal.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo 'if which rbenv &gt; /dev/null; then eval "$(rbenv init -)"; fi' &gt;&gt; ~/.bash_profile
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Source your <code class="language-plaintext highlighter-rouge">.bash_profile</code> file.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ source ~/.bash_profile
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Install a specific version of Ruby.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rbenv install 2.3.1
+$ rbenv global 2.3.1
+$ ruby -v
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="starting-a-jekyll-site">Starting a Jekyll site</h2>
+
+<p>This <a href="https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/">help page from GitHub</a> provides a great starting point for building a Jekyll site. In our case, we have a specific theme, minimal-mistakes, that we want to use, so these instructions offer exact steps.</p>
+
+<ol>
+  <li>
+    <p>Install the Bundler gem, which helps with Ruby dependencies.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gem install bundler
+</code></pre></div>    </div>
+  </li>
+  <li>In the folder where you want to create the project, start with a new Jekyll build and use the <code class="language-plaintext highlighter-rouge">jekyll new</code> command. Use <code class="language-plaintext highlighter-rouge">.</code> to indicate you want it created in the current directory.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ jekyll new .
+</code></pre></div>    </div>
+  </li>
+  <li>Take a look at the files created in the directory with an <code class="language-plaintext highlighter-rouge">ls</code> command:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ls -A
+.gitignore	Gemfile		_config.yml	about.md
+404.html	Gemfile.lock	_posts		index.md
+</code></pre></div></div>
+<ol>
+  <li>Edit <code class="language-plaintext highlighter-rouge">_config.yml</code> in any text editor you like. Add these lines to ensure you use the Minimal Mistakes theme, and choose a color collection for the theme:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+</code></pre></div></div>
+<ol>
+  <li>Also in the <code class="language-plaintext highlighter-rouge">_config.yml</code> file, edit the following:</li>
+</ol>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">title: "Site Title"</code>: Enter the title you want for the site that appears in the <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> tag.</li>
+  <li><code class="language-plaintext highlighter-rouge">name: "Your Name"</code>: Enter the name for the authorship and ownership of the site. Could be a company name or team name.</li>
+  <li><code class="language-plaintext highlighter-rouge">description: "An amazing website."</code>: Write a one-line description of the site and its purpose.</li>
+</ul>
+
+<p>You can work on the rest of the settings as you continue to build out the site.</p>
+<ol>
+  <li>Move the root <code class="language-plaintext highlighter-rouge">index.md</code> file to <code class="language-plaintext highlighter-rouge">index.html</code> to work best with the Minimal Mistakes theme.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mv index.md index.html
+</code></pre></div>    </div>
+  </li>
+  <li>Write any text you want to appear on the landing page, below the front matter, which indicates to the theme how to build the file.</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: home
+author_profile: true
+---
+
+Welcome to our site! Please take a look around at the content available.
+</code></pre></div></div>
+
+<ol>
+  <li>In the <code class="language-plaintext highlighter-rouge">Gemfile</code> in the root directory, replace gem “jekyll” with:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem "github-pages", group: :jekyll_plugins
+</code></pre></div>    </div>
+  </li>
+  <li>Run <code class="language-plaintext highlighter-rouge">bundle update</code> and verify that all gems install properly.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle update
+</code></pre></div>    </div>
+    <p>If you see an error, copy the error and enter it into Google to search for solutions to the error message.</p>
+  </li>
+</ol>
+
+<blockquote>
+  <p>Note: If you are working on an already-set-up Jekyll site, run <code class="language-plaintext highlighter-rouge">bundle install</code> the first time you are in a Jekyll docs directory or when you need to pick up theme changes locally.</p>
+</blockquote>
+
+<h2 id="build-a-jekyll-site-locally">Build a Jekyll site locally</h2>
+
+<p>Once you’ve prepared your environment, you can build locally and review the site in your browser.</p>
+
+<ol>
+  <li>
+    <p>Run the serve command.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle exec jekyll serve
+Configuration file: /path/to/configuration/file/project-name/_config.yml
+Configuration file: /path/to/configuration/file/project-name/_config.yml
+            Source: /path/to/configuration/file/project-name
+       Destination: /path/to/configuration/file/project-name/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 22.964 seconds.
+ Auto-regeneration: enabled for '/path/to/configuration/file/project-name'
+Configuration file: /path/to/configuration/file/project-name/_config.yml
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+</code></pre></div>    </div>
+  </li>
+  <li>Use the <strong>Server address</strong> URL  <code class="language-plaintext highlighter-rouge">http://127.0.0.1:4000/latest/</code> in a browser to preview the content.
+<img src="/images/learn/jekyll-docs-page.png" alt="Example Jekyll site" /></li>
+  <li>Press <code class="language-plaintext highlighter-rouge">Ctrl+C</code> in the serve terminal to stop the server.
+    <blockquote>
+      <p><strong><em>TIP</em></strong>
+Leave the serve terminal open and running. Every time you save changes to a file, it automatically regenerates the site so you can test the output as you write. That said, if you change the <code class="language-plaintext highlighter-rouge">_config.yml</code> file, you must stop (ctrl-c) and then re-run the serve command to see changes.</p>
+    </blockquote>
+  </li>
+  <li>Don’t forget to add the files to a commit and then commit the changes so that you can track the changes and work with others on GitHub. Refer to <a href="https://docslikecode.com/learn/04-add-content-workflow/">Working with content in GitHub repositories</a>.</li>
+</ol>
+
+<h2 id="whats-next">What’s next</h2>
+
+<ul>
+  <li><a href="https://docslikecode.com/learn/04-add-content-workflow/">Working with content in GitHub repositories</a></li>
+  <li><a href="https://www.docslikecode.com/learn/05-cd-for-docs/">Continuous Deployment (CD) for Documentation Sites</a></li>
+  <li><a href="https://www.docslikecode.com/learn/06-test-docs-as-code/">Set Up Automated Tests for Docs</a></li>
+</ul>
+
+<h2 id="evaluating-options">Evaluating options</h2>
+
+<ul>
+  <li><a href="https://www.docslikecode.com/learn/07-evaluating-ssg-themes/">Evaluating Static Site Generator themes</a></li>
+  <li><a href="https://www.docslikecode.com/learn/08-evaluating-table-layouts/">Evaluating table layouts and formatting</a></li>
+  <li><a href="https://www.docslikecode.com/learn/09-ssg-search-implementations/">Evaluating Static Site Generator search options</a></li>
+</ul>
+
+<h2 id="additional-references">Additional references</h2>
+
+<ul>
+  <li><a href="https://commonmark.org/help/">Markdown reference</a></li>
+  <li><a href="https://idratherbewriting.com/documentation-theme-jekyll/">Documentation Theme for Jekyll</a></li>
+  <li><a href="https://www.lynda.com/Web-Development-tutorials/GitHub-pages/609031/654613-4.html">Lynda.com Web foundations, GitHub Pages</a></li>
+  <li><a href="https://jekyllrb.com/docs/github-pages/">Jekyll documentation about GitHub Pages</a></li>
+</ul>
+:ET

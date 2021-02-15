@@ -1,0 +1,201 @@
+I"�(<p>TechDocs is Spotify’s homegrown docs-like-code solution built directly into Backstage. This means engineers write their documentation in Markdown files which live together with their code. In this post we will walk you through how to setup Backstage and Techdocs.</p>
+
+<p><strong>Table of contents</strong></p>
+
+<ul>
+  <li>Introduction.</li>
+  <li>Basic concepts and structure of backstage and techdocs.</li>
+  <li>Install Backstage.</li>
+  <li>Setup tech docs.</li>
+  <li>Creating and publishing documentation.</li>
+  <li>Publish to cloud storage</li>
+  <li>Recap</li>
+</ul>
+
+<h2 id="introduction"><strong>Introduction</strong></h2>
+
+<p>Backstage is a platform for building developer portals.</p>
+
+<p>Its main benefit is allowing you to ship high quality code fast.</p>
+
+<p>The main features you get out of the box are</p>
+
+<ul>
+  <li>Service catalog.</li>
+  <li>Software templates.</li>
+  <li>Plugins which allow you to extend backstage functionality.</li>
+  <li>Techdocs, which is the focus of this post.</li>
+</ul>
+
+<p>These features allow you to create standards and best practices across teams.  It increases the speed of development. It creates a  good developer experience for everyone who uses it. You centralise  all your tools and info in one place.</p>
+
+<p>In this post I will take you through the following</p>
+
+<ul>
+  <li>Learn basic concepts and structure of backstage and techdocs</li>
+  <li>Install Backstage</li>
+  <li>Setup tech docs</li>
+  <li>Creating and publishing documentation.</li>
+  <li>All on local machine</li>
+</ul>
+
+<h2 id="basics-concepts-and-structures-of-backstage-and-techdocs"><strong>Basics concepts and structures of backstage and techdocs</strong></h2>
+
+<p>The focus of this article is techdocs so i will go through the other main features at a high level.</p>
+
+<ul>
+  <li>Service catalog. It keeps track of ownership and metadata for all the software in your ecosystem. it does this by putting metadata in YAML files stored together with your code. You process these files and then you can visualise the catalog in backstage. This will enable your teams to manage and maintain the software they own. it also makes the software discoverable.</li>
+  <li>Software templates - This feature allows you to create templates or skeletons of code. These templates are published to github.</li>
+  <li>Plugins - Allow you to integrate third part tools or any kind of infrastructure into backstage. They are open source and you can view a list <a href="https://backstage.io/plugins">here</a></li>
+  <li>Techdocs- yay, finally, why we are here. Techdocs is Spotify’s homegrown docs like code solution. it allows the user to store documentation to near code thus allowing it to be easily discovered.</li>
+</ul>
+
+<p>When you deploy backstage with Techdocs enabled you get a basic out of the box experience.</p>
+
+<p>At its core it is MKDocs plugin and other MkDocs plugins and Python Markdown extensions which allows it to standardize the configuration of MkDocs used for TechDocs.</p>
+
+<p>You can see the code <a href="https://github.com/backstage/mkdocs-techdocs-core">here</a></p>
+
+<p>The other moving parts are</p>
+
+<ul>
+  <li>The techdocs container which can be found on Docker-hub, It builds static content through MKDocs</li>
+  <li>The Techdocs backend plugin This is the backend part of the techdocs plugin.</li>
+  <li>The Techdocs CLI, Command line tool for managing techdocs sites in backstage</li>
+  <li>The Techdocs reader, it fetch’s remotes pages , run transformers against them and renders them in a shadow DOM</li>
+  <li>Transformers API is a function that takes in parameters from the reader component and returns a function which gets passed the dom of the fetched page.</li>
+</ul>
+
+<p>Architecture</p>
+
+<p><img src="https://backstage.io/docs/assets/techdocs/architecture-basic.drawio.svg" alt="Architecture diagram" /></p>
+
+<p>When you open a techdocs sites a request is made the techdocs reader calls the techdocs-backend with the entity id and the path of the current page, the response contains the static content</p>
+
+<p>The static content contains HTML and CSS, javascript is removed for security reasons</p>
+
+<p>Transforms are then applied which modiy the generated static HTML files for a number of reasons like removing certain headers etc</p>
+
+<p>For the following instructions we will use the local file storage but it is better to use cloud storage like S3.</p>
+
+<h2 id="install-backstage"><strong>Install Backstage</strong></h2>
+
+<h3 id="perquisites">Perquisites</h3>
+<p>Mac running MacOS</p>
+
+<p>Node version 14.x</p>
+
+<p>cookiecutter</p>
+
+<p>If you already have backstage installed then skip this.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">npx</span> <span class="p">@</span><span class="nd">backstage</span><span class="sr">/create-ap</span><span class="err">p
+</span></code></pre></div></div>
+
+<p>You are asked some questions on setup, The recommendation for this tutorial is to go with SQLLite.</p>
+
+<p><img src="/images/techdocs/Untitled.png" alt="npx install" /></p>
+
+<p>If successful you will see this message</p>
+
+<p><img src="/images/techdocs/01.png" alt="successful" /></p>
+
+<p>cd into your directory  and run</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">yarn</span> <span class="nx">workspace</span> <span class="nx">backend</span> <span class="nx">start</span>
+</code></pre></div></div>
+
+<p><img src="/images/techdocs/02.png" alt="yarn workspace" /></p>
+
+<p>Open a new terminal window and</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">run</span> <span class="nx">yarn</span> <span class="nx">start</span>
+</code></pre></div></div>
+
+<p><img src="/images/techdocs/03.png" alt="yarn start" /></p>
+
+<p>If successful a browser window will open up and you should be presented with a window</p>
+
+<p><img src="/images/techdocs/04.png" alt="successfull register" /></p>
+
+<p>Well done, you have successfully installed backstage on your machine.</p>
+
+<h2 id="setup-techdocs">Setup TechDocs</h2>
+
+<p>Historically you had to manually add Techdocs , the  latest version of create-app bundles tech docs.</p>
+
+<p>to verify this you should be able to see entries for the following plugin</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">'</span><span class="s1">@backstage/plugin-techdocs</span><span class="dl">'</span><span class="p">;</span>
+  
+</code></pre></div></div>
+
+<p>in the following files</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">packages</span><span class="o">/</span><span class="nx">app</span><span class="o">/</span><span class="nx">src</span><span class="o">/</span><span class="nx">plugins</span><span class="p">.</span><span class="nx">ts</span>
+<span class="nx">packages</span><span class="o">/</span><span class="nx">app</span><span class="o">/</span><span class="nx">src</span><span class="o">/</span><span class="nx">App</span><span class="p">.</span><span class="nx">tsx</span>
+</code></pre></div></div>
+
+<h2 id="creating-and-publishing-techdocs">Creating and publishing techdocs</h2>
+
+<p>To create docs manually from scratch click on create component</p>
+
+<p><img src="/images/techdocs/05.png" alt="manuall" /></p>
+
+<p>From here choose the Documentation template</p>
+
+<p><img src="/images/techdocs/06.png" alt="template" /></p>
+
+<p>Fill out Name and Description</p>
+
+<p><img src="/images/techdocs/07.png" alt="Name Desc" /></p>
+
+<p>Type in the owner, the Github repo you want to call it , ensure their is no Github repo that exists with the same name or the Templater will fail</p>
+
+<p><img src="/images/techdocs/08.png" alt="owner" /></p>
+
+<p>Once you click on create you will be presented with a Create component status popup.</p>
+
+<p><img src="/images/techdocs/09.png" alt="create component" /></p>
+
+<p>Once the repository has been published to github the create component status popup will go green like below.</p>
+
+<p><img src="/images/techdocs/10.png" alt="popup" /></p>
+
+<p>You will be able to navigate to the docs.</p>
+
+<p><img src="/images/techdocs/11.png" alt="navigate" /></p>
+
+<p>If it is the first time you are loading them you could receive this message while it converts from MD to html</p>
+
+<p><img src="/images/techdocs/12.png" alt="loading" /></p>
+
+<p>Here is what you will be presented with.</p>
+
+<p><img src="/images/techdocs/13.png" alt="results" /></p>
+
+<p>You now have techdocs up and running on your machine, if you want to view the files manually they are located at the following location on you machine</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">backstage</span><span class="o">/</span><span class="nx">node_modules</span><span class="o">/</span><span class="p">@</span><span class="nd">backstage</span><span class="sr">/plugin-techdocs-backend/</span><span class="kd">static</span><span class="sr">/docs/</span><span class="k">default</span><span class="sr">/Component/</span>
+</code></pre></div></div>
+
+<p>The recommended setup is to place the output on to cloud storage and not on the local machine</p>
+
+<h2 id="publish-to-cloud-storage">Publish to cloud storage</h2>
+
+<p><img src="/images/techdocs/14.png" alt="cloud" /></p>
+
+<p>When you startup backstage you should see this message in the logs to confirm you are using cloud storage</p>
+
+<p><img src="/images/techdocs/15.png" alt="registered" /></p>
+
+<p>You will also see the content in the S3 bucket.</p>
+
+<p><img src="/images/techdocs/16.png" alt="s3" /></p>
+
+<h2 id="recap">Recap</h2>
+
+<p>In summary, we went through an introduction on backs stage, techdocs and how to publish techdocs locally and to cloud storage via s3. if you want to learn more about backstage i would recommend visiting <a href="https://backstage.io">https://backstage.io</a> or if you want to learn more about techdocs then <a href="https://backstage.io/docs/features/techdocs/techdocs-overview">https://backstage.io/docs/features/techdocs/techdocs-overview</a></p>
+
+<p>If you like the idea of backstage but don’t want the inconvenience of managing backstage yourself then i would check out Roadie.io.</p>
+:ET

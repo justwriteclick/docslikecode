@@ -1,0 +1,139 @@
+I"/<p>Continuous deployment lets you build the docs on another system and then place the files where the web server can serve them. CD can include both the building of the HTML files as well as deploying them to a host.</p>
+
+<p>Continuous deployment is game-changing for documentation sites. You can get free or super inexpensive hosting, make sure that all your pull requests build correctly, and make gorgeous web sites, all with automated builds. Until you have used automation for docs it’s hard to describe how freeing it can be. You don’t have to take the time to build the site locally and then FTP the files to a remote host. You don’t have to fiddle with the HTTPS certificates or make sure that the web server itself is configured “just so.”</p>
+
+<p>Webhooks are a mechanism for triggering an event based on a change in the repository. You can choose from different services that provide webhooks to build your site automatically. Some examples include:</p>
+
+<ul>
+  <li><a href="https://readthedocs.org/">Read the Docs</a></li>
+  <li><a href="https://www.netlify.com/">Netlify</a></li>
+  <li><a href="https://pages.github.com">GitHub Pages</a></li>
+</ul>
+
+<p>Let’s walk through some examples of CI/CD for websites so you can automate your documentation workflow.</p>
+
+<h2 id="build-python-sphinx-project-to-read-the-docs">Build Python Sphinx project to Read the Docs</h2>
+
+<p>Once you have a simple set of pages, you can set up continuous deployment on the Read the Docs website, where open source projects can choose to build for free while supporting the site with ethical ads, or by paying a small fee. Follow these steps to get started.</p>
+
+<ol>
+  <li>Go to https://readthedocs.org/ and sign up for an account.</li>
+  <li>Once you’ve logged in, go to <strong>Settings</strong> and then choose <strong>Connected Services</strong>.</li>
+  <li>Click the prompts to connect your GitHub account, giving Read the Docs permissions for the repository you want to build docs from, to read the repo and clone the repo.</li>
+  <li>Once you have a connected account, go to your profile on readthedocs.org and click <strong>My Projects</strong> to see a list of your repositories that Read the Docs service can access.</li>
+  <li>To import your new project, click the <strong>+</strong> import icon next to the repository name. Click <strong>Import Manually</strong> if you do not see the repository listed after refreshing your accounts.</li>
+</ol>
+
+<h3 id="next-deploy-a-sphinx-project-to-readthedocsorg">Next: Deploy a Sphinx project to readthedocs.org</h3>
+
+<p>When you have a local project you want to deploy to a web site, you can set up the configuration for Continuous Deployment (CD) on readthedocs.org.</p>
+
+<p>You can complete this setup online at readthedocs.org through an account, or you can <a href="https://docs.readthedocs.io/en/latest/webhooks.html#webhook-creation">manually add the webhook</a> to your repository in GitHub, GitLab, or Bitbucket.</p>
+
+<p>Since this lesson is intended to be prescriptive, let’s go through the manual settings in GitHub so that you see how webhooks work.</p>
+
+<ol>
+  <li>Log into GitHub.</li>
+  <li>Go to the <strong>Settings</strong> page for your project that contains the Sphinx project.</li>
+  <li>Click <strong>Webhooks</strong> and then click <strong>Add webhook</strong>.</li>
+  <li>For the Payload URL, use the URL of the integration on Read the Docs, found in the <strong>Dashboard</strong> &gt; <strong>Admin</strong> &gt; <strong>Integrations</strong> settings. For example, use https://readthedocs.org/api/v2/webhook/rockthedocs-demo/40722/ for a generic webhook. However, while RTD gives you a “token” that is intended for the <strong>Secret</strong> field, the tooling is not yet complete to respect that token. The example URL for the project Integration page is this URL: https://readthedocs.org/dashboard/rockthedocs-demo/integrations/40708/.</li>
+  <li>For Content type, you can use either <code class="language-plaintext highlighter-rouge">application/json</code> or <code class="language-plaintext highlighter-rouge">application/x-www-form-urlencoded</code>.</li>
+  <li>Select <strong>Just the push event</strong>.</li>
+  <li>Finish by clicking <strong>Add webhook</strong>.</li>
+  <li>You can verify if the webhook is working at the bottom of the GitHub page under <strong>Recent Deliveries</strong>. If you see a <code class="language-plaintext highlighter-rouge">Response 200</code>, then the webhook is correctly configured.</li>
+</ol>
+
+<blockquote>
+  <p>Note: You can configure a Sphinx project to use Markdown as source files. You update your <code class="language-plaintext highlighter-rouge">conf.py</code> file with this line when you want to use Markdown (<code class="language-plaintext highlighter-rouge">.md</code>) rather than ReStructured Text (<code class="language-plaintext highlighter-rouge">.rst</code>) files. Here’s an example:</p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   # The suffix(es) of source filenames.
+   # You can specify multiple suffix as a list of string:
+   source_suffix = ['.rst', '.md']
+   source_parsers = {
+      '.md': 'recommonmark.parser.CommonMarkParser',
+   }
+</code></pre></div>  </div>
+</blockquote>
+
+<h2 id="deploy-a-jekyll-project-using-github-pages">Deploy a Jekyll Project using GitHub Pages</h2>
+
+<p><a href="https://pages.github.com/">GitHub Pages</a> is a hosted offering from GitHub itself so you can make web sites by building from GitHub repositories. For your GitHub account, you get one site and with an organization account you get another site, plus you can have unlimited project sites.</p>
+
+<p>Because GitHub Pages supports building sites using a gem-based theme, you can add a line to your <code class="language-plaintext highlighter-rouge">Gemfile</code> in your repo and then deploy using GitHub Pages from the branch of your choosing in your repository settings.</p>
+
+<ol>
+  <li>In your local files, edit the <code class="language-plaintext highlighter-rouge">Gemfile</code> to make sure it contains the line <code class="language-plaintext highlighter-rouge">gem "github-pages", group: :jekyll_plugins</code> – replacing the <code class="language-plaintext highlighter-rouge">gem "jekyll"</code> line:</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source "https://rubygems.org"
+
+gem "github-pages", group: :jekyll_plugins
+gem "minimal-mistakes-jekyll"
+</code></pre></div></div>
+<ol>
+  <li>Run <code class="language-plaintext highlighter-rouge">bundle install</code> locally to make sure your local builds are being build with that <code class="language-plaintext highlighter-rouge">Gemfile</code>.</li>
+  <li>Open your local <code class="language-plaintext highlighter-rouge">_config.yml</code> file. Remove any existing <code class="language-plaintext highlighter-rouge">theme:</code> entries and replace with this entry:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remote_theme: "mmistakes/minimal-mistakes"
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>By default, you are specifying the <code class="language-plaintext highlighter-rouge">master</code> branch of the Minimal Mistakes theme with this configuration. You can also “pin” to a specific release by using <code class="language-plaintext highlighter-rouge">"mmistakes/minimal-mistakes@4.9.0"</code> instead of <code class="language-plaintext highlighter-rouge">"mmistakes/minimal-mistakes"</code>. I’d recommend using a specific release if you have an active docs site because it helps you with troubleshooting output. Your output remains stable when you pin to a release value and you can test first before a theme upgrade.</p>
+<ol>
+  <li>Create a commit and push these changes to your GitHub repository. Once merged to the branch configured in your repo, the changes show up in a few seconds at username.github.io/project-name.</li>
+</ol>
+
+<h2 id="deploy-a-hugo-project-using-netlify">Deploy a Hugo Project using Netlify</h2>
+
+<p>Once you have a Hugo site working locally, you can set up continuous deployment on Netlify with a free account.</p>
+
+<ol>
+  <li><a href="https://app.netlify.com/signup">Sign up for free first</a>.</li>
+  <li>Next, go to https://app.netlify.com/.</li>
+  <li>Click <strong>New site from Git</strong>. One great feature of Netlify is that it can deploy from GitHub, GitLab, or BitBucket, no small feat!</li>
+  <li>Click <strong>GitHub</strong> for this tutorial, but definitely feel free to explore other options later.</li>
+  <li>Grant access by clicking <strong>Authorize Netlify</strong>.</li>
+  <li>Enter your GitHub password to grant access.</li>
+  <li>In the next window, choose the repository that you want to deploy. Of course, you want to choose the one that has Hugo-based documentation source files.</li>
+  <li>In the Netlify window, choose which branch to deploy from (such as <code class="language-plaintext highlighter-rouge">master</code>), the command to use (Hugo, which by default uses version 0.17), and the directory the deployed files are in (<code class="language-plaintext highlighter-rouge">public</code> by default).
+    <blockquote>
+      <p>Note: If you want to use Hugo 0.20 or a later specific version, you should later enter it in a <code class="language-plaintext highlighter-rouge">netlify.toml</code> file in your repository. Or, click <strong>Advanced</strong> and then <strong>New variable</strong> if you want to use the <code class="language-plaintext highlighter-rouge">HUGO_VERSION=0.47</code> variable in the <code class="language-plaintext highlighter-rouge">[context.deploy-preview.environment]</code> and <code class="language-plaintext highlighter-rouge">[context.production.environment]</code> sections.</p>
+    </blockquote>
+  </li>
+  <li>Click <strong>Deploy site</strong>.</li>
+</ol>
+
+<h2 id="alternative-cicd-options-for-deploying-and-hosting-docs-sites">Alternative CI/CD options for deploying and hosting docs sites</h2>
+
+<p>You can also deploy documentation sites using free hosting options as alternatives to GitHub Pages.</p>
+
+<ul>
+  <li>
+    <p><a href="https://gitlab.com">GitLab</a> also offers GitLab Pages, read more <a href="https://about.gitlab.com/2016/04/07/gitlab-pages-setup/">about how to set it up to learn how</a>.</p>
+  </li>
+  <li>
+    <p><a href="https://www.netlify.com">Netlify</a> provides the same capability as GitHub and GitLab with the Ruby gem configuration described in <a href="https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/">this tutorial</a> and in the <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#ruby-gem-method">Minimal Mistakes theme documentation</a>.</p>
+  </li>
+</ul>
+
+<h2 id="whats-next">What’s next</h2>
+
+<ul>
+  <li><a href="https://docslikecode.com/learn/04-add-content-workflow/">Working with content in GitHub repositories</a></li>
+  <li><a href="https://www.docslikecode.com/learn/06-test-docs-as-code/">Set Up Automated Tests for Docs</a></li>
+</ul>
+
+<h2 id="evaluating-options">Evaluating options</h2>
+
+<ul>
+  <li><a href="https://www.docslikecode.com/learn/07-evaluating-ssg-themes/">Evaluating Static Site Generator themes</a></li>
+  <li><a href="https://www.docslikecode.com/learn/08-evaluating-table-layouts/">Evaluating table layouts and formatting</a></li>
+  <li><a href="https://www.docslikecode.com/learn/09-ssg-search-implementations/">Evaluating Static Site Generator search options</a></li>
+</ul>
+
+<h2 id="additional-references">Additional references</h2>
+
+<ul>
+  <li><a href="https://docs.travis-ci.com/user/for-beginners">TravisCI Core Concepts for Beginners</a></li>
+  <li><a href="http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html">Convert AsciiDoc to HTML/PDF &amp; publish to GitHub Pages with Travis CI and Asciidoctor Docker containers</a></li>
+</ul>
+:ET

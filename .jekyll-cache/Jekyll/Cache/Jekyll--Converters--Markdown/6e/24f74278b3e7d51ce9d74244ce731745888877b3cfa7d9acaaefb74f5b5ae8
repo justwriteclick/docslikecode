@@ -1,0 +1,163 @@
+I"�)<p>To build Hugo sites locally, install Homebrew and Hugo. You do not need to install Go to use Hugo as your static site generator. These instructions are for a Mac or Linux system, but you can also read the Windows installation instructions on the <a href="https://gohugo.io/getting-started/installing#windows">gohugo.io</a> site.</p>
+
+<p>Since Hugo is built on Go, you can use the binary for your operating system. No need to maintain a development environment. Upgrades are easy too, get a new binary and install it and you’re upgraded.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+  <li>Windows, MacOS, or a Linux-based environment.</li>
+  <li>On MacOS, you will install <a href="https://brew.sh">Homebrew</a>.</li>
+  <li>On Windows, you must install Docker.</li>
+  <li>On Windows, you must install <a href="https://gitforwindows.org/">Git for Windows</a> which includes Git Bash.</li>
+</ul>
+
+<h2 id="set-up-hugo-on-windows-with-git-bash-and-docker">Set up Hugo on Windows with Git Bash and Docker</h2>
+
+<p>You can also set up Docker and then use this <a href="https://hub.docker.com/r/jguyomard/hugo-builder/">Docker image</a> to install Hugo. With the Docker image, you set up alias commands for <code class="language-plaintext highlighter-rouge">hugo</code> running in Docker, but can work in Git Bash and follow this tutorial using the same <code class="language-plaintext highlighter-rouge">hugo</code> commands in Git Bash on Windows.</p>
+
+<h2 id="set-up-hugo-on-macos">Set up Hugo on MacOS</h2>
+<ol>
+  <li>Install Homebrew. See the <a href="https://brew.sh">Homebrew site</a> for instructions.</li>
+  <li>
+    <p>Use Homebrew to install Hugo.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ brew install hugo
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Verify the <code class="language-plaintext highlighter-rouge">hugo</code> installation by checking the version value.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ hugo version
+Hugo Static Site Generator v0.74.3/extended darwin/amd64 BuildDate: unknown
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="starting-a-hugo-site">Starting a Hugo site</h2>
+
+<p>For a Hugo static site, you can choose your specific theme after you create the source files. The theme we’ll use in this tutorial is <a href="https://themes.gohugo.io/hugo-theme-learn/">hugo-theme-learn</a>. To start a new site in the current folder, run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   $ hugo new site docs-as-code
+   $ cd docs-as-code
+</code></pre></div></div>
+
+<ol>
+  <li>Take a look at the files created in the directory with an <code class="language-plaintext highlighter-rouge">ls</code> command:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ ls -A
+  archetypes	content		layouts		themes
+  config.toml	data		static
+</code></pre></div>    </div>
+  </li>
+  <li>Initialize the current directory as a Git repository, which will enable you to bring the theme in as a Git submodule.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git init
+Initialized empty Git repository in /Users/annegentle/src/src/hugo-example/.git/
+</code></pre></div>    </div>
+  </li>
+  <li>Edit <code class="language-plaintext highlighter-rouge">config.toml</code> in any text editor you like to get started. Choose a title for your site and the theme, in our case, <code class="language-plaintext highlighter-rouge">hugo-theme-learn</code>. The theme name in your configuration file must match the name of the specific theme directory inside the <code class="language-plaintext highlighter-rouge">/themes</code> directory, so we will add those files in the next step.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  baseURL = "http://example.org/"
+  languageCode = "en-us"
+  title = "Learning Hugo Site"
+  theme = "hugo-theme-learn"
+</code></pre></div>    </div>
+  </li>
+  <li>To get the theme files in the <code class="language-plaintext highlighter-rouge">/themes</code> directory, and keep them updated, use a <code class="language-plaintext highlighter-rouge">git submodules</code> command to get the required theme files as well as keep them updated.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ git submodule add https://github.com/matcornic/hugo-theme-learn.git themes/hugo-theme-learn
+</code></pre></div>    </div>
+  </li>
+  <li>For Hugo, the <code class="language-plaintext highlighter-rouge">content</code> folder contains the site source content. For your home page, make an <code class="language-plaintext highlighter-rouge">_index.md</code> document in the <code class="language-plaintext highlighter-rouge">content</code> folder and write it with Markdown content. Switch back up one level since you just cloned the theme files.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ cd ..
+  $ hugo new _index.md
+</code></pre></div>    </div>
+  </li>
+  <li>Next, add a new page using the <code class="language-plaintext highlighter-rouge">hugo</code> command, <code class="language-plaintext highlighter-rouge">hugo new</code>:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ hugo new prerequisites.md
+  /Users/agentle/src/hugo-example/doc-machine/content/prerequisites.md created
+</code></pre></div>    </div>
+  </li>
+  <li>You can keep adding files with the <code class="language-plaintext highlighter-rouge">hugo new</code> command so that the Markdown files are pre-populated with the front matter:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ---
+  title: "Prerequisites"
+  date: 2018-06-16T10:38:19-05:00
+  draft: true
+  ---
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="build-a-hugo-site-locally">Build a Hugo site locally</h2>
+
+<p>Once you’ve prepared your local system, you can build locally and review the site in your browser.</p>
+
+<p>For Hugo, it’s important to know that draft pages are only served when using the <code class="language-plaintext highlighter-rouge">-D</code> parameter.</p>
+
+<ol>
+  <li>
+    <p>Run the <code class="language-plaintext highlighter-rouge">hugo server</code> command with the <code class="language-plaintext highlighter-rouge">-D</code> parameter (to serve draft pages).</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ hugo server -D
+
+                      | EN
+   +------------------+----+
+     Pages            | 12
+     Paginator pages  |  0
+     Non-page files   |  0
+     Static files     | 67
+     Processed images |  0
+     Aliases          |  0
+     Sitemaps         |  1
+     Cleaned          |  0
+
+   Total in 48 ms
+   Watching for changes in /Users/agentle/src/hugo-example/doc-machine/{content,data,layouts,static,themes}
+   Watching for config changes in /Users/agentle/src/hugo-example/doc-machine/config.toml
+   Serving pages from memory
+   Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+   Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+   Press Ctrl+C to stop
+</code></pre></div>    </div>
+  </li>
+  <li>Open the <strong>Web Server</strong> URL, <code class="language-plaintext highlighter-rouge">http://localhost:1313/</code> in your local browser to view the site. (By default, the theme may be purple instead of green.)
+ <img src="/images/learn/hugo-docs-page.png" alt="Example Hugo site" /></li>
+  <li>Press <code class="language-plaintext highlighter-rouge">Ctrl+C</code> in the server terminal to stop the Hugo server.</li>
+  <li>You can add your files to a Git commit. Refer to <a href="https://docslikecode.com/learn/04-add-content-workflow/">Working with content in GitHub repositories</a> for a documentation workflow with your Hugo site.</li>
+</ol>
+
+<h2 id="modify-the-hugo-theme">Modify the Hugo theme</h2>
+
+<p>By default, the Hugo Theme “Learn” has a purple sidebar. How about changing the color and logo displayed in the sidebar? Here’s how. While we’re at it, let’s make sure to configure the search tool that works best with this theme.</p>
+
+<ol>
+  <li>Edit the <code class="language-plaintext highlighter-rouge">config.toml</code> file and add these lines to the <code class="language-plaintext highlighter-rouge">config.toml</code> file. This example shows setting the <code class="language-plaintext highlighter-rouge">themeVariant</code> to <code class="language-plaintext highlighter-rouge">green</code>.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[params]
+themeVariant = "green"
+</code></pre></div>    </div>
+  </li>
+  <li>You can make sure that the theme works with the <code class="language-plaintext highlighter-rouge">lunr.js</code> <a href="https://lunrjs.com/">JavaScript search engine</a> by adding these lines to the <code class="language-plaintext highlighter-rouge">config.toml</code> file.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[outputs]
+home = [ "HTML", "RSS", "JSON"]
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="whats-next">What’s next</h2>
+
+<ul>
+  <li><a href="https://docslikecode.com/learn/04-add-content-workflow/">Working with content in GitHub repositories</a></li>
+  <li><a href="https://www.docslikecode.com/learn/05-cd-for-docs/">Continuous Deployment (CD) for Documentation Sites</a></li>
+  <li><a href="https://www.docslikecode.com/learn/06-test-docs-as-code/">Set Up Automated Tests for Docs</a></li>
+</ul>
+
+<h2 id="evaluating-options">Evaluating options</h2>
+
+<ul>
+  <li><a href="https://www.docslikecode.com/learn/07-evaluating-ssg-themes/">Evaluating Static Site Generator themes</a></li>
+  <li><a href="https://www.docslikecode.com/learn/08-evaluating-table-layouts/">Evaluating table layouts and formatting</a></li>
+  <li><a href="https://www.docslikecode.com/learn/09-ssg-search-implementations/">Evaluating Static Site Generator search options</a></li>
+</ul>
+
+<h2 id="additional-references">Additional references</h2>
+
+<ul>
+  <li><a href="https://gohugo.io/getting-started/quick-start/">Hugo Quickstart</a></li>
+  <li><a href="https://themes.gohugo.io/">Hugo Themes web site</a></li>
+</ul>
+:ET

@@ -1,0 +1,134 @@
+I"&<p>I asked three questions in a survey emailed to my mailing list and got more than 30 responses. Thanks to everyone who took the time to share their stories and respond. Here are the three questions:</p>
+
+<ul>
+  <li>
+    <p>Question 1: When you talk to your leaders about docs-as-code, can they describe the benefits as well as the difficulties?</p>
+  </li>
+  <li>
+    <p>Question 2: How do you onboard people who are new to your docs tools and processes?</p>
+  </li>
+  <li>
+    <p>Question 3: What tips or discussions (from any source) was most helpful to you when learning docs-as-code techniques?</p>
+  </li>
+</ul>
+
+<p>Docs-as-code processes are still new in the field and it seems many of the responses are split, with no overwhelming patterns in any single area. Let’s look into the data and charts for the first two questions.</p>
+
+<h2 id="question-1-when-you-talk-to-your-leaders-about-docs-as-code-can-they-describe-the-benefits-as-well-as-the-difficulties">Question 1: When you talk to your leaders about docs-as-code, can they describe the benefits as well as the difficulties?</h2>
+
+<p><img src="/images/survey-charts/leadership-docs-tools.png" alt="" /></p>
+
+<p><strong>Legend</strong></p>
+
+<p><strong>26.8</strong>% Yes, my leader started our processes and makes it possible for us to use our current tools and processes.</p>
+
+<p><strong>19.5</strong>% Yes, my leader can provide their leadership complete justification for our choices.</p>
+
+<p><strong>19.5</strong>% No, I work in an environment where my tool selection does not need justification from a management chain.</p>
+
+<p><strong>19.5</strong>% No, my leadership chain doesn’t really know what I do or why I use certain tools.</p>
+
+<p><strong>14.6</strong>% It depends on which leader I’m talking to.</p>
+
+<p>In a way, nearly all the responses could be viewed as “leadership either supports the selection does not get in the way of tool selection.” For about two-thirds of the responses, either leadership can justify, started the processes, or isn’t a deciding factor.</p>
+
+<p>Looking at the number of lone writer responses in the next question, this indicator makes sense as five of thirty-five respondents noted that they were the only writer in the organization, which would make up 14% of all responses. Let’s take a look.</p>
+
+<h2 id="question-2-how-do-you-onboard-people-who-are-new-to-your-docs-tools-and-processes">Question 2: How do you onboard people who are new to your docs tools and processes?</h2>
+
+<p><img src="/images/survey-charts/how-onboard-docs.png" alt="" /></p>
+
+<p><strong>Legend</strong></p>
+
+<p><strong>14.6</strong>% Internal write-up only</p>
+
+<p><strong>20.2</strong>% Meeting only</p>
+
+<p><strong>1.1</strong>% Pre-built environment only</p>
+
+<p><strong>5.6</strong>% Lone writer</p>
+
+<p><strong>23.6</strong>% Internal write up and meeting</p>
+
+<p><strong>34.8</strong>% Internal write-up, meeting, and pre-built environment</p>
+
+<p>My favorite answer to this question was one I hadn’t considered, where the person is a lone writer, but works with the devs to get the docs working in the source code repo. It’s along the lines of “It’s complicated.”</p>
+
+<blockquote>
+  <p>“Nothing, I’m the only person working on docs. The developers required documentation to work with our first attempt because we tried to use tool stacks that crossed different departments between authoring and publishing. Extensive process documentation was required in order for devs to figure out how the docs were to fit together despite the fact that we used markdown and the docs were in the source code repo. We switched tracks when the pain of the “throw it over the wall approach got too big. At which point we started a whole new docs site on a JAM stack platform. But still… Baby-steps.”</p>
+</blockquote>
+
+<h2 id="question-3-what-tips-or-discussions-from-any-source-was-most-helpful-to-you-when-learning-docs-as-code-techniques">Question 3: What tips or discussions (from any source) was most helpful to you when learning docs-as-code techniques?</h2>
+
+<p>For question three, I wanted to share any nuggets found in the answers here on the Docs Like Code site, since the goal for this site is to learn these techniques together and share our stories. Here are some highlights.</p>
+
+<blockquote>
+  <p>“Write the Docs community. Hustling the hard streets of Google search results. Your book!”</p>
+</blockquote>
+
+<blockquote>
+  <p>“Trail and Error - lots of searching. Reliance on internal Dev Ops”</p>
+</blockquote>
+
+<blockquote>
+  <p>“Familiarity with Git was key - I had already used Git on a smaller scale for personal projects and that helped me become comfortable when I had to  collaborate with other writers/devs. And even then I still had to constantly refer to Git-related resources online to make sure I wasn’t messing anything up.”</p>
+</blockquote>
+
+<blockquote>
+  <p>“Your Docs as Code book was helpful, for certain.  Recently, Frank Miller and Rik Page had two broad discussions about using GIT in lieu of a cCMS (see Git Happens <a href="https://vimeo.com/431452486">part 1</a> and <a href="https://vimeo.com/449217243">part 2</a>). The main fear I have is different technical aptitudes and willingness to learn of the writers with whom I work. Some will adapt to GIT easily, while others will struggle mightily.”</p>
+</blockquote>
+
+<blockquote>
+  <p>“It’s still writing. If you don’t have documentation as business goal with the processes to produce it - e.g. customer expectation to receive docs with a new release so docs as part of Definition of Done - then docs in code won’t help.
+Also, engineers won’t write unless they’re told to. You need a push down from leadership. Don’t try to grassroots it.”</p>
+</blockquote>
+
+<blockquote>
+  <p>“show people that the browser&lt;&gt;Git edit flow is ok, but IDE&lt;&gt;Git&lt;&gt;Browser is far better… show people how much support a good IDE plugin can give (asciidoctor plugin for IntelliJ has so many great features)”</p>
+</blockquote>
+
+<blockquote>
+  <p>“We use GitHub already so the argument to switch was easy. When I told the dev teams they didn’t need to use different tools, they were sold. I did, however, make a big mistake early on in the transition. I failed to point out that any non-code related docs (team/training content) should be separate from the code-related docs (readme.md) because not everyone had GitHub work accounts. As a result, non-dev employees couldn’t access anything. That’s not a result of the technique but bad planning on my part. Other than that, it’s been a lean and efficient methodology for how we document our dev projects.”</p>
+</blockquote>
+
+<blockquote>
+  <p>“Putting the documentation in source code where the developers can get to it. Attempting to docs-as-code with 2 stacks requiring a conversion from markdown to HTML fragments ingested by a little known CMS (MODX) as the published content was a poorly thought out approach. I tried to warn the guys about this - especially since we didn’t have a way to duplicate the nested CMS structure required on the publishing end… But we lived with it for a year before it became painfully obvious that another solution was required.”</p>
+</blockquote>
+
+<blockquote>
+  <p>“I studied your shared extent extensively when I was starting out. Other courses include Peter Gruenbaum’s set on Udemy, Tom Johnson’s blog, and chats in the Write the Docs Slack channel.”</p>
+</blockquote>
+
+<blockquote>
+  <p>“Sarah Parson’s Write the Docs presentation on static site generators and Tom Johnson’s explanation of his Documentation Jekyll theme.”</p>
+</blockquote>
+
+<p>This is not a section simply to point to the <a href="https://docslikecode.com/book/">Docs Like Code book</a> as a resource, rather, it’s to show that having additional resources including people you can ask questions is super valuable when learning how to treat docs like code. I’m grateful to the Write the Docs community and people who are also writing their experiences here and on other sites so we can all learn together. Thanks to everyone who shared their experiences and hard-earned wisdom!</p>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+/* 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+<blockquote>
+<div id="mc_embed_signup">
+<form action="//justwriteclick.us1.list-manage.com/subscribe/post?u=3828f8d87d82289b96ff8fd19&amp;id=cc1d483d59" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div id="mc_embed_signup_scroll">
+			<i class="fa fa-envelope-square"></i>
+	<label for="mce-EMAIL">Enter your email for free lessons plus a review checklist in a neat PDF file.</label>
+
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" />
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3828f8d87d82289b96ff8fd19_cc1d483d59" tabindex="-1" value="" /></div>
+    <div class="clear"><input type="submit" value="Join now" name="subscribe" id="mc-embedded-subscribe" class="btn btn--inverse" /></div>
+    </div>
+</form>
+</div>
+</blockquote>
+<!--End mc_embed_signup-->
+
+:ET

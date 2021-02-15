@@ -1,0 +1,27 @@
+I"b
+<p>Most static site generators provide a browser-side search capability, where the list of indexed keywords for search are built at the same time as the output. Learn more about considerations for each SSG in the following sections.</p>
+
+<h3 id="jekyll-implementation-for-search-within-the-site">Jekyll implementation for search within the site</h3>
+
+<p>For Jekyll and the <a href="https://mmistakes.github.io/minimal-mistakes/">Minimal Mistakes theme</a>, the theme author has implemented Lunr.js as a browser-side search tool. The search works fast, and when a user types in a search term, it pre-fills with suggestions in the search form. The JSON file used for the search terms should be generated each time the site is re-built.</p>
+
+<h3 id="sphinx-search-implementation">Sphinx search implementation</h3>
+
+<p>For Sphinx, the default search engine creates a <code class="language-plaintext highlighter-rouge">searchindex.js</code> file that depends on cached doctree files being built each time the site is built. The build implementation goes through each document and pulls out words for search. Then, the theme uses a web form that calls the <code class="language-plaintext highlighter-rouge">searchindex.js</code> file when a user fills out the form. Currently the system does not have a way to substitute another browser-side search implementation, but the developers are considering it in a future Sphinx release based on <a href="https://github.com/sphinx-doc/sphinx/issues/3812">discussion in this GitHub Issue</a>.</p>
+
+<h3 id="hugo-search-options">Hugo search options</h3>
+
+<p>For Hugo, the search engine included with the “Learn” theme can be configured for Lunr.js. To configure the theme to use the <code class="language-plaintext highlighter-rouge">lunr.js</code> <a href="https://lunrjs.com/">JavaScript search engine</a>, add these lines to the <code class="language-plaintext highlighter-rouge">config.toml</code> file and rebuild.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[outputs]
+home = [ "HTML", "RSS", "JSON"]
+</code></pre></div></div>
+
+<p>You can also configure Algolia, a software-as-a-service (SaaS) search solution, in Hugo, according to this <a href="https://forestry.io/blog/search-with-algolia-in-hugo/">blog post</a>.</p>
+
+<h2 id="evaluating-other-options">Evaluating other options</h2>
+
+<ul>
+  <li><a href="https://www.docslikecode.com/learn/07-evaluating-ssg-themes/">Evaluating Static Site Generator themes</a></li>
+  <li><a href="https://www.docslikecode.com/learn/08-evaluating-table-layouts/">Evaluating table layouts and formatting</a></li>
+</ul>
+:ET

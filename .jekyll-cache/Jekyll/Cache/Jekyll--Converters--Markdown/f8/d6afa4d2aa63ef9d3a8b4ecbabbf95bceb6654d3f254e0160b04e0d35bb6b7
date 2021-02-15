@@ -1,0 +1,131 @@
+I"�*<p>This article series describes our process of building our <a href="https://documentation.platform-os.com/">documentation site</a> for <a href="https://www.platform-os.com/">platformOS</a>, with in-depth insights into our approach, decisions, and plans. We have planned four parts for this series, each describing a unique aspect of our journey:</p>
+
+<ul>
+  <li>Part 1: <strong>Information Architecture</strong><br />
+In this part, we share how we started, how we got to know our audience, how we figured out what content we need, and how we outlined a sitemap for our documentation site.</li>
+  <li>Part 2: <strong>Layouts and Content Production</strong><br />
+In this part, we discuss how we started building templates and wireframes, how we approached the design, and how we started producing content.</li>
+  <li>Part 3: <strong>Community</strong><br />
+We build our site for our community. Learn more about community-driven documentation, and the mechanisms we built in to support our users and continuously improve our docs, like feedback options, contribution through GitHub, pre-made templates for each content type, and a style guide to make it easier to keep everything consistent.</li>
+  <li>Part 4: <strong>Implementation</strong><br />
+In this part, we take a look under the hood, and discuss the technologies we used, how we built our auto-generated API Reference, and how we pull content and related information from Github. We also share our future plans with you.</li>
+</ul>
+
+<p>All these articles together will show you a complete framework for building a documentation site on platformOS.</p>
+
+<p>We are continuously working on our documentation, but decided to make it public early on to get valuable feedback and show you the whole process, so please expect the documentation site to change and evolve while you learn more about it through these articles. At the time of the publication of this article, our documentation site is in alpha.</p>
+
+<h1 id="building-information-architecture-through-design-thinking">Building Information Architecture through Design Thinking</h1>
+
+<p>Because of the strategic role our documentation plays in the adoption and use of our product, we approached the development of our docs with a mindset that ensures that:</p>
+
+<ul>
+  <li>Our community gets the most out of our documentation as early on as possible.</li>
+  <li>We receive feedback as soon as possible.</li>
+  <li>We never lose sight of our long-term goals.</li>
+</ul>
+
+<p>All throughout the process, we used the user-centered, solution-based <a href="https://en.wikipedia.org/wiki/Design_thinking">Design Thinking</a> method.</p>
+
+<p><img src="/images/platformos/platformos_part1/design_thinking.png" alt="" /></p>
+
+<p>At the start, we explored our audience, our documentation needs, existing and missing content through in-depth interviews and workshops. In Design Thinking terms, this was the <strong>Empathize</strong> phase. Then, we defined personas and our Content Inventory (<strong>Define</strong>), and shared our ideas for content and features through a Card Sorting exercise (<strong>Ideate</strong>). Based on our findings, we created a sitemap and prioritized content needs. Layouts, wireframes, and content production (<strong>Prototype</strong>) started based on the results of our discovery phase.</p>
+
+<p>We decided to follow an iterative, docs like code approach: at each stage, we work with quick feedback rounds, deploy often (multiple times a week), and improve features and content based on feedback from real users (<strong>Test</strong>). We have an overarching plan outlined for our documentation that we keep in mind, but we always focus on the next couple of action steps we’d like to take.</p>
+
+<h2 id="discovery">Discovery </h2>
+
+<p>We knew that knowing our audience is the key to writing documentation that best supports their needs. For efficiency, we also needed to know what we already have, and how existing content could be reused. This is why we started our journey with a discovery phase. By asking the right questions, we got the answers we could build on, and outlined the Information Architecture and content needs of our documentation site.</p>
+
+<h3 id="proto-personas">Proto-personas</h3>
+
+<p>The first output from our workshops was a detailed description of each persona — the types of users that will be interacting with our documentation site. The user personas help team members share a specific, consistent understanding of various audience groups. We use these personas to see how well proposed solutions meet their needs, and to prioritize features based on how well they address the needs of one or more personas. We plan to revisit and revalidate these personas in later phases of the project as the product is evolving.</p>
+
+<p>We found out that we have the following four main personas:</p>
+
+<ul>
+  <li>Experienced Developers</li>
+  <li>Junior Developers</li>
+  <li>Site Builders</li>
+  <li>Marketplace Owners</li>
+</ul>
+
+<p><img src="/images/platformos/platformos_part1/protopersonas.jpg" alt="" /></p>
+
+<p><em>Descriptions of our proto-personas with sample photos and names to make them easier to relate and refer to</em></p>
+
+<h3 id="content-inventory">Content Inventory</h3>
+
+<p>Taking into account our proto-personas’ needs and sites we considered our inspiration, we created a detailed list of content from our previous documentation site, and identified missing, reusable, and non-reusable content for our future site. </p>
+
+<p><img src="/images/platformos/platformos_part1/content_inventory.png" alt="" /></p>
+
+<p><em>Content Inventory ready for the Card Sorting Session</em></p>
+
+<h3 id="card-sorting-sessions">Card Sorting Sessions</h3>
+
+<p>Through a <a href="https://www.usability.gov/how-to-and-tools/methods/card-sorting.html">Card Sorting</a> exercise, we defined connected elements, and mapped out the best site structure for our goals and proto-personas.</p>
+
+<p><img src="/images/platformos/platformos_part1/cardsorting.png" alt="" /></p>
+
+<p><img src="/images/platformos/platformos_part1/cardsorting2.png" alt="" /></p>
+
+<p><em>Screens from <a href="https://mural.co/">Mural</a> during our Card Sorting sessions</em></p>
+
+<h3 id="sitemap">Sitemap</h3>
+
+<p>Based on the Content Inventory and the results of the Card Sorting sessions, we outlined a sitemap for our future site. Our sitemap shows the structure of the site. We can also use it as a roadmap to keep track of site improvements, content needs, and project phases, because following our iterative approach, we created several sitemaps — one for each phase of the process (e.g. alpha, beta, etc.).</p>
+
+<p><img src="/images/platformos/platformos_part1/sitemap.png" alt="" /></p>
+
+<p><em>Sample page from our sitemap</em></p>
+
+<p>We have already changed some parts of our sitemap based on new information we gathered and business decisions we made. For example, we are now planning to build a separate community site, instead of having a community section on our documentation site. We decided to link to content on <a href="https://www.platform-os.com/blog/post/blog/platform-os-blog-module">platform-os.com</a> (like the blog, terms &amp; conditions, etc.) in the beginning to focus on other parts of the site, and reevaluate these sections later. We believe that both product and content development can benefit from a process that allows for such flexibility.</p>
+
+<h3 id="persona-based-content-prioritization">Persona-based content prioritization</h3>
+
+<p>Now that we had data about the personas and our sitemap, we put the data into the proper context and outlined coherent stories. These stories, similar to user journeys, show the order of actions taken by the user personas during their interaction with the site. During the Card Sorting sessions, we explored areas of interest for each user persona. This helped us see where to focus first to help them from the beginning. We also validated the importance of these areas to assign higher priorities to the ones that need more attention. We then displayed their interaction with the site on the sitemap.</p>
+
+<p><img src="/images/platformos/platformos_part1/userjourneys1.png" alt="" /></p>
+
+<p><em>Exploring areas of interest based on the persona’s actions taken on the site</em></p>
+
+<p><img src="/images/platformos/platformos_part1/sitemap_userjourneys.png" alt="" /></p>
+
+<p><em>Persona interactions with the site displayed on the sitemap</em></p>
+
+<p>This concluded our Information Architecture phase. We have discovered and organized all the information we needed to continue on to the next phase, where we started creating templates for content types, building the wireframes for each page, producing content, and making decisions about design.</p>
+
+<p><strong>We will discuss these aspects in part 2 of our series. Stay tuned!</strong></p>
+
+<p><em>We involved <a href="https://www.linkedin.com/in/nagygyorgykatalin/">UX Strategist Katalin Nagygyörgy</a> in our process from the start. Through our collaboration, we could extract and collect all the necessary information using tried and true research methodologies and UX best practices.</em></p>
+
+<p><em>This article was originally written for the <a href="https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platformos-part-1-information-architecture">platformOS Blog</a>.</em></p>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+/* 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+<blockquote>
+<div id="mc_embed_signup">
+<form action="//justwriteclick.us1.list-manage.com/subscribe/post?u=3828f8d87d82289b96ff8fd19&amp;id=cc1d483d59" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+    <div id="mc_embed_signup_scroll">
+			<i class="fa fa-envelope-square"></i>
+	<label for="mce-EMAIL">Enter your email for free lessons plus a review checklist in a neat PDF file.</label>
+
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" />
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3828f8d87d82289b96ff8fd19_cc1d483d59" tabindex="-1" value="" /></div>
+    <div class="clear"><input type="submit" value="Join now" name="subscribe" id="mc-embedded-subscribe" class="btn btn--inverse" /></div>
+    </div>
+</form>
+</div>
+</blockquote>
+<!--End mc_embed_signup-->
+
+:ET
