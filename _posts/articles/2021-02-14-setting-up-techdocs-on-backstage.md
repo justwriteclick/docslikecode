@@ -207,4 +207,4 @@ You will also see the content in the S3 bucket.
 
 In summary, we went through an introduction on backs stage, techdocs and how to publish techdocs locally and to cloud storage via s3. if you want to learn more about backstage i would recommend visiting [https://backstage.io](https://backstage.io) or if you want to learn more about techdocs then [https://backstage.io/docs/features/techdocs/techdocs-overview](https://backstage.io/docs/features/techdocs/techdocs-overview)
 
-If you like the idea of backstage but don't want the inconvenience of managing backstage yourself then i would check out Roadie.io.
+If you like the idea of backstage but don't want the inconvenience of managing backstage yourself then i would check out   [https://roadie.io](https://roadie.io).
