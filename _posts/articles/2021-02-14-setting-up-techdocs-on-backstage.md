@@ -14,7 +14,7 @@ share: true
 ---
 TechDocs is Spotify’s homegrown docs-like-code solution built directly into Backstage. [Backstage](https://github.com/backstage/backstage) gives teams one front-end view for all their infrastructure tools, like Google Cloud Platform, Cloud Bigtable, CI pipelines, TensorFlow Extended, and others, all in a consistent, easy-to-use interface, or portal. It's open source software released by Spotify.
 
-With TechDocs built into Backstage, all the engineers write their documentation in Markdown files which live together with their code. In this post we will walk you through how to setup Backstage and Techdocs.
+With TechDocs built into Backstage, all the engineers write their documentation in Markdown files which live together with their code. You can read more about their docs-as-code story in [this article](https://www.docslikecode.com/articles/ten-tips-maintaining-long-term-docs-like-code/). In this post we will walk you through how to setup Backstage and Techdocs.
 
 **Table of contents**
 
@@ -39,13 +39,13 @@ The features you get out of the box are:
 - Plugins which allow you to extend Backstage functionality
 - TechDocs, which is the focus of this post
 
-These features allow you to create standards and best practices across teams. It increases the speed of development. It creates a good developer experience for everyone who uses it. You centralise all your tools and information in one place.
+These features allow you to create standards and best practices across teams. It increases the speed of development. It creates a good developer experience for everyone who uses it. You centralize all your tools and information in one place.
 
 In this post I will take you through the basic concepts and structure of Backstage and TechDocs, an installation of Backstage including the setup of TechDocs, creating and publishing documentation, all on a local machine on MacOS.
 
-## Basics concepts and structures of backstage and TechDocs
+## Basic concepts and structures of Backstage and TechDocs
 
-The focus of this article is TechDocs, so I will go through the other main features at a high level.
+The focus of this article is TechDocs, so I will go through the main features at a high level.
 
 - Service catalog - It keeps track of ownership and metadata for all the software in your ecosystem. Backstage does this by putting metadata in YAML files stored together with your code. You process these files and then you can visualise the catalog in Backstage. This catalog enables your teams to manage and maintain the software they own, making the software discoverable.
 - Software templates - This feature allows you to create templates or skeletons of code. These templates are published to GitHub.
@@ -78,7 +78,7 @@ For the following instructions, since we are using a local install for demonstra
 
 ## Install Backstage
 
-### Prequisites
+### Prerequisites
 
 * Mac running MacOS
 
@@ -100,11 +100,11 @@ You are asked some questions on setup. The recommendation for this local tutoria
 
 ![npx install](/images/techdocs/create-app.png)
 
-If successful you will see this message:
+If successful you see this message:
 
 ![successful](/images/techdocs/01.png)
 
-Change into your created app's directory, the name you used for the app, in this example it's `infraportal`:
+Change into your created app's directory, the name you used for the app. In this example the name is `infraportal`:
 
 ```
 cd infraportal
@@ -133,13 +133,13 @@ yarn run start
 
 If successful, a browser window opens and you should be presented with a window.
 
-![successfull register](/images/techdocs/04.png)
+![successful register](/images/techdocs/04.png)
 
 Well done, you have successfully installed Backstage on your local machine.
 
 ## Setup TechDocs
 
-Historically you had to manually add Techdocs, but now the latest version of create-app bundles TechDocs.
+Historically you had to manually add Techdocs, but now the latest version of `create-app` bundles TechDocs.
 
 To verify this setup, you should be able to see entries for the plugin `'@backstage/plugin-TechDocs';` in the following files:
 
@@ -150,7 +150,7 @@ packages/app/src/App.tsx
 
 ## Creating and publishing TechDocs
 
-To create docs manually from scratch, click on create component:
+To create docs manually from scratch, click on Create component:
 
 ![manuall](/images/techdocs/05.png)
 
@@ -170,7 +170,7 @@ Once you click on create you will be presented with a Create component status po
 
 ![create component](/images/techdocs/09.png)
 
-Once the repository has been published to GitHub, the create component status popup will show green like below.
+Once the repository has been published to GitHub, the Create component status popup will show green like below.
 
 ![popup](/images/techdocs/10.png)
 
