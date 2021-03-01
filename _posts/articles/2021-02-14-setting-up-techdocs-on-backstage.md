@@ -68,7 +68,7 @@ The other moving parts are:
 
 **Architecture**
 
-![Architecture diagram](https://backstage.io/docs/assets/TechDocs/architecture-basic.drawio.svg)
+![Architecture diagram](/images/techdocs/backstage-techdocs-architecture.png)
 
 When you open a TechDocs site, a request is made. The TechDocs reader calls the TechDocs-backend with the entity id and the path of the current page. The response contains the static content. The static content contains HTML and CSS, and any JavaScript is removed for security reasons.
 
