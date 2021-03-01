@@ -32,7 +32,7 @@ Backstage is a platform for building developer portals, giving one view into dev
 
 Its main benefit is allowing you to ship high quality code fast thanks to consistent views of your tools and infrastructure.
 
-The main features you get out of the box are:
+The features you get out of the box are:
 
 - Service catalog
 - Software templates
@@ -162,7 +162,7 @@ Fill out a Name and Description.
 
 ![Name Desc](/images/techdocs/07.png)
 
-Have a GitHub org or owner and a GitHub repo ready to use for your docs. Type in the GitHub owner and the GitHub repo you want to use. Make sure there is no GitHub repo that exists with the same name or the Templater will fail.
+Have a GitHub org or owner and a GitHub repo ready to use for your docs. Have a [GitHub token created](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) and available in your environment as `GITHUB_TOKEN`. Type in the GitHub owner and the GitHub repo you want to use. Make sure there is no GitHub repo that exists with the same name or the Templater will fail.
 
 ![owner](/images/techdocs/08.png)
 
@@ -178,7 +178,7 @@ You will be able to navigate to the docs.
 
 ![navigate](/images/techdocs/11.png)
 
-If it is the first time you are loading them you could receive this message while it converts from MD to html.
+If this is the first time you are loading the docs, you could receive this message while it converts from Markdown to HTML.
 
 ![loading](/images/techdocs/12.png)
 
@@ -186,11 +186,13 @@ Here is a screenshot of what you will be presented with.
 
 ![results](/images/techdocs/13.png)
 
-You now have TechDocs up and running on your machine. Well done. If you want to view the files manually they are located at the following location on your machine:
+You now have TechDocs up and running on your machine. Well done. If you want to view the files and work on them locally they are located at the following location on your machine:
 
 ```jsx
 backstage/node_modules/@backstage/plugin-TechDocs-backend/static/docs/default/Component/
 ```
+
+Your workflow would be to work on the files, preview locally, then commit your changes and send in pull requests, using your team's Git workflows.
 
 ## Publish to cloud storage
 
@@ -210,7 +212,7 @@ You will also see the content in the S3 bucket.
 
 ## Recap and summary
 
-In summary, we went through an introduction on Backstage, TechDocs, and how to publish TechDocs locally and to cloud storage via S3. If you want to learn more about Backstage I would recommend visiting [https://backstage.io](https://backstage.io) or if you want to learn more about TechDocs then [https://backstage.io/docs/features/TechDocs/TechDocs-overview](https://backstage.io/docs/features/TechDocs/TechDocs-overview) offers a great overview.
+In summary, we went through an introduction on Backstage, TechDocs, and how to publish TechDocs locally. We took a look at the cloud storage option with some screenshots showing S3. To learn more about Backstage I would recommend visiting [https://backstage.io](https://backstage.io) or if you want to learn more about TechDocs then [https://backstage.io/docs/features/TechDocs/TechDocs-overview](https://backstage.io/docs/features/TechDocs/TechDocs-overview) offers a great overview.
 
 You can also read about the gains the team at Spotify has seen since using TechDocs for all their documentation in [Ten tips for maintaining a long-term relationship with docs like code](https://www.docslikecode.com/articles/ten-tips-maintaining-long-term-docs-like-code/).
 
