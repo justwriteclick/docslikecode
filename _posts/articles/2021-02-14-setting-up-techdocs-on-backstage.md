@@ -78,6 +78,8 @@ For the following instructions, since we are using a local install for demonstra
 
 ## Install Backstage
 
+> If you have any difficulty with the installation, you can [log an Issue in the Backstage repository](https://github.com/backstage/backstage/issues).
+
 ### Prerequisites
 
 * Mac running MacOS
@@ -214,6 +216,6 @@ You will also see the content in the S3 bucket.
 
 In summary, we went through an introduction on Backstage, TechDocs, and how to publish TechDocs locally. We took a look at the cloud storage option with some screenshots showing S3. To learn more about Backstage I would recommend visiting [https://backstage.io](https://backstage.io) or if you want to learn more about TechDocs then [https://backstage.io/docs/features/TechDocs/TechDocs-overview](https://backstage.io/docs/features/TechDocs/TechDocs-overview) offers a great overview.
 
-You can also read about the gains the team at Spotify has seen since using TechDocs for all their documentation in [Ten tips for maintaining a long-term relationship with docs like code](https://www.docslikecode.com/articles/ten-tips-maintaining-long-term-docs-like-code/).
+You can also read about the gains the team at Spotify has seen since using TechDocs for all their documentation in [Ten tips for maintaining a long-term relationship with docs like code](https://www.docslikecode.com/articles/ten-tips-maintaining-long-term-docs-like-code/). TechDocs has a really nice [project board in GitHub,](https://github.com/orgs/backstage/projects/1#card-54927264) so if you're interested in working on it yourself, take a look.
 
 If you like the idea of Backstage but don't want the inconvenience of managing Backstage yourself, then check out [https://roadie.io](https://roadie.io). Thanks for taking a look at this tutorial and happy documenting!
