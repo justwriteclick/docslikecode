@@ -12,7 +12,7 @@ image:
 comments: false
 share: true
 ---
-TechDocs is Spotify’s homegrown docs-like-code solution built directly into Backstage. [Backstage](https://github.com/backstage/backstage) gives teams one front-end view for all their infrastructure tools, like Google Cloud Platform, Cloud Bigtable, CI pipelines, TensorFlow Extended, and others, all in a consistent, easy-to-use interface, or portal. It's open source software released by Spotify. 
+TechDocs is Spotify’s homegrown docs-like-code solution built directly into Backstage. [Backstage](https://github.com/backstage/backstage) gives teams one front-end view for all their infrastructure tools, like Google Cloud Platform, Cloud Bigtable, CI pipelines, TensorFlow Extended, and others, all in a consistent, easy-to-use interface, or portal. It's open source software released by Spotify.
 
 With TechDocs built into Backstage, all the engineers write their documentation in Markdown files which live together with their code. In this post we will walk you through how to setup Backstage and Techdocs.
 
@@ -22,7 +22,7 @@ With TechDocs built into Backstage, all the engineers write their documentation 
 - Basic concepts and structure of Backstage and TechDocs
 - Install Backstage
 - Setup TechDocs
-- Create and publish documentation 
+- Create and publish documentation
 - Publish to cloud storage (example)
 - Recap and summary
 
@@ -41,7 +41,7 @@ The main features you get out of the box are:
 
 These features allow you to create standards and best practices across teams. It increases the speed of development. It creates a good developer experience for everyone who uses it. You centralise all your tools and information in one place.
 
-In this post I will take you through the basic concepts and structure of Backstage and TechDocs, an installation of Backstage including the setup of TechDocs, creating and publishing documentation, all on a local machine on MacOS. 
+In this post I will take you through the basic concepts and structure of Backstage and TechDocs, an installation of Backstage including the setup of TechDocs, creating and publishing documentation, all on a local machine on MacOS.
 
 ## Basics concepts and structures of backstage and TechDocs
 
@@ -60,7 +60,7 @@ You can see the source code for TechDocs [here](https://github.com/backstage/mkd
 
 The other moving parts are:
 
-- The TechDocs container which can be found on Docker-hub, which builds static content through MKDocs.
+- The TechDocs container which can be found on DockerHub at https://hub.docker.com/r/spotify/techdocs, which builds static content through MKDocs.
 - The Techdocs backend plugin which is the backend part of the TechDocs plugin.
 - The Techdocs CLI, a handy command line tool for managing TechDocs sites in Backstage.
 - The Techdocs reader, it fetches remotes pages, runs "transforms" against them, and renders them in a shadow DOM.
@@ -94,7 +94,7 @@ If you already have Backstage installed, then you skip this "create-app" step. F
 npx @backstage/create-app
 ```
 
-This will take a few minutes. 
+This will take a few minutes.
 
 You are asked some questions on setup. The recommendation for this local tutorial is to go with SQLLite by using the down arrow when prompted.
 
@@ -118,7 +118,7 @@ yarn workspace backend start
 
 ![yarn workspace](/images/techdocs/02.png)
 
-Open a new terminal window and change directories to the `infraportal` where you created the app. 
+Open a new terminal window and change directories to the `infraportal` where you created the app.
 ```
 cd ~/src/backstage/infraportal
 ```
@@ -192,9 +192,11 @@ You now have TechDocs up and running on your machine. Well done. If you want to 
 backstage/node_modules/@backstage/plugin-TechDocs-backend/static/docs/default/Component/
 ```
 
-The recommended setup is to place the output on to cloud storage such as S3, and not on the local machine, so let's look at that next.
-
 ## Publish to cloud storage
+
+The recommended setup is to place the output on to cloud storage such as S3, and not on the local machine, so let's look at that.
+
+> Note: This section is just an overview, and not a full tutorial, because there are a lot of prerequisites for setting up cloud storage. If you're interested, read the AWS S3 documentation about [Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) and the [Buckets overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html).
 
 ![cloud](/images/techdocs/14.png)
 
@@ -208,7 +210,7 @@ You will also see the content in the S3 bucket.
 
 ## Recap and summary
 
-In summary, we went through an introduction on Backstage, TechDocs, and how to publish TechDocs locally and to cloud storage via S3. If you want to learn more about Backstage I would recommend visiting [https://backstage.io](https://backstage.io) or if you want to learn more about TechDocs then [https://backstage.io/docs/features/TechDocs/TechDocs-overview](https://backstage.io/docs/features/TechDocs/TechDocs-overview) offers a great overview. 
+In summary, we went through an introduction on Backstage, TechDocs, and how to publish TechDocs locally and to cloud storage via S3. If you want to learn more about Backstage I would recommend visiting [https://backstage.io](https://backstage.io) or if you want to learn more about TechDocs then [https://backstage.io/docs/features/TechDocs/TechDocs-overview](https://backstage.io/docs/features/TechDocs/TechDocs-overview) offers a great overview.
 
 You can also read about the gains the team at Spotify has seen since using TechDocs for all their documentation in [Ten tips for maintaining a long-term relationship with docs like code](https://www.docslikecode.com/articles/ten-tips-maintaining-long-term-docs-like-code/).
 
