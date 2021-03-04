@@ -69,3 +69,10 @@ gary_niemen:
   github: //github.com/garyniemen
   twitter:
   bio: "Product Manager for TechDocs, a docs-like-code solution at Spotify"
+
+padraig_o_brien:
+  name: Padraig O'Brien
+  picture: https://docslikecode.com/images/padraig_o_brien.jpg
+  github: //github.com/padraigobrien
+  twitter: padraigobrien
+  bio: "Director of engineering"
