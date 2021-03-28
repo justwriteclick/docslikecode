@@ -2,4 +2,5 @@ _site/
 .DS_Store
 node*
 .sass-cache/
+.jekyll-cache/
 node_modules
