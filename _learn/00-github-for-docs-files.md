@@ -57,7 +57,7 @@ The terms sound confusing at first. Here's a list of vocabulary words to help yo
 
 | Term               | Definition                                                                                                                                                                                                                                                                                                                                                                                 |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| branch             | A parallel version of a repo within the repo that does not affect the primary or master branch. You can work freely in a branch without affecting the live version. After you make changes, you can merge your branch into the master branch to publish your changes.                                                                                                                      |
+| branch             | A parallel version of a repo within the repo that does not affect the primary or main branch. You can work freely in a branch without affecting the live version. After you make changes, you can merge your branch into the main branch to publish your changes.                                                                                                                      |
 | clone              | A copy of a repo that lives on your computer instead of on a website's server.                                                                                                                                                                                                                                                                                                             |
 | commit             | A point-in-time snapshot of a repo. Commits let you see the differences between changes. A commit is an individual change to a file or set of files. Every time that you save a file or a set of files, Git creates a unique ID, also known as the SHA or hash, that tracks the changes. Commits usually contain a commit message, which is a brief description of what changes were made. |
 | downstream         | A label for a remote URL, where a remote represents a place where code is stored. A downstream remote indicates an opposite of an upstream, or original, repo.                                                                                                                                                                                                                             |
@@ -75,9 +75,9 @@ The terms sound confusing at first. Here's a list of vocabulary words to help yo
 
 You want to get a good sense of these terms, because when you're new to Git, it's easy to confuse named directories, such as a cloned fork that is named after the original repo, and Git branches.
 
-You can instruct Git to base your branch on the `master` branch in `upstream`, `origin`, or another `named` remote. For example, this command bases a new branch on the `master` branch in the `upstream` remote:
+You can instruct Git to base your branch on the `main` branch in `upstream`, `origin`, or another `named` remote. For example, this command bases a new branch on the `main` branch in the `upstream` remote:
 ```
-$ git checkout upstream/master -b my-branch
+$ git checkout upstream/main -b my-branch
 ```
 
 ## Set up prompts (Terminal on MacOS or Linux)
@@ -171,7 +171,7 @@ If you get a 404 page after logging in, then you need to be added as a collabora
    Output:
 
    ```
-   * master
+   * main
    ```
 
 Now you have a local copy of the content and can do more steps in [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/). Hopefully you have a good starting point for working with docs repositories.
@@ -186,7 +186,11 @@ Before you get too far writing content for a new site, get the directory set up 
 ```
 $ echo "# do-docs-as-code" >> README
 ```
-1. In the root directory, initialize the Git repo.
+1. Set up your local Git installation so that it uses `main` for the default branch name every time you use the `git init` command.
+   ```bash
+   git config --global init.defaultBranch main
+   ```
+4. In the root directory, initialize the Git repo.
   ```bash
   $ git init
   ```
@@ -204,9 +208,9 @@ $ echo "# do-docs-as-code" >> README
   ```bash
   $ git remote add origin <paste the reference>
   ```
-1. In the Terminal window, set the newly added remote as the upstream branch and push the initial commit to this new remote named origin.
+1. In the Terminal window, set the newly added remote as the upstream "tracker" (named origin) and push the initial commit to this new branch named `main`.
 ```
-$ git push --set-upstream origin master
+$ git push --set-upstream origin main
 ```
 
 ## Ignoring operating system files or generated files
