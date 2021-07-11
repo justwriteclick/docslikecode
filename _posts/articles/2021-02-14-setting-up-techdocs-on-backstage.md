@@ -214,7 +214,7 @@ You will also see the content in the S3 bucket.
 
 ## Recap and summary
 
-In summary, we went through an introduction on Backstage, TechDocs, and how to publish TechDocs locally. We took a look at the cloud storage option with some screenshots showing S3. To learn more about Backstage I would recommend visiting [https://backstage.io](https://backstage.io) or if you want to learn more about TechDocs then [https://backstage.io/docs/features/TechDocs/TechDocs-overview](https://backstage.io/docs/features/TechDocs/TechDocs-overview) offers a great overview.
+In summary, we went through an introduction on Backstage, TechDocs, and how to publish TechDocs locally. We took a look at the cloud storage option with some screenshots showing S3. To learn more about Backstage I would recommend visiting [https://backstage.io](https://backstage.io) or if you want to learn more about TechDocs then [https://backstage.io/docs/features/techdocs/techdocs-overview](https://backstage.io/docs/features/techdocs/techdocs-overview) offers a great overview.
 
 You can also read about the gains the team at Spotify has seen since using TechDocs for all their documentation in [Ten tips for maintaining a long-term relationship with docs like code](https://www.docslikecode.com/articles/ten-tips-maintaining-long-term-docs-like-code/). TechDocs has a really nice [project board in GitHub,](https://github.com/orgs/backstage/projects/1#card-54927264) so if you're interested in working on it yourself, take a look.
 

@@ -8,12 +8,12 @@ author: diana_lakatos
 tags: [developer documentation, editorial workflow, API documentation, docs, documentation, contribution, testing, QA, performance]
 image:
   path: /images/platformos/platformos_part4/part4_cover.jpg
-  caption: "[Courtesy platformOS Blog](https://www.platformos.com/blog/post/blog/building-our-documentation-site-on-platformos-part-4-implementation)"
+  caption: "[Courtesy platformOS Blog](https://www.platformos.com/blog/post/building-our-documentation-site-on-platformos-part-4-implementation)"
 comments: false
 share: true
 ---
 
-In this article series we describe the process of building our [award-winning](https://www.platformos.com/blog/post/blog/platformos-developer-portal-wins-uk-technical-communication-award) developer documentation site from discovery to development, with in-depth insights into our approach, decisions, plans, and technical implementation.
+In this article series we describe the process of building our [award-winning](https://www.platformos.com/blog/post/platformos-developer-portal-wins-uk-technical-communication-award) developer documentation site from discovery to development, with in-depth insights into our approach, decisions, plans, and technical implementation.
 
 * [Part 1: Information Architecture](/articles/platformos-1of4)
 * [Part 2: Content Production and Layouts](/articles/platformos-2of4)
@@ -132,14 +132,14 @@ In the near future, we are planning to implement **performance testing with real
 
 If you’d be interested in learning more about our process and tools, check out our article series on QA and testing:  
 
-* [QA and Testing Best Practices — Part 1: Our QA Process](https://www.platformos.com/blog/post/blog/qa-and-testing-best-practices-part-1-our-qa-process)
-* [QA and Testing Best Practices — Part 2: Tips and Tricks](https://www.platformos.com/blog/post/blog/qa-and-testing-best-practices-part-2-tips-and-tricks)
-* [QA and Testing Best Practices — Part 3: Speeding Up Development and Troubleshooting](https://www.platformos.com/blog/post/blog/qa-and-testing-best-practices-part-3-speeding-up-development-and-troubleshooting)
-* [QA and Testing Best Practices — Part 4: Performance Testing](https://www.platformos.com/blog/post/blog/qa-and-testing-best-practices-part-4-performance-testing)
+* [QA and Testing Best Practices — Part 1: Our QA Process](https://www.platformos.com/blog/post/qa-and-testing-best-practices-part-1-our-qa-process)
+* [QA and Testing Best Practices — Part 2: Tips and Tricks](https://www.platformos.com/blog/post/qa-and-testing-best-practices-part-2-tips-and-tricks)
+* [QA and Testing Best Practices — Part 3: Speeding Up Development and Troubleshooting](https://www.platformos.com/blog/post/qa-and-testing-best-practices-part-3-speeding-up-development-and-troubleshooting)
+* [QA and Testing Best Practices — Part 4: Performance Testing](https://www.platformos.com/blog/post/qa-and-testing-best-practices-part-4-performance-testing)
 
 ## Performance
 
-If you read our article about [Code Quality and Performance Best Practices for Your platformOS Site](https://www.platformos.com/blog/post/blog/code-quality-and-performance-best-practices-for-your-platformos-site), you know how good performance can help you keep visitors on your site, provide the best user experience, and rank high in search results. Our documentation is a high-performance site with a Google PageSpeed Insights score of 100 for both Mobile and Desktop, so we thought it could be helpful to dive a bit deeper into what tools we use and how we achieved this amazing performance.
+If you read our article about [Code Quality and Performance Best Practices for Your platformOS Site](https://www.platformos.com/blog/post/code-quality-and-performance-best-practices-for-your-platformos-site), you know how good performance can help you keep visitors on your site, provide the best user experience, and rank high in search results. Our documentation is a high-performance site with a Google PageSpeed Insights score of 100 for both Mobile and Desktop, so we thought it could be helpful to dive a bit deeper into what tools we use and how we achieved this amazing performance.
 
 ### Measure early, measure often
 
@@ -256,7 +256,7 @@ We collect user feedback through Slack channels, the feedback block, user resear
 
 We’ve come a long way but there’s still a lot we can improve. Stay tuned, because we will write more articles to support you on your journey with platformOS.  
 
-_This article was co-authored by Pawel Kowalski, Front-End Developer and Performance Advocate at platformOS, and was originally written for the [PlatformOS Blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platformos-part-2-content-production-and-layouts)._
+_This article was co-authored by Pawel Kowalski, Front-End Developer and Performance Advocate at platformOS, and was originally written for the [PlatformOS Blog](https://www.platform-os.com/blog/post/building-our-documentation-site-on-platformos-part-2-content-production-and-layouts)._
 
 {% include sign-up.html %}
 

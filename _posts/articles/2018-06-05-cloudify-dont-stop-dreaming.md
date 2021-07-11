@@ -8,7 +8,7 @@ author: ben_mansheim
 tags: [cicd, circleci, cloudify, Docker, docs, Hugo, Go]
 image:
   path: /images/cloudify/docs-as-code-blog-banner.png
-  caption: "[Courtesy Cloudify blog](https://cloudify.co/2018/06/05/docs-as-code-dont-stop-dreaming)"
+  caption: "[Courtesy Cloudify blog](https://cloudify.co/blog/docs-as-code-dont-stop-dreaming/)"
 comments: false
 share: true
 ---
