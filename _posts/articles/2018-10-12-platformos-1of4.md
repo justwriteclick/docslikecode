@@ -8,7 +8,7 @@ author: diana_lakatos
 tags: [developer documentation, Design Thinking, Information Architecture, docs, documentation, UX]
 image:
   path: /images/platformos/platformos_part1/part1_cover.jpg
-  caption: "[Courtesy platformOS blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platform-os-part-1-information-architecture)"
+  caption: "[Courtesy platformOS blog](https://www.platform-os.com/blog/post/building-our-documentation-site-on-platform-os-part-1-information-architecture)"
 comments: false
 share: true
 ---
@@ -89,7 +89,7 @@ Based on the Content Inventory and the results of the Card Sorting sessions, we 
 
 _Sample page from our sitemap_  
 
-We have already changed some parts of our sitemap based on new information we gathered and business decisions we made. For example, we are now planning to build a separate community site, instead of having a community section on our documentation site. We decided to link to content on [platform-os.com](https://www.platform-os.com/blog/post/blog/platform-os-blog-module) (like the blog, terms & conditions, etc.) in the beginning to focus on other parts of the site, and reevaluate these sections later. We believe that both product and content development can benefit from a process that allows for such flexibility.  
+We have already changed some parts of our sitemap based on new information we gathered and business decisions we made. For example, we are now planning to build a separate community site, instead of having a community section on our documentation site. We decided to link to content on [platform-os.com](https://www.platform-os.com/blog/post/platform-os-blog-module) (like the blog, terms & conditions, etc.) in the beginning to focus on other parts of the site, and reevaluate these sections later. We believe that both product and content development can benefit from a process that allows for such flexibility.  
 
 ### Persona-based content prioritization
 
@@ -109,6 +109,6 @@ This concluded our Information Architecture phase. We have discovered and organi
 
 _We involved [UX Strategist Katalin Nagygyörgy](https://www.linkedin.com/in/nagygyorgykatalin/) in our process from the start. Through our collaboration, we could extract and collect all the necessary information using tried and true research methodologies and UX best practices._
 
-_This article was originally written for the [platformOS Blog](https://www.platform-os.com/blog/post/blog/building-our-documentation-site-on-platformos-part-1-information-architecture)._
+_This article was originally written for the [platformOS Blog](https://www.platform-os.com/blog/post/building-our-documentation-site-on-platformos-part-1-information-architecture)._
 
 {% include sign-up.html %}
