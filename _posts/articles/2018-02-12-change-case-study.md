@@ -13,7 +13,7 @@ comments: false
 share: true
 ---
 
-**Originally published in the [Documenting APIs: A Guide for Technical Writers on Tom Johnson's site, I'd Rather Be Writing](https://idratherbewriting.com/learnapidoc/pubapis_switching_to_docs_as_code.html). Thanks, Tom, for sharing your story in detail for others to learn.**
+**Originally published in the [Documenting APIs: A Guide for Technical Writers on Tom Johnson's site, I'd Rather Be Writing](https://idratherbewriting.com/learnapidoc/pubapis_docs_as_code.html). Thanks, Tom, for sharing your story in detail for others to learn.**
 
 {: .tip}
 For an overview of the docs-as-code approach, see [Docs-as-code tools](https://idratherbewriting.com/learnapidoc/pubapis_docs_as_code.html). In this article, I describe the challenges we faced in implementing a docs-as-code approach within a tech writing group at a large company.
