@@ -10,7 +10,7 @@ You can directly submit a pull request using the fork-and-pull workflow to add a
 
 Pushing to the `build` branch lets you preview the build output using Netlify. You must log into Netlify to view the preview deploy.
 
-Pushing to the `master` branch builds output to https://www.docslikecode.com using Netlify. Auto publishing is on as a setting in Netlify, so deploys from master are published automatically.
+Pushing to the `main` branch builds output to https://www.docslikecode.com using Netlify. Auto publishing is on as a setting in Netlify, so deploys from `main` are published automatically.
 
 ## Theme Colophon
 Theme courtesy of https://mmistakes.github.io/so-simple-theme/

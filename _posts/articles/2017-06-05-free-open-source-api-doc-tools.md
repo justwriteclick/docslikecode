@@ -30,7 +30,7 @@ Recently the Swagger standard changed its name to Open API, you can find out mor
 
 ### Swagger
 
-[Swagger](http://swagger.io/) is a complete framework for describing, producing, consuming, and visualizing RESTful web services.
+[Swagger](https://swagger.io/) is a complete framework for describing, producing, consuming, and visualizing RESTful web services.
 
 Use the Swagger ecosystem to create your API documentation: document APIs with JSON using the Swagger spec, and use the Web UI to dynamically convert it into API documentation in a web page. Your API documentation will be displayed through the Swagger UI, which provides a well-structured and good-looking interface.
 
@@ -40,13 +40,13 @@ Example of an API documentation displayed with the Swagger UI
 
 Swagger is free to use, licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). You can find all Swagger-related public tools under the [swagger-api GitHub account](https://github.com/swagger-api).
 
-Many [open source projects](http://swagger.io/open-source-integrations/) and [commercial vendors](http://swagger.io/commercial-tools/) provide Swagger integrations, so make sure to check out the list of available solutions before building new tooling - there is a big chance you will find an existing solution that fits the needs of your project.
+Many [open source projects](https://swagger.io/open-source-integrations/) and [commercial vendors](https://swagger.io/commercial-tools/) provide Swagger integrations, so make sure to check out the list of available solutions before building new tooling - there is a big chance you will find an existing solution that fits the needs of your project.
 
 As today’s leading API ecosystem, it’s also the best documented and supported. Should you decide to document your APIs with Swagger, you can find plenty of resources, tutorials, examples and help online.
 
 ### DapperDox
 
-With [DapperDox](http://dapperdox.io/) you can author readable guides and have them form part of a cohesive set of documentation along with the API specifications: You can inject relevant documentation into the rendered specification page.
+With [DapperDox](https://dapperdox.io/) you can author readable guides and have them form part of a cohesive set of documentation along with the API specifications: You can inject relevant documentation into the rendered specification page.
 
 <img src="../../images/pronovix/dapperdox_overview.png" alt="DapperDox Overview" width="800" />
 
@@ -63,7 +63,7 @@ ReDoc aims to make deployment extremely easy, provides a wide support for OpenAP
 API documentation generators using the RAML specification
 ---------------------------------------------------------
 
-[RAML](http://raml.org/) (RESTful API Modeling Language) helps you manage the whole API lifecycle from design to sharing.
+[RAML](https://raml.org/) (RESTful API Modeling Language) helps you manage the whole API lifecycle from design to sharing.
 
 RAML is built on broadly-used standards such as YAML and JSON, and is language neutral with tools for: Java, Javascript, .Net, PHP, Python, Ruby, etc.
 
@@ -120,15 +120,15 @@ Besides the ones detailed above, there are plenty of different open source API d
 -   [I/O Docs](https://github.com/mashery/iodocs): I/O docs is an API definition format for the TIBCO Mashery network that comes with a live interactive documentation system for RESTful web APIs. By defining APIs at the resource, method and parameter levels in a JSON schema, I/O Docs will generate a JavaScript client interface.
 -   [Slate](https://github.com/lord/slate): Slate helps you create responsive API documentation with a clean, intuitive design. Although it’s built in Ruby, when you write docs with Slate, you're just writing Markdown, which makes it simple to edit and understand. By default, your Slate-generated documentation is hosted in a public Github repository, which makes it simple for other developers to make pull requests to your docs if they find typos or other problems. Of course, if you don't want to use GitHub, you can also host your docs elsewhere.
 -   [Whiteboard](https://github.com/mpociot/whiteboard): A NodeJS based project started from Slate.
--   [apiDoc](http://apidocjs.com/): Inline documentation for RESTful web APIs, that creates a documentation from API annotations in your source code.
+-   [apiDoc](https://apidocjs.com/): Inline documentation for RESTful web APIs, that creates a documentation from API annotations in your source code.
 -   [CUUBEZ API Visualizer](https://github.com/cuubez/api-visualizer): Java based API solution to visualize the documentation of RESTful web APIs. This API visualizing framework supports all JAXRS based java REST frameworks and non-JAXRS java based REST frameworks that are currently available in the industry.
--   [Apidox](http://apidox.net/): XML powered live interactive API documentation and browsing for RESTful APIs.
+-   [Apidox](https://apidox.net/): XML powered live interactive API documentation and browsing for RESTful APIs.
 -   [Carte](https://github.com/Wiredcraft/carte): A simple Jekyll based documentation website for APIs. Designed as a boilerplate to build your own documentation, heavily inspired by Swagger and I/O docs.
 -   [Docbox](https://github.com/tmcw/docbox): A responsive website generated from Markdown documentation content. It’s dynamically updated with React.
 
 And a free one:
 
--   [API Docs](https://api-docs.io/): Although not open source, API Docs provides a hosted public API documentation service for OAS (Swagger) and RAML specifications for free. Features like custom domains, themes, and analytics, are available for a nominal cost through the [StopLight](http://stoplight.io/?utm_source=apidocs&utm_medium=cost) integration.
+-   [API Docs](https://api-docs.io/): Although not open source, API Docs provides a hosted public API documentation service for OAS (Swagger) and RAML specifications for free. Features like custom domains, themes, and analytics, are available for a nominal cost through the [StopLight](https://stoplight.io/?utm_source=apidocs&utm_medium=cost) integration.
 
 General purpose open source documentation tools
 ===============================================
@@ -138,10 +138,10 @@ Although very handy, API documentation generators are not the only way to render
 A couple of documentation tools you can check out:
 
 <!-- No longer available as of May 2019.
--   [Dexy](http://www.dexy.it/): Dexy is a multi-purpose project automation tool with lots of features designed to work with documents. It does the repetitive parts for you, and thus makes it easier to create technical documents. Many developers use it to document APIs, because combined with other open source tools, Dexy is able to run your example code, save the results, fetch data from an API, and post your docs to a blog or a wiki.
+-   [Dexy](https://www.dexy.it/): Dexy is a multi-purpose project automation tool with lots of features designed to work with documents. It does the repetitive parts for you, and thus makes it easier to create technical documents. Many developers use it to document APIs, because combined with other open source tools, Dexy is able to run your example code, save the results, fetch data from an API, and post your docs to a blog or a wiki.
 -->
 -   [Docco](https://jashkenas.github.io/docco/): Docco is a quick-and-dirty documentation generator. It produces an HTML document that displays your comments intermingled with your code.
--   [Doxygen](http://doxygen.nl/): Doxygen is the de facto standard tool for generating documentation from annotated C++ sources, but it also supports other popular programming languages such as C, Objective-C, C\#, PHP, Java, Python, IDL, Fortran, VHDL, Tcl, and to some extent D. To document your API, generate an online HTML documentation browser or an offline reference manual, and configure Doxygen to extract the code structure from your source files.
+-   [Doxygen](https://doxygen.nl/): Doxygen is the de facto standard tool for generating documentation from annotated C++ sources, but it also supports other popular programming languages such as C, Objective-C, C\#, PHP, Java, Python, IDL, Fortran, VHDL, Tcl, and to some extent D. To document your API, generate an online HTML documentation browser or an offline reference manual, and configure Doxygen to extract the code structure from your source files.
 
 We mentioned these tools to give you an idea of how you can use general documentation tools for API documentation, but there are many more to choose from, if you’d like to follow this approach.
 
@@ -182,13 +182,13 @@ Reference
 Good-looking UI for docs<br />
 Widely used, many resources available</td>
 <td>Swagger/OpenAPI</td>
-<td><a href="http://petstore.swagger.io/">Swagger demo</a></td>
+<td><a href="https://petstore.swagger.io/">Swagger demo</a></td>
 </tr>
 <tr class="even">
 <td>DapperDox</td>
 <td>Inject relevant documentation right into the rendered specification page</td>
 <td>OpenAPI, Markdown</td>
-<td><a href="http://dapperdox.io/docs/overview">DapperDox demo</a></td>
+<td><a href="https://dapperdox.io/docs/overview">DapperDox demo</a></td>
 </tr>
 <tr class="odd">
 <td>ReDoc</td>
@@ -220,13 +220,13 @@ Interactive, responsive documentation</td>
 <td>Aglio</td>
 <td>API Blueprint renderer with many custom themes</td>
 <td>API Blueprint</td>
-<td><a href="http://htmlpreview.github.io/?https://raw.githubusercontent.com/danielgtaylor/aglio/blob/master/examples/cyborg.html">Aglio demo</a></td>
+<td><a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/danielgtaylor/aglio/blob/master/examples/cyborg.html">Aglio demo</a></td>
 </tr>
 <tr class="even">
 <td>I/O Docs</td>
 <td>Live interactive API documentation system for I/O Docs specification format</td>
 <td>I/O Docs (JSON)</td>
-<td><a href="http://support.mashery.com/io-docs">I/O Docs demo</a></td>
+<td><a href="https://support.mashery.com/io-docs">I/O Docs demo</a></td>
 </tr>
 <tr class="odd">
 <td><br />
@@ -249,7 +249,7 @@ Markdown (Ruby)</td>
 <td>apiDoc</td>
 <td>Inline documentation for RESTful web APIs</td>
 <td>NodeJS</td>
-<td><a href="http://apidocjs.com/example/">apiDoc demo</a></td>
+<td><a href="https://apidocjs.com/example/">apiDoc demo</a></td>
 </tr>
 <tr class="even">
 <td>CuuBEZ API Visualizer</td>
@@ -262,14 +262,14 @@ Markdown (Ruby)</td>
 <td>XML powered live interactive API documentation and browsing for RESTful APIs</td>
 <td>XML, PHP<br />
 </td>
-<td><a href="http://apidox.net/demo/apidox.php">Apidox demo</a></td>
+<td><a href="https://apidox.net/demo/apidox.php">Apidox demo</a></td>
 </tr>
 <tr class="even">
 <td>Carte</td>
 <td>A simple Jekyll based documentation website<br />
 for APIs</td>
 <td>Jekyll, YAML</td>
-<td><a href="http://wiredcraft.github.io/carte/">Carte demo</a></td>
+<td><a href="https://wiredcraft.github.io/carte/">Carte demo</a></td>
 </tr>
 <tr class="odd">
 <td>Docbox</td>

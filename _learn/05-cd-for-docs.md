@@ -116,4 +116,4 @@ You can also deploy documentation sites using free hosting options as alternativ
 ## Additional references
 
 * [TravisCI Core Concepts for Beginners](https://docs.travis-ci.com/user/for-beginners)
-* [Convert AsciiDoc to HTML/PDF & publish to GitHub Pages with Travis CI and Asciidoctor Docker containers](http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html)
+* [Convert AsciiDoc to HTML/PDF & publish to GitHub Pages with Travis CI and Asciidoctor Docker containers](https://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html)

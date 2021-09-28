@@ -104,11 +104,11 @@ namespace LinkInterface
 }
 ```
 
-After enabling these options, I *could* include code that enables the Swagger UI, but that interface looks a bit outdated. Also, I want to incorporate additional documentation written in Markdown, which the Swagger UI does not support. After reading online forums and posting questions to the [Write The Docs channel on Slack](http://www.writethedocs.org/slack/), I discovered DapperDox.
+After enabling these options, I *could* include code that enables the Swagger UI, but that interface looks a bit outdated. Also, I want to incorporate additional documentation written in Markdown, which the Swagger UI does not support. After reading online forums and posting questions to the [Write The Docs channel on Slack](https://www.writethedocs.org/slack/), I discovered DapperDox.
 
 ## Using DapperDox
 
-[DapperDox](http://dapperdox.io/) is an open source documentation framework for OpenAPI specifications. Instead of having Swashbuckle publish our API specification in the Swagger UI, I added the following code to the `Startup.cs` file. This code writes the Swagger specification to a `swagger.json` file.
+[DapperDox](https://dapperdox.io/) is an open source documentation framework for OpenAPI specifications. Instead of having Swashbuckle publish our API specification in the Swagger UI, I added the following code to the `Startup.cs` file. This code writes the Swagger specification to a `swagger.json` file.
 
 ```csharp
    System.IO.StreamWriter file = new System.IO.StreamWriter("swagger.json");
@@ -118,7 +118,7 @@ After enabling these options, I *could* include code that enables the Swagger UI
 
 DapperDox reads this file and displays it in its own UI. I installed DapperDox and pointed it at my `swagger.json` file, and saw nothing but error messages in my command prompt.
 
-Reading through the [DapperDox documentation](http://dapperdox.io/docs/spec-resource-definitions), I discovered that *"When specifying a resource schema object...DapperDox requires that the optional schema object title member is present."* This requirement was problematic, because Swashbuckle does not include a method for adding members to a schema in the generated `swagger.json` file. Additionally, it took some tinkering in the code for me to realize that the missing title member on the `definitions` model is what caused DapperDox to break.
+Reading through the [DapperDox documentation](https://dapperdox.io/docs/spec-resource-definitions), I discovered that *"When specifying a resource schema object...DapperDox requires that the optional schema object title member is present."* This requirement was problematic, because Swashbuckle does not include a method for adding members to a schema in the generated `swagger.json` file. Additionally, it took some tinkering in the code for me to realize that the missing title member on the `definitions` model is what caused DapperDox to break.
 
 ## Fixing the output
 
