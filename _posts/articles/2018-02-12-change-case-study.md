@@ -109,7 +109,7 @@ The long build times were so annoying, we decided to switch back to individual r
 
 I came up with several creative ways to push the theme files out to multiple small repos in a semi-automated way. My first solution was to distribute the theme through [RubyGems](https://rubygems.org/), which is Jekyll's official [solution for theming](https://jekyllrb.com/docs/themes/). I created a theme gem, open-sourced it and the theme (see [Jekyll Doc Project](https://github.com/amzn/jekyll-doc-project)), and practiced the workflow to push out updates to the theme gem and pull them into each repo.
 
-It worked well (just as designed). However, it turns out our build management system (an engineering tool used to build outputs or other artifacts from code repositories) couldn't build Jekyll from the server using [Bundler](http://bundler.io/), which is what RubyGems required. (Bundler is a tool that automatically gets the right gems for your Jekyll project based on the Jekyll version you are using. Without Bundler, each writer just installs the [jekyll gem](https://rubygems.org/gems/jekyll/versions/3.3.1) locally and builds the Jekyll project based on that gem version.
+It worked well (just as designed). However, it turns out our build management system (an engineering tool used to build outputs or other artifacts from code repositories) couldn't build Jekyll from the server using [Bundler](https://bundler.io/), which is what RubyGems required. (Bundler is a tool that automatically gets the right gems for your Jekyll project based on the Jekyll version you are using. Without Bundler, each writer just installs the [jekyll gem](https://rubygems.org/gems/jekyll/versions/3.3.1) locally and builds the Jekyll project based on that gem version.
 
 My understanding of the build management system was limited, so I had to rely on engineers for their assessment. Ultimately, we had to scrap using Bundler and just build using `jekyll serve`. I still had the problem of distributing the same theme across multiple repos.
 
@@ -241,9 +241,9 @@ If you're implementing docs-as-code at a small company, you can simplify process
 
 To read some other docs-as-code posts on my blog, see the following:
 
-* [Discoveries and realizations while walking down the Docs-as-Code path](http://idratherbewriting.com/2017/08/23/content-architecture-and-repo-sizes/)
-* [Limits to the idea of treating docs as code](http://idratherbewriting.com/2017/06/02/when-docs-are-not-like-code/)
-* [Will the docs-as-code approach scale? Responding to comments on my Review of Modern Technical Writing](http://idratherbewriting.com/2016/08/01/responding-to-feedback-on-modern-tech-writing-review/)
+* [Discoveries and realizations while walking down the Docs-as-Code path](https://idratherbewriting.com/2017/08/23/content-architecture-and-repo-sizes/)
+* [Limits to the idea of treating docs as code](https://idratherbewriting.com/2017/06/02/when-docs-are-not-like-code/)
+* [Will the docs-as-code approach scale? Responding to comments on my Review of Modern Technical Writing](https://idratherbewriting.com/2016/08/01/responding-to-feedback-on-modern-tech-writing-review/)
 
 {: .tip}
 To Learn more about docs as code, see Anne Gentle's book [Docs Like Code](https://www.amazon.com/Docs-Like-Code-Anne-Gentle/dp/1365816079/ref=sr_1_1?ie=UTF8&qid=1508090523&sr=8-1&keywords=docs+like+code).

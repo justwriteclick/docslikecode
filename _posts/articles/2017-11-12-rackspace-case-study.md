@@ -39,7 +39,7 @@ In a docs like code world, everyone has more time to write. People with technica
 
 ## How it’s working at Rackspace
 
-The Rackspace documentation platform delivers to our [Support Network How-To](https://support.rackspace.com/how-to/?_ga=2.229160092.1251205099.1509294907-568023077.1505957457) repository, Carina and [Rackspace developer](https://developer.rackspace.com/docs/?_ga=2.198884143.1251205099.1509294907-568023077.1505957457) websites. Depending on the website, contributors deliver content in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists) and [reStructuredText](http://docutils.sourceforge.net/rst.html) format.
+The Rackspace documentation platform delivers to our [Support Network How-To](https://support.rackspace.com/how-to/?_ga=2.229160092.1251205099.1509294907-568023077.1505957457) repository, Carina and [Rackspace developer](https://developer.rackspace.com/docs/?_ga=2.198884143.1251205099.1509294907-568023077.1505957457) websites. Depending on the website, contributors deliver content in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists) and [reStructuredText](https://docutils.sourceforge.net/rst.html) format.
 
 We use GitHub and GitHub workflow to manage source as well as content development and review. Our [custom-built documentation platform](https://github.com/deconst) assembles documentation from individual GitHub source repositories and publishes it to the web. The platform supports content created using the Jekyll static site generator and Sphinx documentation generator, and can be extended to support other content development frameworks.
 

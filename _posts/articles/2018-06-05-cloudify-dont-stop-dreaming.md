@@ -49,7 +49,7 @@ Then I looked for a Hugo theme that looked good for documentation and found DocD
 
 ![Hugo Docdock theme](../../images/cloudify/hugo-docdock.png)
 
-([DocDock Theme Site](http://docdock.netlify.com/))
+([DocDock Theme Site](https://docdock.netlify.com/))
 
 Some of the challenges that I faced were:
 

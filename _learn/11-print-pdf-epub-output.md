@@ -10,7 +10,7 @@ How difficult or straightforward is it to create a print or PDF format? You may 
 
 ### Jekyll options
 
-In the Jekyll Documentation Theme site, Tom Johnson suggests buying a license for Prince XML ($500) in order to create print-ready PDF files with the [Jekyll Documentation Theme](https://idratherbewriting.com/documentation-theme-jekyll/). The PDF layout and styles are set using CSS. Considering that the only gem solution, [jekyll-pdf](https://github.com/abeMedia/jekyll-pdf), makes PDF files of single pages rather than a collection, the third-party solution is probably the way to go. You could look into the [Open-Publisher](https://github.com/chrisanthropic/Open-Publisher) project, which is using Jekyll to create outputs that can be used as Pandoc inputs. [Pandoc](http://pandoc.org/) is a super handy conversion tool that can convert many formats to other formats, and has templating capabilities that can help.
+In the Jekyll Documentation Theme site, Tom Johnson suggests buying a license for Prince XML ($500) in order to create print-ready PDF files with the [Jekyll Documentation Theme](https://idratherbewriting.com/documentation-theme-jekyll/). The PDF layout and styles are set using CSS. Considering that the only gem solution, [jekyll-pdf](https://github.com/abeMedia/jekyll-pdf), makes PDF files of single pages rather than a collection, the third-party solution is probably the way to go. You could look into the [Open-Publisher](https://github.com/chrisanthropic/Open-Publisher) project, which is using Jekyll to create outputs that can be used as Pandoc inputs. [Pandoc](https://pandoc.org/) is a super handy conversion tool that can convert many formats to other formats, and has templating capabilities that can help.
 
 ### Sphinx options
 

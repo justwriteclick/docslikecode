@@ -51,7 +51,7 @@ For the next update to our docs, we decided that we needed to finally address th
 
 But, of course, we didn't want to maintain seven copies of each article. We wanted to be able to write the docs once and have them show up across multiple versions.
 
-A simple solution, I suppose, would have been to switch from Markdown to a file format that supports including content from one file in another (like [reStructuredText](http://docutils.sourceforge.net/rst.html) or [AsciiDoc](http://asciidoc.org/)). **But, I'm stubborn** (and Hugo doesn't support them well). I like how simple Markdown is and I wanted to see if we could achieve what we wanted without abandoning it.
+A simple solution, I suppose, would have been to switch from Markdown to a file format that supports including content from one file in another (like [reStructuredText](https://docutils.sourceforge.net/rst.html) or [AsciiDoc](https://asciidoc.org/)). **But, I'm stubborn** (and Hugo doesn't support them well). I like how simple Markdown is and I wanted to see if we could achieve what we wanted without abandoning it.
 
 I enlisted the help of our resident [Go](https://golang.org/) expert, [Luis](https://balsamiq.com/company/#luis), and he wrote some code to do just what we wanted. This code inside one of the Hugo templates allowed us to put help files in two hidden folders (called "\_v2" and "\_v3") that would get injected into files across multiple documentation folders each time the site was generated. The end result was that users could now find the information where they expected to find it.
 

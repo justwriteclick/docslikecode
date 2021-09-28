@@ -20,7 +20,7 @@ youtubeIdRiona: EnB8GtPuauw
 
 In the new year I want to keep learning more about docs like code, and I know that I've learned a lot from the Write the Docs community and presentations.
 
-Top of mind for me right now is that the 2018 conference in Portland Oregon is in May, 6-8 to be exact, and the [call for proposals closes next Wednesday](http://www.writethedocs.org/conf/portland/2018/cfp/), January 10, 2018. You can register and buy your ticket - or tickets for your whole team - [online now](http://www.writethedocs.org/conf/portland/2018/).
+Top of mind for me right now is that the 2018 conference in Portland Oregon is in May, 6-8 to be exact, and the [call for proposals closes next Wednesday](https://www.writethedocs.org/conf/portland/2018/cfp/), January 10, 2018. You can register and buy your ticket - or tickets for your whole team - [online now](https://www.writethedocs.org/conf/portland/2018/).
 
 Even when I don't make it to the conference in person, the video recordings are super helpful to learn from others. Here's a collection of the relevant talks over the years:
 

@@ -69,7 +69,7 @@ Now, in the root of your repository, you can create a source folder for your doc
   - If you're working with code and docs in the same repo, you can name the folder `docsource` or `docsrc`.
   - If your repo is for only documentation, you can name the folder `source`.
 
-Next, make sure that your `conf.py` file has been set up with these source and destination directories. The Sphinx documentation has a good [Configuration section](http://www.sphinx-doc.org/en/master/usage/configuration.html).
+Next, make sure that your `conf.py` file has been set up with these source and destination directories. The Sphinx documentation has a good [Configuration section](https://www.sphinx-doc.org/en/master/usage/configuration.html).
 
 ## Make sure you can still build Sphinx locally for reviews
 
@@ -83,7 +83,7 @@ Here's another pro tip I found while browsing [Issues in the Sphinx repository i
 
 Now you can run `make github` from the doc source directory to generate a local preview and move the docs where GitHub wants to serve them from.
 
-> Note: Realize that there's a `conf.py` setting for both where the `make` command is run and where files are built to. Read up in the [Configuration section](http://www.sphinx-doc.org/en/master/usage/configuration.html) of the Sphinx docs for all the details.
+> Note: Realize that there's a `conf.py` setting for both where the `make` command is run and where files are built to. Read up in the [Configuration section](https://www.sphinx-doc.org/en/master/usage/configuration.html) of the Sphinx docs for all the details.
 
 ## Pull it all together
 

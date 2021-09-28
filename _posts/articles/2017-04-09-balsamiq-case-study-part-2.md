@@ -31,16 +31,16 @@ But it can be distracting to read an article when there's an endlessly-looping a
 
 I came across several sites that gave users an option to play the animated GIF when they clicked on it and I thought that would be great for our docs.
 
-I found a great jquery plugin that I wanted to use called [**gifplayer**](http://rubentd.com/gifplayer/).
+I found a great jquery plugin that I wanted to use called [**gifplayer**](https://rubentd.com/gifplayer/).
 
-[![You know you want to click](https://media.balsamiq.com/images/docslikecode/gifplayer.png)](http://rubentd.com/gifplayer/).
+[![You know you want to click](https://media.balsamiq.com/images/docslikecode/gifplayer.png)](https://rubentd.com/gifplayer/).
 
 There was just one problem. Markdown. Again.
 
 Triggering the gifplayer code is as easy as adding a CSS class to an image. Like this:
 
 ```html
-<img class="gif" src="http://rubentd.com/img/banana.png">
+<img class="gif" src="https://rubentd.com/img/banana.png">
 ```
 
 But native Markdown doesn't support adding CSS. Of course, Markdown *does* support inline HTML, and we *could* have just written HTML whenever we wanted to add an animated GIF. But, again, **I'm stubborn**. I like my Markdown to be clean. I didn't want to go down a slippery slope of adding special cases for departing from pure Markdown.
@@ -60,11 +60,11 @@ Like this:
 So, now, if we write:
 
 ```markdown
-![gif](http://rubentd.com/img/banana.png)
+![gif](https://rubentd.com/img/banana.png)
 ```
 it triggers the gifplayer script!
 
-![party](http://rubentd.com/img/banana.gif)
+![party](https://rubentd.com/img/banana.gif)
 
 Sorry, we didn't implement the pause/play capability on this site, so that banana is gonna keep on dancing. You can see the pause/play solution in action on our Balsamiq article on [common workarounds](https://support.balsamiq.com/tutorials/workarounds/#link-to-alternates).
 

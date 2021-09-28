@@ -46,7 +46,7 @@ And so, with all those bits of input from others, it created a quest to be a pro
 
 There are other publishing options - IngramSpark, Amazon, LeanPub, and I’m sure others. I did sign up and get approved for an account with IngramSpark, which is the print-on-demand service that XML Press uses.
 
-To me, after reading the [origin story for Lulu](http://www.lulu.com/about/our-story), I feel that Lulu is a bit more "open source" based than say, Amazon. I don't know much about LeanPub. Since I was using Markdown on a private GitHub repo anyway, it doesn't seem to offer more than Lulu for the marketplace reach. I'm not trying to make money at it; only trying to increase reach.
+To me, after reading the [origin story for Lulu](https://www.lulu.com/about/our-story), I feel that Lulu is a bit more "open source" based than say, Amazon. I don't know much about LeanPub. Since I was using Markdown on a private GitHub repo anyway, it doesn't seem to offer more than Lulu for the marketplace reach. I'm not trying to make money at it; only trying to increase reach.
 
 Finding a freelance editor would be a huge leg up on the writing process itself, especially if you also need a bit of developmental editing for the book idea.
 

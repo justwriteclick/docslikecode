@@ -42,7 +42,7 @@ Here are some resources to get your first punch in that punch list:
 
 * Using Python Sphinx? The OpenStack docs theme has some Javascript you could re-use to pre-populate an Issue template so the reporter sends the page URL, the source URL, the git SHA of the commit for that version of the page, and the release version value. See this [docs.js snippet](https://github.com/openstack/openstackdocstheme/blob/master/openstackdocstheme/theme/openstackdocs/static/js/docs.js#L119).
 * Using a private repo for docs, but want to track bugs publicly? Use [Issues-only Access Permissions](https://help.github.com/articles/issues-only-access-permissions/).
-* Want to add a bit of code to pre-create Issues to use as comments on every page? Free yourself from Disqus comments. Try this [set of tips and sample code in a blog post](http://zpbappi.com/jekyll-with-tags-archive-and-comments-in-github-pages/).
+* Want to add a bit of code to pre-create Issues to use as comments on every page? Free yourself from Disqus comments. Try this [set of tips and sample code in a blog post](https://zpbappi.com/jekyll-with-tags-archive-and-comments-in-github-pages/).
 
 
 {% include sign-up.html %}
