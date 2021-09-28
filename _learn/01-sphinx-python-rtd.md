@@ -6,7 +6,7 @@ image:
   caption: "Python and Sphinx"
 ---
 
-Sphinx works with either major versions of Python active today, Python 2 and Python 3. Python 3 is the current and recommended version, and Python 2 is an unsupported Python version. Sphinx is a documentation tool that creates HTML, CSS, and JavaScript files from [ReStructured](http://docutils.sourceforge.net/rst.html) text files.
+Sphinx works with either major versions of Python active today, Python 2 and Python 3. Python 3 is the current and recommended version, and Python 2 is an unsupported Python version. Sphinx is a documentation tool that creates HTML, CSS, and JavaScript files from [ReStructured](https://docutils.sourceforge.net/rst.html) text files.
 
 In case you need both versions, refer to the [Downloads on the Python site](https://www.python.org/downloads/).
 
@@ -89,7 +89,7 @@ Most people use Virtual Environments because it's a recommended practice when wo
 
 ## Create a Basic Sphinx Project
 
-You can also get familiar with [ReStructured text](http://docutils.sourceforge.net/docs/user/rst/quickstart.html), a plain text markup syntax system that you use to write content in Sphinx documentation. Sphinx can also accept [Markdown](https://commonmark.org/help/) files.
+You can also get familiar with [ReStructured text](https://docutils.sourceforge.net/docs/user/rst/quickstart.html), a plain text markup syntax system that you use to write content in Sphinx documentation. Sphinx can also accept [Markdown](https://commonmark.org/help/) files.
 
 1. Create a new directory for your project:
   ```
@@ -151,4 +151,4 @@ You can also get familiar with [ReStructured text](http://docutils.sourceforge.n
 ## Additional references
 
 * [Sphinx Python Documentation Generator](https://www.sphinx-doc.org/en/stable/)
-* [ReStructured text documentation](http://docutils.sourceforge.net/rst.html)
+* [ReStructured text documentation](https://docutils.sourceforge.net/rst.html)

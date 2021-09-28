@@ -187,7 +187,7 @@ Using some development and asset building techniques allows you to mitigate the 
 * Dynamic code splitting (with lazy loading chunks that are used on specific sites)
 * Tree shaking (smaller bundles)
 * Serving ES6 bundles to browsers that understand them, because it is smaller in size, and ES5 transpiled code to old browsers. Read more about this technique in [Using ES6 modules in the browser](https://medium.com/ghostcoder/using-es6-modules-in-the-browser-5dce9ca9e911).
-* Using modern features and Conditional polyfills (progressive enhancement) — verify browser support at [caniuse.com](http://caniuse.com/)
+* Using modern features and Conditional polyfills (progressive enhancement) — verify browser support at [caniuse.com](https://caniuse.com/)
 
 Jump to the [Quick Wins](https://www.smashingmagazine.com/2019/01/front-end-performance-checklist-2019-pdf-pages/#quick-wins) section from the Front-End Performance Checklist 2019 to read about the recommended 12 low-hanging fruits.
 
@@ -198,7 +198,7 @@ Let’s explore the steps we took to ensure outstanding performance that made th
 * We replaced font icons with SVG icons. This improves rendering quality, it’s smaller and more flexible.
 * We self-hosted Google fonts. The fonts are also optimized to include only characters used on the website. This means instead of additional 2 HTTP requests and over 400KB to download, there is no HTTP request (apart from the font files themselves) and only 20KB to download.
 * We reduced third-party requests to an absolute minimum, even non-blocking ones. They can break performance of your website very quickly.
-* We use two external tools: The excellent [polyfill.io](http://polyfill.io) service and sentry. We decided to self-host raven (sentry client) to save DNS lookups. One day we might decide to move to a self-hosted polyfill service as it is [open source](https://github.com/Financial-Times/polyfill-service).
+* We use two external tools: The excellent [polyfill.io](https://polyfill.io) service and sentry. We decided to self-host raven (sentry client) to save DNS lookups. One day we might decide to move to a self-hosted polyfill service as it is [open source](https://github.com/Financial-Times/polyfill-service).
 * We strip every package we use to the bare minimum using both manual and automatic methods, like [selective imports for bootstrap](https://github.com/mdyd-dev/nearme-documentation/blob/f4d78da3c108a119aa2c899a1526ff5394e9c9ee/src/css/vendor.scss).
 * We split code using [webpack's dynamic imports](https://webpack.js.org/guides/code-splitting/#dynamic-imports) to asynchronously load heavy dependencies on demand ([prismjs](https://github.com/mdyd-dev/nearme-documentation/blob/f4d78da3c108a119aa2c899a1526ff5394e9c9ee/src/js/syntaxHighlighting.js)).
 * We [preload resources](https://github.com/mdyd-dev/nearme-documentation/blob/f4d78da3c108a119aa2c899a1526ff5394e9c9ee/marketplace_builder/views/partials/layouts/javascripts.liquid) using the meta tag (JS, CSS, sometimes JSON with data).
