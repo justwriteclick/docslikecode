@@ -27,7 +27,7 @@ When developing a platformOS site or app, the process starts with setting up Ins
 
 Our documentation site has a staging instance for development and testing and a production Instance — the live site if all tests are green. It works with continuous integration and continuous deployment: it automatically runs tests, deploys to staging and then to production. Once done, it sends us a Slack notification. To support a small footprint deployment process, we use an asynchronous event-driven JavaScript runtime, Node.js.  
 
-Our [codebase](https://documentation.platformos.com/how-platformos-works/platformos-workflow/codebase) is [on GitHub](https://github.com/mdyd-dev/nearme-documentation). Besides standard web technologies like HTML, CSS, JavaScript (including JSON and AJAX), we use a couple of languages like YAML, Liquid, and GraphQL in our code.   
+Our codebase is [on GitHub](https://github.com/mdyd-dev/nearme-documentation). Besides standard web technologies like HTML, CSS, JavaScript (including JSON and AJAX), we use a couple of languages like YAML, Liquid, and GraphQL in our code.   
 
 ## Pages and layouts
 
@@ -256,7 +256,7 @@ We collect user feedback through Slack channels, the feedback block, user resear
 
 We’ve come a long way but there’s still a lot we can improve. Stay tuned, because we will write more articles to support you on your journey with platformOS.  
 
-_This article was co-authored by Pawel Kowalski, Front-End Developer and Performance Advocate at platformOS, and was originally written for the [PlatformOS Blog](https://www.platform-os.com/blog/post/building-our-documentation-site-on-platformos-part-2-content-production-and-layouts)._
+_This article was co-authored by Pawel Kowalski, Front-End Developer and Performance Advocate at platformOS, and was originally written for the [PlatformOS Blog](https://www.platformos.com/blog/post/building-our-documentation-site-on-platformos-part-2-content-production-and-layouts)._
 
 {% include sign-up.html %}
 

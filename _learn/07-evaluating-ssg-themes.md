@@ -15,7 +15,7 @@ Here's a short list of questions you may want to ask about the theme you use for
 ## Admonitions or notes
 Are there designs for output of levels of admonition, such as warning, information, and note?
 
-Advanced admonitions can enable substituting custom text instead of "Note" or "Warning," or custom icons. You can also configure the admonitions in some themes to expand or contract in-page. For example, look at the variations for Markdown source with the [Mkdocs Material theme when using the admonition extension](https://squidfunk.github.io/mkdocs-material/extensions/admonition/). Or, when using [RST with the Read the Docs theme, you have lots of directives](https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/demo.html#admonitions) to choose from, including Attention, Hint, Important, Note, Tip, Error, or Danger, or write your own. You should also test if code blocks work within an admonition if that is important in your documentation.
+Advanced admonitions can enable substituting custom text instead of "Note" or "Warning," or custom icons. You can also configure the admonitions in some themes to expand or contract in-page. For example, look at the variations for Markdown source with the [Mkdocs Material theme when using the admonition extension](https://squidfunk.github.io/mkdocs-material/reference/admonitions/). Or, when using [RST with the Read the Docs theme, you have lots of directives](https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/demo.html#admonitions) to choose from, including Attention, Hint, Important, Note, Tip, Error, or Danger, or write your own. You should also test if code blocks work within an admonition if that is important in your documentation.
 
 ![Note, Tip, Error, oh my](/images/learn/rtd-admonitions.png)
 

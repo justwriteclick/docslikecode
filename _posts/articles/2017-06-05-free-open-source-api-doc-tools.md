@@ -40,7 +40,7 @@ Example of an API documentation displayed with the Swagger UI
 
 Swagger is free to use, licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). You can find all Swagger-related public tools under the [swagger-api GitHub account](https://github.com/swagger-api).
 
-Many [open source projects](https://swagger.io/open-source-integrations/) and [commercial vendors](https://swagger.io/commercial-tools/) provide Swagger integrations, so make sure to check out the list of available solutions before building new tooling - there is a big chance you will find an existing solution that fits the needs of your project.
+Many [open source projects](https://swagger.io/open-source-integrations/) and [tools vendors](https://swagger.io/tools/) provide Swagger integrations, so make sure to check out the list of available solutions before building new tooling - there is a big chance you will find an existing solution that fits the needs of your project.
 
 As today’s leading API ecosystem, it’s also the best documented and supported. Should you decide to document your APIs with Swagger, you can find plenty of resources, tutorials, examples and help online.
 
@@ -54,7 +54,7 @@ To create your API documentation with DapperDox, point DapperDox at your **OpenA
 
 ### ReDoc
 
-[ReDoc](https://github.com/Rebilly/ReDoc) uses the OpenAPI specification and generates a responsive site with a three-panel design. It pulls markdown headings from the OpenAPI description field into the side menu, and supports deep linking.
+[ReDoc](https://github.com/Redocly/redoc) uses the OpenAPI specification and generates a responsive site with a three-panel design. It pulls markdown headings from the OpenAPI description field into the side menu, and supports deep linking.
 
 ReDoc aims to make deployment extremely easy, provides a wide support for OpenAPI objects, and offers interactive documentation for nested objects. You can include code samples via a third-party extension.
 
@@ -98,7 +98,7 @@ Thanks to its broad adoption there is a wide range of tools built for API Bluepr
 
 ### Snowboard
 
-[Snowboard](https://github.com/subosito/snowboard) is an API Blueprint parser and renderer. It offers a colourful default theme illustrating API request types and responses, and can also be used with custom templates.
+[Snowboard](https://github.com/bukalapak/snowboard) is an API Blueprint parser and renderer. It offers a colourful default theme illustrating API request types and responses, and can also be used with custom templates.
 
 <img src="../../images/pronovix/snowboard_example.png" alt="Snowboard example" width="800" />
 
@@ -118,7 +118,7 @@ Other free and open source API documentation generators
 Besides the ones detailed above, there are plenty of different open source API documentation generators for different languages and API specifications. Here’s a brief summary of the ones we’ve explored:
 
 -   [I/O Docs](https://github.com/mashery/iodocs): I/O docs is an API definition format for the TIBCO Mashery network that comes with a live interactive documentation system for RESTful web APIs. By defining APIs at the resource, method and parameter levels in a JSON schema, I/O Docs will generate a JavaScript client interface.
--   [Slate](https://github.com/lord/slate): Slate helps you create responsive API documentation with a clean, intuitive design. Although it’s built in Ruby, when you write docs with Slate, you're just writing Markdown, which makes it simple to edit and understand. By default, your Slate-generated documentation is hosted in a public Github repository, which makes it simple for other developers to make pull requests to your docs if they find typos or other problems. Of course, if you don't want to use GitHub, you can also host your docs elsewhere.
+-   [Slate](https://github.com/slatedocs/slate): Slate helps you create responsive API documentation with a clean, intuitive design. Although it’s built in Ruby, when you write docs with Slate, you're just writing Markdown, which makes it simple to edit and understand. By default, your Slate-generated documentation is hosted in a public Github repository, which makes it simple for other developers to make pull requests to your docs if they find typos or other problems. Of course, if you don't want to use GitHub, you can also host your docs elsewhere.
 -   [Whiteboard](https://github.com/mpociot/whiteboard): A NodeJS based project started from Slate.
 -   [apiDoc](https://apidocjs.com/): Inline documentation for RESTful web APIs, that creates a documentation from API annotations in your source code.
 -   [CUUBEZ API Visualizer](https://github.com/cuubez/api-visualizer): Java based API solution to visualize the documentation of RESTful web APIs. This API visualizing framework supports all JAXRS based java REST frameworks and non-JAXRS java based REST frameworks that are currently available in the industry.
@@ -141,7 +141,7 @@ A couple of documentation tools you can check out:
 -   [Dexy](https://www.dexy.it/): Dexy is a multi-purpose project automation tool with lots of features designed to work with documents. It does the repetitive parts for you, and thus makes it easier to create technical documents. Many developers use it to document APIs, because combined with other open source tools, Dexy is able to run your example code, save the results, fetch data from an API, and post your docs to a blog or a wiki.
 -->
 -   [Docco](https://jashkenas.github.io/docco/): Docco is a quick-and-dirty documentation generator. It produces an HTML document that displays your comments intermingled with your code.
--   [Doxygen](https://doxygen.nl/): Doxygen is the de facto standard tool for generating documentation from annotated C++ sources, but it also supports other popular programming languages such as C, Objective-C, C\#, PHP, Java, Python, IDL, Fortran, VHDL, Tcl, and to some extent D. To document your API, generate an online HTML documentation browser or an offline reference manual, and configure Doxygen to extract the code structure from your source files.
+-   [Doxygen](https://doxygen.nl/index.html): Doxygen is the de facto standard tool for generating documentation from annotated C++ sources, but it also supports other popular programming languages such as C, Objective-C, C\#, PHP, Java, Python, IDL, Fortran, VHDL, Tcl, and to some extent D. To document your API, generate an online HTML documentation browser or an offline reference manual, and configure Doxygen to extract the code structure from your source files.
 
 We mentioned these tools to give you an idea of how you can use general documentation tools for API documentation, but there are many more to choose from, if you’d like to follow this approach.
 
@@ -214,7 +214,7 @@ Interactive, responsive documentation</td>
 <td>Snowboard</td>
 <td>API Blueprint renderer</td>
 <td>API Blueprint</td>
-<td><a href="https://htmlpreview.github.io/?https://github.com/subosito/snowboard/blob/master/examples/alpha/Real%20World%20API.html">Snowboard demo</a></td>
+<td><a href="https://htmlpreview.github.io/?https://github.com/bukalapak/snowboard/blob/v3/examples/winter/Real%20World%20API.html">Snowboard demo</a></td>
 </tr>
 <tr class="odd">
 <td>Aglio</td>
@@ -237,7 +237,7 @@ Collaboration through GitHub</td>
 <td><br />
 Markdown (Ruby)</td>
 <td><br />
-<a href="https://lord.github.io/slate/">Slate demo</a></td>
+<a href="https://slatedocs.github.io/slate">Slate demo</a></td>
 </tr>
 <tr class="even">
 <td>Whiteboard</td>
