@@ -8,12 +8,12 @@ author: diana_lakatos
 tags: [developer documentation, Content-First Design, community, style guide, templates, editorial workflow, wireframes, docs, documentation, UX]
 image:
   path: /images/platformos/platformos_part2/part2_cover.jpg
-  caption: "[Courtesy platformOS Blog](https://www.platform-os.com/blog/post/building-our-documentation-site-on-platform-os-part-2-content-production-and-layouts)"
+  caption: "[Courtesy platformOS Blog](https://www.platformos.com/blog/post/building-our-documentation-site-on-platform-os-part-2-content-production-and-layouts)"
 comments: false
 share: true
 ---
 
-Welcome to part 2 of our article series where we describe the process of building the [platformOS documentation site](https://documentation.platform-os.com/) from discovery to development, with in-depth insights into our approach, decisions, plans, and technical implementation.
+Welcome to part 2 of our article series where we describe the process of building the [platformOS documentation site](https://documentation.platformos.com/) from discovery to development, with in-depth insights into our approach, decisions, plans, and technical implementation.
 
 Now that you’ve seen how we explored the needs of our audience, outlined the types of content we’d work on, and created a sitemap in part 1, let’s move on to discuss how content production started, and how we created the layouts and navigation for the site.  
 
@@ -37,7 +37,7 @@ We also wanted to provide tools to make it easy for our users to contribute docu
 
 # Style Guide
 
-To ensure a consistent communication style throughout our documentation, we started with defining our standards for grammar, syntax, and the different types of technical content we have, in our [style guide](https://documentation.platform-os.com/style-guide/documentation-style-guide).  
+To ensure a consistent communication style throughout our documentation, we started with defining our standards for grammar, syntax, and the different types of technical content we have, in our [style guide](https://documentation.platformos.com/style-guide/documentation-style-guide).  
 
 Our style guide is just as much a work in progress as our documentation, but we’ve defined the basics that internal or external contributors need:  
 
@@ -142,6 +142,6 @@ We hope you enjoyed learning about how we started content production, how we bui
 
 _We involved [UX Strategist Katalin Nagygyörgy](https://www.linkedin.com/in/nagygyorgykatalin/) in our process from the start. Through our collaboration, we could extract and collect all the necessary information using tried and true research methodologies and UX best practices._
 
-_This article was originally written for the [platformOS Blog](https://www.platform-os.com/blog/post/building-our-documentation-site-on-platformos-part-2-content-production-and-layouts)._
+_This article was originally written for the [platformOS Blog](https://www.platformos.com/blog/post/building-our-documentation-site-on-platformos-part-2-content-production-and-layouts)._
 
 {% include sign-up.html %}
