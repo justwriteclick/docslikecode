@@ -24,7 +24,7 @@ It's a pretty simple request:
 
 You can then pre-fill with additional information to help you or other collaborators fix the bug, such as the source file and when it was merged into the repository.
 
-All these concerns can be addressed with a great [Issues template](https://github.com/blog/2111-issue-and-pull-request-templates). To make an Issue template for a GitHub docs repository, save a file named ISSUE_TEMPLATE in the root directory that contains the information you need in Markdown format. Add headings, links, @-mentions, and task lists to your Issue template.
+All these concerns can be addressed with a great [Issues template](https://github.blog/2016-02-17-issue-and-pull-request-templates/). To make an Issue template for a GitHub docs repository, save a file named ISSUE_TEMPLATE in the root directory that contains the information you need in Markdown format. Add headings, links, @-mentions, and task lists to your Issue template.
 
 In OpenStack, we use [JavaScript](https://github.com/openstack/openstackdocstheme/blob/master/openstackdocstheme/theme/openstackdocs/static/js/docs.js#L119) to pre-fill the bug form with the page title, URL, a link to the source file itself, and any tags to add to the logged doc bug. I'm sure you could adopt something similar in your static site generator as well.
 

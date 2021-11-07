@@ -8,12 +8,12 @@ author: diana_lakatos
 tags: [developer documentation, contributor experience, community, style guide, templates, editorial workflow, docs, documentation]
 image:
   path: /images/platformos/platformos_part3/part3_cover.jpg
-  caption: "[Courtesy platformOS Blog](https://www.platform-os.com/blog/post/building-our-documentation-site-on-platformos-part-3-community)"
+  caption: "[Courtesy platformOS Blog](https://www.platformos.com/blog/post/building-our-documentation-site-on-platformos-part-3-community)"
 comments: false
 share: true
 ---
 
-In this [article series](/articles/platformos-1of4) we describe the process of building the [platformOS documentation site](https://documentation.platform-os.com/) from discovery to development, with in-depth insights into our approach, decisions, plans, and technical implementation. Welcome to part 3, where we explore how we collaborate with our community. 
+In this [article series](/articles/platformos-1of4) we describe the process of building the [platformOS documentation site](https://documentation.platformos.com/) from discovery to development, with in-depth insights into our approach, decisions, plans, and technical implementation. Welcome to part 3, where we explore how we collaborate with our community. 
 
 # Community-driven documentation
 
@@ -34,7 +34,7 @@ We’d like to serve a diverse, highly motivated, active community, and provide 
   * For quick feedback, we added a feedback block at the bottom of each documentation page, where the minimum input is clicking on a smiley, but users can answer a question and share their suggestions, too. 
   * For some quick editing, like fixing typos or adding links, contributors can edit the content easily on the GitHub UI. 
   * For heavy editing, adding new content, or developers who prefer to use git, we provide a complete docs as code workflow.  
-* **Clear expectations**: We know it’s easier to get started on editing or writing a topic with clear guidelines to follow. Our [style guide](https://documentation.platform-os.com/style-guide/documentation-style-guide) contains guidelines for writing technical content (e.g. language, tone, etc.) and each content type in our documentation (e.g. tutorials, concept topics, etc.). 
+* **Clear expectations**: We know it’s easier to get started on editing or writing a topic with clear guidelines to follow. Our [style guide](https://documentation.platformos.com/style-guide/documentation-style-guide) contains guidelines for writing technical content (e.g. language, tone, etc.) and each content type in our documentation (e.g. tutorials, concept topics, etc.). 
 * **Ease of contribution**: To make contribution easier and to keep content on our documentation site consistent, we created [templates](https://github.com/mdyd-dev/nearme-documentation/tree/master/marketplace_builder/views/pages/doc-templates) for all content types. The templates provide an outline and instructions that contributors can follow.  
 * **Clear workflow**: We developed an editorial workflow that works for both internal and external contributors, and ensures that contributors get quick and precise feedback. 
 * **Familiar tools**: We chose a tool that most of our target audience is familiar with, GitHub. As our users usually already use git or some other version-control system, extending its use to external content contributors was a logical step. 
@@ -112,6 +112,6 @@ Now that you’ve seen how we discovered the needs of our target audience, plann
 
 _We involved [UX Strategist Katalin Nagygyörgy](https://www.linkedin.com/in/nagygyorgykatalin/) in our process from the start. Through our collaboration, we could extract and collect all the necessary information using tried and true research methodologies and UX best practices._
 
-_This article was originally written for the [platformOS Blog](https://www.platform-os.com/blog/post/building-our-documentation-site-on-platformos-part-3-community)._
+_This article was originally written for the [platformOS Blog](https://www.platformos.com/blog/post/building-our-documentation-site-on-platformos-part-3-community)._
 
 {% include sign-up.html %}
