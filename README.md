@@ -1,5 +1,7 @@
 # Docs Like Code
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a47374ca-f840-4191-b695-f34651a2078c/deploy-status)](https://app.netlify.com/sites/docs-like-code/deploys)
+
 ## The Website
 
 This website is intended to offer stories and articles about how to treat docs like code, and lessons learned along the way. You are welcome to tell your story here as well.
