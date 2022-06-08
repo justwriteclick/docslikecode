@@ -1,8 +1,9 @@
 ---
 title: "Templating and data-based layouts"
+layout: learn
 image:
-  path: /images/so-simple-sample-image-4.jpg
-  thumbnail: /images/site-logo.png
+  path: /images/learn/web-templates.png
+  thumbnail: /images/learn/web-templates400x225.png
 ---
 
 Templates can have a couple of different definitions for content, depending on the size. You can make a template for an entire document or for a page. When talking about repositories you can also have a template for a repository. 
@@ -46,13 +47,15 @@ productname              : Opposcale
 
 Any place that your source files contain these template indicators, you can rely on substitution to fill in the values. 
 
-`intro.md`
+Example snippet from a Markdown file with substitutions:
 
-```
-See the {{ site.productname }} [User Guide]({{ site.baseurl }}user-guide) for user information.
-```
+See the &#91; &#123;&#123; site.productname &#125;&#125; User Guide&#93;&#40;&#123;&#123; site.baseurl &#125;&#125;user-guide&#41; for more information.
+
+With the first `_config.yml` file, the output would be:
+"See the [Oppogrid User Guide](https://annegentle.io) for more information." and the internal cross link would go to the correct version for that site. 
 
 ## Additional resources
 
 [Learning Liquid](https://www.shopify.com/partners/blog/topics/learning-liquid)
+
 [Sphinx Readthedocs theme documentation](https://sphinx-rtd-theme.readthedocs.io/)
