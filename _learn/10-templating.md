@@ -24,21 +24,21 @@ The Read the Docs theme for Sphinx uses Python variables to indicate the version
 
 A practical example for storing a value for version would be in the `_config.yml` file in a Jekyll project. In this case, you want to output the older versions of the docs site to different base URLs, and there was a product name change from one version to the next.
 
-`_config.yml`
+Take this `_config.yml` file, which is for the current version, where the product is named "Oppogrid" and you want to have /latest/ in the URL:
 
 ```
 baseurl                  : /versions-jekyll/latest
 productname              : Oppogrid
 ```
 
-`_config.4.2.yml`
+The numbered version is 4.2, so this `_config.4.2.yml` file outputs to a /4.2/ URL but this release is the one with the new product name.
 
 ```
 baseurl                  : /versions-jekyll/4.2
 productname              : Oppogrid
 ```
 
-`_config.4.1.yml`
+In this release, `_config.4.1.yml`, the product was named "Opposcale" and all the product name mentions can correctly subsititue in the right value for that release point.
 
 ```
 baseurl                  : /versions-jekyll/4.1
