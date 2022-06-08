@@ -5,16 +5,54 @@ image:
   thumbnail: /images/site-logo.png
 ---
 
-Templates within static site generators enable you to use variables or metadata values from other files in the source files that create HTML. Maybe you want to keep the product version value in a metadata file. Or you want to access the domain name the site is built upon, reliably and repeatedly. Template engines integrated with the underlying programming language give access to loops, variables, or functions so that you can enhance your website output.
+Templates can have a couple of different definitions for content, depending on the size. You can make a template for an entire document or for a page. When talking about repositories you can also have a template for a repository. 
 
-* Jekyll uses the [Liquid templating engine](https://shopify.github.io/liquid/), originally built by Shopify, written in Ruby.
-* Hugo has a packaged templating engine similar to liquid, but Go-based. Read more in [Introduction to Hugo Templating](https://gohugo.io/templates/introduction/).
+Template engines within static site generators enable you to use variables or metadata values from other files in the source files that create HTML. Maybe you want to keep the product version value in a metadata file. Or you want to access the domain name the site is built upon, reliably and repeatedly. Template engines integrated with the underlying programming language give access to loops, variables, or functions so that you can enhance your website output.
+
+* Jekyll uses the [Liquid templating engine](https://shopify.github.io/liquid/), originally built by Shopify, written in Ruby. The template language is also called Liquid. 
+* Hugo has a packaged templating engine similar to Liquid, but Go-based. Read more in [Introduction to Hugo Templating](https://gohugo.io/templates/introduction/).
 * Sphinx uses Python for any extensibility you need. I find it helpful to browse through the [Read the Docs Theme](https://github.com/rtfd/sphinx_rtd_theme) to find examples of templating.
 
-When using a templating engine like Liquid in Jekyll, you can access the version value from a data file. Read more in the Liquid documentation about [Iteration](https://shopify.github.io/liquid/tags/iteration/).
+## Version values as a use case for templates
+
+For web templates, the data can be substituted at the smallest level possible, the word or character level. A templating engine uses certain characters to indicate that you want to start substituting in other information from a data source. For example, a double curly bracket can show the start of the template insertion point.
+
+When using a templating language like Liquid in Jekyll, you can access the version value from a data file or from a database. Read more in the Liquid documentation about [Iteration](https://shopify.github.io/liquid/tags/iteration/).
 
 The Read the Docs theme for Sphinx uses Python variables to indicate the version, using values from the `conf.py` file for the project and a definition list rather than an unordered list.
+
+A practical example for storing a value for version would be in the `_config.yml` file in a Jekyll project. In this case, you want to output the older versions of the docs site to different base URLs, and there was a product name change from one version to the next.
+
+`_config.yml`
+
+```
+baseurl                  : /versions-jekyll/latest
+productname              : Oppogrid
+```
+
+`_config.4.2.yml`
+
+```
+baseurl                  : /versions-jekyll/4.2
+productname              : Oppogrid
+```
+
+`_config.4.1.yml`
+
+```
+baseurl                  : /versions-jekyll/4.1
+productname              : Opposcale
+```
+
+Any place that your source files contain these template indicators, you can rely on substitution to fill in the values. 
+
+`intro.md`
+
+```
+See the {{ site.productname }} [User Guide]({{ site.baseurl }}user-guide) for user information.
+```
 
 ## Additional resources
 
 [Learning Liquid](https://www.shopify.com/partners/blog/topics/learning-liquid)
+[Sphinx Readthedocs theme documentation](https://sphinx-rtd-theme.readthedocs.io/)
