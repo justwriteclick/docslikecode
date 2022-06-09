@@ -3,7 +3,7 @@ title: "Templating and data-based layouts"
 layout: learn
 image:
   path: /images/learn/web-templates.png
-  thumbnail: /images/learn/web-templates400x225.png
+  thumbnail: /images/learn/web-templates400×225.png
 ---
 
 Templates can have a couple of different definitions for content, depending on the size. You can make a template for an entire document or for a page. When talking about repositories you can also have a template for a repository. 
