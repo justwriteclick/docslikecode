@@ -4,7 +4,7 @@ title: Coming Soon - Write Docs Like Code Ebook
 excerpt: "What do you want to know about these techniques?"
 last_modified_at: Thu Dec 29 20:07:26 CST 2016
 categories: articles
-tags: [ebook, epub, gitbook, book, github, docs, repos]
+tags: [ebook, epub, gitbook, book, GitHub, docs, repos]
 image:
   path: /images/seabamirum-common-redpoll.jpg
   caption: "[Flickr seabamirum](https://flic.kr/p/dFow3k)"

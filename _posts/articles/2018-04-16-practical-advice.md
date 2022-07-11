@@ -5,7 +5,7 @@ excerpt: What does it take to publish a technical book using GitHub? Let's dig i
 last_modified_at: Fri Apr 20 21:01:44 CDT 2018
 categories: articles
 author: anne_gentle
-tags: [book, publishing, github, git, gitbook, lulu, self-publishing, collaboration, design, layout]
+tags: [book, publishing, GitHub, git, gitbook, lulu, self-publishing, collaboration, design, layout]
 image:
   path: /images/designbyandren-lightbulb.jpg
   caption: "[Flickr designbyandren](https://flic.kr/p/cMiQAJ)"
