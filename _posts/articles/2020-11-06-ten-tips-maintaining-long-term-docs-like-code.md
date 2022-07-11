@@ -5,7 +5,7 @@ excerpt: "Learn about one team's journey to keep a long-term relationship with t
 last_modified_at: Fri Nov  6 20:47:45 CST 2020
 categories: articles
 author: gary_niemen
-tags: [cicd, backstage, spotify, github, git, portal, internal, documentation, developer, docs]
+tags: [cicd, backstage, spotify, GitHub, git, portal, internal, documentation, developer, docs]
 image:
   path: /images/spotify/soundboard-han.ailes.jpg
   caption: "[Flickr han.ailes](https://flic.kr/p/oVPTVm)"
