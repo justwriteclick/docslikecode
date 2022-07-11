@@ -4,7 +4,7 @@ title: Building Docs Like Code
 excerpt: "Let's look at a live example."
 last_modified_at: Sun Sep 25 15:35:08 CDT 2016
 categories: articles
-tags: [developers, github, git, improvement, quality, testing, writers]
+tags: [developers, GitHub, git, improvement, quality, testing, writers]
 image:
   path: /images/threeblackdots-playground.jpg
   caption: "[Flickr threeblackdots](https://flic.kr/p/8tQAGQ)"
@@ -13,7 +13,7 @@ comments: false
 share: true
 ---
 
-Let's take a look at what docs like code looks like in practice.
+Let's take a look at what docs as code looks like in practice.
 
 The basic steps on a Mac are:
 
@@ -24,11 +24,10 @@ The basic steps on a Mac are:
 1. Run `bundle exec jekyll serve` to serve the content from a local web server.
 1. Copy and paste the `http://127.0.0.1:4000/` URL into your web browser.
 
-This video shows you how to clone a GitHub repo with an existing Jekyll theme, and build it locally.
+This video shows you how to clone a GitHub repo with an existing Jekyll theme and build it locally.
 
 ### How it's made
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
-
 
 {% include sign-up.html %}
