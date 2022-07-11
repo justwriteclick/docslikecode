@@ -4,7 +4,7 @@ title: The Vocabulary of GitHub for Documentation
 excerpt: "What would happen if we treated docs like code?"
 last_modified_at: Sat Sep 17 07:11:52 CDT 2016
 categories: articles
-tags: [github, git, definitions, repository, branch, fork, pull request]
+tags: GitHub, git, definitions, repository, branch, fork, pull request]
 image:
   path: /images/guarded-lightbulb-rob-sinclair.jpg
   caption: "[Flickr rob-sinclair](https://flic.kr/p/8J2gDY)"
@@ -21,31 +21,31 @@ Believe me, your fellow software builders are wondering, experimenting, or alrea
 ![git]({{ site.url }}/images/git-logo.png)
 {: .pull-right}
 
-I’ve found that the principles inherent to the social web for coding work extremely well for documentation. The social web, leads to social coding, leads to social documentation.
+I’ve found that the principles inherent to the social web for coding work extremely well for documentation. The social web leads to social coding, leads to social documentation.
 
 # What is GitHub?
 
 ![GitHub]({{ site.url }}/images/github-logo.png)
 {: .pull-left}
 
-Like many tools, git and GitHub were created by fire — through a pressing need for performant and efficient source control management for theLinux kernel. Read the history in the excellent [Pro Git Book](https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git).
+Like many tools, git and GitHub were created by fire — through a pressing need for performant and efficient source control management for the Linux kernel. Read the history in the excellent [Pro Git Book](https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git).
 
-GitHub is the web interface for `git` the command-line tool, that works well on Linux, Mac, or Windows. To work with others on a project (code or docs), you merge files. This model is the opposite of using  a “lock and checkout” model, where no one else can work on the piece at the same time as you. With GitHub, you can work separately and bring it all together later. Git has a non-linear branching model that can take some learning to get used to. That said, I've found git and GitHub for docs quite practical and even inspirational.
+GitHub is the web interface for `git` the command-line tool, that works well on Linux, Mac, or Windows. To work with others on a project (code or docs), you merge files. This model is the opposite of using a “lock and checkout” model, where no one else can work on the piece at the same time as you. With GitHub, you can work separately and bring it all together later. Git has a non-linear branching model that can take some learning to get used to. That said, I've found git and GitHub for docs quite practical and even inspirational.
 
-You can keep docs in a source code repository then the developers will review all your changes prior to merging them in. Unlike traditional source code management, branches are not full copies of entire code base so they are “cheap” and “fast.” The more Agile techniques are applied to documentation, the
-more treating docs like code makes sense.
+You can keep docs in a source code repository then the developers will review all your changes before merging them in. Unlike traditional source code management, branches are not full copies of the entire code base so they are “cheap” and “fast.” The more Agile techniques are applied to documentation, the
+more treating docs like code make sense.
 
 # GitHub definitions and parallels for information
 
 I hope I'm talking to people who care a lot about words. Let's start with some vocabulary and definitions to build upon.
 
-* Branch: Indicator of divergence from base without changing the main line (or "trunk" if you like to visualize organic tree-structures to remember this term).
-* Commit: Point-in-time snapshot of repository with changes.
-* Fork (noun): Copy of the repository that is entirely yours in your namespace. In GitHub-land, forking does not have a negative connotation that it can in other contexts (such as taking an open source project in a new direction in a huff to get different contributors). Rather, it is a way to contribute openly and publicly with your account attributed.
+* Branch: Indicator of divergence from the base without changing the main line (or "trunk" if you like to visualize organic tree structures to remember this term).
+* Commit: Point-in-time snapshot of the repository with changes.
+* Fork (noun): A copy of the repository that is entirely yours in your namespace. In GitHub-land, forking does not have a negative connotation that it can in other contexts (such as taking an open-source project in a new direction in a huff to get different contributors). Rather, it is a way to contribute openly and publicly with your account attributed.
 * Fork (verb): Making a copy of the repository.
 * Issue: Defects, tasks, or feature requests.
 * Organization: Collection of group-owned repositories.
-* Pull Request: Comparison of edits to see if team wants to accept changes.
+* Pull Request: Comparison of edits to see if the team wants to accept changes.
 * Push: Move changes branch-to-branch. When you type `man git` at a Terminal prompt to read the [manual page for Git](https://www.kernel.org/pub/software/scm/git/docs/git.html), you see "Update remote refs along with associated objects," but that's more technical than we need here.
 * Repository: Collection of stored code or documentation that is written and built like code.
 * Review: Do a line-by-line comparison of a change, much like an editor would for documentation, and comment on improvements or changes.

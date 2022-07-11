@@ -5,7 +5,7 @@ excerpt: "In the last three years of Write the Docs conferences, you can learn f
 last_modified_at: Sat Jan  6 10:29:44 CST 2018
 categories: articles
 author: anne_gentle
-tags: [writethedocs, video, conferences, github, git, collaboration, transformation]
+tags: [writethedocs, video, conferences, GitHub, git, collaboration, transformation]
 image:
   path: /images/wtd-eur-2017.jpg
   caption: "[Flickr writethedocs](https://flic.kr/p/LqxXHE)"

@@ -29,6 +29,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jekyll-seo-tag
 google_fonts:
   - name: "Source Sans Pro"
     weights: "400,400i,700,700i"
