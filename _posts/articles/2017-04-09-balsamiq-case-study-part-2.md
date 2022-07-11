@@ -5,7 +5,7 @@ excerpt: "Learn how to play and pause animated GIFs on static sites such as Hugo
 last_modified_at: Sat May 13 18:37:48 CDT 2017
 categories: articles
 author: leon_barnard
-tags: [case study, balsamiq, static sites, use case, wireframes, github, docs, repos, hugo, tools, gif, animated gifs]
+tags: [case study, balsamiq, static sites, use case, wireframes, GitHub, docs, repos, hugo, tools, gif, animated gifs]
 image:
   path: /images/rogerjones-wireframe.jpg
   caption: "[Flickr rogerjones](https://flic.kr/p/i4ZAW)"
@@ -62,10 +62,10 @@ So, now, if we write:
 ```markdown
 ![gif](https://rubentd.com/img/banana.png)
 ```
-it triggers the gifplayer script!
+it triggers the `gifplayer` script!
 
 ![party](https://rubentd.com/img/banana.gif)
 
-Sorry, we didn't implement the pause/play capability on this site, so that banana is gonna keep on dancing. You can see the pause/play solution in action on our Balsamiq article on [common workarounds](https://support.balsamiq.com/tutorials/workarounds/#link-to-alternates).
+Sorry, we didn't implement the pause/play capability on this site, so that banana is gonna keep on dancing. 
 
 {% include sign-up.html %}
