@@ -5,7 +5,7 @@ excerpt: "In this use case, the Technical Content Editor at Pantheon, Rachel Whi
 last_modified_at: Sat Mar 18 09:50:27 CDT 2017
 categories: articles
 author: rachel_whitton
-tags: [case study, use case, github, docs, repos, web, content, workflows]
+tags: [case study, use case, GitHub, docs, repos, web, content, workflows]
 image:
   path: /images/stevensnodgrass-bolt.jpg
   caption: "[Flickr stevensnodgrass](https://flic.kr/p/8jKjE2)"

@@ -4,7 +4,7 @@ title: Remodeling documentation
 excerpt: "Make sure you have a punch list of doc bugs to get higher quality results."
 last_modified_at: Sat May 13 18:34:40 CDT 2017
 categories: articles
-tags: [issues, bugs, technical debt, github, git, backlog]
+tags: [issues, bugs, technical debt, GitHub, git, backlog]
 image:
   path: /images/mtischendorf-logpile.jpg
   caption: "[Flickr mtischendorf](https://flic.kr/p/aAb4s8)"

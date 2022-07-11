@@ -5,7 +5,7 @@ excerpt: "Learn useful techniques for static sites such as Hugo on GitHub from L
 last_modified_at: Sat May 13 18:37:07 CDT 2017
 categories: articles
 author: leon_barnard
-tags: [case study, balsamiq, static sites, use case, wireframes, github, docs, repos, hugo, tools, gif, animated gifs]
+tags: [case study, balsamiq, static sites, use case, wireframes, GitHub, docs, repos, hugo, tools, gif, animated gifs]
 image:
   path: /images/therefore-wireframe.jpg
   caption: "[Flickr therefore](https://flic.kr/p/7ewunt)"
