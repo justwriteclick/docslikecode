@@ -15,7 +15,7 @@ share: true
 
 # A Pirate's Life for Me: Documenting APIs with Swagger
 
-Our team starting developing a new API (in C#), which I took as an opportunity to implement Swagger (now the OpenAPI Specification), an open source project used to describe and document RESTful APIs. I wanted to show our developers and support engineers that injecting documentation into the code can reduce response time, mitigate errors, and decrease the point of entry for new hires. To illustrate those gains, I needed to develop a proof of concept.
+Our team started developing a new API (in C#), which I took as an opportunity to implement Swagger (now the OpenAPI Specification), an open-source project used to describe and document RESTful APIs. I wanted to show our developers and support engineers that injecting documentation into the code can reduce response time, mitigate errors, and decrease the point of entry for new hires. To illustrate those gains, I needed to develop a proof of concept.
 
 ## Why Swagger?
 
@@ -42,7 +42,7 @@ using Swashbuckle.Swagger;
 using Swashbuckle.Swagger.XmlComments;
 ```
 
-Then, I add the following code (see example that follows), much of which is supplied in a Swashbuckle example file. In the `SwaggerGeneratorOptions` class, I specify the options that I want Swashbuckle to enable.
+Then, I add the following code (see the example that follows), much of which is supplied in a Swashbuckle example file. In the `SwaggerGeneratorOptions` class, I specify the options that I want Swashbuckle to enable.
 
 * `schemaFilters` post-modify complex schemas in the generated output. You can modify schemas for a specific member type or across all member types. The `IModelFilter` is now the `ISchemaFilter`. We created an `IModelFilter` to fix some of the generated output.
 
@@ -108,7 +108,7 @@ After enabling these options, I *could* include code that enables the Swagger UI
 
 ## Using DapperDox
 
-[DapperDox](https://dapperdox.io/) is an open source documentation framework for OpenAPI specifications. Instead of having Swashbuckle publish our API specification in the Swagger UI, I added the following code to the `Startup.cs` file. This code writes the Swagger specification to a `swagger.json` file.
+[DapperDox](https://dapperdox.io/) is an open-source documentation framework for OpenAPI specifications. Instead of having Swashbuckle publish our API specification in the Swagger UI, I added the following code to the `Startup.cs` file. This code writes the Swagger specification to a `swagger.json` file.
 
 ```csharp
    System.IO.StreamWriter file = new System.IO.StreamWriter("swagger.json");
@@ -118,7 +118,7 @@ After enabling these options, I *could* include code that enables the Swagger UI
 
 DapperDox reads this file and displays it in its own UI. I installed DapperDox and pointed it at my `swagger.json` file, and saw nothing but error messages in my command prompt.
 
-Reading through the [DapperDox documentation](https://dapperdox.io/docs/spec-resource-definitions), I discovered that *"When specifying a resource schema object...DapperDox requires that the optional schema object title member is present."* This requirement was problematic, because Swashbuckle does not include a method for adding members to a schema in the generated `swagger.json` file. Additionally, it took some tinkering in the code for me to realize that the missing title member on the `definitions` model is what caused DapperDox to break.
+Reading through the [DapperDox documentation](https://dapperdox.io/docs/spec-resource-definitions), I discovered that *"When specifying a resource schema object...DapperDox requires that the optional schema object title member is present."* This requirement was problematic because Swashbuckle does not include a method for adding members to a schema in the generated `swagger.json` file. Additionally, it took some tinkering in the code for me to realize that the missing title member on the `definitions` model is what caused DapperDox to break.
 
 ## Fixing the output
 
@@ -144,13 +144,13 @@ I compiled the code and Swashbuckle generated an updated `swagger.json` file. Wi
 .\dapperdox -spec-dir=C:\Bitbucket\APIproject\source
 ```
 
-I opened a browser and entered `http://localhost:3123`, which is where DapperDox runs by default, and it worked! DapperDox displayed my `swagger.json` file and created interactive documentation that clearly displays the requests, responses, and query parameters for the API. I demoed the output for a few developers and support engineers, and they were over the moon.
+I opened a browser and entered `http://localhost:3123`, which is where DapperDox runs by default, and it worked! DapperDox displayed my `swagger.json` file and created interactive documentation that clearly displays the requests, responses, and query parameters for the API. I demoed the output to a few developers and support engineers, and they were over the moon.
 
 ![DapperDox API reference screenshot](../../images/DapperDox_API_reference.png "DapperDox API reference screenshot")
 
 ## Next steps
 
-With this framework in place, we can extend Swashbuckle to future APIs and use DapperDox to host the `swagger.json` file for each. The resulting output lives with the code, and provides documentation that developers and support engineers can access locally by running a single command.
+With this framework in place, we can extend Swashbuckle to future APIs and use DapperDox to host the `swagger.json` file for each. The resulting output lives with the code and provides documentation that developers and support engineers can access locally by running a single command.
 
 To add documentation beyond just the generated JSON output, DapperDox works incredibly well. I can author short tutorials that describe how to integrate our API with third-party services, which developers can easily review and modify through pull requests. As the API grows, we can add a README file that describes enhancements, modifications, and new integration points. Non-API documentation will live in an `\assets` directory, which DapperDox includes at build time.
 
@@ -158,7 +158,7 @@ Each time that the code builds, the `swagger.json` file updates with the most cu
 
 ## Lessons learned
 
-Static site generators are all the rage, and for good reason. Providing a lightweight framework that can be deployed quickly is a huge asset when documenting APIs, especially external-facing documentation. Numerous options are available, but DapperDox felt like the right fit for our needs.
+Static site generators are all the rage and for good reason. Providing a lightweight framework that can be deployed quickly is a huge asset when documenting APIs, especially external-facing documentation. Numerous options are available, but DapperDox felt like the right fit for our needs.
 
 The pain of determining why DapperDox was broken and the additional coding required to fix the problem was worth the effort, and we are poised to integrate this process into the next set of APIs that our team develops.
 
