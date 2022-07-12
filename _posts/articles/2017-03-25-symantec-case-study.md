@@ -5,7 +5,7 @@ excerpt: "Jennifer Rondeau, Technical Writing Manager at Capital One, talks abou
 last_modified_at: Sat Mar 25 15:51:58 CDT 2017
 categories: articles
 author: jennifer_rondeau
-tags: [case study, javadoc, doxygen, use case, github, docs, repos, workflows, tools]
+tags: [case study, javadoc, doxygen, use case, GitHub, docs, repos, workflows, tools]
 image:
   path: /images/ehktang-yellow-reflection.jpg
   caption: "[Flickr ehktang](https://flic.kr/p/bpTk6k)"

@@ -5,7 +5,7 @@ excerpt: Changing from a content management system to Jekyll and all the change 
 last_modified_at: Mon Feb 12 09:06:03 CST 2018
 categories: articles
 author: tom_johnson
-tags: [engineering, security, github, git, jekyll, static site, change, culture, teamwork, collaboration, development]
+tags: [engineering, security, GitHub, git, jekyll, static site, change, culture, teamwork, collaboration, development]
 image:
   path: /images/laurencehorten-traintracks.jpg
   caption: "[Flickr laurencehorton](https://flic.kr/p/e3AsFw)"

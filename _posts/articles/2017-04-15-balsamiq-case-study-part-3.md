@@ -5,7 +5,7 @@ excerpt: "Give list pages a makeover using Hugo, a static site generator, with s
 last_modified_at: Sat May 13 18:38:24 CDT 2017
 categories: articles
 author: leon_barnard
-tags: [case study, balsamiq, static sites, use case, wireframes, github, docs, repos, hugo, tools, gif, animated gifs]
+tags: [case study, balsamiq, static sites, use case, wireframes, GitHub, docs, repos, hugo, tools, gif, animated gifs]
 image:
   path: /images/alittlecreation-paintchips.jpg
   caption: "[Flickr alittlecreation](https://flic.kr/p/dfEUAY)"
@@ -21,7 +21,7 @@ Check out the prior two parts of this series, including [how to use conditional 
 
 ## Challenge #3: Giving the list pages a makeover
 
-The last challenge is one that I had wanted to do for the first release of our new docs site, but never got around to. The challenge is that it's hard to make a documentation site look pretty beyond the home page, whether it's a static site or not.
+The last challenge is one that I had wanted to do for the first release of our new docs site but never got around to. The challenge is that it's hard to make a documentation site look pretty beyond the home page, whether it's a static site or not.
 
 Let's look at the [Dropbox help site home page](https://www.dropbox.com/help) as an example:
 
@@ -41,17 +41,17 @@ And this is exactly what we do on our documentation site within each product cat
 
 ![Previous Balsamiq Table of Contents]({{ site.url }}/images/balsamiq/desktop-toc-old.png)
 
-But I really love the look of hard-coded landing pages like the Dropbox site. The illustrations, the grid layout, the way it directs you to the information that's most important. I wanted to see if we could make our second-level pages look more like that.
+But I really love the look of hard-coded landing pages like the Dropbox site. The illustrations, the grid layout, and the way it directs you to the most important information. I wanted to see if we could make our second-level pages look more like that.
 
 To cut to the chase, here's what the upcoming version of our docs site will look like:
 
 ![New Balsamiq Table of Contents]({{ site.url }}/images/balsamiq/desktop-toc.png)
 
-It feels more like a documentation site landing page, right? It has a featured articles section with the articles that are most relevant to new users, and the rest of the articles are split evenly in three columns. Yet none of it is hard-coded, even the featured "Getting Started" articles.
+It feels more like a documentation site landing page, right? It has a featured articles section with the articles that are most relevant to new users, and the rest of the articles are split evenly into three columns. Yet none of it is hard-coded, even the featured "Getting Started" articles.
 
 I'll start by explaining the "Everything Else..." section at the bottom and what makes it different from our previous version.
 
-The links there are automatically placed by Hugo and styled using the [Bootstrap List group](https://getbootstrap.com/components/#list-group) component. That part is pretty easy. The challenge was putting them in columns and making sure that the columns were equal heights, regardless of how many articles there were.
+The links there are automatically placed by Hugo and styled using the [Bootstrap List group](https://getbootstrap.com/components/#list-group) component. That part is pretty easy. The challenge was putting them in columns and making sure that the columns were of equal heights, regardless of how many articles there were.
 
 Here's the code I wrote inside the Hugo template to define some variables to use further down in the code:
 
@@ -117,7 +117,7 @@ Voila!
 
 So, what did we learn from these challenges? I think the most important thing is that all of them were overcome without making life harder for the content writers. We didn't compromise on keeping the workflow simple when we added functionality, even though we were tempted to.
 
-We *could* have switched away from Markdown. We *could* have started writing HTML inside our Markdown files. We *could* have required manual template updates when we reordered articles. It took a lot of work not to do these things. But that's the beauty of programming: it's an up front investment that saves time and effort in the long run.
+We *could* have switched away from Markdown. We *could* have started writing HTML inside our Markdown files. We *could* have required manual template updates when we reordered articles. It took a lot of work not to do these things. But that's the beauty of programming: it's an up-front investment that saves time and effort in the long run.
 
 Static sites may seem to have more limitations than traditional CMSs or powerful technical writing tools. But if you can find a way around the limitations, you can reap the benefits that made static sites attractive in the first place. Markdown is easy. GitHub offers collaborative coding. A scripted robot can run a build command from a terminal. It's writing excellent documentation that is tough. Fortunately, that's what technical writers are good at. Having a developer liaison for the docs team can free writers from having to think about the limitations of the technology they're using so they can focus on writing the docs.
 

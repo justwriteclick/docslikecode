@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Multiple product versions - Balsamiq, Leon Barnard
-excerpt: "Learn useful techniques for static sites such as Hugo on GitHub from Leon Barnard, Designer and Writer at Balsamiq. He describes documenting multiple versions of a product with a Go coded solution."
+excerpt: "Learn useful techniques for static sites such as Hugo on GitHub from Leon Barnard, Designer and Writer at Balsamiq. He describes documenting multiple versions of a product with a Go-coded solution."
 last_modified_at: Sat May 13 18:37:07 CDT 2017
 categories: articles
 author: leon_barnard
-tags: [case study, balsamiq, static sites, use case, wireframes, github, docs, repos, hugo, tools, gif, animated gifs]
+tags: [case study, balsamiq, static sites, use case, wireframes, GitHub, docs, repos, hugo, tools, gif, animated gifs]
 image:
   path: /images/therefore-wireframe.jpg
   caption: "[Flickr therefore](https://flic.kr/p/7ewunt)"
@@ -37,7 +37,7 @@ Our product, [Balsamiq Mockups](https://balsamiq.com/), comes in multiple "flavo
 
 That's seven different products that we sell, catered to different types of users. This is great for our customers, but a challenge for our docs.
 
-The majority of our documentation is how to use one of the two core wireframe editors. Very little has to do with platform-specific features. So, seven products that we sell, but only two main sets of documentation.
+The majority of our documentation is on how to use one of the two core wireframe editors. Very little has to do with platform-specific features. So, seven products that we sell, but only two main sets of documentation.
 
 For historical reasons, most of the common documentation is in the Desktop version docs. If you used our product on a different platform, you had to know to go to the Desktop docs.
 
@@ -53,11 +53,11 @@ But, of course, we didn't want to maintain seven copies of each article. We want
 
 A simple solution, I suppose, would have been to switch from Markdown to a file format that supports including content from one file in another (like [reStructuredText](https://docutils.sourceforge.net/rst.html) or [AsciiDoc](https://asciidoc.org/)). **But, I'm stubborn** (and Hugo doesn't support them well). I like how simple Markdown is and I wanted to see if we could achieve what we wanted without abandoning it.
 
-I enlisted the help of our resident [Go](https://golang.org/) expert, [Luis](https://balsamiq.com/company/#luis), and he wrote some code to do just what we wanted. This code inside one of the Hugo templates allowed us to put help files in two hidden folders (called "\_v2" and "\_v3") that would get injected into files across multiple documentation folders each time the site was generated. The end result was that users could now find the information where they expected to find it.
+I enlisted the help of our resident [Go](https://golang.org/) expert, [Luis](https://balsamiq.com/company/#luis), and he wrote some code to do just what we wanted. This code inside one of the Hugo templates allowed us to put help files in two hidden folders (called "\_v2" and "\_v3") that would get injected into files across multiple documentation folders each time the site was generated. The result was that users could now find the information where they expected to find it.
 
 ![Content insertions]({{ site.url }}/images/balsamiq/structure5.png)
 
-Instead of changing file formats, we leveraged the flexibility of Hugo to use the meta data (front matter) from the Markdown file as a trigger to tell Hugo to insert content from one file to another.
+Instead of changing file formats, we leveraged the flexibility of Hugo to use the metadata (front matter) from the Markdown file as a trigger to tell Hugo to insert content from one file to another.
 
 The code looks like this:
 
