@@ -2,8 +2,9 @@
 layout: post
 title: "Adopting Docs-as-Code: From Hackathon to Production"
 excerpt: Sysdig's journey from unstructured to structured, finally to semi-structured authoring and how Sysdig hackathon enabled design their homegrown docs-like-code solution.
-last_modified_at: 
+last_modified_at: Mon Jul 11 17:33:53 CDT 2022
 categories: articles
+canonical_url: "https://sysdig.com/blog/adopting-docs-as-code/"
 author: radhikapc
 tags: [cicd, sysdig, docker, docs, Hugo, Go]
 image:
@@ -13,7 +14,7 @@ comments: false
 share: true
 ---
 
-Originally published in the [Sysdig Blog](https://sysdig.com/blog/adopting-docs-as-code/). 
+Originally published in the [Sysdig Blog](https://sysdig.com/blog/adopting-docs-as-code/).
 
 Thanks to the yearly Hackathons at Sysdig, we’ve recently democratized documentation creation by embracing the docs-as-code philosophy. Similar to our source code practices, product documentation has been version controlled, subjected to the same gatekeeping systems, and auto-delivered by using the same CI/CD pipeline.
 
@@ -75,6 +76,9 @@ The result was a Python script to solve this problem and make the conversion aut
 ### CI/CD Pipeline
 
 We chose [Hugo](https://gohugo.io/) static site generator with [Docsy](https://www.docsy.dev/) theme for building the documentation website for its rich feature set. Hugo is faster, offers a rich feature set for expansion, and has an active community for support. Docsy offers features such as dark theme, RSS feed support, and swagger integration for APIs, which we plan to introduce to the site at some point. [Netlify](https://www.netlify.com/) is faster to launch and easier to integrate with Github repository for hosting preview and production builds. The publishing flow has been designed in such a way that each Pull Request would generate a preview build so reviewers can see the content as it would appear on the website. This mechanism accelerated our documentation publishing pace without sacrificing quality.
+
+![](/images/sysdig/adopting-doc-as-code-01.png)
+
 
 ### From Docs-as-Code to Docs-from-Code
 
