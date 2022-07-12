@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Adopting Docs-as-Code: From Hackathon to Production"
-excerpt: Sysdig's journey from unstructured to structured, finally to semi-structured authoring and how Sysdig hackathon enabled design their homegrown docs-like-code solution.
+excerpt: Sysdig's journey from unstructured to structured, and finally, to semi-structured authoring and how Sysdig hackathon enabled designing their homegrown docs-like-code solution.
 last_modified_at: Mon Jul 11 17:33:53 CDT 2022
 categories: articles
 canonical_url: "https://sysdig.com/blog/adopting-docs-as-code/"
