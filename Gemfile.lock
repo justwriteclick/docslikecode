@@ -128,7 +128,6 @@ PLATFORMS
 
 DEPENDENCIES
   html-proofer
-  jekyll-seo-tag
   jekyll-theme-so-simple
 
 BUNDLED WITH
