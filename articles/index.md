@@ -5,6 +5,3 @@ excerpt: "Read articles to learn more about the docs like code vision and how to
 search: false
 entries_layout: grid
 ---
-
-
-{% include sign-up.html %}
