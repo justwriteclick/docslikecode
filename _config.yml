@@ -4,9 +4,10 @@ title: Let's Treat Docs Like Code
 locale: en-US
 description: Technical documentation with tools and techniques like version control (GitHub) and automation (CICD) with static site generators (SSG) and more.
 logo: /images/treat-docs-like-code.png
-#url: http://127.0.0.1:4000
-url: https://www.docslikecode.com
+url: http://127.0.0.1:4000
+#url: https://www.docslikecode.com
 theme: jekyll-theme-so-simple
+skin: "/assets/css/skins/light.css"
 search_full_content: true
 tag_archive_path: "/tags/#"
 footer_links:
@@ -76,7 +77,7 @@ exclude: ["_drafts", "lib", "config.rb", "Capfile", "config", "log", "Rakefile",
 
 comments: false
 twitter: annegentle
-google_analytics: UA-85706588-1
+google_analytics: G-6MYV72DWCZ
 
 # Site author, previously was site.owner
 author:
