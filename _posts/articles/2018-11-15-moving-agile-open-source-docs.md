@@ -7,7 +7,7 @@ categories: articles
 author: ben_mansheim
 tags: 
 image:
-  path: /images/redis/writer_in_the_middle.jpg
+  path: /images/redislabs/writer_in_the_middle.jpg
   caption: "[Courtesy Redis Blog](https://redis.com/blog/moving-agile-open-source-docs/)"
 comments: false
 share: true
