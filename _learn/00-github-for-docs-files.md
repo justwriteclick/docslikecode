@@ -233,40 +233,13 @@ _site
 .DS_Store
 ```
 
-For Hugo, you want to ignore these files and folders. The `static` folder could be named `public`, depending on your configuration
-```
-static
-.DS_Store
-```
-
-## Ignoring operating system files or generated files
-
-In GitHub repos, you can place a `.gitignore` file that contains the file extensions or folder names that you want to keep out of source control. When a file extension or folder is in the `.gitignore` file, even when you use the `git add .` command, those files and folders are not added to the commit.
-
-This exclusion is useful so that you do not have a lot of difficult merges on output HTML files or operating system tracking files.
-
-For Sphinx, you want to ignore these files and folders to avoid merge conflicts:
-
-```
-build
-.DS_Store
-```
-
-For Jekyll, you want to ignore these files and folders:
-
-```
-_site
-.DS_Store
-```
-
 For Hugo, you want to ignore these files and folders. The `static` folder could be named `public`, depending on your configuration.
 ```
 static
-public # depends on configuration
+public # depends on the configuration
 .DS_Store
 ```
 
 ## Additional resources
-[Learning Git and GitHub resources on help.github.com](https://help.github.com/articles/git-and-github-learning-resources/)
-[GitHub Guides](https://guides.github.com/)
+[Learning Git and GitHub resources on docs.github.com]([https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources](https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources))
 [Pro Git](https://git-scm.com/book/en/v2)
