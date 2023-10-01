@@ -29,6 +29,8 @@ You can also use an email address instead of an account name. See an example wit
 
 Then, make sure that the branch is protected using the repository's **Setting** > **Branches** > **Branch protection rules** > **Add protection rule** button. Enter `main` for the **Branch name pattern** and then select **Require a pull request before merging**. The settings expand so you can also choose **Require review from Code Owners**. Once you have the settings, click the **Create** button at the bottom of the page. More details are in the [GitHub Docs](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
 
+<img src="../../images/branch-protection-rule.png" alt="GitHub Branch protection rules settings.">
+
 To see an example of this setup, look at the Microsoft 365 community documentation repository at https://github.com/MicrosoftDocs/microsoft-365-community/. The `CODEOWNERS` file contains a team name, `@microsoftdocs/officedocs-admin`, and those team members can review and merge the list of documents in the `CODEOWNERS` file. The documents contain configuration information as well as the `CODEOWNERS` file itself. 
 
 ```
