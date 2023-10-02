@@ -7,7 +7,7 @@ categories: articles
 author: annegentle
 tags: [cicd, reviews, docs, settings, GitHub]
 image:
-  path: ../../images/guarded-lightbulb-rob-sinclair.png
+  path: ../../images/guarded-lightbulb-rob-sinclair.jpg
   caption: "[Lightbulb in a protective cage, Attribution: Rob Sinclair.)"
 comments: false
 share: true
