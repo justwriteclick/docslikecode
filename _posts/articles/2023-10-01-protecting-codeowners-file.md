@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Protecting a Branch so Only the Docs Team Merges and Publishes"
-excerpt: .
+excerpt: When you want to allow the docs team members to maintain docs within a code repo, while giving the docs team autonomy over their own reviews and merges, you can use a protected branch and a CODEOWNERS file.
 last_modified_at: Sun Oct  1 11:05:31 CDT 2023
 categories: articles
 author: annegentle
 tags: [cicd, reviews, docs, settings, GitHub]
 image:
-  path: /images/guarded-lightbulb-rob-sinclair.png
+  path: images/guarded-lightbulb-rob-sinclair.jpg
   caption: "[Lightbulb in a protective cage, Attribution: Rob Sinclair.)"
 comments: false
 share: true
