@@ -21,6 +21,7 @@ A `CODEOWNERS` file can be stored in a directory, or in the `.github` folder, wh
 
 A straightforward example involves protecting the `docs` folder in the `main` branch, where the `main` branch is the branch used to publish the documentation. In this example, the org name is `justwriteclick` and the username is `annegentle`. You would name the file `CODEOWNERS` and store it in a `docs` directory.
 
+Example `CODEOWNERS` file:
 ```
 @justwriteclick/annegentle
 ```
@@ -33,6 +34,7 @@ Then, make sure that the branch is protected using the repository's **Setting** 
 
 To see an example of this setup, look at the Microsoft 365 community documentation repository at https://github.com/MicrosoftDocs/microsoft-365-community/. The `CODEOWNERS` file contains a team name, `@microsoftdocs/officedocs-admin`, and those team members can review and merge the list of documents in the `CODEOWNERS` file. The documents contain configuration information as well as the `CODEOWNERS` file itself. 
 
+Example `CODEOWNERS` file from MicrosoftDocs:
 ```
 docfx.json                          @microsoftdocs/officedocs-admin
 .openpublishing.build.ps1           @microsoftdocs/officedocs-admin
