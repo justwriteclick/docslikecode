@@ -32,7 +32,7 @@ Then, make sure that the branch is protected using the repository's **Setting** 
 
 <img src="../../images/branch-protection-rule.png" alt="GitHub Branch protection rules settings.">
 
-To see an example of this setup, look at the Microsoft 365 community documentation repository at https://github.com/MicrosoftDocs/microsoft-365-community/. The `CODEOWNERS` file contains a team name, `@microsoftdocs/officedocs-admin`, and those team members can review and merge the list of documents in the `CODEOWNERS` file. The documents contain configuration information as well as the `CODEOWNERS` file itself. 
+To see an example of this setup, look at the Microsoft 365 community documentation repository at [https://github.com/MicrosoftDocs/microsoft-365-community/](https://github.com/MicrosoftDocs/microsoft-365-community/). The `CODEOWNERS` file contains a team name, `@microsoftdocs/officedocs-admin`, and those team members can review and merge the list of documents in the `CODEOWNERS` file. The documents contain configuration information as well as the `CODEOWNERS` file itself. 
 
 Example `CODEOWNERS` file from MicrosoftDocs:
 ```
