@@ -3,7 +3,7 @@ title: "Static Site Generator performance considerations"
 layout: learn
 image:
   path: /images/learn/ssg-performance.png
-  thumbnail: /images/learn/ssg-performance-400×225.png
+  thumbnail: /images/learn/ssg-performance-400x225.png
 ---
 
 When you start building large documentation sites, or gluing together multiple documentation sets, you might look for performance gains in the build time. Having smaller doc sites helps with this, so that you can build with your static site generator systems in parallel, but also look for incremental builds or ways to measure build times to look for areas where the build is slowed down and then find a root cause for the slower performance.
