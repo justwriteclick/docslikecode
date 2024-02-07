@@ -12,6 +12,8 @@ image:
 comments: false
 share: true
 ---
+To dive deeply into this topic, check out the Docs Like Code book at https://docslikecode.com/book.
+
 Choosing 'Docs Like Code' over an enterprise Component Content Management System (CCMS) depends on various factors, including the nature of the project, the team's skillset, the content's complexity, and the intended workflow. Let's explore some reasons why one might opt for 'Docs Like Code':
 
 1. **Integration with Software Development Processes**: 'Docs Like Code' is particularly beneficial in environments where documentation is closely tied to software development. This approach integrates documentation into the same version control systems (like Git) used for code, making it easier to keep documentation in sync with software updates.
