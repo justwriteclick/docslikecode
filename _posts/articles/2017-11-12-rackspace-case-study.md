@@ -106,5 +106,3 @@ Finally, another great resource is Anne Gentle’s [Docs like Code project](http
 Are you treating docs like code, or thinking about transforming your documentation processes? We’d love to hear your thoughts and experiences. If you have questions or want to know more about contributing to Rackspace documentation, see our [Quickstart](https://docs.rackspace.com/docs/style-guide/quickstart) or e-mail us at devdoc@rackspace.com.
 
 Originally published November 11, 2016, on the [Rackspace Blog](https://blog.rackspace.com/transforming-developer-and-support-documentation-with-docs-like-code).
-
-{% include sign-up.html %}

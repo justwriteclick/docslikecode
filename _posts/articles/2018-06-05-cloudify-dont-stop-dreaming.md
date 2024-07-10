@@ -91,5 +91,3 @@ As much as I faced lots of frustration during the process, I learned a tremendou
 
 I hope that others can learn from the process we went through to see that it is both fun and productive to go for your dreams!
 
-
-{% include sign-up.html %}

@@ -113,5 +113,3 @@ Now that you’ve seen how we discovered the needs of our target audience, plann
 _We involved [UX Strategist Katalin Nagygyörgy](https://www.linkedin.com/in/nagygyorgykatalin/) in our process from the start. Through our collaboration, we could extract and collect all the necessary information using tried and true research methodologies and UX best practices._
 
 _This article was originally written for the [platformOS Blog](https://www.platformos.com/blog/post/building-our-documentation-site-on-platformos-part-3-community)._
-
-{% include sign-up.html %}

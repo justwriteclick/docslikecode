@@ -93,5 +93,3 @@ Wikis may have a reputation built up over time with a lack of discipline in edit
 ## Bringing it home
 
 Even as I wrote back to Gene to answer his questions, and even as I incorporated the answers into the _Docs Like Code_ book, I continue to be challenged with my answers and to reconsider some of them. Tools come and go, and our ability as professional writers remains and shines: provide the best critical analysis of the content management tools, and then write and manage the heck out of the content and the talent that creates and maintains it.
-
-{% include sign-up.html %}

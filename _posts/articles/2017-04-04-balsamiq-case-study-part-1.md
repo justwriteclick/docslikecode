@@ -94,5 +94,3 @@ Hugo looks for two pieces of front matter. The first is the presence of a parame
 If the `include` parameter isn't present, Hugo just uses the Markdown content in the file without copying content from elsewhere. This allows us to mix and match docs that are unique to one product with docs that share functionality with multiple products.
 
 It took some effort to get it set up, but now we don't even think about it. It's really easy for the content writers, and we'll be able to extend it when we add yet more versions in the future (we already are, in fact).
-
-{% include sign-up.html %}
