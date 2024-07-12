@@ -31,5 +31,3 @@ In the [Learn section of the site](https://docslikecode.com/learn/), there are t
 Choose your adventure and start one of these sites - and learn how to do docs as code along the journey.
 
 ## Ready to learn more?
-
-{% include sign-up.html %}

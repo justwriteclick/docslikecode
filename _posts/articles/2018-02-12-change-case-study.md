@@ -248,5 +248,3 @@ To read some other docs-as-code posts on my blog, see the following:
 {: .tip}
 To Learn more about docs as code, see Anne Gentle's book [Docs Like Code](https://www.amazon.com/Docs-Like-Code-Anne-Gentle/dp/1365816079/ref=sr_1_1?ie=UTF8&qid=1508090523&sr=8-1&keywords=docs+like+code).
 
-
-{% include sign-up.html %}

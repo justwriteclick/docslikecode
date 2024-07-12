@@ -32,5 +32,3 @@ When you write with people beyond your immediate team, ensure that those contrib
 Harnessing these needs being met is not about gaining free labor. Contributors should be highly, highly valued, and rewarded. It's about creating opportunities to shine, and curating jobs. Because contributor graphs are available on GitHub, and because the contribution data can be mined to see that reputation being built one pull request at a time, GitHub gives rewards in a new way.
 
 If you think this all sounds nice but impractical, I encourage you to sign up for the newsletter to learn how to practice these techniques like you would a musical instrument. You need hands-on experience and time to play to get better and better.
-
-{% include sign-up.html %}

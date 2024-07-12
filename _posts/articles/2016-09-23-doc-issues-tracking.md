@@ -40,5 +40,3 @@ To take it a step further, you can also add a link to edit the source doc file i
 In traditional enterprise doc systems, writers can go weeks without getting reviews or input. Even when asking and nagging multiple times, sometimes the documentation systems are so separate from code systems that technical reviews are through email. GASP. Put those days behind you and go where the technically knowledgeable people are.
 
 Working with the same collaboration tools as technical people gives better reviews. We can merge as many as 50 patches per day, though, in reality, it's about a dozen a day. We are running up to four automated doc tests per patch and requiring two humans to check the patch and click to publish. Each reviewer who can publish must adhere to our review rules, and people follow the rules well.
-
-{% include sign-up.html %}

@@ -127,5 +127,3 @@ The biggest thing we didn't do was integrate the Javadoc build completely into t
 On the other hand, because other doc components besides the Javadoc could only be built manually, more automation could have solved only part of the problem of keeping content up-to-date on the server. Ultimately, the decision not to automate the Javadoc made sense &mdash; there are always pain points on either side of a decision like this.
 
 We also didn't realize initially that we'd have to coordinate our doxygen build, which ran over only a small subset of the code, with multiple other doxygen builds over other parts of the code tree. I wound up working with lead devs on other coding projects to coordinate main page markup and config values so that we could all get the doc builds that we needed. This work was a bit fiddly, and produced an extra round of review with every Javadoc build to make sure that the right components were all properly included.
-
-{% include sign-up.html %}

@@ -67,5 +67,3 @@ it triggers the `gifplayer` script!
 ![party](https://rubentd.com/img/banana.gif)
 
 Sorry, we didn't implement the pause/play capability on this site, so that banana is gonna keep on dancing. 
-
-{% include sign-up.html %}

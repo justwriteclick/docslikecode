@@ -66,5 +66,3 @@ As of March 2017, this workflow was not available to forks for security reasons.
 #### Are there any questions you wish you had asked before using GitHub for docs?
 
 How do the needs of open source software projects differ from those of a documentation project? Where does GitHub fail to fulfill the needs of documentation projects and how can those gaps be filled?
-
-{% include sign-up.html %}
