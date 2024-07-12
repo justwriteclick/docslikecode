@@ -139,5 +139,3 @@ One last note to let you know that **we have now open sourced TechDocs**. Let’
 * [Backstage](https://backstage.io), an open platform for building developer portals
 * [github.com/backstage](https://github.com/backstage/backstage)
 * [DevRelCon London, December 2019: Gary Niemen, The Hero’s Journey: How we are solving internal technical documentation at Spotify](https://www.linkedin.com/posts/garyniemen_how-we-are-solving-internal-technical-documentation-activity-6646078605594030080-4L31)
-
-{% include sign-up.html %}

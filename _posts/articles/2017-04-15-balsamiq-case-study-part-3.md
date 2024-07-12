@@ -120,5 +120,3 @@ So, what did we learn from these challenges? I think the most important thing is
 We *could* have switched away from Markdown. We *could* have started writing HTML inside our Markdown files. We *could* have required manual template updates when we reordered articles. It took a lot of work not to do these things. But that's the beauty of programming: it's an up-front investment that saves time and effort in the long run.
 
 Static sites may seem to have more limitations than traditional CMSs or powerful technical writing tools. But if you can find a way around the limitations, you can reap the benefits that made static sites attractive in the first place. Markdown is easy. GitHub offers collaborative coding. A scripted robot can run a build command from a terminal. It's writing excellent documentation that is tough. Fortunately, that's what technical writers are good at. Having a developer liaison for the docs team can free writers from having to think about the limitations of the technology they're using so they can focus on writing the docs.
-
-{% include sign-up.html %}

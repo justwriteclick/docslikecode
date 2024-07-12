@@ -87,5 +87,3 @@ I calculated the starting costs for six or five months, when I needed a monthly 
 | **Total startup costs**    |  **$828**           |
 
 Based on Lulu reporting, I see the book brought in about $2500 in 12 months of the first and second edition being available. So while the startup costs are not nothing, I did see a profit from the effort. Really, though, the effort is paid off in helping others see the benefits I've observed and in sharing and learning. Let me know what you think about this method, the tools, and of course, the resulting book, *Docs Like Code*.
-
-{% include sign-up.html %}

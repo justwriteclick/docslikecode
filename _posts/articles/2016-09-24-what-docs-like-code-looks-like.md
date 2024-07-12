@@ -29,5 +29,3 @@ This video shows you how to clone a GitHub repo with an existing Jekyll theme an
 ### How it's made
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
-
-{% include sign-up.html %}

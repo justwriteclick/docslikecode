@@ -92,5 +92,3 @@ Also, engineers won't write unless they're told to. You need a push down from le
 > "Sarah Parson’s Write the Docs presentation on static site generators and Tom Johnson’s explanation of his Documentation Jekyll theme."
 
 This is not a section simply to point to the [Docs Like Code book](https://docslikecode.com/book/) as a resource, rather, it's to show that having additional resources including people you can ask questions is super valuable when learning how to treat docs like code. I'm grateful to the Write the Docs community and people who are also writing their experiences here and on other sites so we can all learn together. Thanks to everyone who shared their experiences and hard-earned wisdom!
-
-{% include sign-up.html %}

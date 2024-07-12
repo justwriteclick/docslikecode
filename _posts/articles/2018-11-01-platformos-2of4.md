@@ -143,5 +143,3 @@ We hope you enjoyed learning about how we started content production, how we bui
 _We involved [UX Strategist Katalin Nagygyörgy](https://www.linkedin.com/in/nagygyorgykatalin/) in our process from the start. Through our collaboration, we could extract and collect all the necessary information using tried and true research methodologies and UX best practices._
 
 _This article was originally written for the [platformOS Blog](https://www.platformos.com/blog/post/building-our-documentation-site-on-platformos-part-2-content-production-and-layouts)._
-
-{% include sign-up.html %}

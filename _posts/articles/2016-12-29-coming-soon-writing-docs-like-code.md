@@ -28,5 +28,3 @@ Here are some of the topics:
 * What about wikis?
 
 When you treat docs as code, what are your biggest barriers? Your looming concerns? Let me know so we can address these. Sign up below to learn more together.
-
-{% include sign-up.html %}

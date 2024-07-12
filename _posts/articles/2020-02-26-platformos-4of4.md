@@ -258,7 +258,5 @@ We’ve come a long way but there’s still a lot we can improve. Stay tuned, be
 
 _This article was co-authored by Pawel Kowalski, Front-End Developer and Performance Advocate at platformOS, and was originally written for the [PlatformOS Blog](https://www.platformos.com/blog/post/building-our-documentation-site-on-platformos-part-2-content-production-and-layouts)._
 
-{% include sign-up.html %}
-
 
 

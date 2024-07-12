@@ -88,5 +88,3 @@ Now you can run `make github` from the doc source directory to generate a local 
 ## Pull it all together
 
 I've been working on a talk titled, "Make an Instant Web Site with Webhooks" for DevNet Create. In it, I show how to publish and host on GitHub Pages, which is built to use Jekyll by default, using Python Sphinx instead. I've got a GitHub repository set up at [annegentle/create-demo](https://github.com/annegentle/create-demo) as a demonstration. I'll post the slides when it's done. In the meantime, we'd love to see you next week! Visit the [DevNet Create site](https://developer.cisco.com/devnetcreate/2019) for more information.
-
-{% include sign-up.html %}

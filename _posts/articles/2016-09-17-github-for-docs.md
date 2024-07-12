@@ -53,5 +53,3 @@ I hope I'm talking to people who care a lot about words. Let's start with some v
 These definitions can give you decision points to make about information architecture, so think about which deliverables you'll make, who should review and collaborate on those deliverables, and how you can automate publishing with the chunks of a repository or an organization as overarching collections.
 
 Take a look at [this article's source on GitHub](https://raw.githubusercontent.com/justwriteclick/docslikecode/master/_posts/articles/2016-09-17-github-for-docs.md) to get a sense of the "source" for a document. We'll look at the source aspects in a future article. To stay in touch, subscribe to get relevant emails in your inbox.
-
-{% include sign-up.html %}
