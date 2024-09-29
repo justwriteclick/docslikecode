@@ -65,7 +65,7 @@ For a Hugo static site, you can choose your specific theme after you create the 
   title = "Learning Hugo Site"
   [module]
   [[module.imports]]
-    path = 'github.com/McShelby/hugo-theme-relearn'
+      path = 'github.com/McShelby/hugo-theme-relearn'
   ```
 1. To get the theme files in the `/themes` directory, and keep them updated, use a `git submodules` command to get the required theme files as well as keep them updated.
   ```
@@ -75,11 +75,11 @@ For a Hugo static site, you can choose your specific theme after you create the 
   ```
   go: creating new go.mod: module example.com
   go: to add module requirements and sums:
-	go mod tidy
+  go mod tidy
   ```
   Next, add the theme as a Git submodule with this command:
   ```
-  git submodule add --depth 1 https://github.com/McShelby/hugo-theme-relearn.git themes/hugo-theme-relearn
+  $ git submodule add --depth 1 https://github.com/McShelby/hugo-theme-relearn.git themes/hugo-theme-relearn
   ```
 1. For Hugo, the `content` folder contains the site source content. For your home page, make an `_index.md` document in the `content` folder and write it with Markdown content. Switch back up one level since you just cloned the theme files.
   ```
@@ -112,24 +112,30 @@ For Hugo, it's important to know that draft pages, where `draft = true` is in th
    ```
    $ hugo server
 
-                         | EN
-      +------------------+----+
-        Pages            | 12
-        Paginator pages  |  0
-        Non-page files   |  0
-        Static files     | 67
-        Processed images |  0
-        Aliases          |  0
-        Sitemaps         |  1
-        Cleaned          |  0
+    Watching for changes in /Users/agentle/src/hugo-learn/{archetypes,assets,content,data,i18n,layouts,static,themes}
+    Watching for config changes in /Users/agentle/src/hugo-learn/hugo.toml, /Users/agentle/src/hugo-learn/themes/hugo-theme-relearn/hugo.toml, /Users/agentle/src/hugo-learn/go.mod
+    Start building sites …
+    hugo v0.135.0+extended darwin/amd64 BuildDate=2024-09-27T13:17:08Z VendorInfo=brew
 
-      Total in 48 ms
-      Watching for changes in /Users/agentle/src/hugo-example/doc-machine/{content,data,layouts,static,themes}
-      Watching for config changes in /Users/agentle/src/hugo-example/doc-machine/config.toml
-      Serving pages from memory
-      Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-      Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
-      Press Ctrl+C to stop
+    WARN  deprecated: .Sites.First was deprecated in Hugo v0.127.0 and will be removed in a future release. Use .Sites.Default instead.
+    WARN  deprecated: .Site.IsMultiLingual was deprecated in Hugo v0.124.0 and will be removed in a future release. Use hugo.IsMultilingual instead.
+
+                      | EN
+    -------------------+------
+      Pages            |  11
+      Paginator pages  |   0
+      Non-page files   |   0
+      Static files     | 182
+      Processed images |   0
+      Aliases          |   0
+      Cleaned          |   0
+
+    Built in 276 ms
+    Environment: "development"
+    Serving pages from disk
+    Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+    Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+    Press Ctrl+C to stop
    ```
 2. Open the **Web Server** URL, `http://localhost:1313/` in your local browser to view the site.
     ![Example Hugo site](/images/learn/hugo-docs-page.png)
@@ -138,18 +144,7 @@ For Hugo, it's important to know that draft pages, where `draft = true` is in th
 
 ## Modify the Hugo theme
 
-By default, the Hugo Theme "Learn" has a purple sidebar. How about changing the color and logo displayed in the sidebar? Here's how. While we're at it, let's make sure to configure the search tool that works best with this theme.
-
-1. Edit the `config.toml` file and add these lines to the `config.toml` file. This example shows setting the `themeVariant` to `green`.
-```
-[params]
-themeVariant = "green"
-```
-1. You can make sure that the theme works with the `lunr.js` [JavaScript search engine](https://lunrjs.com/) by adding these lines to the `config.toml` file.
-```
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
-```
+The Hugo Theme "Relearn" has many ways to [customize the theme](https://mcshelby.github.io/hugo-theme-relearn/basics/customization/index.html), including activating print support and a dedicated search page. Refer to the [Relearn theme documentation](https://mcshelby.github.io/hugo-theme-relearn/) for details.
 
 ## What's next
 
@@ -165,5 +160,5 @@ home = [ "HTML", "RSS", "JSON"]
 
 ## Additional references
 
-* [Hugo Quickstart](https://gohugo.io/getting-started/quick-start/)
+* [Hugo Quick start](https://gohugo.io/getting-started/quick-start/)
 * [Hugo Themes web site](https://themes.gohugo.io/)
