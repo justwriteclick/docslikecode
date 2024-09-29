@@ -131,7 +131,7 @@ For Hugo, it's important to know that draft pages, where `draft = true` is in th
       Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
       Press Ctrl+C to stop
    ```
-2. Open the **Web Server** URL, `http://localhost:1313/` in your local browser to view the site. (By default, the theme may be purple instead of green.)
+2. Open the **Web Server** URL, `http://localhost:1313/` in your local browser to view the site.
     ![Example Hugo site](/images/learn/hugo-docs-page.png)
 3. Press `Ctrl+C` in the server terminal to stop the Hugo server.
 4. You can add your files to a Git commit. Refer to [Working with content in GitHub repositories](https://docslikecode.com/learn/04-add-content-workflow/) for a documentation workflow with your Hugo site.
