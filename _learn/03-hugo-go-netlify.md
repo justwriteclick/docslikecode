@@ -69,13 +69,14 @@ For a Hugo static site, you can choose your specific theme after you create the 
   ```
 1. To get the theme files in the `/themes` directory, and keep them updated, use a `git submodules` command to get the required theme files as well as keep them updated.
   ```
+  $ cd themes
   $ hugo mod init example.com
   ```
   The terminal returns something like this:
   ```
   go: creating new go.mod: module example.com
-  go: to add module requirements and sums:
-  go mod tidy
+  hugo: to add module requirements and sums:
+  hugo mod tidy
   ```
   Next, add the theme as a Git submodule with this command:
   ```
