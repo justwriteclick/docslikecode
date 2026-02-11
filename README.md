@@ -39,7 +39,7 @@ On macOS you need to install brew, bundler.io, and Ruby version manager so that 
    $ echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
    ```
 
-1. Source your `.bash_profile` file. If you are using macOS Catalina, your profile file may be `.zshrc`.
+1. Source your `.bash_profile` file. If you are using macOS Catalina or later, your profile file may be `.zshrc`.
 
    ```
    $ source ~/.bash_profile
