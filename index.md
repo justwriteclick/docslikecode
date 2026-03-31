@@ -99,125 +99,73 @@ Get your copy today:
 
 ---
 
-## Frequently Asked Questions
-
-### What is docs as code?
-
-Docs as code is an approach where documentation is written, managed, and published using the same tools and workflows as software development (Git, Markdown, CI/CD).
-
----
-
-### Why use GitHub for documentation?
-
-GitHub enables version control, collaboration, and automation, making it easier to manage documentation at scale.
-
----
-
-### What tools are used in docs-as-code?
-
-Common tools include:
-- Git and GitHub  
-- Markdown  
-- Static site generators (Jekyll, Hugo, Sphinx)  
-- CI/CD pipelines  
-
----
-
 ## Start Building Better Documentation
 
 If you’re ready to modernize your documentation workflow, this book will give you the foundation.
 
-👉 [Buy the Book](https://amzn.to/4tiBLy6)
+👉 [Why Buy the Book?](https://docslikecode.com/book/)
 
 
-<h1>Get Started with Docs as Code</h1>
+## Get Started with Docs as Code
 
-<img src="../../images/docs-like-code-book.jpg" alt="Docs Like Code" style="padding:14px;" align="right" height="200" width="319">
-<p>We've transformed the way teams work together on docs, and we want to show you the best practices for writing docs using development tools and techniques. Now available in both print and ebook, check out <i>Docs Like Code</i>.</p>
+![Docs Like Code cover](images/docs-like-code-book.jpg){: style="padding:14px;" height="200" width="319" }
 
+We've transformed the way teams work together on docs, and we want to show you the best practices for writing docs using development tools and techniques. Now available in both print and ebook, check out *Docs Like Code*.
 
-<p><a href="https://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
-  margin-bottom: 20px;
-  padding: 8px 20px;
-  font-size: 14px;
-  background-color: #fc5720;
-  color: #fff;
-  border: 2px solid #fc5720 !important;
-  border-radius: 3px;
-  &:visited {
-    color: #fff;
-  }
-  &:hover {
-    background-color: #fff;
-    color: #64baaa;"><i class='fa fa-book'></i> Buy Now</a></p>
+[Buy Now](https://www.lulu.com/spotlight/justwriteclick)
 
-<h1>What's inside?</h1>
+## What's inside?
 
-<p><strong>Why use GitHub for docs?</strong> If you're unsure of a good fit for your projects and teams, read about the potential wins with these techniques. Or, you may learn how to convince others who need to hear about the use cases.</p>
-<p><strong>Information architecture and workflows, how do you choose?</strong> Read these chapters to find out lessons learned when making sure the users are served first.
-</p>
-<p>
-<strong>How can I improve upon my team's work?</strong> Author and build content like a pro, whether you're a writer or a developer. Build in quality assurance, automate builds, and review with your teammates to make great docs.
-</p>
-<p>
-<strong>What are the best practices for REST API docs?</strong> While Swagger/OpenAPI, RAML, and other standards work well when considering the entire API lifecycle, you can also consider collaboration gains with simple markup and narrative documents beyond the REST API reference doc set.
-</p>
+**Why use GitHub for docs?** If you're unsure of a good fit for your projects and teams, read about the potential wins with these techniques. Or, you may learn how to convince others who need to hear about the use cases.
 
-<p><a href="https://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
-  margin-bottom: 20px;
-  padding: 8px 20px;
-  font-size: 14px;
-  background-color: #fc5720;
-  color: #fff;
-  border: 2px solid #fc5720 !important;
-  border-radius: 3px;
-  &:visited {
-    color: #fff;
-  }
-  &:hover {
-    background-color: #fff;
-    color: #fc5720;"><i class='fa fa-book'></i> Buy Now</a></p>
+**Information architecture and workflows, how do you choose?** Read these chapters to find out lessons learned when making sure the users are served first.
 
-<h1>Who's using these docs-as-code techniques?</h1>
+**How can I improve upon my team's work?** Author and build content like a pro, whether you're a writer or a developer. Build in quality assurance, automate builds, and review with your teammates to make great docs.
+
+**What are the best practices for REST API docs?** While Swagger/OpenAPI, RAML, and other standards work well when considering the entire API lifecycle, you can also consider collaboration gains with simple markup and narrative documents beyond the REST API reference doc set.
+
+[Buy Now](https://www.lulu.com/spotlight/justwriteclick)
+
+## Who's using these docs-as-code techniques?
 
 > “I met with one of the devs today to go over a Pull Request that I had submitted with editorial comments, and in the course of conversation, I mentioned that I had not been working directly with developers for very long.
 >
 > He replied that he'd worked with technical editors in the past who were not very helpful, but that I was different. In fact, he assumed I was a developer at first because I was working in GitHub, effortlessly creating PRs!”
-> 
+>
 > _Kelly Holcomb, Senior Technical Editor, Oracle_
 
 > “This book will be the go-to guide for people looking to get into the _Docs like Code_ world. It has been on my list to write for a while, and I'm glad someone did for me. :)”
-> 
+>
 > _Eric Holscher, Cofounder of Read the Docs and Write the Docs_
 
 > "The wonderful @annegentle introduced me to this a long while ago and Docs Like Code has been a huge improvement in /everything/. Check out https://docslikecode.com"
-> 
-> [Cody Bunch](https://x.com/cody_bunch/status/1309677037267935235?s=20)
+>
+> — Cody Bunch
 
 > If you haven’t read about it yet I’d recommend you to read — @annegentle #DocsLikeCode #software #product #Documentation #SaaS #tech #techcomm #technology #technicalwriting #techwriter #knowledgebase
 >
-> Sriram Hariharan
+> — Sriram Hariharan
 
 > #docsLikeCode refers to the use of repos like #git for source/version control and doc generation. It facilitates #agile docs, in the same sprints as agile dev.
 >
-> Mike Jang
+> — Mike Jang
 
-> We do this for all documentation at @GDSTeam. The brilliant @annegentle has written a book on 'docs as code' and has case studies and guidance on her website. It works so well! 
+> We do this for all documentation at @GDSTeam. The brilliant @annegentle has written a book on 'docs as code' and has case studies and guidance on her website. It works so well!
 >
-> Jen Lambourne
+> — Jen Lambourne
 
-> "Docs as Code" is the search term you're looking for! #lca2019 #techcomm #docsascode Also, the wonderful @annegentle literally wrote the book on it. 
+> "Docs as Code" is the search term you're looking for! #lca2019 #techcomm #docsascode
 >
-> Lana Brindley
+> — Lana Brindley
 
-> Just finished @annegentle's new book, Docs Like Code — outstanding for devs. If you value quality docs, see the book. 
+> Just finished @annegentle's new book, Docs Like Code — outstanding for devs. If you value quality docs, see the book.
 >
-> Carol Willing 
+> — Carol Willing
 
-> Just finished "Docs Like Code" by @annegentle — Superb advice for modern technical writing. 
+> Just finished "Docs Like Code" by @annegentle — Superb advice for modern technical writing.
 >
-> Doug Hellmann
+> — Doug Hellmann
 
-> This one just moved to the top of my reading list: a book on how to treat docs like code by @annegentle. 
+> This one just moved to the top of my reading list: a book on how to treat docs like code by @annegentle.
 >
-> Patrick Andriessen
+> — Patrick Andriessen
