@@ -1,0 +1,140 @@
+---
+layout: home
+title: "Quick Start with Docs as Code"
+excerpt: "Use Git and GitHub, static site generators, and CICD systems to write and automate documentation builds so you can focus on writing and organizing excellent content."
+search: false
+show_excerpts: true
+entries_layout: grid
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Docs Like Code",
+  "description": "Learn to treat documentation like code using Git, GitHub, static site generators, and CI/CD for scalable, maintainable docs.",
+  "url": "https://www.docslikecode.com",
+  "author": {
+    "@type": "Person",
+    "name": "Anne Gentle"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Docs Like Code"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.docslikecode.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<div>
+  <a href="https://www.docslikecode.com/learn/"><img src="images/learn/octocat-400x333.png" alt="Learn more about docs as code" align="left" hspace="20" vspace="20" width="159"></a>
+  <h2>Experiment with Docs As Code with GitHub Pages</h2> 
+  <p>The fastest way to get started with docs-as-code with a web browser, internet connection, and GitHub account: </p>
+  <ol>
+    <li>Create a GitHub account at <a href="https://github.com">github.com</a>. Refer to <a href="https://justwriteclick.com/2019/01/14/github-pro-account-or-github-free-account-for-technical-writing/">GitHub Pro Account or GitHub Free Account for Technical Writing</a> if you're wondering which pricing plan makes sense for you. Free is likely fine!</li>
+    <li>In your browser, create a repository with the same name as your GitHub username, followed by "github.io". 
+      For example, my repository name is "annegentle.github.io".</li>
+    <li>On the repository's main page, on the Code tab, click <em>Add file</em> > <em>Create new file</em>.
+      <p><img src="images/quickstart/add-file-create-new-file.png" alt="GitHub Add file and Create file"  hspace="20" vspace="20" width="600"/></p>
+    </li>
+    <li>In the <em>Name your file...</em> field, enter "index.md" and under <em>Edit new file</em>, add a line or two of text that you want to publish as your new web landing page.
+      <p><img src="images/quickstart/edit-new-file.png" alt="GitHub Edit new file" hspace="20" vspace="20" width="400"/></p></li>
+    <li>Add a message if you like, and click <em>Commit new file</em>.
+      <p><img src="images/quickstart/commit-new-file.png" alt="GitHub Commit new file" hspace="20" vspace="20" width="500"/></p></li>
+    <li>Wait just a few seconds, then go to your new page, https://username.github.io. For an example, go to <a href="https://annegentle.github.io">annegentle.github.io</a>.
+      <li>If you don't see a page, check the settings for GitHub Pages by going to the <em>Settings</em> tab for the repository, and then click <em>Pages</em> in the left-hand side. The Settings should look similar to these:
+      <p><img src="images/quickstart/github-pages-settings.png" alt="GitHub repository Settings then Pages sidebar" hspace="20" vspace="20" width="800"/></li>
+        <li>Go to <a href="https://pages.github.com">pages.github.com</a> for even more scenarios. <p>That exercise gives you a taste of using GitHub as a content management system and publishing to a single web page automatically by pushing to a branch. Learn more by exploring the rest of this site.</p></li>
+  </ol>
+  </div>
+
+<section id="start-here">
+<h2>Start Here</h2>
+
+<h3>🚀 Quick Start Guide</h3>
+<p>Build your first docs-as-code workflow in under 30 minutes.</p>
+<p>👉 <a href="/guides/quickstart/">/guides/quickstart/</a></p>
+
+<h3>📘 Docs Like Code (Book)</h3>
+<p>Learn the complete system for scaling documentation across teams.</p>
+<p>👉 <a href="/book/">/book/</a></p>
+</section>
+
+<section id="core-topics">
+<h2>Core Topics</h2>
+
+<h3>GitHub for Documentation</h3>
+<p>Learn how to use repositories, pull requests, and workflows to manage docs.</p>
+<p>👉 <a href="/guides/github-docs/">/guides/github-docs/</a></p>
+
+<h3>Markdown for Technical Writers</h3>
+<p>Write clean, structured, and maintainable documentation.</p>
+<p>👉 <a href="/guides/markdown/">/guides/markdown/</a></p>
+
+<h3>Static Site Generators</h3>
+<p>Compare tools like Jekyll, Hugo, and Sphinx for publishing documentation.</p>
+<p>👉 <a href="/guides/static-site-generators/">/guides/static-site-generators/</a></p>
+</section>
+
+<section id="why-docs-as-code">
+<h2>Why Docs as Code Works</h2>
+
+<p><strong>Traditional documentation:</strong></p>
+<ul>
+  <li>Lives in disconnected tools</li>
+  <li>Is hard to maintain</li>
+  <li>Lacks collaboration</li>
+</ul>
+
+<p><strong>Docs-as-code workflows:</strong></p>
+<ul>
+  <li>Integrate with development</li>
+  <li>Improve consistency</li>
+  <li>Enable automation</li>
+  <li>Scale with your team</li>
+</ul>
+</section>
+
+<section id="audience">
+<h2>Who This Site Is For</h2>
+<ul>
+  <li>Technical writers working with developers</li>
+  <li>Developer advocates and API doc writers</li>
+  <li>Engineering teams improving documentation</li>
+  <li>Anyone adopting docs-as-code workflows</li>
+</ul>
+</section>
+
+<section id="about-author">
+<h2>From the Author</h2>
+<p>This site accompanies <em>Docs Like Code</em>, a book focused on modern documentation workflows using developer tools and automation.</p>
+<p>You’ll find practical guides, examples, and strategies for implementing docs-as-code in real teams.</p>
+</section>
+
+👉 [Learn more about the book](/book/)
+
+---
+
+## Latest Guides
+
+<!-- This pulls recent items from your guides collection -->
+
+{% assign recent_guides = site.guides | slice: 0, 3 %}
+
+{% for post in recent_guides %}
+### [{{ post.title }}]({{ post.url }})
+{{ post.excerpt }}
+{% endfor %}
+
+---
+
+## Start Building Better Documentation
+
+If you're ready to modernize your documentation workflow:
+
+👉 [Start with the Quick Start Guide](/guides/quickstart/)  
+👉 [Get the full book](/book/)
