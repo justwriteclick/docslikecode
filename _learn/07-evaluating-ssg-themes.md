@@ -6,11 +6,27 @@ image:
   thumbnail: /images/learn/ssg-themes400x225.png
 ---
 
-Themes for static site generators often provide advanced user experience features such as navigation, search, and responsive designs for mobile consumption. You also analyze the theme to make decisions on the authoring side, such as a table format for large data tables.
+Themes for static site generators (SSGs) often provide advanced user experience features such as navigation, search, and responsive designs for mobile consumption. You also analyze the theme to make decisions on the authoring side, such as a table format for large data tables.
 
 When researching and selecting a theme, analyze the possibilities for printed outputs, such as PDF or EPUB. Perhaps you need version control for both the output and the source files. The size of your site may mean you need to consider the performance gains you can make with the build. Themes are one part of this analysis.
 
-Here's a short list of questions you may want to ask about the theme you use for a static site generator.
+## Quick answer
+
+- **What this article covers:** Evaluating SSG themes for navigation, search, responsiveness, customization, localization, code blocks, images, tables, print output (PDF/EPUB), versioning, performance, and maintenance.
+- **When to use this information:** Run this checklist when choosing, auditing, or customizing a theme before adoption.
+- **Fast checklist with yes/no answers for evaluating SSG themes:**
+  - Clear navigation (sidebar, breadcrumbs, prev/next)?
+  - Search present, mobile-friendly, and configurable?
+  - Responsive UI for mobile (collapsible nav, readable TOC)?
+  - Easy branding/customization without heavy developer work?
+  - Rich code block features (syntax, copy, line numbers, highlighting)?
+  - Admonitions/notes supported and rendered properly?
+  - Images and captions behave on mobile and in print outputs?
+  - Tables render well in browsers and in PDF/EPUB sizes?
+  - Localization/translation support for UI labels?
+  - Theme updates manageable via version control and tracked versions?
+
+The rest of the article provides questions you can ask about the theme you use for a static site generator.
 
 ## Admonitions or notes
 Are there designs for output of levels of admonition, such as warning, information, and note?

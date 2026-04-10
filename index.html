@@ -1,60 +1,323 @@
 ---
 layout: home
-title: "Quick Start with Docs as Code"
-excerpt: "Use Git and GitHub, static site generators, and CICD systems to write and automate documentation builds so you can focus on writing and organizing excellent content."
+title: "Docs Like Code — Treat Your Documentation Like a Developer"
+excerpt: "Learn to write, version, automate, and ship technical docs using the same tools developers use: Git, GitHub, static site generators, and CI/CD."
 search: false
 show_excerpts: true
 entries_layout: grid
 ---
 
-<div>
-  <!-- <a href="https://www.docslikecode.com/learn/"><img src="images/learn/octocat-400x333.png" alt="Learn more" align="left" hspace="20" vspace="20" width="159"></a>
-   -->
-  <!-- <h2>Quick Start with GitHub Pages</h2> -->
-  
-  <!-- <p>The fastest way to get started with docs-as-code with a web browser, internet connection, and GitHub account: </p> -->
-  <ol>
-    <li>Create a GitHub account at <a href="https://github.com">github.com</a>. Refer to <a href="https://justwriteclick.com/2019/01/14/github-pro-account-or-github-free-account-for-technical-writing/">GitHub Pro Account or GitHub Free Account for Technical Writing</a> if you're wondering which pricing plan makes sense for you. Free is likely fine!</li>
-    <li>In your browser, create a repository with the same name as your GitHub username, followed by "github.io". 
-      For example, my repository name is "annegentle.github.io".</li>
-    <li>On the repository's main page, on the Code tab, click <em>Add file</em> > <em>Create new file</em>.
-      <p><img src="images/quickstart/add-file-create-new-file.png" alt="GitHub Add file and Create file"  hspace="20" vspace="20" width="600"/></p>
-    </li>
-    <li>In the <em>Name your file...</em> field, enter "index.md" and under <em>Edit new file</em>, add a line or two of text that you want to publish as your new web landing page.
-      <p><img src="images/quickstart/edit-new-file.png" alt="GitHub Edit new file" hspace="20" vspace="20" width="400"/></p></li>
-    <li>Add a message if you like, and click <em>Commit new file</em>.
-      <p><img src="images/quickstart/commit-new-file.png" alt="GitHub Commit new file" hspace="20" vspace="20" width="500"/></p></li>
-    <li>Wait just a few seconds, then go to your new page, https://username.github.io. For an example, go to <a href="https://annegentle.github.io">annegentle.github.io</a>.
-      <li>If you don't see a page, check the settings for GitHub Pages by going to the <em>Settings</em> tab for the repository, and then click <em>Pages</em> in the left-hand side. The Settings should look similar to these:
-      <p><img src="images/quickstart/github-pages-settings.png" alt="GitHub repository Settings then Pages sidebar" hspace="20" vspace="20" width="800"/></li>
-        <li>Go to <a href="https://pages.github.com">pages.github.com</a> for even more scenarios. <p>That exercise gives you a taste of using GitHub as a content management system and publishing to a single web page automatically by pushing to a branch. Learn more by exploring the rest of this site.</p></li>
-  </ol>
+<style>
+  /* ── Hero ── */
+  .dlc-hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 0 2.5rem;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 3rem;
+  }
+  .dlc-hero__text { flex: 1 1 340px; }
+  .dlc-hero__image { flex: 0 0 auto; text-align: center; }
+  .dlc-hero__image img {
+    max-width: 200px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+    border-radius: 4px;
+  }
+  .dlc-hero__eyebrow {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 0.6rem;
+  }
+  .dlc-hero h1 {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    line-height: 1.2;
+    margin: 0 0 1rem;
+  }
+  .dlc-hero__sub {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 520px;
+  }
+  .dlc-btn-group { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .dlc-btn {
+    display: inline-block;
+    padding: 0.65rem 1.4rem;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+  .dlc-btn:hover { opacity: 0.85; text-decoration: none; }
+  .dlc-btn--primary {
+    background: #1a5276;
+    color: #fff !important;
+  }
+  .dlc-btn--secondary {
+    background: transparent;
+    color: #1a5276 !important;
+    border: 2px solid #1a5276;
+  }
+  .dlc-hero__edition {
+    margin-top: 1rem;
+    font-size: 0.82rem;
+    color: #888;
+  }
+
+  /* ── Social proof strip ── */
+  .dlc-proof {
+    background: #f7f9fb;
+    border: 1px solid #e4e8ed;
+    border-radius: 4px;
+    padding: 1.4rem 1.6rem;
+    margin-bottom: 3rem;
+  }
+  .dlc-proof__quote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 0 0.5rem;
+  }
+  .dlc-proof__attr {
+    font-size: 0.82rem;
+    color: #666;
+    font-weight: 600;
+  }
+
+  /* ── Value prop ── */
+  .dlc-value {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.6rem;
+    margin-bottom: 3rem;
+  }
+  .dlc-value__card {
+    border-left: 3px solid #1a5276;
+    padding: 0.8rem 1rem;
+  }
+  .dlc-value__card h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0 0 0.4rem;
+    color: #1a5276;
+  }
+  .dlc-value__card p {
+    font-size: 0.88rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  /* ── Who it's for ── */
+  .dlc-audience {
+    margin-bottom: 3rem;
+  }
+  .dlc-audience h2 { margin-bottom: 0.8rem; }
+  .dlc-audience__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.8rem;
+  }
+  .dlc-audience__item {
+    background: #f0f4f8;
+    border-radius: 3px;
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.4;
+  }
+  .dlc-audience__item strong { display: block; font-size: 0.82rem; color: #1a5276; margin-bottom: 0.2rem; }
+
+  /* ── Second edition callout ── */
+  .dlc-edition-note {
+    border: 1px solid #aac5e0;
+    background: #eef5fc;
+    border-radius: 4px;
+    padding: 1rem 1.4rem;
+    margin-bottom: 3rem;
+    font-size: 0.92rem;
+    color: #1a3a52;
+    line-height: 1.6;
+  }
+  .dlc-edition-note strong { color: #1a5276; }
+
+  /* ── Quickstart section ── */
+  .dlc-quickstart {
+    padding-top: 2rem;
+    border-top: 1px solid #e8e8e8;
+    margin-bottom: 3rem;
+  }
+  .dlc-quickstart h2 { margin-bottom: 0.3rem; }
+  .dlc-quickstart__sub {
+    color: #666;
+    font-size: 0.92rem;
+    margin-bottom: 1.4rem;
+  }
+  .dlc-quickstart ol li { margin-bottom: 1.2rem; line-height: 1.6; }
+  .dlc-quickstart ol li img { display: block; margin: 0.8rem 0; }
+
+  /* ── Learn & articles ── */
+  .dlc-links-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e8e8e8;
+  }
+  .dlc-links-row a {
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+</style>
+
+<!-- ═══════════════════════════════════════════
+     HERO — book first, clear CTA
+═══════════════════════════════════════════ -->
+<div class="dlc-hero">
+  <div class="dlc-hero__text">
+    <p class="dlc-hero__eyebrow">📘 Now in its Second Edition</p>
+    <h1>Ship better docs by treating them like code</h1>
+    <p class="dlc-hero__sub">
+      Version control, automation, and real team collaboration — the same workflow developers already use, applied to technical documentation. This site and the book behind it show you exactly how.
+    </p>
+    <div class="dlc-btn-group">
+      <a href="https://www.lulu.com/spotlight/justwriteclick" class="dlc-btn dlc-btn--primary">Get the Book — Print or Ebook</a>
+      <a href="/book/" class="dlc-btn dlc-btn--secondary">What's inside?</a>
+    </div>
+    <p class="dlc-hero__edition">Available in print and ebook via Lulu · by Anne Gentle</p>
   </div>
-
-<div>
-<a href="https://www.docslikecode.com/learn/"><img src="images/learn/octocat-400x333.png" alt="Learn more" align="left" hspace="20" vspace="20" width="159"></a>
-
-<h2>Learn the tools</h2>
-
-<p><a href="https://www.docslikecode.com/learn/" class="btn btn--inverse"><i class='fa fa-graduation-cap'></i> Learn </a></p>
-
-<p>Learning GitHub or any system backed by `git` takes some time and practice. Try some lessons with multiple static site generators and deployment systems as well as how to test docs as code.</p>
+  <div class="dlc-hero__image">
+    <a href="/book/">
+      <img src="/images/docs-like-code-book.jpg" alt="Docs Like Code book cover" />
+    </a>
+  </div>
 </div>
 
-<div style="clear:both">
-
-  <a href="https://www.lulu.com/spotlight/justwriteclick"><img src="images/docs-like-code-book.jpg" alt="Docs Like Code Book" align="left" hspace="20" vspace="20" height="100" width="159"></a>
-
-  <h1>Buy the book</h1>
-
-  <p><a href="https://www.lulu.com/spotlight/justwriteclick" class="btn btn--inverse"><i class='fa fa-book'></i> Buy </a></p>
-
-  <p>We've transformed the way teams work together on docs, and we want to talk about the best practices for writing docs using development tools and techniques. Now in its second edition.</p>
+<!-- ═══════════════════════════════════════════
+     SOCIAL PROOF — best quote first
+═══════════════════════════════════════════ -->
+<div class="dlc-proof">
+  <p class="dlc-proof__quote">"This book will be the go-to guide for people looking to get into the Docs like Code world. It has been on my list to write for a while, and I'm glad someone did for me."</p>
+  <p class="dlc-proof__attr">— Eric Holscher, Co-founder of Read the Docs &amp; Write the Docs</p>
 </div>
 
-<div style="clear:both">
-<h2>Read the articles</h2>
-<p>Read more <a href="{{base_url}}/articles/">articles</a> on this site about
-using GitHub for documentation. Let's find out the best practices and create a balance point between artisanal craft and automation efficiency.
-</p>
+<!-- ═══════════════════════════════════════════
+     VALUE PROP — 4 concrete wins
+═══════════════════════════════════════════ -->
+<div class="dlc-value">
+  <div class="dlc-value__card">
+    <h3>Version every change</h3>
+    <p>Use Git to track who changed what and why — for docs, not just code.</p>
+  </div>
+  <div class="dlc-value__card">
+    <h3>Automate your builds</h3>
+    <p>CI/CD pipelines that publish your docs on every merge, no manual steps.</p>
+  </div>
+  <div class="dlc-value__card">
+    <h3>Review with pull requests</h3>
+    <p>Writers and developers collaborate in the same workflow they already know.</p>
+  </div>
+  <div class="dlc-value__card">
+    <h3>Scale with your team</h3>
+    <p>Patterns that work whether you're a solo writer or a distributed doc team.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     WHO THIS IS FOR
+═══════════════════════════════════════════ -->
+<div class="dlc-audience">
+  <h2>Who this is for</h2>
+  <div class="dlc-audience__grid">
+    <div class="dlc-audience__item">
+      <strong>Technical Writers</strong>
+      Work alongside engineers without losing control of your docs.
+    </div>
+    <div class="dlc-audience__item">
+      <strong>Developer Advocates</strong>
+      Publish and maintain API docs that stay in sync with the code.
+    </div>
+    <div class="dlc-audience__item">
+      <strong>Engineering Teams</strong>
+      Adopt a lightweight docs workflow that fits your existing CI/CD setup.
+    </div>
+    <div class="dlc-audience__item">
+      <strong>Doc Team Leads</strong>
+      Build systems that don't break when headcount or tooling changes.
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SECOND EDITION CALLOUT
+═══════════════════════════════════════════ -->
+<div class="dlc-edition-note">
+  <strong>What's new in the Second Edition?</strong>
+  Updated coverage of modern static site generators, expanded CI/CD automation examples, new case studies from teams at Sysdig, platformOS, and Redis, plus a deeper look at REST API documentation and OpenAPI workflows.
+  <a href="/book/">See full table of contents →</a>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     QUICKSTART TUTORIAL (moved below the fold)
+═══════════════════════════════════════════ -->
+<div class="dlc-quickstart">
+  <h2>Try it in your browser — under 10 minutes</h2>
+  <p class="dlc-quickstart__sub">No local setup needed. All you need is a GitHub account.</p>
+
+  <div>
+    <a href="https://www.docslikecode.com/learn/">
+      <img src="/images/learn/octocat-400x333.png" alt="Learn more about docs as code" align="right" hspace="20" vspace="10" width="140">
+    </a>
+
+    <ol>
+      <li>
+        Create a free GitHub account at <a href="https://github.com">github.com</a>.
+        (<a href="https://justwriteclick.com/2019/01/14/github-pro-account-or-github-free-account-for-technical-writing/">Free vs Pro — which plan?</a>)
+      </li>
+      <li>
+        Create a new repository named <code>yourusername.github.io</code> — for example, <code>annegentle.github.io</code>.
+      </li>
+      <li>
+        On the repository's <strong>Code</strong> tab, click <em>Add file</em> → <em>Create new file</em>.
+        <img src="/images/quickstart/add-file-create-new-file.png" alt="GitHub Add file and Create file" width="600" />
+      </li>
+      <li>
+        Name the file <code>index.md</code> and add a line of text — this becomes your live web page.
+        <img src="/images/quickstart/edit-new-file.png" alt="GitHub Edit new file" width="400" />
+      </li>
+      <li>
+        Click <em>Commit new file</em>.
+        <img src="/images/quickstart/commit-new-file.png" alt="GitHub Commit new file" width="500" />
+      </li>
+      <li>
+        Wait a few seconds, then visit <code>https://yourusername.github.io</code>.
+        See <a href="https://annegentle.github.io">annegentle.github.io</a> for a live example.
+        <br><br>
+        <strong>Don't see a page?</strong> Go to <em>Settings → Pages</em> in your repo and verify GitHub Pages is enabled.
+        <img src="/images/quickstart/github-pages-settings.png" alt="GitHub Pages settings" width="700" />
+        <br>
+        More scenarios at <a href="https://pages.github.com">pages.github.com</a>.
+      </li>
+    </ol>
+
+    <p>That's the core loop: write a file, commit it, and it publishes automatically. The book and guides on this site show you how to take that same idea much further.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     EXPLORE MORE
+═══════════════════════════════════════════ -->
+<div class="dlc-links-row">
+  <a href="/learn/">📚 Lessons &amp; exercises →</a>
+  <a href="/articles/">📰 Articles &amp; case studies →</a>
+  <a href="https://www.lulu.com/spotlight/justwriteclick">🛒 Buy the book →</a>
 </div>

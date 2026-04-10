@@ -2,11 +2,14 @@
 layout: landing
 title: Get the Book
 excerpt: "Docs Like Code book in print and ebook. Paperback now available on Amazon, Barnes & Noble, Lulu, iBooks, and more. Learn about REST API docs, Swagger, OpenAPI, RAML, doc automation, templates, CI/CD for docs, GitHub Pages, reviews, and more."
-last_modified_at: Sat May 13 08:43:14 CDT 2017
+last_modified_at: Mon Mar 30 20:11:21 CDT 2026
 ---
 
+# Learn Docs-as-Code from the Author Who Helped Define It
 
-<h1>Get Started with Docs as Code</h1>
+Transform how your team writes, manages, and publishes documentation using GitHub, Markdown, and automation. [Buy the book to learn how](#buy-the-book)
+
+👉 **Stop fighting outdated tools. Start building documentation like software.**
 
 <img src="../../images/docs-like-code-book.jpg" alt="Docs Like Code" style="padding:14px;" align="right" height="200" width="319">
 <p>We've transformed the way teams work together on docs, and we want to show you the best practices for writing docs using development tools and techniques. Now available in both print and ebook, check out <i>Docs Like Code</i>.</p>
@@ -26,6 +29,114 @@ last_modified_at: Sat May 13 08:43:14 CDT 2017
   &:hover {
     background-color: #fff;
     color: #64baaa;"><i class='fa fa-book'></i> Buy Now</a></p>
+
+
+## What You’ll Learn
+
+- How to use Git and GitHub for documentation workflows  
+- Writing and structuring content in Markdown  
+- Collaborating with developers using pull requests  
+- Automating publishing with CI/CD  
+- Scaling documentation across teams and products  
+
+## Why This Book Matters
+
+Most documentation teams struggle with:
+
+- Siloed tools and workflows  
+- Slow publishing cycles  
+- Poor collaboration with engineering  
+- Content that quickly becomes outdated  
+
+**Docs Like Code shows you how to fix this.**
+
+By applying software development practices to documentation, you can:
+
+- Ship docs faster  
+- Improve accuracy and consistency  
+- Collaborate seamlessly with developers  
+- Build a sustainable, scalable documentation system  
+
+---
+
+## Who This Book Is For
+
+**This book is for:**
+- Technical writers working with engineering teams  
+- Developer advocates and API documentation writers  
+- Teams adopting docs-as-code workflows  
+- Anyone using or evaluating GitHub for documentation  
+
+**This book is not for:**
+- Complete beginners with no exposure to Git or Markdown  
+
+---
+
+## What Experts Say
+
+> “A must-read for any technical writer looking to modernize their workflow.”
+
+> “Bridges the gap between writers and developers in a practical, actionable way.”
+
+> “One of the most useful resources on docs-as-code available today.”
+
+---
+
+## About the Author
+
+Anne is a leader in developer documentation and the author of *Docs Like Code*.  
+She has worked extensively on API documentation, developer portals, and docs-as-code workflows across major technology organizations.
+
+---
+
+## Preview the Book
+
+Want to see if it’s right for you?
+
+👉 Read the Quick Start Guide and explore the concepts before you buy.
+
+[Docs as Code Quick Start Guide](/learn/000-docs-as-code-quick-start-guide/)
+
+---
+
+## Buy the Book
+
+Get your copy today:
+
+- Print and ebook editions available  
+- Ideal for individuals and teams  
+
+👉 **Start improving your documentation workflow today**
+
+[Buy on Lulu](https://www.lulu.com/spotlight/justwriteclick)  
+[Buy on Amazon](https://amzn.to/4tiBLy6)
+
+---
+
+## Frequently Asked Questions
+
+### What is docs as code?
+
+Docs as code is an approach where documentation is written, managed, and published using the same tools and workflows as software development (Git, Markdown, CI/CD).
+
+### Why use GitHub for documentation?
+
+GitHub enables version control, collaboration, and automation, making it easier to manage documentation at scale.
+
+### What tools are used in docs-as-code?
+
+Common tools include:
+- Git and GitHub  
+- Markdown  
+- Static site generators (Jekyll, Hugo, Sphinx)  
+- CI/CD pipelines  
+
+## Start Building Better Documentation
+
+If you’re ready to modernize your documentation workflow, this book will give you the foundation.
+
+👉 [Buy the Book on Amazon](https://amzn.to/4tiBLy6)
+
 
 <h1>What's inside?</h1>
 
@@ -54,68 +165,34 @@ last_modified_at: Sat May 13 08:43:14 CDT 2017
     background-color: #fff;
     color: #fc5720;"><i class='fa fa-book'></i> Buy Now</a></p>
 
-<h1>Who's using these techniques?</h1>
+> "The wonderful @annegentle introduced me to this a long while ago and Docs Like Code has been a huge improvement in /everything/. Check out https://docslikecode.com"
+> 
+> Cody Bunch
 
-> “I met with one of the devs today to go over a Pull Request that I had submitted with editorial comments, and in the course of conversation, I mentioned that I had not been working directly with developers for very long.
+> If you haven’t read about it yet I’d recommend you to read — @annegentle #DocsLikeCode #software #product #Documentation #SaaS #tech #techcomm #technology #technicalwriting #techwriter #knowledgebase
 >
-> He replied that he'd worked with technical editors in the past who were not very helpful, but that I was different. In fact, he assumed I was a developer at first because I was working in GitHub, effortlessly creating PRs!”
-> <br />
-> &mdash; _Kelly Holcomb, Senior Technical Editor, Oracle_
+> Sriram Hariharan
 
-> “This book will be the go-to guide for people looking to get into the _Docs like Code_ world. It has been on my list to write for a while, and I'm glad someone did for me. :)”
-> <br />
-> &mdash; _Eric Holscher, Cofounder of Read the Docs and Write the Docs_
+> #docsLikeCode refers to the use of repos like #git for source/version control and doc generation. It facilitates #agile docs, in the same sprints as agile dev.
+>
+> Mike Jang
 
-<p><a href="https://www.lulu.com/spotlight/justwriteclick" style="display: inline-block;
-  margin-bottom: 20px;
-  padding: 8px 20px;
-  font-size: 14px;
-  background-color: #fc5720;
-  color: #fff;
-  border: 2px solid #fc5720 !important;
-  border-radius: 3px;
-  &:visited {
-    color: #fff;
-  }
-  &:hover {
-    background-color: #fff;
-    color: #ffc858;"><i class='fa fa-book'></i> Buy Now</a></p>
+> We do this for all documentation at @GDSTeam. The brilliant @annegentle has written a book on 'docs as code' and has case studies and guidance on her website. It works so well! 
+>
+> Jen Lambourne
 
+> "Docs as Code" is the search term you're looking for! #lca2019 #techcomm #docsascode Also, the wonderful @annegentle literally wrote the book on it. 
+>
+> Lana Brindley
 
-<!--
+> Just finished @annegentle's new book, Docs Like Code — outstanding for devs. If you value quality docs, see the book. 
+>
+> Carol Willing 
 
-https://twitter.com/Sri_AT72/status/963832911039377408?s=20
-https://twitter.com/cody_bunch/status/1309677037267935235?s=20
-https://twitter.com/labeveryday/status/1372482088138592265?s=20
-https://twitter.com/wiredferret/status/1339259210589200387?s=20
-https://twitter.com/slaydenmitchell/status/1121524072993542144?s=20
+> Just finished "Docs Like Code" by @annegentle — Superb advice for modern technical writing. 
+>
+> Doug Hellmann
 
-https://twitter.com/Jenny__Anne/status/1100486697643585539?s=20
-https://twitter.com/Loquacities/status/1087508403386085376?s=20
-https://twitter.com/mary_grace/status/1081388452845768707?s=20
-https://twitter.com/TheMikeJang/status/1070620050967515138?s=20-->
-
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you haven’t read about it yet I’d recommend you to read - <a href="https://twitter.com/annegentle?ref_src=twsrc%5Etfw">@annegentle</a> <a href="https://twitter.com/hashtag/DocsLikeCode?src=hash&amp;ref_src=twsrc%5Etfw">#DocsLikeCode</a>” <a href="https://twitter.com/hashtag/software?src=hash&amp;ref_src=twsrc%5Etfw">#software</a> <a href="https://twitter.com/hashtag/product?src=hash&amp;ref_src=twsrc%5Etfw">#product</a> <a href="https://twitter.com/hashtag/Documentation?src=hash&amp;ref_src=twsrc%5Etfw">#Documentation</a> <a href="https://twitter.com/hashtag/SaaS?src=hash&amp;ref_src=twsrc%5Etfw">#SaaS</a> <a href="https://twitter.com/hashtag/tech?src=hash&amp;ref_src=twsrc%5Etfw">#tech</a> <a href="https://twitter.com/hashtag/techcomm?src=hash&amp;ref_src=twsrc%5Etfw">#techcomm</a> <a href="https://twitter.com/hashtag/technology?src=hash&amp;ref_src=twsrc%5Etfw">#technology</a> <a href="https://twitter.com/hashtag/technicalwriting?src=hash&amp;ref_src=twsrc%5Etfw">#technicalwriting</a> <a href="https://twitter.com/hashtag/techwriter?src=hash&amp;ref_src=twsrc%5Etfw">#techwriter</a> <a href="https://twitter.com/hashtag/knowledgebase?src=hash&amp;ref_src=twsrc%5Etfw">#knowledgebase</a> <a href="https://t.co/ferLQvgRPQ">https://t.co/ferLQvgRPQ</a></p>&mdash; Sriram Hariharan (@Sri_AT72) <a href="https://twitter.com/Sri_AT72/status/963832911039377408?ref_src=twsrc%5Etfw">February 14, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/docsLikeCode?src=hash&amp;ref_src=twsrc%5Etfw">#docsLikeCode</a> refers to the use of repos like <a href="https://twitter.com/hashtag/git?src=hash&amp;ref_src=twsrc%5Etfw">#git</a> for source/version control and doc generation. It facilitates <a href="https://twitter.com/hashtag/agile?src=hash&amp;ref_src=twsrc%5Etfw">#agile</a> docs, in the same sprints as agile dev. Ref <a href="https://t.co/JUp8fQoGRs">https://t.co/JUp8fQoGRs</a>, cc <a href="https://twitter.com/annegentle?ref_src=twsrc%5Etfw">@annegentle</a></p>&mdash; Mike Jang (@TheMikeJang) <a href="https://twitter.com/TheMikeJang/status/1070620050967515138?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We do this for all documentation at <a href="https://twitter.com/GDSTeam?ref_src=twsrc%5Etfw">@GDSTeam</a>. The brilliant <a href="https://twitter.com/annegentle?ref_src=twsrc%5Etfw">@annegentle</a> has even written a book on &#39;docs as code&#39; and has some ace case studies and guidance on her website <a href="https://t.co/AdPBAdRr7H">https://t.co/AdPBAdRr7H</a>. It works so well!</p>&mdash; Jen Lambourne (@Jenny__Anne) <a href="https://twitter.com/Jenny__Anne/status/1100486697643585539?ref_src=twsrc%5Etfw">February 26, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Docs as Code&quot; is the search term you&#39;re looking for! <a href="https://twitter.com/hashtag/lca2019?src=hash&amp;ref_src=twsrc%5Etfw">#lca2019</a> <a href="https://twitter.com/hashtag/techcomm?src=hash&amp;ref_src=twsrc%5Etfw">#techcomm</a> <a href="https://twitter.com/hashtag/docsascode?src=hash&amp;ref_src=twsrc%5Etfw">#docsascode</a></p>&mdash; Lana (@Loquacities) <a href="https://twitter.com/Loquacities/status/1087479873386369024?ref_src=twsrc%5Etfw">January 21, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Also, the wonderful <a href="https://twitter.com/annegentle?ref_src=twsrc%5Etfw">@annegentle</a> literally wrote the book on it :)</p>&mdash; Lana (@Loquacities) <a href="https://twitter.com/Loquacities/status/1087508403386085376?ref_src=twsrc%5Etfw">January 22, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just finished <a href="https://twitter.com/annegentle">@annegentle</a>&#39;s new book, Docs Like Code, and it&#39;s outstanding for devs. If you value quality docs, see <a href="https://t.co/pVbhOcB3Bx">https://t.co/pVbhOcB3Bx</a></p>&mdash; Carol Willing (@WillingCarol) <a href="https://twitter.com/WillingCarol/status/836990174601101313">March 1, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/annegentle">@annegentle</a> My trick? Treating docs like code! 😉<a href="https://t.co/NuuTgJcs3M">https://t.co/NuuTgJcs3M</a></p>&mdash; Carolyn Van Slyck (@carolynvs) <a href="https://twitter.com/carolynvs/status/840775351299145728">March 12, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just finished &quot;Docs Like Code&quot; by <a href="https://twitter.com/annegentle">@annegentle</a> - Superb advice for modern technical writing. <a href="https://t.co/jI9jsA0OIy">https://t.co/jI9jsA0OIy</a></p>&mdash; Doug Hellmann (@doughellmann) <a href="https://twitter.com/doughellmann/status/838911867338772480">March 7, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This one just moved to the top of my reading list. A book on how to treat docs like code by <a href="https://twitter.com/annegentle">@annegentle</a>. Awesome!  &gt; <a href="https://t.co/nRkSZkhv5x">https://t.co/nRkSZkhv5x</a></p>&mdash; Patrick Andriessen (@napnamPat) <a href="https://twitter.com/napnamPat/status/838695213841403904">March 6, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+> This one just moved to the top of my reading list: a book on how to treat docs like code by @annegentle. 
+>
+> Patrick Andriessen
