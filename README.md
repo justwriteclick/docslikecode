@@ -49,14 +49,14 @@ On macOS you need to install brew, bundler.io, and Ruby version manager so that 
    $ source ~/.zshrc
    ```
 
-1. Install the required Ruby version:
+1. Install a currently supported Ruby version (example uses `3.2.2`):
 
    ```
-   $ rbenv install 2.7.1
-   $ rbenv global 2.7.1
+   $ rbenv install 3.2.2
+   $ rbenv global 3.2.2
    $ rbenv version
    ```
-   In return, you should see `ruby 2.7.1 2.7.1 (set by /Users/username/docslikecode/.ruby-version`.
+   In return, you should see output like `ruby 3.2.2 (set by /Users/username/docslikecode/.ruby-version)`.
 
 1. Run `gem install bundle` to install the bundler gem, which helps with Ruby dependencies.
 1. Run `bundle install` the first time you are in the `docslikecode` directory.
