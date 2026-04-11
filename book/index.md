@@ -97,6 +97,36 @@ Want to see if it’s right for you?
 
 [Docs as Code Quick Start Guide](/learn/000-docs-as-code-quick-start-guide/)
 
+
+<div style="border: 2px solid #e0e0e0; border-radius: 8px; padding: 20px; margin: 20px 0; background-color: #f9f9f9;">
+<h3>Peruse the table of contents</h3>
+<b>Why treat docs as code?</b><br />
+Discover the compelling reasons to apply software development practices to documentation, from faster iteration to better collaboration.
+<br /><br />
+<b>Background for docs as code</b><br />
+Explore the evolution of documentation practices and how treating docs like code emerged as a solution to common industry challenges.
+<br /><br />
+<b>Plan for docs as code</b><br />
+Learn how to assess your current documentation workflow and create a strategic roadmap for adopting docs-as-code practices.
+<br /><br />
+<b>Automate builds so you can focus on writing</b><br />
+Set up automated publishing pipelines that handle the technical heavy lifting, freeing you to concentrate on creating great content.
+<br /><br />
+<b>Teamwork and GitHub workflows with docs-as-code systems</b><br />
+Master collaborative workflows using GitHub's powerful features for pull requests, reviews, and team coordination on documentation projects.
+<br /><br />
+<b>Test the docs: linting, inclusive language, and DocOps</b><br />
+Implement quality assurance through automated testing, accessibility checks, and continuous integration practices for documentation.
+<br /><br />
+<b>Review your docs as code</b><br />
+Establish effective review processes that leverage code review best practices to ensure documentation accuracy and consistency.
+<br /><br />
+<b>Versions and releases: publish docs as code</b><br />
+Manage documentation versions, releases, and deployment strategies that align with your software development lifecycle.
+<br /><br />
+<b>Lessons learned with docs as code</b><br />
+Gain insights from real-world implementations, common pitfalls to avoid, and proven strategies for long-term success.
+</div>
 ---
 
 ## Buy the Book
