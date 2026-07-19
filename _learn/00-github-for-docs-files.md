@@ -241,5 +241,5 @@ public # depends on the configuration
 ```
 
 ## Additional resources
-[Learning Git and GitHub resources on docs.github.com]([https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources](https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources))
+[Learning Git and GitHub resources on docs.github.com](https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources)
 [Pro Git](https://git-scm.com/book/en/v2)
