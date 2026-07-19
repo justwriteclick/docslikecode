@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Let's Treat Docs Like Code
+title: Treat Docs Like Code
 locale: en-US
-description: 
+description: A modern approach to technical documentation
 logo: /images/treat-docs-like-code.png
 #url: http://127.0.0.1:4000
 url: https://www.docslikecode.com
